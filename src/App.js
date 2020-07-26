@@ -50,7 +50,18 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="App">
+      <div id="App">
+        <div id='navBar'>
+          <div className='navButtons' id='navLeft'>
+            <p className='navText'>About</p>
+            <p className='navText'>Donate</p>
+          </div>
+          <p id='title'>A People's Calendar</p>
+          <div className='navButtons' id='navRight'>
+            <p className='navText'>Volunteer</p>
+            <p className='navText'>Contact</p>
+          </div>
+        </div>
         <header id="onThisDayWrapper">
           <p id='onThisDay'>On This Day</p>
         </header>
