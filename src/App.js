@@ -51,33 +51,38 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <p>On This Day</p>
+        <header id="onThisDayWrapper">
+          <p id='onThisDay'>On This Day</p>
         </header>
         <div id='eventDisplay'>
           {this.categoryList.map(eventCategory => {
+            /*if the description of the first event in this category is non-empty (i.e., category for the day is not blank)*/
             if (eventLibrary[this.initTodayString][eventCategory][0].description) {
+              /*then, map category events into JSX*/
               var categoryEvents = eventLibrary[this.initTodayString][eventCategory].map(categoryEvent => {
+                //split description on new lines so we can actually have formatting
                 var paragraphs = categoryEvent.description.split('\n\n');
+                //JSX format for each event
                 return (
-                  <div>
-                    <header>
-                      <p>{categoryEvent.title}</p>
+                  <div className='eventWrapper'>
+                    <header className='eventHeaderWrapper'>
+                      <p className='eventHeader'>{categoryEvent.title}</p>
                     </header>
-                    <p>{categoryEvent.date}</p>
-                    <img src={categoryEvent.imgSrc}/>
-                    {paragraphs.map(paragraph => <p>{paragraph}</p>)}
-                    <div>
-                      <a href={categoryEvent.infoSrc} target='_blank'>Source</a>
-                      <a href={categoryEvent.link} target='_blank'>More Info</a>
+                    <p className='eventDate'>{categoryEvent.date}</p>
+                    <img className='eventImg' src={categoryEvent.imgSrc}/>
+                    {paragraphs.map(paragraph => <p className='eventDescription'>{paragraph}</p>)}
+                    <div className='sourcesWrapper'>
+                      <a className='source' href={categoryEvent.infoSrc} target='_blank'>Source</a>
+                      <a className='source' href={categoryEvent.link} target='_blank'>More Info</a>
                     </div>
                   </div>
                   )
                 })
+              //return the formatted jsx event, with event category name above the mapped events. One of these is created for every event category
               return (
-                <div>
-                  <header>
-                    <p>{eventCategory}</p>
+                <div className='categoryEvents'>
+                  <header className='categoryHeaderWrapper'>
+                    <p className='categoryHeader'>{eventCategory}</p>
                   </header>
                   {categoryEvents}
                 </div>
