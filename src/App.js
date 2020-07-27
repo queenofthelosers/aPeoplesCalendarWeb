@@ -25,27 +25,74 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-
+      dayString: (new Date().getMonth() + 1 + '-' + new Date().getDate()),
+      dateHeader: '',
+      searchValue: '',
+      displaySearch: false,
     };
-    this.initTodayString = (new Date().getMonth() + 1 + '-' + new Date().getDate());
+    //this.dayString = (new Date().getMonth() + 1 + '-' + new Date().getDate());
+    this.monthList = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
     this.categoryList = ['Revolution', 'Rebellion', 'Labor', 'Birthdays', 'Assassinations', 'Other'];
 
-    this.createEventElements = this.createEventElements.bind(this);
+    this.handleNewDate = this.handleNewDate.bind(this);
+    this.handleSearch = this.handleSearch.bind(this);
+    this.trackSearch = this.trackSearch.bind(this);
   };
 
-  createEventElements() {
-    var events = [];
-    for (var i = 0; i < this.categoryList.length; i++) {
-        var eventCategory = this.categoryList[i];
-        //if event category for this day is not empty
-        if (eventLibrary[this.initTodayString][eventCategory][0].description) {
-          for (var j = 0; j < eventLibrary[this.initTodayString][eventCategory].length; j++) {
-            events.push([]);
-          };
-          events.push([<li>{eventLibrary[this.initTodayString][eventCategory][0].title}</li>]);
-        };
+  componentWillMount() {
+    //console.log('component will mount is running');
+    //initialize date header with today's date month and day:
+    var today = new Date();
+    this.setState({
+      dateHeader: this.monthList[today.getMonth()] + ' ' + today.getDate() + this.getDaySuffix(today.getDate())
+    });
+  };
+
+  handleNewDate(e) {
+    //change the dayString in state, which will update displayed events
+    var newDateString = e.target.value.split('-');
+    //remove any zero padding from day and month
+    if (newDateString[1][0] === '0') {
+      newDateString[1] = newDateString[1].slice(1);
     };
-    return events;
+    if (newDateString[2][0] === '0') {
+      newDateString[2] = newDateString[2].slice(1);
+    };
+    //create the month and day date header with suffix
+    var dateHeader = this.monthList[parseInt(newDateString[1]) - 1] + ' ' + newDateString[2] + this.getDaySuffix(newDateString[2]);
+    //create the lookup key to use with eventLibrary
+    newDateString = [newDateString[1], newDateString[2]].join('-');
+    this.setState({
+      dayString: newDateString,
+      dateHeader: dateHeader,
+      displaySearch: false,
+    });
+  };
+
+  getDaySuffix(num) {
+    var array = ("" + num).split("").reverse(); // E.g. 123 = array("3","2","1")
+    if (array[1] != "1") { // Number is in the teens
+      switch (array[0]) {
+        case "1": return "st";
+        case "2": return "nd";
+        case "3": return "rd";
+      }
+    }
+    return "th";
+  };
+
+  trackSearch(e) {
+    console.log(e.target.value);
+    this.setState({
+      searchValue: e.target.value
+    });
+  };
+
+  handleSearch() {
+    console.log('handleSearch running');
+    this.setState({
+      displaySearch: true,
+    });
   };
 
   render() {
@@ -62,15 +109,20 @@ class App extends React.Component {
             <p className='navText'>Contact</p>
           </div>
         </div>
-        <header id="onThisDayWrapper">
-          <p id='onThisDay'>On This Day</p>
-        </header>
+        <div id="onThisDayWrapper">
+          <p id='onThisDay'>{this.state.displaySearch ? 'Search Results' : this.state.dateHeader}</p>
+        </div>
+        <div id='settings'>
+          <input type='date' onChange={this.handleNewDate}/>
+            <input type="text" value={this.state.searchValue} placeholder='Search the calendar!' onChange={this.trackSearch}/>
+            <button type="button" onClick={() => this.handleSearch()}><p>Search</p></button>
+        </div>
         <div id='eventDisplay'>
           {this.categoryList.map(eventCategory => {
             /*if the description of the first event in this category is non-empty (i.e., category for the day is not blank)*/
-            if (eventLibrary[this.initTodayString][eventCategory][0].description) {
+            if (eventLibrary[this.state.dayString][eventCategory][0].description) {
               /*then, map category events into JSX*/
-              var categoryEvents = eventLibrary[this.initTodayString][eventCategory].map(categoryEvent => {
+              var categoryEvents = eventLibrary[this.state.dayString][eventCategory].map(categoryEvent => {
                 //split description on new lines so we can actually have formatting
                 var paragraphs = categoryEvent.description.split('\n\n');
                 //JSX format for each event
