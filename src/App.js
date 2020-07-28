@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import {eventLibrary} from './eventLibrary.js';
+import {CalendarDisplay} from './calendarDisplay.js';
 
 /*{this.props.events['Revolution'][0].description.length > 0 && <View style={[styles.eventCategory, ]}>
     <TouchableOpacity
@@ -21,16 +22,18 @@ import {eventLibrary} from './eventLibrary.js';
     )}
   </View>}*/
 
+//inital string to get events on first load (defaults to today in the form MM-DD (no zero pads));
+var initTodayString = (new Date().getMonth() + 1 + '-' + new Date().getDate());
+
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      dayString: (new Date().getMonth() + 1 + '-' + new Date().getDate()),
       dateHeader: '',
       searchValue: '',
       displaySearch: false,
+      events: eventLibrary[initTodayString], //events from selected day, initialized to today's date, sent to display in CalendarDisplay as prop
     };
-    //this.dayString = (new Date().getMonth() + 1 + '-' + new Date().getDate());
     this.monthList = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
     this.categoryList = ['Revolution', 'Rebellion', 'Labor', 'Birthdays', 'Assassinations', 'Other'];
 
@@ -63,7 +66,7 @@ class App extends React.Component {
     //create the lookup key to use with eventLibrary
     newDateString = [newDateString[1], newDateString[2]].join('-');
     this.setState({
-      dayString: newDateString,
+      events: eventLibrary[newDateString],
       dateHeader: dateHeader,
       displaySearch: false,
     });
@@ -89,9 +92,63 @@ class App extends React.Component {
   };
 
   handleSearch() {
+    //iterate over each day, each day's category, each day's category's list of events, see if this.state.searchValue is in the event's description
+    //if it is, add that event to the "artificial" day that is created from search results (held as searchEventsResult)
+    //this "day" is then passed to calendarDisplay, retaining all the functionality of a calendar day's events
+
+    var searchEventsResult = {
+      'Revolution': [{description: ''}],
+      'Rebellion': [{description: ''}],
+      'Labor': [{description: ''}],
+      'Birthdays': [{description: ''}],
+      'Assassinations': [{description: ''}],
+      'Other': [{description: ''}],
+    };
+
+    if (this.state.searchValue.length < 3) {
+      alert('Search value must be three characters or longer!');
+      return '';
+    };
+
+    var lowerSearchValue = this.state.searchValue.toLowerCase();
+    //create a list of every day in a year (used as a key in eventLibrary)
+    var everyDayString = Object.keys(eventLibrary);
+    //iterate through each day
+    for (var i = 0; i < everyDayString.length; i++) {
+      var day = eventLibrary[everyDayString[i]];
+      //if day has no entries, increment count by one
+      for (var j = 0; j < this.categoryList.length; j++) {
+        for (var k = 0; k < day[this.categoryList[j]].length; k++) {
+          //finally, we arrive at a specific event object - check to see if searchText in event's description prop
+          var lowerDescription = day[this.categoryList[j]][k].description.toLowerCase();
+          if (lowerDescription.includes(lowerSearchValue)) {
+            //if the search term is included, add the event to the results class variable
+            //searchEventsResult.push(day[this.categoryList[j]][k]);
+            //if the list of events under the given category is just a placeholder (i.e., description: ''), then overwrite it; else, append to end of list
+            if (!searchEventsResult[this.categoryList[j]][0].description) {
+              searchEventsResult[this.categoryList[j]][0] = day[this.categoryList[j]][k];
+            } else {
+              searchEventsResult[this.categoryList[j]].push(day[this.categoryList[j]][k]);
+            };
+          };
+        };
+        //if iteration is on last day, sort each category events by title, alphabetically
+        if (everyDayString[i] === "12-31") {
+          searchEventsResult[this.categoryList[j]].sort(function(a, b) {
+            if (a.title > b.title) {
+              return 1;
+            } else {
+              return -1;
+            };
+          });
+        };
+      };
+    };
+
     console.log('handleSearch running');
     this.setState({
       displaySearch: true,
+      events: searchEventsResult
     });
   };
 
@@ -117,42 +174,7 @@ class App extends React.Component {
             <input type="text" value={this.state.searchValue} placeholder='Search the calendar!' onChange={this.trackSearch}/>
             <button type="button" onClick={() => this.handleSearch()}><p>Search</p></button>
         </div>
-        <div id='eventDisplay'>
-          {this.categoryList.map(eventCategory => {
-            /*if the description of the first event in this category is non-empty (i.e., category for the day is not blank)*/
-            if (eventLibrary[this.state.dayString][eventCategory][0].description) {
-              /*then, map category events into JSX*/
-              var categoryEvents = eventLibrary[this.state.dayString][eventCategory].map(categoryEvent => {
-                //split description on new lines so we can actually have formatting
-                var paragraphs = categoryEvent.description.split('\n\n');
-                //JSX format for each event
-                return (
-                  <div className='eventWrapper'>
-                    <header className='eventHeaderWrapper'>
-                      <p className='eventHeader'>{categoryEvent.title}</p>
-                    </header>
-                    <p className='eventDate'>{categoryEvent.date}</p>
-                    <img className='eventImg' src={categoryEvent.imgSrc}/>
-                    {paragraphs.map(paragraph => <p className='eventDescription'>{paragraph}</p>)}
-                    <div className='sourcesWrapper'>
-                      <a className='source' href={categoryEvent.infoSrc} target='_blank'>Source</a>
-                      <a className='source' href={categoryEvent.link} target='_blank'>More Info</a>
-                    </div>
-                  </div>
-                  )
-                })
-              //return the formatted jsx event, with event category name above the mapped events. One of these is created for every event category
-              return (
-                <div className='categoryEvents'>
-                  <header className='categoryHeaderWrapper'>
-                    <p className='categoryHeader'>{eventCategory}</p>
-                  </header>
-                  {categoryEvents}
-                </div>
-                );
-            }
-          })}
-        </div>
+        <CalendarDisplay events={this.state.events}/>
       </div>
     );
   };
