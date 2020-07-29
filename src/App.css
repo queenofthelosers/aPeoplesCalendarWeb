@@ -197,7 +197,7 @@
 }
 
 .eventHeaderWrapper {
-
+  border-bottom: 1px solid black
 }
 
 .headerEvent {
@@ -223,7 +223,6 @@
 }
 
 .expandedEventHeader {
-  border-bottom: 1px solid black;
   background-color: white;
 }
 
