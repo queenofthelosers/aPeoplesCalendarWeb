@@ -3,6 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 import {eventLibrary} from './eventLibrary.js';
 import {CalendarDisplay} from './calendarDisplay.js';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faSearch} from '@fortawesome/free-solid-svg-icons';
 
 /*{this.props.events['Revolution'][0].description.length > 0 && <View style={[styles.eventCategory, ]}>
     <TouchableOpacity
@@ -91,10 +93,12 @@ class App extends React.Component {
     });
   };
 
-  handleSearch() {
+  handleSearch(e) {
     //iterate over each day, each day's category, each day's category's list of events, see if this.state.searchValue is in the event's description
     //if it is, add that event to the "artificial" day that is created from search results (held as searchEventsResult)
     //this "day" is then passed to calendarDisplay, retaining all the functionality of a calendar day's events
+
+    e.preventDefault()
 
     var searchEventsResult = {
       'Revolution': [{description: ''}],
@@ -166,13 +170,15 @@ class App extends React.Component {
             <p className='navText'>Contact</p>
           </div>
         </div>
+        <div id='settings'>
+          <input id='datePicker' type='date' onChange={this.handleNewDate}/>
+          <form id='searchWrapper' onSubmit={this.handleSearch}>
+            <input id='searchField' type="text" value={this.state.searchValue} placeholder='Search the calendar!' onChange={this.trackSearch}/>
+            <button id='searchButton' type="submit"><FontAwesomeIcon icon={faSearch} size="m"/></button>
+          </form>
+        </div>
         <div id="onThisDayWrapper">
           <p id='onThisDay'>{this.state.displaySearch ? 'Search Results' : this.state.dateHeader}</p>
-        </div>
-        <div id='settings'>
-          <input type='date' onChange={this.handleNewDate}/>
-            <input type="text" value={this.state.searchValue} placeholder='Search the calendar!' onChange={this.trackSearch}/>
-            <button type="button" onClick={() => this.handleSearch()}><p>Search</p></button>
         </div>
         <CalendarDisplay events={this.state.events}/>
       </div>
