@@ -25,25 +25,16 @@ export class CalendarDisplay extends React.Component {
   };
 
   render() {
+    var events = this.props.events;
     return (
       <div id='eventDisplay'>
         {this.categoryList.map(eventCategory => {
-          /*if the description of the first event in this category is non-empty (i.e., category for the day is not blank)*/
-          if (this.props.events[eventCategory][0].description) {
-            /*then, map each individual category event to EventComponent*/
-            var categoryEvents = this.props.events[eventCategory].map(categoryEvent => {
-              //split description on new lines so we can actually have separate p elements
-              var paragraphs = categoryEvent.description.split('\n\n');
-              //return individual element (becomes list of individual events per category)
-              return (
-                <EventComponent
-                  categoryEvent={categoryEvent}
-                  paragraphs={paragraphs}
-                />
-                )
-              })
-            //return the formatted jsx event, with event category name above the mapped events. One of these is created for every event category
-            return (
+          //if the first event is blank (placeholder)
+          if (!events[eventCategory][0].description) {
+            return null;
+          }
+          //if event is non-empty, make a category "card"
+          return (
               <div className='categoryEvents'>
                 <div className='headerWrapper' onClick={(e) => this.handleExpandCollapse(e, eventCategory)}>
                   <div className='collapseButton' onClick={(e) => this.handleExpandCollapse(e, eventCategory)}>
@@ -54,11 +45,24 @@ export class CalendarDisplay extends React.Component {
                     <p className='categoryHeader'>{eventCategory}</p>
                   </div>
                 </div>
-                {!this.state.collapseCategory[eventCategory] ? categoryEvents : null}
+                {!this.state.collapseCategory[eventCategory] &&
+                  /*map each individual category event to an EventComponent*/
+                  events[eventCategory].map(categoryEvent => {
+                    //split description on new lines so we can actually have separate p elements (new lines is how description was stored in data)
+                    var paragraphs = categoryEvent.description.split('\n\n');
+                    //return individual event as formatted jsx (map returns list of individual events per category)
+                    return (
+                      <EventComponent
+                        categoryEvent={categoryEvent}
+                        paragraphs={paragraphs}
+                      />
+                      )
+                    })
+                  }
               </div>
-              );
+            );
           }
-        })}
+        )}
       </div>
     );
   };
