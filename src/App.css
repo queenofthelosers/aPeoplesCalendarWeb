@@ -65,6 +65,11 @@
   color: white;
 }
 
+.headerWrapper {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
 .categoryHeaderWrapper {
 
 }
@@ -72,6 +77,7 @@
 .categoryHeader {
   text-align: center;
   font-size: 38px;
+  margin: 0px;
 }
 
 #eventDisplay {
@@ -89,7 +95,7 @@
   border-radius: 3px;
   border-bottom-right-radius: 7px;
   border-bottom-left-radius: 7px;
-  padding: 0px 10px 10px 10px;
+  padding: 0px 0px 10px 0px;
   margin-top: 5px;
 }
 
@@ -109,8 +115,8 @@
 }
 
 .eventDescription {
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .sourcesWrapper {

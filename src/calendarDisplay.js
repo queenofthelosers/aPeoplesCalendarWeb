@@ -2,16 +2,28 @@ import React from 'react';
 import logo from './logo.svg';
 import './calendarDisplay.css';
 import {EventComponent} from './eventComponent.js';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faPlus, faMinus} from '@fortawesome/free-solid-svg-icons';
 
 export class CalendarDisplay extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-
+      collapseCategory: {'Revolution': false, 'Rebellion': false, 'Labor': false, 'Birthdays': false, 'Assassinations': false, 'Other': false}
     };
+
+    this.handleExpandCollapse = this.handleExpandCollapse.bind(this);
+
     this.categoryList = ['Revolution', 'Rebellion', 'Labor', 'Birthdays', 'Assassinations', 'Other'];
   };
-  //functions go here
+
+  handleExpandCollapse(e, category) {
+    var tempCollapseCategory = this.state.collapseCategory;
+    tempCollapseCategory[category] = !tempCollapseCategory[category];
+    this.setState({
+      collapseCategory: tempCollapseCategory
+    });
+  };
 
   render() {
     return (
@@ -34,10 +46,16 @@ export class CalendarDisplay extends React.Component {
             //return the formatted jsx event, with event category name above the mapped events. One of these is created for every event category
             return (
               <div className='categoryEvents'>
-                <header className='categoryHeaderWrapper'>
-                  <p className='categoryHeader'>{eventCategory}</p>
-                </header>
-                {categoryEvents}
+                <div className='headerWrapper' onClick={(e) => this.handleExpandCollapse(e, eventCategory)}>
+                  <div className='collapseButton' onClick={(e) => this.handleExpandCollapse(e, eventCategory)}>
+                    {this.state.collapseCategory[eventCategory] && <FontAwesomeIcon icon={faPlus}/>}
+                    {!this.state.collapseCategory[eventCategory] && <FontAwesomeIcon icon={faMinus}/>}
+                  </div>
+                  <div className='categoryHeaderWrapper'>
+                    <p className='categoryHeader'>{eventCategory}</p>
+                  </div>
+                </div>
+                {!this.state.collapseCategory[eventCategory] ? categoryEvents : null}
               </div>
               );
           }
