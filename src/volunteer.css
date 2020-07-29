@@ -1,0 +1,81 @@
+#volunteerWrapper {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1200px) {
+  #volunteerWrapper {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  #volunteerWrapper {
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 700px) {
+  #volunteerWrapper {
+    display: grid;
+    grid-template-columns: 20px 1fr 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+#volunteerContent {
+  grid-column: 2;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px;
+}
+
+#volunteerHeader {
+  background-color: #1c1c1c;
+  padding: 10px;
+}
+
+#headerText {
+  font-size: 24px;
+  color: white;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.volunteerText {
+  font-size: 18px;
+  margin-bottom: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.volunteerListText {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+ul {
+  grid-column: 2;
+  list-style-type: circle;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.volunteerLink {
+  color: black;
+}
+
+.volunteerLink:hover {
+  font-weight: bold;
+}

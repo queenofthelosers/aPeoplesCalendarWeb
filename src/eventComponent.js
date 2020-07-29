@@ -32,7 +32,7 @@ export class EventComponent extends React.Component {
             {this.state.collapsed && <FontAwesomeIcon icon={faPlus}/>}
             {!this.state.collapsed && <FontAwesomeIcon icon={faMinus}/>}
           </div>
-          <header className={this.state.collapsed ? '' : 'expandedEventHeader'}>
+          <header className={this.state.collapsed ? 'headerEvent' : 'headerEvent expandedEventHeader'}>
             <p className='eventHeader'>{this.props.categoryEvent.title}</p>
           </header>
           </div>
