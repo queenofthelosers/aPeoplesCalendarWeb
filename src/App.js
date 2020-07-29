@@ -63,17 +63,17 @@ class App extends React.Component {
       <Router>
         {this.state.windowWidth > 800 && <div id='navBar'>
           <NavLink to='/about' id='aboutLink' className='navText'>About</NavLink>
-          <a target='_blank' href='https://www.patreon.com/apeoplescalendar' id='donateLink' className='navText'>Donate</a>
+          <a target='_blank' rel="noopener noreferrer" href='https://www.patreon.com/apeoplescalendar' id='donateLink' className='navText'>Donate</a>
           <NavLink to='/' className='navText' id='title'>A People's Calendar</NavLink>
           <NavLink to='/volunteer' id='volunteer' className='navText'>Volunteer</NavLink>
-          <a target='_blank' id='contactLink' className='navText' href='mailto:apeoplescalendar@gmail.com'>Contact</a>
+          <a target='_blank' rel="noopener noreferrer" id='contactLink' className='navText' href='mailto:apeoplescalendar@gmail.com'>Contact</a>
         </div>}
         {this.state.open && <div id='hamburgerOpen'>
             <NavLink to='/' className='navText hamburgerText' id='hamburgerHome'>Home</NavLink>
             <NavLink to='/about' id='hamburgerAbout' className='navText hamburgerText'>About</NavLink>
-            <a target='_blank' href='https://www.patreon.com/apeoplescalendar' id='hamburgerDonate' className='navText hamburgerText'>Donate</a>
+            <a target='_blank' rel="noopener noreferrer" href='https://www.patreon.com/apeoplescalendar' id='hamburgerDonate' className='navText hamburgerText'>Donate</a>
             <NavLink to='/volunteer' id='hamburgerVolunteer' className='navText hamburgerText'>Volunteer</NavLink>
-            <a target='_blank' id='hamburgerContact' className='navText hamburgerText' href='mailto:apeoplescalendar@gmail.com'>Contact</a>
+            <a target='_blank' rel="noopener noreferrer" id='hamburgerContact' className='navText hamburgerText' href='mailto:apeoplescalendar@gmail.com'>Contact</a>
           </div>
         }
         {this.state.windowWidth <= 800 && <div id='navBar'>

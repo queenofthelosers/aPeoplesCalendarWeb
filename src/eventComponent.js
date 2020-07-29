@@ -42,8 +42,8 @@ export class EventComponent extends React.Component {
               <img className='eventImg' src={this.props.categoryEvent.imgSrc}/>
               {this.props.paragraphs.map(paragraph => <p className='eventDescription'>{paragraph}</p>)}
                 <div className='sourcesWrapper'>
-                  <a className='links source' href={this.props.categoryEvent.infoSrc} target='_blank'>Source</a>
-                  <a className='links more' href={this.props.categoryEvent.link} target='_blank'>More Info</a>
+                  <a className='links source' href={this.props.categoryEvent.infoSrc} target='_blank' rel="noopener noreferrer">Source</a>
+                  <a className='links more' href={this.props.categoryEvent.link} target='_blank' rel="noopener noreferrer">More Info</a>
                   </div>
               </div>}
         </div>
