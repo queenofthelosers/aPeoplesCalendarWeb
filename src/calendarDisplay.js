@@ -48,8 +48,8 @@ export class CalendarDisplay extends React.Component {
               <div className='categoryEvents'>
                 <div className='headerWrapper' onClick={(e) => this.handleExpandCollapse(e, eventCategory)}>
                   <div className='collapseButton' onClick={(e) => this.handleExpandCollapse(e, eventCategory)}>
-                    {this.state.collapseCategory[eventCategory] && <FontAwesomeIcon icon={faPlus}/>}
-                    {!this.state.collapseCategory[eventCategory] && <FontAwesomeIcon icon={faMinus}/>}
+                    {this.state.collapseCategory[eventCategory] && <FontAwesomeIcon icon={faPlus} onClick={(e) => this.handleExpandCollapse(e, eventCategory)}/>}
+                    {!this.state.collapseCategory[eventCategory] && <FontAwesomeIcon icon={faMinus} onClick={(e) => this.handleExpandCollapse(e, eventCategory)}/>}
                   </div>
                   <div className='categoryHeaderWrapper'>
                     <p className='categoryHeader'>{eventCategory}</p>
