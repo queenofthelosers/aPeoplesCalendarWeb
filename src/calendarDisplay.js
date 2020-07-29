@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './calendarDisplay.css';
 import {EventComponent} from './eventComponent.js';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';

@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './volunteer.css';
 
 export function Volunteer() {
