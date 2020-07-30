@@ -67,7 +67,7 @@
 
 ul {
   grid-column: 2;
-  list-style-type: circle;
+  
   margin-left: 10px;
   margin-right: 10px;
 }

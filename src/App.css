@@ -23,12 +23,13 @@
 #title {
   margin: 0 auto;
   font-size: 26px;
+  line-height: 26px;
   grid-column: 3;
   grid-row: 1;
 }
 
 #title:hover {
-  
+  font-size: 28px;
 }
 
 .navButtons {
@@ -40,13 +41,14 @@
 
 .navText {
   font-size: 22px;
+  line-height: 22px;
   text-decoration: none;
   color: white;
   justify-self: center;
 }
 
 .navText:hover {
-  font-weight: bold;
+  font-size: 24px;
 }
 
 /*#navRight {
@@ -106,6 +108,10 @@
   padding-right: 5px;
 }
 
+#datePickerWrapper:hover {
+  cursor: pointer;
+}
+
 #onThisDayWrapper {
   display: flex;
   justify-content: center;
@@ -147,6 +153,10 @@
   background-color: white;
   color: grey;
   border: 0px;
+}
+
+#searchButton:hover {
+  cursor: pointer;
 }
 
 .categoryEvents {

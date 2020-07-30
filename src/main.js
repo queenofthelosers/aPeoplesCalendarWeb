@@ -5,8 +5,21 @@ import {CalendarDisplay} from './calendarDisplay.js';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faSearch} from '@fortawesome/free-solid-svg-icons';
 
-//inital string to get events on first load (defaults to today in the form MM-DD (no zero pads));
-var initTodayString = (new Date().getMonth() + 1 + '-' + new Date().getDate());
+//inital string to get events and date input displayed with today on first load
+var now = new Date();
+var month = now.getMonth() + 1;
+var day = now.getDate();
+//for the actual getting of data:
+var initTodayString = month + '-' + day;
+var year = now.getFullYear();
+if (month.toString().length === 1) {
+  month = '0' + month;
+};
+if (day.toString().length === 1) {
+  day = '0' + day;
+};
+//placeholder for date input:
+var dateInputInit = year + '-' + month + '-' + day;
 
 export class Main extends React.Component {
   constructor(props) {
@@ -147,9 +160,11 @@ export class Main extends React.Component {
     return (
       <div id="App">
         <div id='settings'>
-          <input id='datePicker' type='date' onChange={this.handleNewDate}/>
+          <div id='datePickerWrapper'>
+            <input id='datePicker' type='date' value={dateInputInit} onChange={this.handleNewDate}/>
+          </div>
           <form id='searchWrapper' onSubmit={this.handleSearch}>
-            <input id='searchField' type="text" value={this.state.searchValue} placeholder='Search the calendar!' onChange={this.trackSearch}/>
+            <input id='searchField' type="text" value={this.state.searchValue} onChange={this.trackSearch}/>
             <button id='searchButton' type="submit"><FontAwesomeIcon icon={faSearch} className='searchIcon' size="m"/></button>
           </form>
         </div>

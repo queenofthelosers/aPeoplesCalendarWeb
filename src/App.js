@@ -51,13 +51,6 @@ class App extends React.Component {
   };
 
   render() {
-    /*<div className='navButtons' id='navLeft'>
-
-    </div>
-    <div className='navButtons' id='navRight'>
-
-    </div>
-    */
     return (
       <Router>
         {this.state.windowWidth > 800 && <div id='navBar'>
@@ -68,11 +61,11 @@ class App extends React.Component {
           <a target='_blank' rel="noopener noreferrer" id='contactLink' className='navText' href='mailto:apeoplescalendar@gmail.com'>Contact</a>
         </div>}
         {this.state.open && <div id='hamburgerOpen'>
-            <NavLink to='/' className='navText hamburgerText' id='hamburgerHome'>Home</NavLink>
-            <NavLink to='/about' id='hamburgerAbout' className='navText hamburgerText'>About</NavLink>
-            <a target='_blank' rel="noopener noreferrer" href='https://www.patreon.com/apeoplescalendar' id='hamburgerDonate' className='navText hamburgerText'>Donate</a>
-            <NavLink to='/volunteer' id='hamburgerVolunteer' className='navText hamburgerText'>Volunteer</NavLink>
-            <a target='_blank' rel="noopener noreferrer" id='hamburgerContact' className='navText hamburgerText' href='mailto:apeoplescalendar@gmail.com'>Contact</a>
+            <NavLink to='/' className='navText hamburgerText' id='hamburgerHome' onClick={() => this.handleClick()}>Home</NavLink>
+            <NavLink to='/about' id='hamburgerAbout' className='navText hamburgerText' onClick={() => this.handleClick()}>About</NavLink>
+            <a target='_blank' rel="noopener noreferrer" href='https://www.patreon.com/apeoplescalendar' id='hamburgerDonate' className='navText hamburgerText' onClick={() => this.handleClick()}>Donate</a>
+            <NavLink to='/volunteer' id='hamburgerVolunteer' className='navText hamburgerText' onClick={() => this.handleClick()}>Volunteer</NavLink>
+            <a target='_blank' rel="noopener noreferrer" id='hamburgerContact' className='navText hamburgerText' href='mailto:apeoplescalendar@gmail.com' onClick={() => this.handleClick()}>Contact</a>
           </div>
         }
         {this.state.windowWidth <= 800 && <div id='navBar'>
