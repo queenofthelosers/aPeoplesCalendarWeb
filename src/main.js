@@ -35,7 +35,12 @@ export class Main extends React.Component {
   };
 
   handleNewDate(e) {
-    //change the dayString in state, which will update displayed events
+    //e.target.value is data from date input
+    //if the user did something weird and the given date is falsy, don't run anything
+    if (!e.target.value) {
+      return null;
+    };
+    //else, split the date string up into an array by dash character
     var newDateString = e.target.value.split('-');
     //remove any zero padding from day and month
     if (newDateString[1][0] === '0') {

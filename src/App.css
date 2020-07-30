@@ -28,7 +28,7 @@
 }
 
 #title:hover {
-  text-decoration: underline;
+  
 }
 
 .navButtons {
@@ -46,7 +46,7 @@
 }
 
 .navText:hover {
-  text-decoration: underline;
+  font-weight: bold;
 }
 
 /*#navRight {
