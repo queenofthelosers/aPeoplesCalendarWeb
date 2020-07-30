@@ -17197,7 +17197,7 @@ export const eventLibrary = {
         category: 'Other',
         date: 'September 1st, 1960',
         title: 'Aunt Molly Jackson Passes (1960)',
-        imgSrc: require('./assets/eventPhotos/empty.jpg'),
+        imgSrc: require('./assets/eventPhotos/auntMollyJackson.jpg'),
         description: `Aunt Molly Jackson (Mary Magdalene Garland Stewart Jackson Stamos, 1880 - 1960) was an influential American folk singer and a union activist who died on this day in 1960.\n\nBorn into a poor, mining family, Jackson was arrested at age ten due to her family's involvement in union activities. She became a member of the United Mine Workers (UMW) and began writing protest songs like "I Am A Union Woman", "Kentucky Miner's Wife", and "Poor Miner's Farewell". When Jackson was jailed because of her unionizing activities, her husband was forced to divorce her in order to keep his mining job.\n\n In December 1931, Jackson traveled to New York City to support and raise money for striking Harlan coal miners, at one point appearing before an estimated crowd of 21,000 at the Bronx Coliseum. In the mid-1930s, she performed in New York City together with Woody Guthrie, Pete Seeger, Earl Robinson, and others.`,
         link: 'https://lomaxky.omeka.net/exhibits/show/artistprofiles/auntmollyjackson',
         infoSrc: 'https://en.wikipedia.org/wiki/Aunt_Molly_Jackson'
