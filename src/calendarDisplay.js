@@ -25,6 +25,7 @@ export class CalendarDisplay extends React.Component {
   };
 
   render() {
+    //less verbosity:
     var events = this.props.events;
     return (
       <div id='eventDisplay'>
