@@ -26,6 +26,7 @@ export class Main extends React.Component {
     super(props);
     this.state = {
       dateHeader: '',
+      dateInput: dateInputInit,
       searchValue: '',
       displaySearch: false,
       events: eventLibrary[initTodayString], //events from selected day, initialized to today's date, sent to display in CalendarDisplay as prop
@@ -69,6 +70,7 @@ export class Main extends React.Component {
     this.setState({
       events: eventLibrary[newDateString],
       dateHeader: dateHeader,
+      dateInput: e.target.value,
       displaySearch: false,
     });
   };
@@ -161,7 +163,7 @@ export class Main extends React.Component {
       <div id="App">
         <div id='settings'>
           <div id='datePickerWrapper'>
-            <input id='datePicker' type='date' value={dateInputInit} onChange={this.handleNewDate}/>
+            <input id='datePicker' type='date' value={this.state.dateInput} onChange={this.handleNewDate}/>
           </div>
           <form id='searchWrapper' onSubmit={this.handleSearch}>
             <input id='searchField' type="text" value={this.state.searchValue} onChange={this.trackSearch}/>
