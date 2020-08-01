@@ -409,3 +409,15 @@
     font-size: 15px;
   }
 }
+
+@media (max-width: 375px) {
+  #searchField {
+    width: 50px;
+  }
+  #searchButton {
+    width: 35px;
+  }
+  #datePicker {
+    width: 160px;
+  }
+}

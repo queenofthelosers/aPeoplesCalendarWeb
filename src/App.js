@@ -3,6 +3,7 @@ import './App.css';
 import {Main} from './main.js';
 import {About} from './about.js';
 import {Volunteer} from './volunteer.js';
+import {Donate} from './donate.js';
 import {
   BrowserRouter as Router,
   Switch,
@@ -18,7 +19,7 @@ class App extends React.Component {
     super(props);
     this.state = {
       windowWidth: window.innerWidth,
-      open: false,
+      openHamburger: false,
     };
     this.handleResize = this.handleResize.bind(this);
     this.handleHamburger = this.handleHamburger.bind(this);
@@ -34,7 +35,7 @@ class App extends React.Component {
 
   handleClick() {
     this.setState({
-      open: !this.state.open
+      openHamburger: !this.state.openHamburger
     });
   };
 
@@ -46,24 +47,26 @@ class App extends React.Component {
 
   handleHamburger(e) {
     this.setState({
-      open: !this.state.open
+      openHamburger: !this.state.openHamburger
     });
   };
 
   render() {
+    /*<a target='_blank' rel="noopener noreferrer" href='https://www.patreon.com/apeoplescalendar' id='donateLink' className='navText'>Donate</a>*/
+    /*<a target='_blank' rel="noopener noreferrer" href='https://www.patreon.com/apeoplescalendar' id='hamburgerDonate' className='navText hamburgerText' onClick={() => this.handleClick()}>Donate</a>*/
     return (
       <Router>
         {this.state.windowWidth > 800 && <div id='navBar'>
           <NavLink to='/about' id='aboutLink' className='navText'>About</NavLink>
-          <a target='_blank' rel="noopener noreferrer" href='https://www.patreon.com/apeoplescalendar' id='donateLink' className='navText'>Donate</a>
+          <NavLink to='/donate' id='donateLink' className='navText'>Donate</NavLink>
           <NavLink to='/' className='navText' id='title'>A People's Calendar</NavLink>
           <NavLink to='/volunteer' id='volunteer' className='navText'>Volunteer</NavLink>
           <a target='_blank' rel="noopener noreferrer" id='contactLink' className='navText' href='mailto:apeoplescalendar@gmail.com'>Contact</a>
         </div>}
-        {this.state.open && <div id='hamburgerOpen'>
+        {this.state.openHamburger && <div id='hamburgerOpen'>
             <NavLink to='/' className='navText hamburgerText' id='hamburgerHome' onClick={() => this.handleClick()}>Home</NavLink>
             <NavLink to='/about' id='hamburgerAbout' className='navText hamburgerText' onClick={() => this.handleClick()}>About</NavLink>
-            <a target='_blank' rel="noopener noreferrer" href='https://www.patreon.com/apeoplescalendar' id='hamburgerDonate' className='navText hamburgerText' onClick={() => this.handleClick()}>Donate</a>
+            <NavLink to='/donate' id='hamburgerDonate' className='navText hamburgerText' onClick={() => this.handleClick()}>Donate</NavLink>
             <NavLink to='/volunteer' id='hamburgerVolunteer' className='navText hamburgerText' onClick={() => this.handleClick()}>Volunteer</NavLink>
             <a target='_blank' rel="noopener noreferrer" id='hamburgerContact' className='navText hamburgerText' href='mailto:apeoplescalendar@gmail.com' onClick={() => this.handleClick()}>Contact</a>
           </div>
@@ -75,6 +78,9 @@ class App extends React.Component {
         <Switch>
           <Route path='/about'>
             <About/>
+          </Route>
+          <Route path='/donate'>
+            <Donate/>
           </Route>
           <Route path='/volunteer'>
             <Volunteer/>
