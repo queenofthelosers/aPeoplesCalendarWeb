@@ -279,6 +279,16 @@
   color: white;
 }
 
+.emptyLink {
+  /*same as .links, but no color change on hover*/
+  font-size: 22px;
+  text-decoration: none;
+  color: black;
+  padding-bottom: 8px;
+  padding-top: 7px;
+  background: white;
+}
+
 .source {
   grid-column: 1;
   border-right: 1px solid black;

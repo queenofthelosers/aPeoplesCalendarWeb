@@ -43,7 +43,10 @@ export class EventComponent extends React.Component {
               {this.props.paragraphs.map(paragraph => <p className='eventDescription'>{paragraph}</p>)}
                 <div className='sourcesWrapper'>
                   <a className='links source' href={this.props.categoryEvent.infoSrc} target='_blank' rel="noopener noreferrer">Source</a>
-                  <a className='links more' href={this.props.categoryEvent.link} target='_blank' rel="noopener noreferrer">More Info</a>
+                  {this.props.categoryEvent.infoSrc !== this.props.categoryEvent.link ?
+                    <a className='links more' href={this.props.categoryEvent.link} target='_blank' rel="noopener noreferrer">More Info</a> :
+                    <div className='emptyLink'></div>
+                  }
                   </div>
               </div>}
         </div>
