@@ -4,7 +4,9 @@ A People's Calendar (aPC) is a project that seeks to promote the worldwide histo
 This repository contains the web version of this calendar. It is built using ReactJS and deployed via Netlify at apeoplescalendar.org. A separate codebase is maintained for the app version here: https://github.com/huntzinger92/aPeoplesCalendar. The event libraries (eventLibrary.js) in either repository are meant to be identical, but are currently stored separately and do not track one another.
 
 # Open Source
-Both the web and native versions of this application are freely available, and I will never restrict or profit from them for propertiary reasons. I welcome your ideas and suggestions, whether they be something as simple as a typo correction or as complex as a major feature addition. As of July 30th, 2020, there are many features I am still working towards adding, like graphic design on the homepage, animations, and adding hundreds of historical events which are still missing from the event library. If you have an idea about how to improve the app and the skill and time to implement it, feel free to submit a pull request.
+Both the web and native versions of this application are freely available, and I will never restrict or profit from them for propertiary reasons. I welcome your ideas and suggestions, whether they be something as simple as a typo correction or as complex as a major feature addition. As of July 30th, 2020, there are many features I am still working towards adding, like graphic design on the homepage, animations, and adding hundreds of historical events which are still missing from the event library. One of the major steps coming next is supplying the event library and photos with a back-end, which I have not built yet (Netlify allows for backend-less deploy, currently that data is packaged in the front end code). 
+
+If you have an idea about how to improve the app and the skill and time to implement it, feel free to submit a pull request.
 
 # App Hierarchy
 
