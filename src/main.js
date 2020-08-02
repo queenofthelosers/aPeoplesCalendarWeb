@@ -5,31 +5,15 @@ import {CalendarDisplay} from './calendarDisplay.js';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faSearch} from '@fortawesome/free-solid-svg-icons';
 
-//inital string to get events and date input displayed with today on first load
-var now = new Date();
-var month = now.getMonth() + 1;
-var day = now.getDate();
-//for the actual getting of data:
-var initTodayString = month + '-' + day;
-var year = now.getFullYear();
-if (month.toString().length === 1) {
-  month = '0' + month;
-};
-if (day.toString().length === 1) {
-  day = '0' + day;
-};
-//placeholder for date input:
-var dateInputInit = year + '-' + month + '-' + day;
-
 export class Main extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      dateHeader: '',
-      dateInput: dateInputInit,
+      dateHeader: '', //string, used as date header on homepage
+      dateInput: '', //string in the format YYYY-MM-DD, used to have forward-facing tracked date input
       searchValue: '',
       displaySearch: false,
-      events: eventLibrary[initTodayString], //events from selected day, initialized to today's date, sent to display in CalendarDisplay as prop
+      events: '', //events from selected day, initialized to today's date, sent to display in CalendarDisplay as prop
     };
     this.monthList = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
     this.categoryList = ['Revolution', 'Rebellion', 'Labor', 'Birthdays', 'Assassinations', 'Other'];
@@ -37,14 +21,37 @@ export class Main extends React.Component {
     this.handleNewDate = this.handleNewDate.bind(this);
     this.handleSearch = this.handleSearch.bind(this);
     this.trackSearch = this.trackSearch.bind(this);
+    this.initalizeToday = this.initializeToday.bind(this);
   };
 
   componentWillMount() {
-    //console.log('component will mount is running');
+    this.initializeToday();
+  };
+
+  initializeToday() {
+    //the following code makes sure that every time homepage is loaded, it does so with today's date and relevant events
+
+    //inital string to get events and date input displayed with today
+    var now = new Date();
+    var month = now.getMonth() + 1;
+    var day = now.getDate();
+    //for the actual getting of data:
+    var initTodayString = month + '-' + day;
+    var year = now.getFullYear();
+    if (month.toString().length === 1) {
+      month = '0' + month;
+    };
+    if (day.toString().length === 1) {
+      day = '0' + day;
+    };
+    //placeholder for date input:
+    var dateInputInit = year + '-' + month + '-' + day;
     //initialize date header with today's date month and day:
-    var today = new Date();
     this.setState({
-      dateHeader: this.monthList[today.getMonth()] + ' ' + today.getDate() + this.getDaySuffix(today.getDate())
+      dateInput: dateInputInit,
+      dateHeader: this.monthList[now.getMonth()] + ' ' + now.getDate() + this.getDaySuffix(now.getDate()),
+      events: eventLibrary[initTodayString],
+      displaySearch: false,
     });
   };
 
@@ -89,7 +96,6 @@ export class Main extends React.Component {
   };
 
   trackSearch(e) {
-    console.log(e.target.value);
     this.setState({
       searchValue: e.target.value
     });
@@ -111,7 +117,10 @@ export class Main extends React.Component {
       'Other': [{description: ''}],
     };
 
-    if (this.state.searchValue.length < 3) {
+    if (this.state.searchValue.length === 0) {
+      this.initializeToday();
+      return '';
+    } else if (this.state.searchValue.length < 3) {
       alert('Search value must be three characters or longer!');
       return '';
     };
@@ -151,7 +160,6 @@ export class Main extends React.Component {
       };
     };
 
-    console.log('handleSearch running');
     this.setState({
       displaySearch: true,
       events: searchEventsResult

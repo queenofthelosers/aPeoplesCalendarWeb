@@ -52,8 +52,6 @@ class App extends React.Component {
   };
 
   render() {
-    /*<a target='_blank' rel="noopener noreferrer" href='https://www.patreon.com/apeoplescalendar' id='donateLink' className='navText'>Donate</a>*/
-    /*<a target='_blank' rel="noopener noreferrer" href='https://www.patreon.com/apeoplescalendar' id='hamburgerDonate' className='navText hamburgerText' onClick={() => this.handleClick()}>Donate</a>*/
     return (
       <Router>
         {this.state.windowWidth > 800 && <div id='navBar'>
