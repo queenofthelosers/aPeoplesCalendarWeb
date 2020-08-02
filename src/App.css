@@ -268,15 +268,15 @@
 .links {
   font-size: 22px;
   text-decoration: none;
-  color: black;
+  color: white;
   padding-bottom: 8px;
   padding-top: 7px;
-  background: white;
+  background: #1c1c1c;
 }
 
 .links:hover {
-  background: #1c1c1c;
-  color: white;
+  background: white;
+  color: black;
 }
 
 .emptyLink {

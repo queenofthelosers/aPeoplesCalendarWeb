@@ -19,12 +19,6 @@ export class EventComponent extends React.Component {
   };
 
   render() {
-    //if you want to include plus/minus icons, put this below first opening div tag:
-    /*<div className='collapseButton' onClick={(e) => this.handleExpandCollapse(e)}>
-      {this.state.collapsed && <FontAwesomeIcon icon={faPlus}/>}
-      {!this.state.collapsed && <FontAwesomeIcon icon={faMinus}/>}
-    </div>
-    */
     return (
         <div className='eventWrapper'>
           <div className='eventHeaderWrapper' onClick={(e) => this.handleExpandCollapse(e)}>
