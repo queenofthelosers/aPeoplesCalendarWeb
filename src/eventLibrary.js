@@ -9883,6 +9883,15 @@ export const eventLibrary = {
         link: 'https://www.britannica.com/biography/Toussaint-Louverture',
         infoSrc: 'https://en.wikipedia.org/wiki/Toussaint_Louverture'
       },
+      {
+        category: 'Birthdays',
+        date: 'May 20th, 1929',
+        title: 'Marcelino Dos Santos (1929 - 2020)',
+        imgSrc: require('./assets/eventPhotos/Individuals/marcelinoSantos.jpg'),
+        description: `Marcelino dos Santos, born on this day in 1929, was a Mozambican poet, revolutionary, and politician. He was a founding member of the Frente de Libertação de Moçambique (FRELIMO-Mozambican Liberation Front), in 1962, and served as the party's deputy president from 1969 to 1977.\n\nSantons also served as Minister of Economic Development in the late 1970s, Frelimo Political Bureau member in charge of the economy in the early 1980s, Chairman of the country's parliament, the Assembly of the Republic, from 1987 to 1994, and, as of 1999, remained a member of the Frelimo Central Committee.\n\nUnder the pseudonyms Kalungano and Lilinho Micaia, he published his early poems in "O Brado Africano". Under his real name, he had a book published by the Associação dos Escritores Moçambicanos (Mozambican Writers' Association) in 1987, entitled "Canto do Amor Natural."`,
+        link: 'http://www.thepresidency.gov.za/national-orders/recipient/marcelino-dos-santos-1929',
+        infoSrc: 'https://en.wikipedia.org/wiki/Marcelino_dos_Santos'
+      },
     ],
     'Assassinations': [
       {
@@ -21214,13 +21223,13 @@ export const eventLibrary = {
     ],
     'Birthdays': [
       {
-        category: '',
-        date: '',
-        title: '',
-        imgSrc: require('./assets/eventPhotos/empty.jpg'),
-        description: ``,
-        link: '',
-        infoSrc: ''
+        category: 'Birthdays',
+        date: 'October 27th, 1917',
+        title: 'Oliver Tambo (1917 - 1993)',
+        imgSrc: require('./assets/eventPhotos/Individuals/oliverTambo.jpg'),
+        description: `Oliver Reginald Kaizana Tambo, born on this day in 1917, was a South African anti-apartheid politician and revolutionary who served as President of the African National Congress (ANC) from 1967 to 1991.\n\nIn 1943, Tambo, along with Nelson Mandela and Walter Sisulu, founded the ANC Youth League, with Tambo becoming its first National Secretary and a member of the National Executive in 1948. The Youth League proposed a change in the tactics of the anti-apartheid movement, advocating boycotts, civil disobedience, strikes, and non-collaboration.\n\nIn 1960, Tambo fled South Africa due to political persecution, living in exile in north London for thirty years. From London, he supported and helped organize the ANC in the fight against apartheid from a distance. On December 13th, 1990, Tambo returned to South Africa and was elected National Chairperson of the ANC.`,
+        link: 'https://www.britannica.com/biography/Oliver-Tambo',
+        infoSrc: 'https://en.wikipedia.org/wiki/Oliver_Tambo'
       },
     ],
     'Assassinations': [
