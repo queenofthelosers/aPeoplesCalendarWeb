@@ -9,7 +9,8 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  NavLink
+  NavLink,
+  Redirect
 } from "react-router-dom";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faBars} from '@fortawesome/free-solid-svg-icons';
@@ -55,6 +56,11 @@ class App extends React.Component {
     this.setState({
       openHamburger: !this.state.openHamburger
     });
+  };
+
+  resetDay() {
+    //re-written as initializedToday in main.js
+    return '';
   };
 
   render() {
@@ -108,7 +114,12 @@ class App extends React.Component {
             />
           </Route>
           <Route>
-            <NotFound/>
+            <Redirect
+              to={{
+                pathname: "/404",
+              }}
+            />
+
           </Route>
         </Switch>
       </Router>

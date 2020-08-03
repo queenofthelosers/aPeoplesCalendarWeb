@@ -9,10 +9,10 @@ export function NotFound() {
     <div id='volunteerWrapper'>
       <div id='volunteerContent'>
         <header id='volunteerHeader'>
-          <p id='volunteerHeaderText'>404'd</p>
+          <p id='volunteerHeaderText'>404'd!</p>
         </header>
-        <p className='volunteerText centeredText'>Looks like the url you tried was wonky.</p>
-        <p className='volunteerText centeredText' id='bottomP'>Try searching the calendar on the <NavLink className='volunteerLink' to='/'>homepage</NavLink>.</p>
+        <p className='volunteerText centeredText'>Sorry, looks like the url you tried didn't work for us.</p>
+        <p className='volunteerText centeredText' id='bottomP'><NavLink className='volunteerLink' to='/'>Try searching the calendar on the homepage</NavLink>.</p>
       </div>
     </div>
   );
