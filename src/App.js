@@ -58,6 +58,10 @@ class App extends React.Component {
     });
   };
 
+  //this is a necessary evil right now. resetDay() does nothing until <Main/> is rendered, in which case it is defined as the initializeToday function from <Main1/>
+  //This code is executed when the title (or "Home" link from hamburger menu) is clicked, causing <Main1/> reset with today's date
+  //I have tried to move the today-initializing code up to this parent component, but the <Main/> <Main1/> situation prevents it from working
+  //when <App/> state updates, the props sent to <Main/> update, but the ones to <Main1/> do not. Instead, we get to have this placeholder function:
   resetDay() {
     //re-written as initializedToday in main.js
     return '';
