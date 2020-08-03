@@ -292,12 +292,12 @@
 
 .source {
   grid-column: 1;
-  border-right: 1px solid black;
+  border-right: 1px solid #e6e6e6;
 }
 
 .more {
   grid-column: 2;
-  border-right: 1px solid black;
+  border-right: 1px solid #e6e6e6;
 }
 
 /*items only rendered at 800px width or below*/
@@ -416,11 +416,11 @@
   }
   .source {
     border-right: 0px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #e6e6e6;
   }
   .more {
     border-right: 0px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #e6e6e6;
   }
 }
 
