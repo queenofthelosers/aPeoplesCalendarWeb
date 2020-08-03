@@ -1,6 +1,7 @@
 import React from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faPlus, faMinus} from '@fortawesome/free-solid-svg-icons';
+import {faPlus, faMinus, faShareAlt} from '@fortawesome/free-solid-svg-icons';
+import {CopyToClipboard} from 'react-copy-to-clipboard';
 import './App.css';
 
 export class EventComponent extends React.Component {
@@ -10,12 +11,20 @@ export class EventComponent extends React.Component {
       collapsed: true
     };
     this.handleExpandCollapse = this.handleExpandCollapse.bind(this);
+    this.slugifiedTitle = 'apeoplescalendar.org/events/' + this.props.stringToSlug(this.props.categoryEvent.title);
   };
 
   handleExpandCollapse(e) {
+    if (this.state.collapsed) {
+      console.log(this.props.stringToSlug(this.props.categoryEvent.title));
+    };
     this.setState({
       collapsed: !this.state.collapsed
     });
+  };
+
+  copyAlert() {
+    alert('Link copied!');
   };
 
   render() {
@@ -41,7 +50,12 @@ export class EventComponent extends React.Component {
                     <a className='links more' href={this.props.categoryEvent.link} target='_blank' rel="noopener noreferrer">More Info</a> :
                     <div className='emptyLink'></div>
                   }
-                  </div>
+                  <CopyToClipboard className='links copyButton' onCopy={() => this.copyAlert()} text={this.slugifiedTitle}>
+                    <div>
+                      <FontAwesomeIcon icon={faShareAlt}/>
+                    </div>
+                  </CopyToClipboard>
+                </div>
               </div>}
         </div>
     );

@@ -171,7 +171,7 @@
 }
 
 .headerWrapper {
-  padding-top: 15px;
+  padding-top: 9px;
   padding-bottom: 15px;
 }
 
@@ -185,7 +185,7 @@
 
 .categoryHeader {
   text-align: center;
-  font-size: 38px;
+  font-size: 34px;
   margin: 0px;
 }
 
@@ -262,7 +262,7 @@
   text-align: center;
   border-top: 1px solid black;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .links {
@@ -275,8 +275,9 @@
 }
 
 .links:hover {
-  background: white;
+  background: #f0f0f0;
   color: black;
+  cursor: pointer;
 }
 
 .emptyLink {
@@ -296,6 +297,7 @@
 
 .more {
   grid-column: 2;
+  border-right: 1px solid black;
 }
 
 /*items only rendered at 800px width or below*/
@@ -407,6 +409,18 @@
     margin-left: 23px;
     margin-right: 23px;
     font-size: 15px;
+  }
+  .sourcesWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .source {
+    border-right: 0px;
+    border-bottom: 1px solid black;
+  }
+  .more {
+    border-right: 0px;
+    border-bottom: 1px solid black;
   }
 }
 

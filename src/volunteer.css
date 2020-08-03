@@ -5,6 +5,14 @@
   margin-bottom: 10px;
 }
 
+#bottomP {
+  margin-bottom: 15px;
+}
+
+.centeredText {
+  text-align: center;
+}
+
 @media (max-width: 1200px) {
   #volunteerWrapper {
     display: grid;

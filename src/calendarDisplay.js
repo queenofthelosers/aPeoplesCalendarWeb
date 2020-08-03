@@ -56,6 +56,7 @@ export class CalendarDisplay extends React.Component {
                       <EventComponent
                         categoryEvent={categoryEvent}
                         paragraphs={paragraphs}
+                        stringToSlug={this.props.stringToSlug}
                       />
                       )
                     })

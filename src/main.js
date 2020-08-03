@@ -1,22 +1,39 @@
 import React from 'react';
+import {
+  useParams,
+  Route,
+  Redirect,
+ } from "react-router-dom";
 import './App.css';
 import {eventLibrary} from './eventLibrary.js';
 import {CalendarDisplay} from './calendarDisplay.js';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faSearch} from '@fortawesome/free-solid-svg-icons';
 
-export class Main extends React.Component {
+export function Main(props) {
+  return (
+    <Main1
+      resetDay={props.resetDay}
+      params={useParams()}
+    />
+  );
+};
+
+//export class Main extends React.Component
+class Main1 extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       dateHeader: '', //string, used as date header on homepage
       dateInput: '', //string in the format YYYY-MM-DD, used to have forward-facing tracked date input
-      searchValue: '',
-      displaySearch: false,
+      searchValue: '', //updated onChange from search field, used to generate text search queries
+      displaySearch: false, //changes header from dateHeader to 'Search Results'
       events: '', //events from selected day, initialized to today's date, sent to display in CalendarDisplay as prop
+      invalidInput: false, //if invalid input (from url params, i.e., day/94-3039), then redirect to <NotFound/>, else, return main calendar view
     };
     this.monthList = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
     this.categoryList = ['Revolution', 'Rebellion', 'Labor', 'Birthdays', 'Assassinations', 'Other'];
+    this.everyDayString = Object.keys(eventLibrary); //1-1, 1-2, 1-3, etc.
 
     this.handleNewDate = this.handleNewDate.bind(this);
     this.handleSearch = this.handleSearch.bind(this);
@@ -25,11 +42,90 @@ export class Main extends React.Component {
   };
 
   componentWillMount() {
-    this.initializeToday();
+    //if Main1 is being rendered via dynamic routing and has been passed a params value
+    if (this.props.params.hasOwnProperty('day')) {
+      //validate date query (non zero padded month and day):
+      var regChecker = new RegExp(/(^(1|3|5|7|8|10|12)-(([1-2]?[1-9])|10|20|3[0-1]))$|(^(4|6|9|11)-(([1-2]?[1-9])|10|20|30))$|(^2-([1-2]?[1-9]|10|20))$/, 'i');
+      if (regChecker.test(this.props.params['day'])) {
+        //if it's a valid date url, look up date
+        var tempNewDate = {target: {value: '2000-'+ this.props.params['day']}}
+        this.handleNewDate(tempNewDate);
+      } else {
+        this.setState({
+          invalidInput: true, //causes this component to redirect to /404 (<NotFound/>)
+        });
+      };
+    } else if (this.props.params.hasOwnProperty('event_')) {
+      //run search with slug on slugified event titles, should only return the one event as titles are unique
+      this.searchBySlug(this.props.params['event_']);
+    } else {
+      this.initializeToday();
+    };
+  };
+
+  componentDidMount() {
+    this.props.resetDay(this.initializeToday.bind(this));
+  };
+
+  stringToSlug(str) {
+    //https://gist.github.com/codeguy/6684588
+    str = str.replace(/^\s+|\s+$/g, ''); //trim
+    str = str.toLowerCase();
+
+    // remove accents, swap ñ for n, etc
+    var from = "àáäâèéëêìíïîòóöôùúüûñç·/_,:;";
+    var to   = "aaaaeeeeiiiioooouuuunc------";
+    for (var i=0, l=from.length ; i<l ; i++) {
+        str = str.replace(new RegExp(from.charAt(i), 'g'), to.charAt(i));
+    };
+
+    str = str.replace(/[^a-z0-9 -]/g, '') // remove invalid chars
+        .replace(/\s+/g, '-') // collapse whitespace and replace by -
+        .replace(/-+/g, '-'); // collapse dashes
+
+    return str;
+  };
+
+  searchBySlug(slug) {
+    var searchEventsResult = {
+      'Revolution': [{description: ''}],
+      'Rebellion': [{description: ''}],
+      'Labor': [{description: ''}],
+      'Birthdays': [{description: ''}],
+      'Assassinations': [{description: ''}],
+      'Other': [{description: ''}],
+    };
+
+    //necessary iteration to get to individual day from eventLibrary:
+    for (var i = 0; i < this.everyDayString.length; i++) {
+      var day = eventLibrary[this.everyDayString[i]];
+      //if day has no entries, increment count by one
+      for (var j = 0; j < this.categoryList.length; j++) {
+        for (var k = 0; k < day[this.categoryList[j]].length; k++) {
+          //finally, we arrive at a specific event object - check to see if slugified title matches slug we are searching for
+          var slugTitle = this.stringToSlug(day[this.categoryList[j]][k].title);
+          if (slugTitle === slug) {
+            //if so, add it to the searchEventsResult object
+            searchEventsResult[this.categoryList[j]][0] = day[this.categoryList[j]][k];
+            //we can safely assume titles are unique, so if we find a match, we can assign the result to state and stop searching
+            this.setState({
+              displaySearch: true,
+              events: searchEventsResult
+            });
+            return '';
+          };
+        };
+      };
+    };
+    //if we make it this far, then the url search term passed didn't find anything - show empty search result
+    this.setState({
+      displaySearch: true,
+      events: searchEventsResult
+    });
   };
 
   initializeToday() {
-    //the following code makes sure that every time homepage is loaded, it does so with today's date and relevant events
+    //the following code sets page to today's date and relevant events
 
     //inital string to get events and date input displayed with today
     var now = new Date();
@@ -47,9 +143,10 @@ export class Main extends React.Component {
     //placeholder for date input:
     var dateInputInit = year + '-' + month + '-' + day;
     //initialize date header with today's date month and day:
+    var dateHeader = this.monthList[now.getMonth()] + ' ' + now.getDate() + this.getDaySuffix(now.getDate());
     this.setState({
       dateInput: dateInputInit,
-      dateHeader: this.monthList[now.getMonth()] + ' ' + now.getDate() + this.getDaySuffix(now.getDate()),
+      dateHeader: dateHeader,
       events: eventLibrary[initTodayString],
       displaySearch: false,
     });
@@ -126,11 +223,9 @@ export class Main extends React.Component {
     };
 
     var lowerSearchValue = this.state.searchValue.toLowerCase();
-    //create a list of every day in a year (used as a key in eventLibrary)
-    var everyDayString = Object.keys(eventLibrary);
     //iterate through each day
-    for (var i = 0; i < everyDayString.length; i++) {
-      var day = eventLibrary[everyDayString[i]];
+    for (var i = 0; i < this.everyDayString.length; i++) {
+      var day = eventLibrary[this.everyDayString[i]];
       //if day has no entries, increment count by one
       for (var j = 0; j < this.categoryList.length; j++) {
         for (var k = 0; k < day[this.categoryList[j]].length; k++) {
@@ -148,7 +243,7 @@ export class Main extends React.Component {
           };
         };
         //if iteration is on last day, sort each category events by title, alphabetically
-        if (everyDayString[i] === "12-31") {
+        if (this.everyDayString[i] === "12-31") {
           searchEventsResult[this.categoryList[j]].sort(function(a, b) {
             if (a.title > b.title) {
               return 1;
@@ -167,22 +262,32 @@ export class Main extends React.Component {
   };
 
   render() {
+    //redirects to 404 if invalid input was given for date (i.e., 030-29)
     return (
-      <div id="App">
-        <div id='settings'>
-          <div id='datePickerWrapper'>
-            <input id='datePicker' type='date' value={this.state.dateInput} onChange={this.handleNewDate}/>
-          </div>
-          <form id='searchWrapper' onSubmit={this.handleSearch}>
-            <input id='searchField' type="text" value={this.state.searchValue} onChange={this.trackSearch}/>
-            <button id='searchButton' type="submit"><FontAwesomeIcon icon={faSearch} className='searchIcon' size="m"/></button>
-          </form>
-        </div>
-        <div id="onThisDayWrapper">
-          <p id='onThisDay'>{this.state.displaySearch ? 'Search Results' : this.state.dateHeader}</p>
-        </div>
-        <CalendarDisplay events={this.state.events}/>
-      </div>
+      <Route
+        render = {() =>
+          !this.state.invalidInput ?
+            <div id="App">
+              <div id='settings'>
+                <div id='datePickerWrapper'>
+                  <input id='datePicker' type='date' value={this.state.dateInput} onChange={this.handleNewDate}/>
+                </div>
+                <form id='searchWrapper' onSubmit={this.handleSearch}>
+                  <input id='searchField' type="text" value={this.state.searchValue} onChange={this.trackSearch}/>
+                  <button id='searchButton' type="submit"><FontAwesomeIcon icon={faSearch} className='searchIcon' size="m"/></button>
+                </form>
+              </div>
+              <div id="onThisDayWrapper">
+                <p id='onThisDay'>{this.state.displaySearch ? 'Search Results' : this.state.dateHeader}</p>
+              </div>
+              <CalendarDisplay events={this.state.events} stringToSlug={this.stringToSlug}/>
+            </div>
+            :
+            <Redirect to={{
+              pathname: "/404",
+            }}/>
+        }
+      />
     );
   };
 };
