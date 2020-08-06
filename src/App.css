@@ -285,9 +285,10 @@
   font-size: 22px;
   text-decoration: none;
   color: black;
+  border-right: 1px solid white;
   padding-bottom: 8px;
   padding-top: 7px;
-  background: white;
+  background: #1c1c1c;
 }
 
 .source {
