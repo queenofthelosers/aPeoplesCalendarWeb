@@ -12,6 +12,7 @@ export class CalendarDisplay extends React.Component {
     };
 
     this.handleExpandCollapse = this.handleExpandCollapse.bind(this);
+    this.resetExpandCollapse = this.resetExpandCollapse.bind(this);
 
     this.categoryList = ['Revolution', 'Rebellion', 'Labor', 'Birthdays', 'Assassinations', 'Other'];
   };
@@ -21,6 +22,12 @@ export class CalendarDisplay extends React.Component {
     tempCollapseCategory[category] = !tempCollapseCategory[category];
     this.setState({
       collapseCategory: tempCollapseCategory
+    });
+  };
+
+  resetExpandCollapse() {
+    this.setState({
+      collapseCategory: {'Revolution': false, 'Rebellion': false, 'Labor': false, 'Birthdays': false, 'Assassinations': false, 'Other': false}
     });
   };
 
@@ -57,6 +64,7 @@ export class CalendarDisplay extends React.Component {
                         categoryEvent={categoryEvent}
                         paragraphs={paragraphs}
                         stringToSlug={this.props.stringToSlug}
+                        key={categoryEvent.title}
                       />
                       )
                     })

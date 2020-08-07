@@ -1168,13 +1168,13 @@ export const eventLibrary = {
     ],
     'Assassinations': [
       {
-        category: '',
-        date: '',
-        title: '',
-        imgSrc: require('./assets/eventPhotos/empty.jpg'),
-        description: ``,
-        link: '',
-        infoSrc: ''
+        category: 'Assassinations',
+        date: 'January 17th, 1925',
+        title: 'Patrice Lumumba (1925 - 1961)',
+        imgSrc: require('./assets/eventPhotos/Individuals/patriceLumumba.jpg'),
+        description: `Patrice Émery Lumumba was a Congolese politician and independence leader who served as the first Prime Minister of the independent Democratic Republic of the Congo from June until September 1960. He played a significant role in the transformation of the Congo from a colony of Belgium into an independent republic.\n\nIdeologically an African nationalist and pan-Africanist, he led the Congolese National Movement (MNC) party from 1958 until his assassination on this day in 1961, in a coup by Joseph-Désiré Mobutu. The coup occurred when Lumumba, facing armed rebellion and an occupation by Belgian forces, asked for support from the Soviet Union. This led to a government split between himself, President Joseph Kasa-Vubu, and military commander Joseph-Désiré Mobutu.\n\nOn December 1st, 1960, Lumumba was captured by Mobutu's forces and imprisoned. On January 17th, 1961, he and his associates were brutally beaten and tortured by Katangan and Belgian officers, and Lumumba was executed later that night. The execution was carried out with Belgian and U.S. assistance; Belgium formally apologized for its role in the assassination in 2002.\n\nOn Lumumba's legacy, his friend and colleague Thomas Kanza wrote "he lived as a free man, and an independent thinker. Everything he wrote, said and did was the product of someone who knew his vocation to be that of a liberator, and he represents for the Congo what Castro does for Cuba, Nasser for Egypt, Nkrumah for Ghana, Mao Tse-tung for China, and Lenin for Russia."`,
+        link: 'https://www.britannica.com/biography/Patrice-Lumumba',
+        infoSrc: 'https://en.wikipedia.org/wiki/Patrice_Lumumba'
       },
     ],
     'Other': [
@@ -13013,6 +13013,15 @@ export const eventLibrary = {
         description: `Medgar Wiley Evers was an American civil rights activist in Mississippi, the state's field secretary for the NAACP, and a World War II veteran who had served in the United States Army. He worked to overturn segregation at the University of Mississippi, end the segregation of public facilities, and expand opportunities for African Americans, which included the enforcement of voting rights.\n\nEvers was assassinated in 1963 by Byron De La Beckwith, a member of the White Citizens' Council in Jackson, Mississippi. His murder and the resulting trials inspired civil rights protests; his life and these events inspired numerous works of art, music, and film. All-white juries failed to reach verdicts in the first two trials of Beckwith in the 1960s. He was convicted in 1994 in a new state trial based on new evidence.`,
         link: 'https://web.archive.org/web/20130611071827/http://mememorial.org/medgar-w-evers-civil-rights-activist/',
         infoSrc: 'https://en.wikipedia.org/wiki/Medgar_Evers'
+      },
+      {
+        category: 'Birthdays',
+        date: 'July 2nd, 1925',
+        title: 'Patrice Lumumba (1925 - 1961)',
+        imgSrc: require('./assets/eventPhotos/Individuals/patriceLumumba.jpg'),
+        description: `Patrice Émery Lumumba, born on this day in 1925, was a Congolese politician and independence leader who served as the first Prime Minister of the independent Democratic Republic of the Congo from June until September 1960. He played a significant role in the transformation of the Congo from a colony of Belgium into an independent republic.\n\nIdeologically an African nationalist and pan-Africanist, he led the Congolese National Movement (MNC) party from 1958 until his assassination on Janauary 17th, 1961 in a coup by Joseph-Désiré Mobutu. Lumumba did not express a pro-capitalist or pro-communist ideology and preferred to remain neutral in Cold War politics, seeking assistance in fighting off colonialism from both the United States and the Soviet Union.\n\nOn Lumumba's legacy, his friend and colleague Thomas Kanza wrote "he lived as a free man, and an independent thinker. Everything he wrote, said and did was the product of someone who knew his vocation to be that of a liberator, and he represents for the Congo what Castro does for Cuba, Nasser for Egypt, Nkrumah for Ghana, Mao Tse-tung for China, and Lenin for Russia."`,
+        link: 'https://www.britannica.com/biography/Patrice-Lumumba',
+        infoSrc: 'https://en.wikipedia.org/wiki/Patrice_Lumumba'
       },
     ],
     'Assassinations': [

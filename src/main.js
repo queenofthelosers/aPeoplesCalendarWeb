@@ -39,6 +39,7 @@ class Main1 extends React.Component {
     this.handleSearch = this.handleSearch.bind(this);
     this.trackSearch = this.trackSearch.bind(this);
     this.initalizeToday = this.initializeToday.bind(this);
+    this.calendarRef = React.createRef();
   };
 
   componentWillMount() {
@@ -177,6 +178,8 @@ class Main1 extends React.Component {
       dateInput: e.target.value,
       displaySearch: false,
     });
+    //reset all categories to be expanded when new date is given:
+    this.calendarRef.current.resetExpandCollapse();
   };
 
   getDaySuffix(num) {
@@ -254,6 +257,8 @@ class Main1 extends React.Component {
         };
       };
     };
+    //reset all categories to be expanded on new search:
+    this.calendarRef.current.resetExpandCollapse();
 
     this.setState({
       displaySearch: true,
@@ -280,7 +285,7 @@ class Main1 extends React.Component {
               <div id="onThisDayWrapper">
                 <p id='onThisDay'>{this.state.displaySearch ? 'Search Results' : this.state.dateHeader}</p>
               </div>
-              <CalendarDisplay events={this.state.events} stringToSlug={this.stringToSlug}/>
+              <CalendarDisplay ref={this.calendarRef} events={this.state.events} stringToSlug={this.stringToSlug}/>
             </div>
             :
             <Redirect to={{
