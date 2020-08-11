@@ -1,6 +1,6 @@
 import React from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faPlus, faMinus, faShareAlt} from '@fortawesome/free-solid-svg-icons';
+import {faPlus, faMinus, faClipboard, faClipboardCheck} from '@fortawesome/free-solid-svg-icons';
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 import './App.css';
 
@@ -8,9 +8,12 @@ export class EventComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      collapsed: true
+      collapsed: true, //if collapsed, just event title is displayed, details (description, date, img) are shown if collapsed false
+      copied: false, //handles the icon change
     };
     this.handleExpandCollapse = this.handleExpandCollapse.bind(this);
+    this.handleCopy = this.handleCopy.bind(this);
+
     this.slugifiedTitle = 'apeoplescalendar.org/events/' + this.props.stringToSlug(this.props.categoryEvent.title);
   };
 
@@ -23,8 +26,10 @@ export class EventComponent extends React.Component {
     });
   };
 
-  copyAlert() {
-    alert('Link copied!');
+  handleCopy() {
+    this.setState({
+      copied: true,
+    });
   };
 
   render() {
@@ -50,9 +55,18 @@ export class EventComponent extends React.Component {
                     <a className='links more' href={this.props.categoryEvent.link} target='_blank' rel="noopener noreferrer">More Info</a> :
                     <div className='emptyLink'></div>
                   }
-                  <CopyToClipboard className='links copyButton' onCopy={() => this.copyAlert()} text={this.slugifiedTitle}>
+                  <CopyToClipboard className='links copyButton' onCopy={() => this.handleCopy()} text={this.slugifiedTitle}>
                     <div>
-                      <FontAwesomeIcon icon={faShareAlt}/>
+                      {!this.state.copied &&
+                        <div className='copyWrapper'>
+                          <FontAwesomeIcon icon={faClipboard}/>
+                          <p className='copyText'>Copy link</p>
+                        </div>}
+                      {this.state.copied &&
+                        <div className='copyWrapper'>
+                          <FontAwesomeIcon icon={faClipboardCheck}/>
+                          <p className='copyText'>Link copied!</p>
+                        </div>}
                     </div>
                   </CopyToClipboard>
                 </div>

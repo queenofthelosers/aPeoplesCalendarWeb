@@ -45,7 +45,7 @@ class Main1 extends React.Component {
   componentWillMount() {
     //if Main1 is being rendered via dynamic routing and has been passed a params value
     if (this.props.params.hasOwnProperty('day')) {
-      //validate date query (non zero padded month and day):
+      //validate date query (Checks for a non zero padded month and day. I know it's ugly, but it works):
       var regChecker = new RegExp(/(^(1|3|5|7|8|10|12)-(([1-2]?[1-9])|10|20|3[0-1]))$|(^(4|6|9|11)-(([1-2]?[1-9])|10|20|30))$|(^2-([1-2]?[1-9]|10|20))$/, 'i');
       if (regChecker.test(this.props.params['day'])) {
         //if it's a valid date url, look up date
@@ -273,6 +273,9 @@ class Main1 extends React.Component {
         render = {() =>
           !this.state.invalidInput ?
             <div id="App">
+              <div id='appPromoWrapper'>
+                <a id='appPromo' target='_blank' rel="noopener noreferrer" href='https://play.google.com/store/apps/details?id=com.aPeoplesCalendar.aPC&hl=en'>On Android? Get the app!</a>
+              </div>
               <div id='settings'>
                 <div id='datePickerWrapper'>
                   <input id='datePicker' type='date' value={this.state.dateInput} onChange={this.handleNewDate}/>
