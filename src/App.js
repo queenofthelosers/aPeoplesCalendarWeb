@@ -77,7 +77,7 @@ class App extends React.Component {
           <NavLink className='navTextWrapper' to='/donate'>
             <NavLink to='/donate' id='donateLink' className='navText'>Donate</NavLink>
           </NavLink>
-          <NavLink className='navTextWrapper' to='/'>
+          <NavLink className='navTextWrapper' id='navTitleWrapper' to='/'>
             <NavLink to='/' className='navText' id='title' onClick={() => this.resetDay()}>A People's Calendar</NavLink>
           </NavLink>
           <NavLink className='navTextWrapper' to='/volunteer'>

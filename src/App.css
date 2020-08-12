@@ -9,7 +9,7 @@
   grid-template-columns: 2fr 2fr 4fr 2fr 2fr;
   grid-template-rows: 1fr;
   align-items: center;
-  background-color: #1c1c1c;
+  /*background-color: #ff4747;*/
   color: white;
   z-index: 99;
   box-shadow: 0px 0px 5px black;
@@ -25,10 +25,6 @@
   line-height: 28px;
   grid-column: 3;
   grid-row: 1;
-}
-
-#title:hover {
-
 }
 
 .navButtons {
@@ -52,6 +48,15 @@
 }
 
 .navTextWrapper:hover {
+  background-color: #333333;
+  color: white;
+}
+
+#navTitleWrapper {
+  /*background-color: #ff4747;*/
+}
+
+#navTitleWrapper:hover {
   background-color: #333333;
   color: white;
 }
@@ -348,12 +353,12 @@
 /*items only rendered at 800px width or below*/
 #hamburgerOpen {
   position: absolute;
+  top: 57px;
   display: flex;
   flex-direction: column;
-  background-color: grey;
-  top: 50px;
   background: linear-gradient(0deg, rgba(37,37,37,1) 0%, #1c1c1c 100%);
   z-index: 100;
+  border: 1px solid #1c1c1c;
 };
 
 .hamburgerIcon {
@@ -363,10 +368,14 @@
 .hamburgerText {
   border-bottom: 1px solid grey;
   padding: 10px;
+  transition: background .5s ease;
+  background-color: #1c1c1c;
+  color: white;
 }
 
 .hamburgerText:hover {
-  font-weight: bold;
+  background-color: #e3e3e3;
+  color: black;
 }
 
 .copyWrapper {
@@ -388,7 +397,15 @@
   #eventDisplay {
     width: 70%;
   }
+  #title {
+    font-size: 25px;
+  }
+  .navText {
+    font-size: 25px;
+  }
 }
+
+/*this is where hamburger menu starts*/
 
 @media (max-width: 800px) {
   #navBar {
@@ -398,16 +415,23 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     align-items: center;
-    background-color: #1c1c1c;
-    color: white;
-    z-index: 99;
+    background-color: #e3e3e3;
+    padding: 10px;
+    color: black;
+    border: 1px solid #1c1c1c;
   }
 
   #title {
     margin: 0 auto;
+    padding: 4px 10px 4px 10px;
     font-size: 26px;
     grid-column: 1;
     grid-row: 1;
+    transition: background .5s ease;
+  }
+
+  #title:hover {
+    cursor: pointer;
   }
 
   #eventDisplay {

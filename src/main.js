@@ -179,7 +179,7 @@ class Main1 extends React.Component {
       displaySearch: false,
     });
     //reset all categories to be expanded when new date is given
-    //on initial apeoplescalendar.org/day/date query, this.calendarRef.current=null, this try catch fixes this issue and doesn't interfere with the usual function 
+    //on initial apeoplescalendar.org/day/date query, this.calendarRef.current=null, this try catch fixes this issue and doesn't interfere with the usual function
     try {
       this.calendarRef.current.resetExpandCollapse()
     } catch (error) {
@@ -278,9 +278,9 @@ class Main1 extends React.Component {
         render = {() =>
           !this.state.invalidInput ?
             <div id="App">
-              <div id='appPromoWrapper'>
+              {/*<div id='appPromoWrapper'>
                 <a id='appPromo' target='_blank' rel="noopener noreferrer" href='https://play.google.com/store/apps/details?id=com.aPeoplesCalendar.aPC&hl=en'>On Android? Get the app!</a>
-              </div>
+              </div>*/}
               <div id='settings'>
                 <div id='datePickerWrapper'>
                   <input id='datePicker' type='date' value={this.state.dateInput} onChange={this.handleNewDate}/>
