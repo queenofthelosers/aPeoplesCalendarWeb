@@ -7,6 +7,7 @@ import {
 import './App.css';
 import {eventLibrary} from './eventLibrary.js';
 import {CalendarDisplay} from './calendarDisplay.js';
+import {EmptyDay} from './emptyDayComponent.js';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faSearch} from '@fortawesome/free-solid-svg-icons';
 
@@ -29,6 +30,7 @@ class Main1 extends React.Component {
       searchValue: '', //updated onChange from search field, used to generate text search queries
       displaySearch: false, //changes header from dateHeader to 'Search Results'
       events: '', //events from selected day, initialized to today's date, sent to display in CalendarDisplay as prop
+      haveEvents: true, //boolean set to true if there is one non-empty event in this.state.events, false if they are all placeholder events (i.e., !events[Category].description for all categories)
       invalidInput: false, //if invalid input (from url params, i.e., day/94-3039), then redirect to <NotFound/>, else, return main calendar view
     };
     this.monthList = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
@@ -111,7 +113,8 @@ class Main1 extends React.Component {
             //we can safely assume titles are unique, so if we find a match, we can assign the result to state and stop searching
             this.setState({
               displaySearch: true,
-              events: searchEventsResult
+              events: searchEventsResult,
+              haveEvents: true
             });
             return '';
           };
@@ -121,7 +124,8 @@ class Main1 extends React.Component {
     //if we make it this far, then the url search term passed didn't find anything - show empty search result
     this.setState({
       displaySearch: true,
-      events: searchEventsResult
+      events: searchEventsResult,
+      haveEvents: false
     });
   };
 
@@ -145,12 +149,24 @@ class Main1 extends React.Component {
     var dateInputInit = year + '-' + month + '-' + day;
     //initialize date header with today's date month and day:
     var dateHeader = this.monthList[now.getMonth()] + ' ' + now.getDate() + this.getDaySuffix(now.getDate());
+    //figure out if today is an empty day or not, set haveEvents as a boolean accordingly
+    var haveEvents = this.isDayNotEmpty(eventLibrary[initTodayString]);
     this.setState({
       dateInput: dateInputInit,
       dateHeader: dateHeader,
       events: eventLibrary[initTodayString],
       displaySearch: false,
+      haveEvents: haveEvents
     });
+  };
+
+  isDayNotEmpty(day) {
+    //if the eventCategory for the day is empty, its first entry's description prop will be an empty string
+    if (day['Revolution'][0].description || day['Rebellion'][0].description || day['Birthdays'][0].description || day['Labor'][0].description || day['Assassinations'][0].description || day['Other'][0].description) {
+      return true;
+    } else {
+      return false;
+    };
   };
 
   handleNewDate(e) {
@@ -172,8 +188,10 @@ class Main1 extends React.Component {
     var dateHeader = this.monthList[parseInt(newDateString[1]) - 1] + ' ' + newDateString[2] + this.getDaySuffix(newDateString[2]);
     //create the lookup key to use with eventLibrary
     newDateString = [newDateString[1], newDateString[2]].join('-');
+    var haveEvents = this.isDayNotEmpty(eventLibrary[newDateString]);
     this.setState({
       events: eventLibrary[newDateString],
+      haveEvents: haveEvents,
       dateHeader: dateHeader,
       dateInput: e.target.value,
       displaySearch: false,
@@ -263,11 +281,14 @@ class Main1 extends React.Component {
       };
     };
     //reset all categories to be expanded on new search:
-    this.calendarRef.current.resetExpandCollapse();
-
+    if (this.state.haveEvents) {
+      this.calendarRef.current.resetExpandCollapse();
+    };
+    var haveEvents = this.isDayNotEmpty(searchEventsResult);
     this.setState({
       displaySearch: true,
-      events: searchEventsResult
+      events: searchEventsResult,
+      haveEvents: haveEvents
     });
   };
 
@@ -293,7 +314,10 @@ class Main1 extends React.Component {
               <div id="onThisDayWrapper">
                 <p id='onThisDay'>{this.state.displaySearch ? 'Search Results' : this.state.dateHeader}</p>
               </div>
-              <CalendarDisplay ref={this.calendarRef} events={this.state.events} stringToSlug={this.stringToSlug}/>
+              {!this.state.haveEvents &&
+                <EmptyDay displaySearch={this.state.displaySearch}/>
+              }
+              {this.state.haveEvents && <CalendarDisplay ref={this.calendarRef} events={this.state.events} stringToSlug={this.stringToSlug}/>}
             </div>
             :
             <Redirect to={{

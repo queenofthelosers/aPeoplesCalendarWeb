@@ -1,3 +1,12 @@
+html {
+  background: rgb(252,252,252);
+  background: linear-gradient(0deg, rgba(252,252,252,1) 0%, rgba(241,241,241,1) 100%);
+}
+
+#root {
+
+}
+
 #App {
   min-height: 100%;
 }
@@ -115,7 +124,7 @@
   padding: 10px;
   background-color: white;
   color: black;
-  border: 1px solid #1c1c1c;
+  border: 1px solid #333333;
   border-radius: 5px;
   font-size: 22px;
   font-weight: normal;
@@ -214,7 +223,7 @@
   border-bottom-right-radius: 0px;
   border-bottom-left-radius: 0px;
   margin-bottom: 20px;
-  background-color: #1c1c1c;
+  background-color: #333333;
   color: white;
   box-shadow: 3px 3px 5px black;
 }
@@ -320,7 +329,7 @@
   color: white;
   padding-bottom: 8px;
   padding-top: 7px;
-  background: #1c1c1c;
+  background: #333333;
 }
 
 .links:hover {
@@ -337,7 +346,7 @@
   border-right: 1px solid white;
   padding-bottom: 8px;
   padding-top: 7px;
-  background: #1c1c1c;
+  background: #333333;
 }
 
 .source {
@@ -356,9 +365,9 @@
   top: 57px;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(0deg, rgba(37,37,37,1) 0%, #1c1c1c 100%);
+  background: linear-gradient(0deg, rgba(37,37,37,1) 0%, #333333 100%);
   z-index: 100;
-  border: 1px solid #1c1c1c;
+  border: 1px solid #333333;
 };
 
 .hamburgerIcon {
@@ -369,7 +378,7 @@
   border-bottom: 1px solid grey;
   padding: 10px;
   transition: background .5s ease;
-  background-color: #1c1c1c;
+  background-color: #333333;
   color: white;
 }
 
@@ -389,6 +398,60 @@
 .copyText {
   margin: 0px;
   margin-left: 8px;
+}
+
+#emptyPromptWrapper {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#emptyDayMessageWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.emptyPrompt {
+  margin: auto;
+  font-size: 24px;
+  /*
+  background-color: #e3e3e3;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px black;*/
+  display: inline-block;
+  padding: 10px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+#emptyDayLinkWrapper {
+  display: inline-block;
+  width: fit-content;
+  margin: auto;
+  background-color: inherit;
+  border: 1px solid black;
+  box-shadow: 2px 2px 4px black;
+  border-radius: 5px;
+  padding: 10px;
+  color: black;
+  transition: background .75s ease;
+}
+
+.emptyPromptLink {
+  text-decoration: none;
+  color: black;
+}
+
+#emptyDayLinkWrapper:hover {
+  background-color: #333333;
+}
+
+.emptyPromptLink:hover {
+  color: white;
+}
+
+#emptyLinkWrapper {
+  margin-bottom: 0px;
 }
 
 /*media queries*/
@@ -418,7 +481,7 @@
     background-color: #e3e3e3;
     padding: 10px;
     color: black;
-    border: 1px solid #1c1c1c;
+    border: 1px solid #333333;
   }
 
   #title {
@@ -442,6 +505,10 @@
 @media (max-width: 700px) {
   #eventDisplay {
     width: 92%;
+  }
+  .emptyPrompt {
+    font-size: 18px;
+    padding: 7px;
   }
 }
 
@@ -502,6 +569,15 @@
     border-right: 0px;
     border-bottom: 1px solid #e6e6e6;
   }
+  .emptyPrompt {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 410px) {
+  #emptyDayLinkWrapper {
+    padding: 6px;
+  }
 }
 
 @media (max-width: 375px) {
@@ -513,5 +589,10 @@
   }
   #datePicker {
     width: 160px;
+  }
+  .emptyPrompt {
+    font-size: 14px;
+    padding: 2px;
+    margin-bottom: 15px;
   }
 }
