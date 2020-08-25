@@ -439,15 +439,16 @@ html {
 
 .emptyPromptLink {
   text-decoration: none;
-  color: black;
+  color: inherit;
 }
 
 #emptyDayLinkWrapper:hover {
   background-color: #333333;
+  color: white;
 }
 
 .emptyPromptLink:hover {
-  color: white;
+  color: inherit;
 }
 
 #emptyLinkWrapper {
