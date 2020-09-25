@@ -21242,7 +21242,7 @@ export const eventLibrary = {
         category: 'Labor',
         date: 'October 18th, 1927',
         title: 'Colorado Miners Strike (1927)',
-        imgSrc: require('./assets/eventPhotos/coloradoMinersStrike.jpg'),
+        imgSrc: require('./assets/eventPhotos/Events/coloradoMinersStrike.jpg'),
         description: `On this day in 1927, the Industrial Workers of the World (IWW) called a strike of all mine workers, which was quickly heeded in Coloardo. Nearly all the mines in Colorado were closed, and the dozen still open did so using imported scab labor. For the still-operating Columbine mine, scab workers were housed in Serene, which was fortified with barbed wire on the fences and armed guards.\n\nMass rallies had been held by workers outside the Columbine mine in Serene for several weeks and, on the morning of November 21st, miners and their families were fired upon by a militia of ex-police, armed with machine guns and tear gas. Six people were killed, and the event became known as the "Columbine Massacre".\n\nThe owner of the Rocky Mountain Fuel Company, Josephine Roche, brought an end to the strike several weeks after the incident at Columbine by declaring that the company union was to be affiliated with the American Federation of Labor (AFL) and recognizing the United Mine Workers of America (UMWA). The backbone of IWW support in the Colorado mines was broken, and the revolutionary union went into decline.`,
         link: 'https://en.wikipedia.org/wiki/Columbine_Mine_massacre',
         infoSrc: 'https://libcom.org/history/1927-colorado-miners-strike-and-columbine-mine-massacre'
