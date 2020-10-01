@@ -302,6 +302,9 @@ class Main1 extends React.Component {
               {/*<div id='appPromoWrapper'>
                 <a id='appPromo' target='_blank' rel="noopener noreferrer" href='https://play.google.com/store/apps/details?id=com.aPeoplesCalendar.aPC&hl=en'>On Android? Get the app!</a>
               </div>*/}
+              <div id="onThisDayWrapper">
+                <p id='onThisDay'>{this.state.displaySearch ? 'Search Results' : this.state.dateHeader}</p>
+              </div>
               <div id='settings'>
                 <div id='datePickerWrapper'>
                   <input id='datePicker' type='date' value={this.state.dateInput} onChange={this.handleNewDate}/>
@@ -310,9 +313,6 @@ class Main1 extends React.Component {
                   <input id='searchField' type="text" value={this.state.searchValue} onChange={this.trackSearch}/>
                   <button id='searchButton' type="submit"><FontAwesomeIcon icon={faSearch} className='searchIcon' size="m"/></button>
                 </form>
-              </div>
-              <div id="onThisDayWrapper">
-                <p id='onThisDay'>{this.state.displaySearch ? 'Search Results' : this.state.dateHeader}</p>
               </div>
               {!this.state.haveEvents &&
                 <EmptyDay displaySearch={this.state.displaySearch}/>

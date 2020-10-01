@@ -11,6 +11,105 @@ html {
   min-height: 100%;
 }
 
+#fullNavBarContainer {
+  display: flex;
+  position: sticky;
+  top: 0px;
+  justify-content: space-between;
+  padding-right: 25px;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid grey;
+  z-index: 99;
+}
+
+#fullNavLeft {
+  display: flex;
+}
+
+#fullNavRight {
+  display: flex;
+  margin-right: 15px;
+}
+
+.navBarNavLink {
+  text-decoration: none;
+}
+
+#titleContainer {
+  background-color: #1c1c1c;
+  color: rgb(255, 69, 0);
+  border: 1px solid #1c1c1c;
+  border-radius: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 0px;
+  transition: .5s ease;
+  font-size: 28px;
+  font-weight: bold;
+  height: 66px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#titleContainer:hover {
+  background-color: #e62222;
+  color: #1c1c1c;
+}
+
+#fullNavTitle {
+
+}
+
+.fullNavTextContainer {
+  font-size: 20px;
+  width: 85px;
+  padding-left: 9px;
+  padding-right: 9px;
+  transition: .5s ease;
+  border-radius: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333333;
+}
+
+.fullNavTextContainer:hover {
+  background-color: #333333;
+  color: #faf7f7;
+}
+
+.fullNavSocialContainer {
+  margin-left: 6px;
+  margin-right: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+}
+
+.faNavIcon {
+  font-size: 31px;
+}
+
+.faNavIconContainer {
+  border-radius: 100px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#androidContainer {
+  background-color: lightgreen;
+}
+
+#appleContainer {
+  background-color: #333333;
+}
+
 #navBar {
   position: sticky;
   top: 0px;
@@ -18,8 +117,8 @@ html {
   grid-template-columns: 2fr 2fr 4fr 2fr 2fr;
   grid-template-rows: 1fr;
   align-items: center;
-  /*background-color: #ff4747;*/
-  color: white;
+  /*color: white;*/
+  color: black;
   z-index: 99;
   box-shadow: 0px 0px 5px black;
 }
@@ -144,8 +243,8 @@ html {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-bottom: 15px;
-  margin-top: 25px;
+  margin-top: 0px;
+  margin-bottom: 25px;
 }
 
 #datePicker {
@@ -183,8 +282,8 @@ html {
   padding: 5px;
   padding-left: 12px;
   padding-right: 12px;
-  margin-top: 0px;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
+  margin-top: 15px;
 }
 
 #searchWrapper {

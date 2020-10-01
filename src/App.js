@@ -5,6 +5,7 @@ import {About} from './about.js';
 import {Volunteer} from './volunteer.js';
 import {Donate} from './donate.js';
 import {NotFound} from './notFound.js';
+import {FullNavBar} from './fullNavBar.js';
 import {
   BrowserRouter as Router,
   Switch,
@@ -68,26 +69,32 @@ class App extends React.Component {
   };
 
   render() {
+    /*
+    <div id='navBar'>
+    <NavLink className='navTextWrapper' to='/about'>
+      <p id='aboutLink' className='navText'>About</p>
+    </NavLink>
+    <NavLink className='navTextWrapper' to='/donate'>
+      <NavLink to='/donate' id='donateLink' className='navText'>Donate</NavLink>
+    </NavLink>
+    <NavLink className='navTextWrapper' id='navTitleWrapper' to='/'>
+      <NavLink to='/' className='navText' id='title' onClick={() => this.resetDay()}>A People's Calendar</NavLink>
+    </NavLink>
+    <NavLink className='navTextWrapper' to='/volunteer'>
+      <NavLink to='/volunteer' id='volunteer' className='navText'>Volunteer</NavLink>
+    </NavLink>
+    <a target='_blank' rel="noopener noreferrer" href='mailto:apeoplescalendar@gmail.com' className='navTextWrapper'>
+      <a target='_blank' rel="noopener noreferrer" id='contactLink' className='navText' href='mailto:apeoplescalendar@gmail.com'>Contact</a>
+    </a>
+    </div>
+    */
     return (
       <Router>
-        {this.state.windowWidth > 800 && <div id='navBar'>
-          <NavLink className='navTextWrapper' to='/about'>
-            <p id='aboutLink' className='navText'>About</p>
-          </NavLink>
-          <NavLink className='navTextWrapper' to='/donate'>
-            <NavLink to='/donate' id='donateLink' className='navText'>Donate</NavLink>
-          </NavLink>
-          <NavLink className='navTextWrapper' id='navTitleWrapper' to='/'>
-            <NavLink to='/' className='navText' id='title' onClick={() => this.resetDay()}>A People's Calendar</NavLink>
-          </NavLink>
-          <NavLink className='navTextWrapper' to='/volunteer'>
-            <NavLink to='/volunteer' id='volunteer' className='navText'>Volunteer</NavLink>
-          </NavLink>
-          <a target='_blank' rel="noopener noreferrer" href='mailto:apeoplescalendar@gmail.com' className='navTextWrapper'>
-            <a target='_blank' rel="noopener noreferrer" id='contactLink' className='navText' href='mailto:apeoplescalendar@gmail.com'>Contact</a>
-          </a>
-        </div>}
-        {this.state.openHamburger && <div id='hamburgerOpen'>
+        {this.state.windowWidth > 800 &&
+          <FullNavBar/>
+        }
+        {this.state.openHamburger &&
+          <div id='hamburgerOpen'>
             <NavLink to='/' className='navText hamburgerText' id='hamburgerHome' onClick={() => this.handleHomeHamburgerClick()}>Home</NavLink>
             <NavLink to='/about' id='hamburgerAbout' className='navText hamburgerText' onClick={() => this.handleClick()}>About</NavLink>
             <NavLink to='/donate' id='hamburgerDonate' className='navText hamburgerText' onClick={() => this.handleClick()}>Donate</NavLink>
@@ -95,10 +102,12 @@ class App extends React.Component {
             <a target='_blank' rel="noopener noreferrer" id='hamburgerContact' className='navText hamburgerText' href='mailto:apeoplescalendar@gmail.com' onClick={() => this.handleClick()}>Contact</a>
           </div>
         }
-        {this.state.windowWidth <= 800 && <div id='navBar'>
-          <FontAwesomeIcon icon={faBars} style={{position: 'absolute', left: '25px'}} onClick={(e) => this.handleHamburger(e)}/>
-          <NavLink to='/' className='navText' id='title' onClick={() => this.resetDay()}>A People's Calendar</NavLink>
-        </div>}
+        {this.state.windowWidth <= 800 &&
+          <div id='navBar'>
+            <FontAwesomeIcon icon={faBars} style={{position: 'absolute', left: '25px'}} onClick={(e) => this.handleHamburger(e)}/>
+            <NavLink to='/' className='navText' id='title' onClick={() => this.resetDay()}>A People's Calendar</NavLink>
+          </div>
+        }
         <Switch>
           <Route path='/about'>
             <About/>
