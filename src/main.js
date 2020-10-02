@@ -197,7 +197,7 @@ class Main1 extends React.Component {
       displaySearch: false,
     });
     //reset all categories to be expanded when new date is given
-    //on initial apeoplescalendar.org/day/date query, this.calendarRef.current=null, this try catch fixes this issue and doesn't interfere with the usual function
+    //on initial apeoplescalendar.org/calendar/day/date query, this.calendarRef.current=null, this try catch fixes this issue and doesn't interfere with the usual function
     try {
       this.calendarRef.current.resetExpandCollapse()
     } catch (error) {
