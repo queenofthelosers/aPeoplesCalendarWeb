@@ -3,6 +3,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faPlus, faMinus, faClipboard, faClipboardCheck} from '@fortawesome/free-solid-svg-icons';
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 import './App.css';
+//import Helmet from 'react-helmet';
 
 export class EventComponent extends React.Component {
   constructor(props) {
@@ -35,6 +36,13 @@ export class EventComponent extends React.Component {
   render() {
     return (
         <div className='eventWrapper'>
+          {/*<Helmet>
+                <title>{this.props.categoryEvent.title}</title>
+                <meta property="og:title" content={this.props.categoryEvent.title} />
+                <meta property="og:description" content={this.props.categoryEvent.paragraphs[0]}/>
+                <meta property="og:image" content={this.props.categoryEvent.imgSrc}>
+                <meta property="og:url" content={this.slugifiedTitle}>
+          </Helmet>*/}
           <div className='eventHeaderWrapper' onClick={(e) => this.handleExpandCollapse(e)}>
           <div className='eventButton' >
             {this.state.collapsed && <FontAwesomeIcon icon={faPlus}/>}

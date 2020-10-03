@@ -32,8 +32,8 @@ export class CalendarDisplay extends React.Component {
   };
 
   render() {
-    console.log('this.props.events:');
-    console.log(this.props.events);
+    //console.log('this.props.events:');
+    //console.log(this.props.events);
     //less verbosity:
     var events = this.props.events;
     return (
