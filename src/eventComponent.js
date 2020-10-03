@@ -14,12 +14,12 @@ export class EventComponent extends React.Component {
     this.handleExpandCollapse = this.handleExpandCollapse.bind(this);
     this.handleCopy = this.handleCopy.bind(this);
 
-    this.slugifiedTitle = 'apeoplescalendar.org/events/' + this.props.stringToSlug(this.props.categoryEvent.title);
+    this.slugifiedTitle = 'apeoplescalendar.org/calendar/events/' + this.props.stringToSlug(this.props.categoryEvent.title);
   };
 
   handleExpandCollapse(e) {
     if (this.state.collapsed) {
-      console.log(this.props.stringToSlug(this.props.categoryEvent.title));
+      //console.log(this.props.stringToSlug(this.props.categoryEvent.title));
     };
     this.setState({
       collapsed: !this.state.collapsed
@@ -50,27 +50,30 @@ export class EventComponent extends React.Component {
               <img className='eventImg' src={this.props.categoryEvent.imgSrc} alt={this.props.categoryEvent.title}/>
               {this.props.paragraphs.map(paragraph => <p className='eventDescription'>{paragraph}</p>)}
                 <div className='sourcesWrapper'>
-                  <a className='links source' href={this.props.categoryEvent.infoSrc} target='_blank' rel="noopener noreferrer">Source</a>
-                  {this.props.categoryEvent.infoSrc !== this.props.categoryEvent.link ?
-                    <a className='links more' href={this.props.categoryEvent.link} target='_blank' rel="noopener noreferrer">More Info</a> :
-                    <div className='emptyLink'></div>
-                  }
-                  <CopyToClipboard className='links copyButton' onCopy={() => this.handleCopy()} text={this.slugifiedTitle}>
-                    <div>
-                      {!this.state.copied &&
-                        <div className='copyWrapper'>
-                          <FontAwesomeIcon icon={faClipboard}/>
-                          <p className='copyText'>Copy link</p>
-                        </div>}
-                      {this.state.copied &&
-                        <div className='copyWrapper'>
-                          <FontAwesomeIcon icon={faClipboardCheck}/>
-                          <p className='copyText'>Link copied!</p>
-                        </div>}
-                    </div>
-                  </CopyToClipboard>
-                </div>
-              </div>}
+                <a className='links source' href={this.props.categoryEvent.infoSrc} target='_blank' rel="noopener noreferrer">Source</a>
+                {this.props.categoryEvent.infoSrc !== this.props.categoryEvent.link ?
+                  <a className='links more' href={this.props.categoryEvent.link} target='_blank' rel="noopener noreferrer">More Info</a> :
+                  <div className='emptyLink'></div>
+                }
+                <CopyToClipboard className='links copyButton' onCopy={() => this.handleCopy()} text={this.slugifiedTitle}>
+                  <div>
+                    {!this.state.copied &&
+                      <div className='copyWrapper'>
+                        <FontAwesomeIcon icon={faClipboard}/>
+                        <p className='copyText'>Copy link</p>
+                      </div>
+                    }
+                    {this.state.copied &&
+                      <div className='copyWrapper'>
+                        <FontAwesomeIcon icon={faClipboardCheck}/>
+                        <p className='copyText'>Link copied!</p>
+                      </div>
+                    }
+                  </div>
+                </CopyToClipboard>
+              </div>
+            </div>
+          }
         </div>
     );
   };

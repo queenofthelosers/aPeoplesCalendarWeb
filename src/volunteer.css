@@ -1,8 +1,9 @@
 #volunteerWrapper {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
-  margin-top: 15px;
+  padding-top: 15px;
   margin-bottom: 10px;
+
 }
 
 #bottomP {

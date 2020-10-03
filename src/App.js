@@ -5,6 +5,9 @@ import {About} from './about.js';
 import {Volunteer} from './volunteer.js';
 import {Donate} from './donate.js';
 import {NotFound} from './notFound.js';
+import {FullNavBar} from './fullNavBar.js';
+import {SocialIcons} from './socialIconsComponent.js';
+import {HomepageComponent} from './homepageComponent.js';
 import {
   BrowserRouter as Router,
   Switch,
@@ -21,10 +24,13 @@ class App extends React.Component {
     super(props);
     this.state = {
       windowWidth: window.innerWidth,
+      hamburgerTop: Math.round(34 + (window.innerWidth/7)),
       openHamburger: false,
     };
     this.handleResize = this.handleResize.bind(this);
     this.handleHamburger = this.handleHamburger.bind(this);
+
+    //this.hamburgerMenuTop = Math.round(1470920 + (46.61548 - 1470920)/(1 + (window.innerWidth/2990619)^1.163445));;
   };
 
   componentDidMount() {
@@ -47,9 +53,16 @@ class App extends React.Component {
   };
 
   handleResize(e) {
+    //this.hamburgerMenuTop = Math.round(1470920 + (46.61548 - 1470920)/(1 + (window.innerWidth/2990619)^1.163445));
     this.setState({
-      windowWidth: window.innerWidth
+      windowWidth: window.innerWidth,
+      hamburgerTop: Math.round(34 + (window.innerWidth/7))
     });
+    if (window.innerWidth > 780 && this.state.openHamburger) {
+      this.setState({
+        openHamburger: false
+      });
+    };
   };
 
   handleHamburger(e) {
@@ -70,36 +83,48 @@ class App extends React.Component {
   render() {
     return (
       <Router>
-        {this.state.windowWidth > 800 && <div id='navBar'>
-          <NavLink className='navTextWrapper' to='/about'>
-            <p id='aboutLink' className='navText'>About</p>
-          </NavLink>
-          <NavLink className='navTextWrapper' to='/donate'>
-            <NavLink to='/donate' id='donateLink' className='navText'>Donate</NavLink>
-          </NavLink>
-          <NavLink className='navTextWrapper' id='navTitleWrapper' to='/'>
-            <NavLink to='/' className='navText' id='title' onClick={() => this.resetDay()}>A People's Calendar</NavLink>
-          </NavLink>
-          <NavLink className='navTextWrapper' to='/volunteer'>
-            <NavLink to='/volunteer' id='volunteer' className='navText'>Volunteer</NavLink>
-          </NavLink>
-          <a target='_blank' rel="noopener noreferrer" href='mailto:apeoplescalendar@gmail.com' className='navTextWrapper'>
-            <a target='_blank' rel="noopener noreferrer" id='contactLink' className='navText' href='mailto:apeoplescalendar@gmail.com'>Contact</a>
-          </a>
-        </div>}
-        {this.state.openHamburger && <div id='hamburgerOpen'>
-            <NavLink to='/' className='navText hamburgerText' id='hamburgerHome' onClick={() => this.handleHomeHamburgerClick()}>Home</NavLink>
+        <img src={require('./assets/Protests-85-skinniest.jpg')} alt='A police officer maces a peaceful protester at a black lives matter protest in Ohio' id='bannerImg'/>
+        {this.state.windowWidth > 780 &&
+          <FullNavBar
+            windowWidth={this.state.windowWidth}
+          />
+        }
+        {this.state.openHamburger &&
+          <div id='hamburgerOpen' style={{top: this.state.hamburgerTop}}>
             <NavLink to='/about' id='hamburgerAbout' className='navText hamburgerText' onClick={() => this.handleClick()}>About</NavLink>
             <NavLink to='/donate' id='hamburgerDonate' className='navText hamburgerText' onClick={() => this.handleClick()}>Donate</NavLink>
             <NavLink to='/volunteer' id='hamburgerVolunteer' className='navText hamburgerText' onClick={() => this.handleClick()}>Volunteer</NavLink>
+            <NavLink to='/calendar' id='hamburgerCalendar' className='navText hamburgerText' onClick={() => this.handleClick()}>Calendar</NavLink>
             <a target='_blank' rel="noopener noreferrer" id='hamburgerContact' className='navText hamburgerText' href='mailto:apeoplescalendar@gmail.com' onClick={() => this.handleClick()}>Contact</a>
           </div>
         }
-        {this.state.windowWidth <= 800 && <div id='navBar'>
-          <FontAwesomeIcon icon={faBars} style={{position: 'absolute', left: '25px'}} onClick={(e) => this.handleHamburger(e)}/>
-          <NavLink to='/' className='navText' id='title' onClick={() => this.resetDay()}>A People's Calendar</NavLink>
-        </div>}
+        {this.state.windowWidth <= 780 &&
+          <div id='smallNavBarContainer'>
+            <NavLink to='/' className='navBarNavLink' id='titleContainer' onClick={() => this.handleClick()}>
+              <p id='fullNavTitle'>aPC</p>
+            </NavLink>
+            <div>
+              <FontAwesomeIcon icon={faBars} style={this.state.windowWidth > 500 ? {position: 'absolute', top: '15px', left: '95px'} : {position: 'absolute', top: '15px', left: '82px'}} onClick={(e) => this.handleHamburger(e)}/>
+            </div>
+            <SocialIcons/>
+          </div>
+        }
         <Switch>
+          <Route path='/calendar/day/:day'>
+            <Main
+              resetDay={resetDay => this.resetDay = resetDay}
+            />
+          </Route>
+          <Route path='/calendar/events/:event_'>
+            <Main
+              resetDay={resetDay => this.resetDay = resetDay}
+            />
+          </Route>
+          <Route exact path='/calendar'>
+            <Main
+              resetDay={resetDay => this.resetDay = resetDay}
+            />
+          </Route>
           <Route path='/about'>
             <About/>
           </Route>
@@ -109,22 +134,12 @@ class App extends React.Component {
           <Route path='/volunteer'>
             <Volunteer/>
           </Route>
-          <Route path='/day/:day'>
-            <Main
-              resetDay={resetDay => this.resetDay = resetDay}
-            />
-          </Route>
-          <Route path='/events/:event_'>
-            <Main
-              resetDay={resetDay => this.resetDay = resetDay}
-            />
-          </Route>
           <Route path='/404'>
             <NotFound/>
           </Route>
           <Route exact path='/'>
-            <Main
-              resetDay={resetDay => this.resetDay = resetDay}
+            <HomepageComponent
+              windowWidth={this.state.windowWidth}
             />
           </Route>
           <Route>
