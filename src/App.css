@@ -58,7 +58,7 @@ html {
   justify-content: center;
   align-items: center;
   /*the following was an attempt to fix a small aesthetic issue with fullnavbar's border. causes more problems than it solves*/
-  /*margin-bottom: -1px;*/
+  margin-bottom: -1px;
 }
 
 #titleContainer:hover {
