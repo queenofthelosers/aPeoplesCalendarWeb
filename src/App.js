@@ -29,7 +29,7 @@ class App extends React.Component {
     };
     this.handleResize = this.handleResize.bind(this);
     this.handleHamburger = this.handleHamburger.bind(this);
-
+    this.closeMenu = this.closeMenu.bind(this);
     //this.hamburgerMenuTop = Math.round(1470920 + (46.61548 - 1470920)/(1 + (window.innerWidth/2990619)^1.163445));;
   };
 
@@ -44,6 +44,12 @@ class App extends React.Component {
   handleHomeHamburgerClick() {
     this.resetDay();
     this.handleClick();
+  };
+
+  closeMenu() {
+    this.setState({
+      openHamburger: false
+    });
   };
 
   handleClick() {
@@ -100,7 +106,7 @@ class App extends React.Component {
         }
         {this.state.windowWidth <= 780 &&
           <div id='smallNavBarContainer'>
-            <NavLink to='/' className='navBarNavLink' id='titleContainer' onClick={() => this.handleClick()}>
+            <NavLink to='/' className='navBarNavLink' id='titleContainer' onClick={() => this.closeMenu()}>
               <p id='fullNavTitle'>aPC</p>
             </NavLink>
             <div>

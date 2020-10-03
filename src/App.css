@@ -57,8 +57,8 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  /*the following item fixes a small aesthetic issue with fullnavbar's border*/
-  margin-bottom: -1px;
+  /*the following was an attempt to fix a small aesthetic issue with fullnavbar's border. causes more problems than it solves*/
+  /*margin-bottom: -1px;*/
 }
 
 #titleContainer:hover {
@@ -436,8 +436,8 @@ html {
 @media (max-width: 780px) {
   #homepageContent {
     display: grid;
-    grid-template-columns: 1fr 18fr 1fr;
-    padding-top: 5px;
+    grid-template-columns: 1fr;
+    padding-top: 0px;
   }
 
   #homepageImg {
@@ -450,7 +450,13 @@ html {
   }
 
   #homepageText {
-    grid-column: 2;
+    padding-top: 5px;
+    grid-column: 1;
+  }
+
+  #homepageDescription {
+    margin-bottom: 8px;
+    font-size: 17px;
   }
 
   #socialWrapper {
@@ -467,6 +473,7 @@ html {
 @media (max-width: 515px) {
   #homepageWrapper {
     padding-bottom: 15px;
+    background-color: #afafaf;
   }
 }
 
@@ -907,6 +914,9 @@ html {
   .emptyPrompt {
     font-size: 18px;
     padding: 7px;
+  }
+  .homepageEventWrapper {
+    width: 95%;
   }
 }
 
