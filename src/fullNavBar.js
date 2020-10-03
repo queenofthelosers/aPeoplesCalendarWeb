@@ -1,14 +1,9 @@
 import React from 'react';
 import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
   NavLink,
-  Redirect
 } from "react-router-dom";
-import {SocialIcon} from 'react-social-icons';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faAndroid, faApple} from '@fortawesome/free-brands-svg-icons';
+//import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+//import {faAndroid, faApple} from '@fortawesome/free-brands-svg-icons';
 import {SocialIcons} from './socialIconsComponent.js';
 
 export function FullNavBar(props) {

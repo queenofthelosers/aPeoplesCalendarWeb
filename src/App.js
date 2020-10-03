@@ -24,10 +24,13 @@ class App extends React.Component {
     super(props);
     this.state = {
       windowWidth: window.innerWidth,
+      hamburgerTop: Math.round(34 + (window.innerWidth/7)),
       openHamburger: false,
     };
     this.handleResize = this.handleResize.bind(this);
     this.handleHamburger = this.handleHamburger.bind(this);
+
+    //this.hamburgerMenuTop = Math.round(1470920 + (46.61548 - 1470920)/(1 + (window.innerWidth/2990619)^1.163445));;
   };
 
   componentDidMount() {
@@ -50,9 +53,16 @@ class App extends React.Component {
   };
 
   handleResize(e) {
+    //this.hamburgerMenuTop = Math.round(1470920 + (46.61548 - 1470920)/(1 + (window.innerWidth/2990619)^1.163445));
     this.setState({
-      windowWidth: window.innerWidth
+      windowWidth: window.innerWidth,
+      hamburgerTop: Math.round(34 + (window.innerWidth/7))
     });
+    if (window.innerWidth > 780 && this.state.openHamburger) {
+      this.setState({
+        openHamburger: false
+      });
+    };
   };
 
   handleHamburger(e) {
@@ -71,34 +81,16 @@ class App extends React.Component {
   };
 
   render() {
-    /*
-    <div id='navBar'>
-    <NavLink className='navTextWrapper' to='/about'>
-      <p id='aboutLink' className='navText'>About</p>
-    </NavLink>
-    <NavLink className='navTextWrapper' to='/donate'>
-      <NavLink to='/donate' id='donateLink' className='navText'>Donate</NavLink>
-    </NavLink>
-    <NavLink className='navTextWrapper' id='navTitleWrapper' to='/'>
-      <NavLink to='/' className='navText' id='title' onClick={() => this.resetDay()}>A People's Calendar</NavLink>
-    </NavLink>
-    <NavLink className='navTextWrapper' to='/volunteer'>
-      <NavLink to='/volunteer' id='volunteer' className='navText'>Volunteer</NavLink>
-    </NavLink>
-    <a target='_blank' rel="noopener noreferrer" href='mailto:apeoplescalendar@gmail.com' className='navTextWrapper'>
-      <a target='_blank' rel="noopener noreferrer" id='contactLink' className='navText' href='mailto:apeoplescalendar@gmail.com'>Contact</a>
-    </a>
-    </div>
-    */
     return (
       <Router>
-        {this.state.windowWidth > 710 &&
+        <img src={require('./assets/Protests-85-skinniest.jpg')} alt='A police officer maces a peaceful protester at a black lives matter protest in Ohio' id='bannerImg'/>
+        {this.state.windowWidth > 780 &&
           <FullNavBar
             windowWidth={this.state.windowWidth}
           />
         }
         {this.state.openHamburger &&
-          <div id='hamburgerOpen'>
+          <div id='hamburgerOpen' style={{top: this.state.hamburgerTop}}>
             <NavLink to='/about' id='hamburgerAbout' className='navText hamburgerText' onClick={() => this.handleClick()}>About</NavLink>
             <NavLink to='/donate' id='hamburgerDonate' className='navText hamburgerText' onClick={() => this.handleClick()}>Donate</NavLink>
             <NavLink to='/volunteer' id='hamburgerVolunteer' className='navText hamburgerText' onClick={() => this.handleClick()}>Volunteer</NavLink>
@@ -106,7 +98,7 @@ class App extends React.Component {
             <a target='_blank' rel="noopener noreferrer" id='hamburgerContact' className='navText hamburgerText' href='mailto:apeoplescalendar@gmail.com' onClick={() => this.handleClick()}>Contact</a>
           </div>
         }
-        {this.state.windowWidth <= 710 &&
+        {this.state.windowWidth <= 780 &&
           <div id='smallNavBarContainer'>
             <NavLink to='/' className='navBarNavLink' id='titleContainer' onClick={() => this.handleClick()}>
               <p id='fullNavTitle'>aPC</p>
@@ -146,7 +138,9 @@ class App extends React.Component {
             <NotFound/>
           </Route>
           <Route exact path='/'>
-            <HomepageComponent/>
+            <HomepageComponent
+              windowWidth={this.state.windowWidth}
+            />
           </Route>
           <Route>
             <Redirect

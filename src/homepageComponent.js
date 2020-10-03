@@ -1,23 +1,7 @@
-//start tomorrow:
-//fix HomepageEventComponent styling, distinct paragraphs, remove collapse/expand etc.
-//style homepage content div, figure out how to include photo
-//actually make link to calendar functional
-//fix indentation in eventComponent.js
-
 import React from 'react';
 import './App.css';
-import {Main} from './main.js';
-import {About} from './about.js';
-import {Volunteer} from './volunteer.js';
-import {Donate} from './donate.js';
-import {NotFound} from './notFound.js';
-import {FullNavBar} from './fullNavBar.js';
 import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
   NavLink,
-  Redirect
 } from "react-router-dom";
 import {eventLibrary} from './eventLibrary.js';
 import {HomepageEventComponent} from './homepageEventComponent.js';
@@ -35,7 +19,7 @@ import {faArrowRight} from '@fortawesome/free-solid-svg-icons';
   }
 }*/
 
-export function HomepageComponent() {
+export function HomepageComponent(props) {
   //get event of the day
   var now = new Date();
   var month = now.getMonth() + 1;
@@ -49,7 +33,7 @@ export function HomepageComponent() {
   for (var i = 0; i < categoryList.length; i++) {
     var category = categoryList[i];
     for (var j = 0; j < todaysEvents[category].length; j++) {
-      console.log(todaysEvents[category][j].description.length);
+      //console.log(todaysEvents[category][j].description.length);
       if (todaysEvents[category][j].description.length >= eventOfTheDay.description.length) {
         eventOfTheDay = todaysEvents[category][j];
       };
@@ -65,15 +49,22 @@ export function HomepageComponent() {
           id='homepageImg'
         />
         <div id='homepageTextWrapper'>
-          <h2>LOREM FUCKING IPSUM</h2>
+          <h2>LOREM IPSUM</h2>
         </div>*/}
         <img
-          src={require('./assets/protestBackgroundImage.png')}
-          alt='a crowd of Arab Spring protesters with riot police in the background and tear gas in the air'
+          src={require('./assets/howardZinnHeadshot.jpg')}
+          alt='a portrait of historian Howard Zinn'
           id='homepageImg'
         />
         <div id='homepageText'>
           <p id='homepageHeader'>A People's Calendar</p>
+          {/*props.windowWidth <= 780 &&
+            <img
+              src={require('./assets/howardZinnHeadshot.jpg')}
+              alt='a portrait of historian Howard Zinn'
+              id='homepageImgSmall'
+            />*/
+          }
           <div>
             <p id='homepageDescription'>Inspired by Howard Zinn's work "A People's History of the United States", A People's Calendar (aPC) is a project that seeks to promote the worldwide history of working class movements and liberation struggles in the form of a searchable "On This Day" calendar.</p>
             <p id='homepageDescription'>This history includes, but is not limited to, indigenous resistance against colonization, the black liberation struggle, unionization efforts, slave rebellions, the women's suffrage movement, and workers' revolution.</p>
@@ -84,6 +75,12 @@ export function HomepageComponent() {
               <FontAwesomeIcon icon={faArrowRight}/>
             </div>
           </NavLink>
+        </div>
+        <div id='eventOfTheDayWrapper'>
+          <div id='eventOTDTextWrapper'>
+            <p id='eventOfTheDay'>Event of the Day</p>
+          </div>
+          <HomepageEventComponent categoryEvent={eventOfTheDay}/>
         </div>
         {/*the following JSX would render an "Event of the Day", whichever today event has longest description
         <div id='eventOfTheDayWrapper'>

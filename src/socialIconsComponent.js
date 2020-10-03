@@ -1,14 +1,8 @@
 import React from 'react';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  NavLink,
-  Redirect
-} from "react-router-dom";
 import {SocialIcon} from 'react-social-icons';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faAndroid, faApple} from '@fortawesome/free-brands-svg-icons';
+//import MobileStoreButton from 'react-mobile-store-button';
 
 export function SocialIcons(props) {
   var socialIconSize;
@@ -30,6 +24,24 @@ export function SocialIcons(props) {
       <div className='fullNavSocialContainer'>
         <SocialIcon className='fullNavSocial' url='https://www.reddit.com/r/aPeoplesCalendar' style={socialIconSize} target='_blank'/>
       </div>
+      {props.windowWidth > 780 &&
+        <div className='fullNavSocialContainer'>
+          <SocialIcon className='fullNavSocial' url='mailto:apeoplescalendar@gmail.com' style={socialIconSize} target='_blank'/>
+        </div>
+      }
+      {/*get it on google play! image, problem is that it is difficult to size
+        <MobileStoreButton
+          store="android"
+          url={androidUrl}
+        />*/
+      }
+      {/*for when you get ios app:
+      <MobileStoreButton
+        store="android"
+        url={'https://play.google.com/store/apps/details?id=com.aPeoplesCalendar.aPC&hl=en_US'}
+        linkProps={{ title: 'Android Store Button' }}
+      />
+      */}
       <div className='fullNavSocialContainer'>
         <a target='_blank' rel="noopener noreferrer" href='https://play.google.com/store/apps/details?id=com.aPeoplesCalendar.aPC&hl=en_US'>
           <div className='faNavIconContainer' id='androidContainer'>
@@ -38,17 +50,12 @@ export function SocialIcons(props) {
         </a>
       </div>
       <div className='fullNavSocialContainer'>
-        <a target='_blank' rel="noopener noreferrer" href='https://play.google.com/store/apps/details?id=com.aPeoplesCalendar.aPC&hl=en_US'>
+        <a target='_blank' rel="noopener noreferrer" href='https://www.gofundme.com/f/get-a-people039s-calendar-on-the-app-store'>
           <div className='faNavIconContainer' id='appleContainer'>
             <FontAwesomeIcon className='fullNavSocial faNavIcon' icon={faApple} color='#ededed' size='lg'/>
           </div>
         </a>
       </div>
-      {props.windowWidth > 710 &&
-        <div className='fullNavSocialContainer'>
-          <SocialIcon className='fullNavSocial' url='mailto:apeoplescalendar@gmail.com' style={socialIconSize} target='_blank'/>
-        </div>
-      }
     </div>
   );
 };
