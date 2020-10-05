@@ -8,6 +8,7 @@ import {NotFound} from './notFound.js';
 import {FullNavBar} from './fullNavBar.js';
 import {SocialIcons} from './socialIconsComponent.js';
 import {HomepageComponent} from './homepageComponent.js';
+import {IconComponent} from './iconComponent.js';
 import {
   BrowserRouter as Router,
   Switch,
@@ -139,6 +140,9 @@ class App extends React.Component {
           </Route>
           <Route path='/volunteer'>
             <Volunteer/>
+          </Route>
+          <Route path='/icon'>
+            <IconComponent/>
           </Route>
           <Route path='/404'>
             <NotFound/>
