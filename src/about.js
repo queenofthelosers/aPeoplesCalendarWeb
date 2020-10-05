@@ -13,6 +13,7 @@ export function About() {
         <p className='aboutText'>While not comprehensive, it is our hope that this calendar makes this topic easier to approach and study. The figures and events included here are not presented with an endorsement, but shared with the understanding that the history of all forms of liberation struggle are worth knowing, in both their successes and their failures.</p>
         <p className='aboutText'>Although we do our best to fact-check the summaries of each event, this project is ultimately meant to provide a jumping off point for users to research the history and form their own opinions on the matter, using the sourced information below the summary of each event.</p>
         <p className='aboutText'>We are always looking out for important events, people, and texts that are missing from the calendar. You can make suggestions, sign up to volunteer, or just say hello via <a target='_blank' rel="noopener noreferrer" id='emailLink' href='mailto:apeoplescalendar@gmail.com'>email</a>.</p>
+        <img src={require('./assets/apcIconBig.jpg')} alt='icon test' />
       </div>
     </div>
   );
