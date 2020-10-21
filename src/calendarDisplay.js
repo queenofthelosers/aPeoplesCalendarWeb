@@ -9,7 +9,7 @@ export class CalendarDisplay extends React.Component {
     super(props);
     this.state = {
       collapseCategory: {'Revolution': false, 'Rebellion': false, 'Labor': false, 'Birthdays': false, 'Assassinations': false, 'Other': false},
-      eventDisplayWidth: window.innerWidth *.89,
+      eventDisplayWidth: window.innerWidth *.9,
     };
 
     this.handleExpandCollapse = this.handleExpandCollapse.bind(this);

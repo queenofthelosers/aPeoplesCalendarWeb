@@ -45,8 +45,6 @@ export class EventComponent extends React.Component {
 
   render() {
     //image resizing logic:
-    const image = this.props.categoryEvent.imgSrc;
-    //const image = resolveAssetSource(imgSrc);
     const width = this.state.imgWidth;
     const height = this.state.imgHeight;
     //console.log('window height: ' + this.props.winDim.height);
