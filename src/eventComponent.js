@@ -47,10 +47,8 @@ export class EventComponent extends React.Component {
     //image resizing logic:
     const width = this.state.imgWidth;
     const height = this.state.imgHeight;
-    //console.log('window height: ' + this.props.winDim.height);
-    //console.log('window width: ' + this.props.winDim.width);
     //second, try resizing image to be around 28% of total view height
-    var resizeHeight = this.props.winDim.height/2; //image will take up 50% of the window's height
+    /*var resizeHeight = this.props.winDim.height/3; //image will take up 25% of the window's height
     var ratio = resizeHeight/height; //the ratio by which image has shrunk
     var resizeWidth = width * ratio; //apply ratio to width
     //if the resized image becomes too wide (happens with short but wide images)
@@ -60,10 +58,28 @@ export class EventComponent extends React.Component {
       resizeWidth = this.props.eventDisplayWidth - 40;
       ratio = resizeWidth/width; //new ratio of shrunkedness
       resizeHeight = height * ratio; //apply new ratio to height
-      console.log('resized for width at ' + resizeWidth);
+      //console.log('resized for width at ' + resizeWidth);
     } else {
-      console.log('resized for height at ' + resizeHeight);
+      //console.log('resized for height at ' + resizeHeight);
+    };*/
+    //console.log('received eventDisplayWidth in eventComponent: ' + this.props.eventDisplayWidth);
+    var resizeWidth = this.props.eventDisplayWidth * .75; //90% of width of container
+    var ratio = resizeWidth/width; //the ratio by which the image has changed
+    var resizeHeight = height * ratio //apply ratio to height
+    //console.log('resizeHeight: ' + resizeHeight);
+    if (resizeHeight > this.props.winDim.height/2.5) {
+      if (this.props.winDim.height > 875) {
+        resizeHeight = 350;
+      } else {
+        resizeHeight = 250;
+      };
+      ratio = resizeHeight/height;
+      resizeWidth = width * ratio;
+      //console.log('using height resize');
+    } else {
+      //console.log('using width resize');
     };
+
     return (
         <div className='eventWrapper'>
           {/*<Helmet>

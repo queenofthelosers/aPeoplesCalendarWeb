@@ -9,7 +9,7 @@ export class CalendarDisplay extends React.Component {
     super(props);
     this.state = {
       collapseCategory: {'Revolution': false, 'Rebellion': false, 'Labor': false, 'Birthdays': false, 'Assassinations': false, 'Other': false},
-      eventDisplayWidth: window.innerWidth *.9,
+      eventDisplayWidth: 1,
     };
 
     this.handleExpandCollapse = this.handleExpandCollapse.bind(this);
@@ -21,6 +21,9 @@ export class CalendarDisplay extends React.Component {
 
   componentDidMount() {
     window.addEventListener("resize", this.handleResize);
+    this.setState({
+      eventDisplayWidth: this.eventDisplayRef.clientWidth
+    });
   };
 
   componentWillUnmount() {
@@ -29,6 +32,7 @@ export class CalendarDisplay extends React.Component {
 
   handleResize() {
     var width = this.eventDisplayRef.clientWidth;
+    //console.log('handleResize running in calendarDisplay, shows eventDisplay width at: ' + width);
     this.setState({
       eventDisplayWidth: width
     });
