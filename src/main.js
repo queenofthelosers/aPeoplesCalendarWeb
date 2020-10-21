@@ -16,6 +16,7 @@ export function Main(props) {
     <Main1
       resetDay={props.resetDay}
       params={useParams()}
+      winDim={props.winDim}
     />
   );
 };
@@ -317,7 +318,9 @@ class Main1 extends React.Component {
               {!this.state.haveEvents &&
                 <EmptyDay displaySearch={this.state.displaySearch}/>
               }
-              {this.state.haveEvents && <CalendarDisplay ref={this.calendarRef} events={this.state.events} stringToSlug={this.stringToSlug}/>}
+              {this.state.haveEvents &&
+                <CalendarDisplay ref={this.calendarRef} events={this.state.events} stringToSlug={this.stringToSlug} winDim={this.props.winDim}/>
+              }
             </div>
             :
             <Redirect to={{

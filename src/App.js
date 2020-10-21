@@ -25,6 +25,7 @@ class App extends React.Component {
     super(props);
     this.state = {
       windowWidth: window.innerWidth,
+      windowHeight: window.innerHeight,
       hamburgerTop: Math.round(34 + (window.innerWidth/7)),
       openHamburger: false,
     };
@@ -39,7 +40,7 @@ class App extends React.Component {
   };
 
   componentWillUnmount() {
-    window.addEventListener("resize", this.handleResize);
+    window.removeEventListener("resize", this.handleResize);
   };
 
   handleHomeHamburgerClick() {
@@ -63,6 +64,7 @@ class App extends React.Component {
     //this.hamburgerMenuTop = Math.round(1470920 + (46.61548 - 1470920)/(1 + (window.innerWidth/2990619)^1.163445));
     this.setState({
       windowWidth: window.innerWidth,
+      windowHeight: window.innerHeight,
       hamburgerTop: Math.round(34 + (window.innerWidth/7))
     });
     if (window.innerWidth > 780 && this.state.openHamburger) {
@@ -120,16 +122,19 @@ class App extends React.Component {
           <Route path='/calendar/day/:day'>
             <Main
               resetDay={resetDay => this.resetDay = resetDay}
+              winDim={{width: this.state.windowWidth, height: this.state.windowHeight}}
             />
           </Route>
           <Route path='/calendar/events/:event_'>
             <Main
               resetDay={resetDay => this.resetDay = resetDay}
+              winDim={{width: this.state.windowWidth, height: this.state.windowHeight}}
             />
           </Route>
           <Route exact path='/calendar'>
             <Main
               resetDay={resetDay => this.resetDay = resetDay}
+              winDim={{width: this.state.windowWidth, height: this.state.windowHeight}}
             />
           </Route>
           <Route path='/about'>

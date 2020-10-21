@@ -21460,10 +21460,10 @@ export const eventLibrary = {
     'Rebellion': [
       {
         category: 'Rebellion',
-        date: 'December 28th, 1837',
+        date: 'October 21st, 1837',
         title: 'Osceola Captured (1837)',
         imgSrc: require('./assets/eventPhotos/Individuals/osceola.jpg'),
-        description: `Osceola (1804 - 1838, Asi-yahola in Creek) was an influential leader of the Seminole people in Florida, and a leader of violent Seminole resistance against colonization. Although he was raised in the Creek tradition, Osceola became part of what was known as the Seminole people after moving to Florida as a child.\n\nOsceola's successful attack on military forces on December 28th, 1835 served as a catalyst for beginning the Second Seminole War against the United States. Although they were successful that day, it was on this day in 1837 that Osceola was captured, by General Joseph Hernández.\n\nGeneral Hernández agreed to meet with Osceola under a white flag of truce, but promptly arrested Osceola and 81 of his followers. This action has been described as "one of the most disgraceful acts in American military history." Osceola died from illness a few months after his capture, on January 30th, 1838.`,
+        description: `Osceola (in Creek, "Asi-yahola"; 1804 - 1838) was an influential leader of the Seminole people in Florida, and a leader of violent Seminole resistance against colonization. Although he was raised in the Creek tradition, Osceola became part of what was known as the Seminole people after moving to Florida as a child.\n\nOsceola's successful attack on military forces on December 28th, 1835 served as a catalyst for beginning the Second Seminole War against the United States. Although they were successful that day, it was on this day in 1837 that Osceola was captured, by General Joseph Hernández.\n\nGeneral Hernández agreed to meet with Osceola under a white flag of truce, but promptly arrested Osceola and 81 of his followers. This action has been described as "one of the most disgraceful acts in American military history." Osceola died from illness a few months after his capture, on January 30th, 1838.`,
         link: 'https://www.historyisaweapon.com/defcon1/zinnasl7.html',
         infoSrc: 'https://en.wikipedia.org/wiki/Osceola'
       },

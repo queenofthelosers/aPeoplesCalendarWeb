@@ -8,13 +8,30 @@ export class CalendarDisplay extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      collapseCategory: {'Revolution': false, 'Rebellion': false, 'Labor': false, 'Birthdays': false, 'Assassinations': false, 'Other': false}
+      collapseCategory: {'Revolution': false, 'Rebellion': false, 'Labor': false, 'Birthdays': false, 'Assassinations': false, 'Other': false},
+      eventDisplayWidth: window.innerWidth *.89,
     };
 
     this.handleExpandCollapse = this.handleExpandCollapse.bind(this);
+    this.handleResize = this.handleResize.bind(this);
     this.resetExpandCollapse = this.resetExpandCollapse.bind(this);
 
     this.categoryList = ['Revolution', 'Rebellion', 'Labor', 'Birthdays', 'Assassinations', 'Other'];
+  };
+
+  componentDidMount() {
+    window.addEventListener("resize", this.handleResize);
+  };
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.handleResize);
+  };
+
+  handleResize() {
+    var width = this.eventDisplayRef.clientWidth;
+    this.setState({
+      eventDisplayWidth: width
+    });
   };
 
   handleExpandCollapse(e, category) {
@@ -37,7 +54,7 @@ export class CalendarDisplay extends React.Component {
     //less verbosity:
     var events = this.props.events;
     return (
-      <div id='eventDisplay'>
+      <div id='eventDisplay' ref={eventDisplay => this.eventDisplayRef = eventDisplay}>
         {this.categoryList.map(eventCategory => {
           //if the first event is blank (placeholder)
           if (!events[eventCategory][0].description) {
@@ -67,6 +84,8 @@ export class CalendarDisplay extends React.Component {
                         paragraphs={paragraphs}
                         stringToSlug={this.props.stringToSlug}
                         key={categoryEvent.title}
+                        winDim={this.props.winDim}
+                        eventDisplayWidth={this.state.eventDisplayWidth}
                       />
                       )
                     })
