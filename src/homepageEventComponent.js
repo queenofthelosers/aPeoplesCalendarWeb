@@ -86,14 +86,14 @@ export class HomepageEventComponent extends React.Component {
           </div>
           <div className='homepageEventFull' ref={eventDisplay => this.eventDisplayRef = eventDisplay}>
             <p className='homepageEventDate'>{this.props.categoryEvent.date}</p>
-            <img
+            {width !== 1 && <img
               className='homepageEventImg'
               src={this.props.categoryEvent.imgSrc}
               alt={this.props.categoryEvent.title}
               ref={img => this.imgRef = img}
               onLoad={() => this.getImgDim(this.imgRef.naturalHeight, this.imgRef.naturalWidth)}
               style={{width: resizeWidth, height: resizeHeight}}
-            />
+            />}
             {paragraphList.map(paragraph => <p className='homepageEventDescription'>{paragraph}</p>)}
             <div className='homepageSourcesWrapper'>
               <a className='links source' href={this.props.categoryEvent.infoSrc} target='_blank' rel="noopener noreferrer">Source</a>

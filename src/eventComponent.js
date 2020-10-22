@@ -101,14 +101,14 @@ export class EventComponent extends React.Component {
           {!this.state.collapsed &&
             <div className='eventFull' ref={eventFull => this.eventFull = eventFull}>
               <p className='eventDate'>{this.props.categoryEvent.date}</p>
-              <img
+              {width !== 1 && <img
                 className='eventImg'
                 src={this.props.categoryEvent.imgSrc}
                 alt={this.props.categoryEvent.title}
                 style={{width: resizeWidth, height: resizeHeight}}
                 ref={img => this.imgRef = img}
                 onLoad={() => this.getImgDim(this.imgRef.naturalHeight, this.imgRef.naturalWidth)}
-              />
+              />}
               {this.props.paragraphs.map(paragraph => <p className='eventDescription'>{paragraph}</p>)}
                 <div className='sourcesWrapper'>
                 <a className='links source' href={this.props.categoryEvent.infoSrc} target='_blank' rel="noopener noreferrer">Source</a>
