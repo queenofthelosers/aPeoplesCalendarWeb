@@ -3350,7 +3350,7 @@ export const eventLibrary = {
         date: 'February 17th, 1942',
         title: 'Huey Newton (1942 - 1989)',
         imgSrc: require('./assets/eventPhotos/Individuals/hueyNewton.jpg'),
-        description: `Huey Percy Newton was an African-American political activist and Marxist-Leninist revolutionary who, along with fellow Merritt College student Bobby Seale, co-founded the Black Panther Party (1966-1982). Together with Seale, Newton created a ten-point program which laid out guidelines for how the African-American community could achieve liberation.\n\nIn the 1960s, under Newton's leadership, the Black Panther Party founded over 60 community support programs (renamed survival programs in 1971) including food banks, medical clinics, HIV support groups, sickle cell anemia tests, prison busing for families of inmates, legal advice seminars, clothing banks, housing co-ops, and their own ambulance service.\n\nThe most famous of these programs was the Free Breakfast for Children program which fed thousands of impoverished children daily during the early 1970s. Newton also co-founded the Black Panther newspaper service which became one of America's most widely distributed African-American newspapers. In 1967, he was involved in a shootout which led to the death of the police officer John Frey. Although arrested for the murder of Frey, the charges were eventually dismissed.\n\nDespite graduating from high school not knowing how to read, he taught himself literacy by reading Plato's Republic and earned a Ph.D. in social philosophy from the University of California at Santa Cruz's History of Consciousness program in 1980. In 1989, he was murdered in Oakland, California by Tyrone Robinson, a member of the Black Guerrilla Family.`,
+        description: `Huey Percy Newton was an African-American political activist and Marxist-Leninist revolutionary who, along with fellow Merritt College student Bobby Seale, co-founded the Black Panther Party (1966 - 1982). Together with Seale, Newton created a ten-point program which laid out guidelines for how the African-American community could achieve liberation.\n\nIn the 1960s, under Newton's leadership, the Black Panther Party founded over 60 community support programs (renamed survival programs in 1971) including food banks, medical clinics, HIV support groups, sickle cell anemia tests, prison busing for families of inmates, legal advice seminars, clothing banks, housing co-ops, and their own ambulance service.\n\nThe most famous of these programs was the Free Breakfast for Children program which fed thousands of impoverished children daily during the early 1970s. Newton also co-founded the Black Panther newspaper service which became one of America's most widely distributed African-American newspapers. In 1967, he was involved in a shootout which led to the death of the police officer John Frey. Although arrested for the murder of Frey, the charges were eventually dismissed.\n\nDespite graduating from high school not knowing how to read, he taught himself literacy by reading Plato's Republic and earned a Ph.D. in social philosophy from the University of California at Santa Cruz's History of Consciousness program in 1980. In 1989, he was murdered in Oakland, California by Tyrone Robinson, a member of the Black Guerrilla Family.`,
         link: 'http://digital.wustl.edu/e/eii/eiiweb/new5427.0458.119hueypnewton.html',
         infoSrc: 'https://en.wikipedia.org/wiki/Huey_P._Newton'
       },
@@ -12121,6 +12121,15 @@ export const eventLibrary = {
         link: 'https://books.google.com/books?id=NOcDAAAAMBAJ&pg=PA16#v=onepage&q&f=false',
         infoSrc: 'https://en.wikipedia.org/wiki/Jack_Ryan_(FBI_agent)'
       },
+      {
+        category: 'Birthdays',
+        date: 'June 19th, 1902',
+        title: 'Harriette Moore (1902 - 1951)',
+        imgSrc: require('./assets/eventPhotos/Individuals/harryHarrietteMoore.jpg'),
+        description: `Harriette Moore, born on this day in 1902, was an elementary school teacher and civil rights activist who, along with her husband, was among the first people assassinated in the civil rights movement. Her husband, Harry Moore, was also a civil rights activist, and together they founded the Florida state chapter of the NAACP. In 1946, they were both fired by the Brevard County public school system and blacklisted due to their political activities.\n\nOn their 25th wedding anniversary (December 25th, 1951), their home in Mims, Florida was bombed. The local hospital would not treat black people, and Harry died on the way to the nearest one that would, 30 miles away in Sanford, Florida. Harriette died from her wounds nine days later, on January 3rd, 1952, at the same hospital. Their deaths were two of the earliest assassinations in the civil rights movement.\n\nAlthough the Federal Bureau of Investigation investigated their murders, no one was ever prosecuted. A state investigation and forensic work in 2005 identified four Ku Klux Klan members who likely committed the bombing, however they had all been dead for many years.`,
+        link: 'https://www.naacp.org/naacp-history-harry-t-and-harriette-moore/',
+        infoSrc: 'https://en.wikipedia.org/wiki/Harriette_Moore'
+      },
     ],
     'Assassinations': [
       {
@@ -20556,13 +20565,13 @@ export const eventLibrary = {
     ],
     'Other': [
       {
-        category: '',
-        date: '',
-        title: '',
-        imgSrc: require('./assets/eventPhotos/empty.jpg'),
-        description: ``,
-        link: '',
-        infoSrc: ''
+        category: 'Other',
+        date: 'October 8th, 2013',
+        title: 'Socialist Rifle Association Founded (2013)',
+        imgSrc: require('./assets/eventPhotos/Organizations/SRA.png'),
+        description: `*Although Wikipedia lists the founding day as October 10th, the Kansas state records cited show the organization was legally founded on October 8th\n\nThe Socialist Rifle Association (SRA), founded on this day in 2013, is an American socialist firearm organization that is dedicated to "providing working class people the information they need to be effectively armed for self and community defense".\n\nThe SRA describes the mission of their organization as "to provide an alternate to the mainstream, toxic, right-wing, and non-inclusive gun culture that has dominated the firearms community for decades. We seek to provide a safe, inclusive, and left-leaning platform for talking about gun rights and self defense, free from racist and reactionary prejudices, while providing a platform for the working class to obtain the skills necessary for all aspects of community defense".`,
+        link: 'https://socialistra.org/',
+        infoSrc: 'https://en.wikipedia.org/wiki/Socialist_Rifle_Association'
       },
     ],
   },
@@ -20692,13 +20701,13 @@ export const eventLibrary = {
     ],
     'Other': [
       {
-        category: 'Other',
-        date: 'October 10th, 2013',
-        title: 'Socialist Rifle Association Founded (2013)',
-        imgSrc: require('./assets/eventPhotos/Organizations/SRA.png'),
-        description: `The Socialist Rifle Association (SRA), founded on this day in 2013, is an American socialist firearm organization that is dedicated to "providing working class people the information they need to be effectively armed for self and community defense".\n\nThe SRA describes the mission of their organization as "to provide an alternate to the mainstream, toxic, right-wing, and non-inclusive gun culture that has dominated the firearms community for decades. We seek to provide a safe, inclusive, and left-leaning platform for talking about gun rights and self defense, free from racist and reactionary prejudices, while providing a platform for the working class to obtain the skills necessary for all aspects of community defense".`,
-        link: 'https://socialistra.org/',
-        infoSrc: 'https://en.wikipedia.org/wiki/Socialist_Rifle_Association'
+        category: '',
+        date: '',
+        title: '',
+        imgSrc: require('./assets/eventPhotos/empty.jpg'),
+        description: ``,
+        link: '',
+        infoSrc: ''
       },
     ],
   },
@@ -21140,7 +21149,7 @@ export const eventLibrary = {
         date: 'October 16th, 1994',
         title: 'Mass Protest Against Prop 187 (1994)',
         imgSrc: require('./assets/eventPhotos/Events/prop187Protest.jpg'),
-        description: `On this day in 1994, an estimated 70,000 demonstrators marched in opposition to California's Prop 187, a ballot initiative that prevented undocumented immigrants from accessing public services. Both parents and children were barred from accessing school, public healthcare, and public universities. The demonstration against Prop 187, known as the "Save Our State" initiative, is one of the largest mass protests in Los Angeles' history.\n\nAlthough the ballot initiative passed at first, public and legal pressure from opponents of Prop 187 led to a federal court order preventing enforcement of the measure. The law was finally killed in 1997, when it was declared unconstitutional in 1997.\n\nThe political controversy surrounding the law led to widespread voter registration from the latino population, and is considered a major factor in California's subsequent shift away from the Republican Party.`,
+        description: `On this day in 1994, an estimated 70,000 demonstrators marched across the city in opposition to Prop 187, a ballot initiative that prevented any undocumented immigrant (both children and parents) from accessing public school, public healthcare, and public universities. The demonstration against Prop 187, known as the "Save Our State" initiative, is one of the largest mass protests in Los Angeles' history.\n\nAlthough the ballot initiative passed at first, public and legal pressure from opponents of Prop 187 led to a federal court order preventing enforcement of the measure. The law was finally killed in 1997, when it was declared unconstitutional in 1997. The political controversy surrounding the law led to widespread voter registration from the latino population, and is considered a major factor in California's subsequent shift away from the Republican Party.`,
         link: 'https://laist.com/2019/11/06/proposition_187_what_you_need_to_know.php',
         infoSrc: 'https://www.latimes.com/archives/la-xpm-1994-10-17-mn-51339-story.html'
       },
@@ -21184,7 +21193,7 @@ export const eventLibrary = {
         date: 'October 17th, 1985',
         title: 'Victoria Nurses Strike (1985)',
         imgSrc: require('./assets/eventPhotos/empty.jpg'),
-        description: `On this day in 1985, thousands of nurses in Victoria, Australia went on an indefinite, state-wide strike for the first time in the country's history.\n\nThe strike was preceded by a breakdown in negotiations between the nurses' union, which was demanding a pay increase, and Health Minister David White. On October 11th, nurses held a meeting where they agreed to go strike the following week indefinitelys.\n\nOn Oct. 17th, they picketed hospitals, handed out leaflets to people on the street, and collected money. Most of them had never been on strike before, but they stood their ground in the face of widespread media criticism and outrage from government officials.\n\nThe strike ended after five days in only a partial victory for the workers. The government agreed to co-operate on some demands regarding staffing, but lower level nurses would get no wage increases - they would have to wait for arbitration. The following year, thousands of nurses in Victoria would go on strike on October 31st, but this time for fifty days.`,
+        description: `On this day in 1985, thousands of nurses in Victoria, Australia went on an indefinite, state-wide strike for the first time in the country's history.\n\nThe strike was preceded by a breakdown in negotiations between the nurses' union, which was demanding a pay increase, and Health Minister David White. On October 11th, nurses held a meeting where they agreed to go strike the following week indefinitely.\n\nOn Oct. 17th, they picketed hospitals, handed out leaflets to people on the street, and collected money. Most of them had never been on strike before, but they stood their ground in the face of widespread media criticism and outrage from government officials.\n\nThe strike ended after five days in only a partial victory for the workers. The government agreed to co-operate on some demands regarding staffing, but lower level nurses would get no wage increases - they would have to wait for arbitration. The following year, thousands of nurses in Victoria would go on strike on October 31st, but this time for fifty days.`,
         link: 'https://libcom.org/history/1986-victoria-nurses-strike',
         infoSrc: 'https://libcom.org/history/articles/victoria-nurses-strike-1985'
       },
@@ -21193,7 +21202,7 @@ export const eventLibrary = {
         date: 'October 17th, 1950',
         title: 'Empire Zinc Strike (1950)',
         imgSrc: require('./assets/eventPhotos/Events/empireZincStrike.jpg'),
-        description: `The Empire Zinc Strike, also known as the Salt of the Earth strike, was a 15-month-long miners' strike that began on this day in 1950 against the Empire Zinc Company for its discriminatory pay and housing practices. Later, workers also demanded indoor plumbing and hot water for Mexican-American homes as well.\n\nEmpire Zinc fought back by sending police to harass picketers, posting eviction notices on company houses, and cutting off credit to strikers at the company grocery store. Labor activist Clinton Jencks, who was the union's business agent, was arrested on strike and kept in solitary confinement for 16 months. After the company got a court injunction forbidding picketers to return to the picket line, the workers' wives and children took their place.\n\nAfter 15 months of a protest, the company came to an agreement with the striking workers on January 21st, 1952, giving the strikers nearly everything they asked for. The strike drew national attention, and, after it was settled in 1952, a movie entitled "Salt of the Earth" (1954) was released that offered a fictionalized version of events.`,
+        description: `The Empire Zinc Strike, also known as the Salt of the Earth strike, was a 15-month-long miners' strike that began on this day in 1950 against the Empire Zinc Company for its discriminatory pay and housing practices. It took place in Silver City, New Mexico. Later, workers also demanded indoor plumbing and hot water for Mexican-American homes as well.\n\nEmpire Zinc fought back by sending police to harass picketers, posting eviction notices on company houses, and cutting off credit to strikers at the company grocery store. Labor activist Clinton Jencks, who was the union's business agent, was arrested on strike and kept in solitary confinement for 16 months. After the company got a court injunction forbidding picketers to return to the picket line, the workers' wives and children took their place.\n\nAfter 15 months of a protest, the company came to an agreement with the striking workers on January 21st, 1952, giving the strikers nearly everything they asked for. The strike drew national attention, and, after it was settled in 1952, a movie entitled "Salt of the Earth" (1954) was released that offered a fictionalized version of events.`,
         link: 'https://www.pri.org/stories/2019-06-13/and-they-will-inherit-it',
         infoSrc: 'https://en.wikipedia.org/wiki/Empire_Zinc_strike'
       },
@@ -21360,7 +21369,7 @@ export const eventLibrary = {
         date: 'October 19th, 1983',
         title: 'Maurice Bishop (1944 - 1983)',
         imgSrc: require('./assets/eventPhotos/Individuals/mauriceBishop.jpg'),
-        description: `Maurice Rupert Bishop was a Grenadian revolutionary and the leader of New Jewel Movement - popular efforts in the areas of socio-economic development, education, and black liberation. Bishop headed the People's Revolutionary Government of Grenada from 1979 to 1983, when he was dismissed from his post and shot in a coup, leading to civil unrest and a U.S. invasion of the country.\n\nAlthough Bishop grew up in Grenada, he left to study in London as a young adult. While there, Bishop acquired a law degree and studied the works of Lenin, Mao Zedong, and Julius Nyerere.\n\nIn 1970, he returned to Grenada and was active politically, representing striking nurses in court and leading the "New Jewel Movement", which ultimately put him in power. In 1979, the New Jewel Movement successfully led a coup against Eric Gairy and made Bishop the Prime Minister of Grenada.\n\nAmong Bishop's core principles were workers' rights, women's rights, and the struggle against racism and apartheid. Women were given equal pay and paid maternity leave, and sex discrimination was made illegal. organizations for education, health care, youth affairs, and literacy were also established. Due to his efforts, illiteracy and unemployment greatly declined.\n\nIn 1983, disputes within the party culminated in Bishop, along with seven members of his cabinet, being captured and executed. After his assassination, the Organization of Eastern Caribbean States (OECS) and Grenada's governor-general Paul Scoon appealed to the United States for help. Within the month, Ronald Reagan launched an invasion of Grenada.`,
+        description: `Maurice Rupert Bishop was a Grenadian revolutionary and the leader of New Jewel Movement assassinated on this day in 1983. Bishop headed the People's Revolutionary Government of Grenada from 1979 until 1983, when he was dismissed from his post and shot in a coup, leading to civil unrest and a U.S. invasion of the country.\n\nAlthough Bishop grew up in Grenada, he left to study in London as a young adult. While there, Bishop acquired a law degree and studied the works of Lenin, Mao Zedong, and Julius Nyerere.\n\nIn 1970, he returned to Grenada and was active politically, representing striking nurses in court and leading the "New Jewel Movement", which ultimately led him in power when, in 1979, the movement successfully led a coup against Eric Gairy and made Bishop the Prime Minister of Grenada.\n\nAmong Bishop's core principles were workers' rights, women's rights, and the struggle against racism and apartheid. Women were given equal pay and paid maternity leave, and sex discrimination was made illegal. organizations for education, health care, youth affairs, and literacy were also established. Due to his efforts, illiteracy and unemployment greatly declined.\n\nIn 1983, power struggles within the party culminated in Bishop and seven members of his cabinet being captured and executed by forces led by Bernard Coard. After his assassination, the Organization of Eastern Caribbean States (OECS) and Grenada's governor-general Paul Scoon appealed to the United States for help. Within the month, Ronald Reagan launched an invasion of Grenada.`,
         link: 'https://www.zinnedproject.org/news/tdih/grenada-revolution/',
         infoSrc: 'https://en.wikipedia.org/wiki/Maurice_Bishop'
       },
@@ -21463,7 +21472,7 @@ export const eventLibrary = {
         date: 'October 21st, 1837',
         title: 'Osceola Captured (1837)',
         imgSrc: require('./assets/eventPhotos/Individuals/osceola.jpg'),
-        description: `Osceola (in Creek, "Asi-yahola"; 1804 - 1838) was an influential leader of the Seminole people in Florida, and a leader of violent Seminole resistance against colonization. Although he was raised in the Creek tradition, Osceola became part of what was known as the Seminole people after moving to Florida as a child.\n\nOsceola's successful attack on military forces on December 28th, 1835 served as a catalyst for beginning the Second Seminole War against the United States. Although they were successful that day, it was on this day in 1837 that Osceola was captured, by General Joseph Hernández.\n\nGeneral Hernández agreed to meet with Osceola under a white flag of truce, but promptly arrested Osceola and 81 of his followers. This action has been described as "one of the most disgraceful acts in American military history." Osceola died from illness a few months after his capture, on January 30th, 1838.`,
+        description: `On this day in 1837, in what has been described as "one of the most disgraceful acts in American military history", Seminole leader Osceola was captured by U.S. forces after he was tricked into meeting for "peace talks".\n\nOsceola (in Creek, "Asi-yahola"; 1804 - 1838) was an influential leader of the Seminole people in Florida, in particular the Seminole resistance against colonization. Although he was raised in the Creek tradition, Osceola became part of what was known as the Seminole people after moving to Florida as a child.\n\nOsceola's successful attack on military forces on December 28th, 1835 served as a catalyst for beginning the Second Seminole War against the United States. Although the Seminole was victorious in some of the battles of the Second Seminole War, it was on this day in 1837 that General Joseph Hernández captured Osceola, who had come to meet Hernández under the false promise of peace talks.\n\nGeneral Hernández had agreed to meet with Osceola under a white flag of truce, but promptly arrested Osceola and 81 of his followers. Osceola died from illness a few months after his capture, on January 30th, 1838.`,
         link: 'https://www.historyisaweapon.com/defcon1/zinnasl7.html',
         infoSrc: 'https://en.wikipedia.org/wiki/Osceola'
       },
@@ -21485,7 +21494,7 @@ export const eventLibrary = {
         date: 'October 21st, 1928',
         title: 'Giuseppe Pinelli (1928 - 1969)',
         imgSrc: require('./assets/eventPhotos/Individuals/giuseppePinelli.jpg'),
-        description: `Giuseppe "Pino" Pinelli (1928 - 1969) was an Italian railroad worker and anarchist born on this day in 1928. He died in 1969 by falling out of a window while in Italian police custody.\n\nPinelli was a member of the Milan-based anarchist association named "Ponte della Ghisolfa", and was also the secretary of the Italian branch of the Anarchist Black Cross. He organized young anarchists in the "Gioventu Libertaria" (Libertarian Youth) in 1962 and helped found the "Sacco and Vanzetti anarchist association" in 1965.\n\nOn December 12th, 1969, Italian fascists from the "Ordine Nuovo" orchestrated a bombing campaign in Milan; one bomb in Piazza Fontana killed 17 people and injured 88. The bombing was blamed on Italian anarchists, and Pinelli was detained along with many other leftists, including Pietro Valpreda, who was falsely convicted and served eighteen years in prison.\n\nJust before midnight on December 15th, 1969, Pinelli fell to his death from a fourth floor window of the Milan police station. Three police officers interrogating Pinelli, including Commissioner Luigi Calabresi, were put under investigation in 1971 for his death, but legal proceedings concluded it was due to accidental causes. Calabresi was later gunned down at his home in 1972, for which Adriano Sofri was convicted in 1997.`,
+        description: `Giuseppe "Pino" Pinelli (1928 - 1969) was a railroad worker and anarchist, likely murdered by the Italian police, and born on this day in 1928. He died in 1969 by falling out of a window while in Italian police custody.\n\nPinelli was a member of the Milan-based anarchist association named "Ponte della Ghisolfa", and was also the secretary of the Italian branch of the Anarchist Black Cross. He organized young anarchists in the "Gioventu Libertaria" (Libertarian Youth) in 1962 and helped found the "Sacco and Vanzetti anarchist association" in 1965.\n\nOn December 12th, 1969, Italian fascists from the "Ordine Nuovo" orchestrated a bombing campaign in Milan; one bomb in Piazza Fontana killed 17 people and injured 88. The bombing was blamed on Italian anarchists, and Pinelli was detained along with many other leftists, including Pietro Valpreda, who was falsely convicted and served eighteen years in prison.\n\nJust before midnight on December 15th, 1969, Pinelli fell to his death from a fourth floor window of the Milan police station. Three police officers interrogating Pinelli, including Commissioner Luigi Calabresi, were put under investigation in 1971 for his death, but legal proceedings concluded it was due to accidental causes. Calabresi was later gunned down at his home in 1972, for which Adriano Sofri was convicted in 1997.`,
         link: 'https://libcom.org/history/pinelli-giuseppe-pino-1928-1969',
         infoSrc: 'https://en.wikipedia.org/wiki/Giuseppe_Pinelli'
       },
@@ -21520,7 +21529,7 @@ export const eventLibrary = {
         date: 'October 22nd, 1935',
         title: 'Long March Ends (1935)',
         imgSrc: require('./assets/eventPhotos/Events/longMarch.jpg'),
-        description: `The Long March was a famous military retreat undertaken by the Red Army of the Communist Party of China that lasted 370 days, ending on this day in 1935 in Shaanxi Province. The Long March was an incredibly arduous journey - estimates are that the journey took around 6000 miles, and only 8,000 of the original 100,000 soldiers who began the march arrived in Shaanxi.\n\nThe Long March was also notable because it resulted in the leadership of Mao Zedong of the CCP, and the event galvanized popular support the communist movement. From their base in Shannxi Province, the revolutionary army went on to defeat nationalist forces, after the conclusion of World War II.`,
+        description: `The Long March was a famous military retreat undertaken by the Red Army of the Communist Party of China (CCP) that lasted 370 days, ending on this day in 1935 in Shaanxi Province. The Long March was a very arduous journey - estimates are that the Long March took around 6000 miles, and only 8,000 of the original 100,000 soldiers who began the march actually rrived in Shaanxi.\n\nThe Long March was also notable for causing Mao Zedong to take on leadership of the CCP, and as well as galvanizing popular support for the communist movement. From their base in Shannxi Province, the revolutionary army went on to defeat nationalist forces after the conclusion of World War II.`,
         link: 'https://www.britannica.com/event/Long-March',
         infoSrc: 'https://en.wikipedia.org/wiki/Long_March'
       },
@@ -21553,7 +21562,7 @@ export const eventLibrary = {
         date: 'October 22nd, 1936',
         title: 'Bobby Seale (1936 - )',
         imgSrc: require('./assets/eventPhotos/Individuals/bobbySeale.jpg'),
-        description: `Robert George Seale is an American political activist. He and fellow activist Huey P. Newton co-founded the Black Panther Party.\n\nBobby Seale and Huey P. Newton were heavily inspired by the teachings of activist Malcolm X, who was assassinated in 1965. The two joined together in October 1966 to create the Black Panther Party for Self-Defense, which adopted the late activist's slogan "freedom by any means necessary" as their own.\n\nSeale and Newton founded the group to organize the black community and express their desires and needs in order to resist the racism and classism perpetuated by the system. Seale described the Panthers as "an organization that represents black people and many white radicals relate to this and understand that the Black Panther Party is a righteous revolutionary front against this racist decadent, capitalistic system."`,
+        description: `Robert "Bobby" Seale, born on this day in 1936, is an American political activist notable for co-founding the Black Panther Party with Huey Newton in 1966.\n\nBobby Seale and Huey P. Newton were heavily inspired by the teachings of activist Malcolm X, who was assassinated in 1965. The two joined together in October 1966 to create the Black Panther Party for Self-Defense, which adopted the late activist's slogan "freedom by any means necessary" as their own.\n\nSeale and Newton founded the group to organize the black community and express their desires and needs in order to resist the racism and classism perpetuated by the system. Seale described the Panthers as "an organization that represents black people and many white radicals relate to this and understand that the Black Panther Party is a righteous revolutionary front against this racist decadent, capitalistic system."`,
         link: 'https://www.britannica.com/biography/Bobby-Seale',
         infoSrc: 'https://en.wikipedia.org/wiki/Bobby_Seale'
       },
@@ -23529,13 +23538,13 @@ export const eventLibrary = {
     ],
     'Birthdays': [
       {
-        category: '',
-        date: '',
-        title: '',
-        imgSrc: require('./assets/eventPhotos/empty.jpg'),
-        description: ``,
-        link: '',
-        infoSrc: ''
+        category: 'Birthdays',
+        date: 'November 18th, 1905',
+        title: 'Harry Moore (1905 - 1951)',
+        imgSrc: require('./assets/eventPhotos/Individuals/harryHarrietteMoore.jpg'),
+        description: `Harry Tyson Moore, born on this day in 1905, was a civil rights activist and NAACP state president who was among the first people assassinated in the civil rights movement. His wife, Harriette Moore, was also a civil rights activist, as well as an elementary school teacher.\n\nThrough his registration activities with the NAACP, he greatly increased its number of members. Harry Moore also advocated for better housing and education, as well as investigating lynchings, filing lawsuits against voter registration barriers, and fighting for equal pay for black teachers in public schools. In 1946, Harriette Moore and her husband were both fired by the Brevard County public school system and blacklisted due to their political activities.\n\nOn their 25th wedding anniversary (December 25th, 1951), their home in Mims, Florida was bombed. The local hospital would not treat black people, and Harry died on the way to the nearest one that would, 30 miles away in Sanford, Florida. Harriette died from her wounds nine days later, on January 3rd, 1952, at the same hospital. Their deaths were two of the earliest assassinations in the civil rights movement.\n\nAlthough the Federal Bureau of Investigation investigated their murders, no one was ever prosecuted. A state investigation and forensic work in 2005 identified four Ku Klux Klan members who likely committed the bombing, however they had all been dead for many years.`,
+        link: 'https://www.naacp.org/naacp-history-harry-t-and-harriette-moore/',
+        infoSrc: 'https://en.wikipedia.org/wiki/Harry_T._Moore'
       },
     ],
     'Assassinations': [
@@ -25359,7 +25368,7 @@ export const eventLibrary = {
         date: 'December 13th, 1895',
         title: 'Lucía Sánchez Saornil (1895 - 1970)',
         imgSrc: require('./assets/eventPhotos/Individuals/luciaSaornil.jpg'),
-        description: `Lucía Sánchez Saornil (born on this day in 1895), was a Spanish poet, anarchist, and feminist. She is best known as one of the founders of Mujeres Libres, an anarchist women's organization in Spain from 1936-1939, and served in the anarcho-syndicalist labor union Confederación Nacional del Trabajo (CNT) and Solidaridad Internacional Antifascista (SIA).\n\nIn 1931, Saornil, who had been working as a telephone operator since 1916, participated in a strike by the CNT against Telefónica. The event was a turning point in her life, and from this point forward, Lucía dedicated herself to the struggle for anarchist social revolution.\n\nWith the defeat of the Second Republic, Lucía and her partner América were forced to flee to Paris, where Lucía continued her involvement in the SIA. Lucía was buried in Valencia, Spain, and her tombstone epitaph reads, "But is it true that hope has died?" ("¿Pero es verdad que la esperanza ha muerto?").`,
+        description: `Lucía Sánchez Saornil (born on this day in 1895), was a Spanish poet, anarchist, and feminist. She is best known as one of the founders of Mujeres Libres, an anarchist women's organization in Spain from 1936 - 1939, and served in the anarcho-syndicalist labor union Confederación Nacional del Trabajo (CNT) and Solidaridad Internacional Antifascista (SIA).\n\nIn 1931, Saornil, who had been working as a telephone operator since 1916, participated in a strike by the CNT against Telefónica. The event was a turning point in her life, and from this point forward, Lucía dedicated herself to the struggle for anarchist social revolution.\n\nWith the defeat of the Second Republic, Lucía and her partner América were forced to flee to Paris, where Lucía continued her involvement in the SIA. Lucía was buried in Valencia, Spain, and her tombstone epitaph reads, "But is it true that hope has died?" ("¿Pero es verdad que la esperanza ha muerto?").`,
         link: 'https://theanarchistlibrary.org/library/lucia-sanchez-saornil-the-question-of-feminism',
         infoSrc: 'https://en.wikipedia.org/wiki/Luc%C3%ADa_S%C3%A1nchez_Saornil'
       },
@@ -26148,13 +26157,13 @@ export const eventLibrary = {
     ],
     'Birthdays': [
       {
-        category: '',
-        date: '',
-        title: '',
-        imgSrc: require('./assets/eventPhotos/empty.jpg'),
-        description: ``,
-        link: '',
-        infoSrc: ''
+        category: 'Birthdays',
+        date: 'December 24th, 1920',
+        title: 'Stormé DeLarverie (1920 - 2014)',
+        imgSrc: require('./assets/eventPhotos/Individuals/stormeDeLarverie.jpg'),
+        description: `Stormé DeLarverie, born on this day in 1920, was a bi-racial queer icon whose scuffle with police was the spark that ignited the Stonewall Riots in 1969. She is sometimes referred to as the "Rosa Parks of the gay community" or "Rosa Parks of Stonewall".\n\nDeLarverie was born in New Orleans to a black mother and a white father, and spent the 50s and 60s as a "male impersonator" in the Jewel Box Revue, the period's only racially integrated drag troupe. Her gender-bending style of zoot suits and black ties was groundbreaking for the era.\n\nOn June 28th, 1969, at the Stonewall Inn in Greenwich Village, New York City, a scuffle broke out when a woman, believed to be Stormé, was roughly escorted from the door of the bar to the waiting police wagon. The woman fought with at least four of the police, swearing and shouting, for about ten minutes. When she shouted to the bystanders "Why don't you guys do something?", the crowd began rioting and clashed with police.`,
+        link: 'https://www.gq.com/story/storme-delarverie-suiting',
+        infoSrc: 'https://en.wikipedia.org/wiki/Storm%C3%A9_DeLarverie'
       },
     ],
     'Assassinations': [
@@ -26170,13 +26179,13 @@ export const eventLibrary = {
     ],
     'Other': [
       {
-        category: '',
-        date: '',
-        title: '',
-        imgSrc: require('./assets/eventPhotos/empty.jpg'),
-        description: ``,
-        link: '',
-        infoSrc: ''
+        category: 'Other',
+        date: 'December 24th, 1913',
+        title: 'Italian Hall Disaster (1913)',
+        imgSrc: require('./assets/eventPhotos/Events/italianHallDisaster.jpg'),
+        description: `The Italian Hall Disaster, also known as the 1913 Massacre, took place on this day in 1913 when someone falsely shouted "Fire!" at a crowded workers' party, resulting in the deaths of seventy-three people in Calumet, Michigan. The Christmas party was mostly attended by workers striking against the Calumet and Hecla Mining Company. Of the seventy-three people who were killed by the stampede of panicked party-goers, fifty-nine were children.\n\nThese workers had been on strike since mid-July, after management refused workers' demands for formal union recognition and a "conference with the employers to adjust wages, hours, and working conditions in the copper district of Michigan".\n\nWhen the false cry of "Fire!" was yelled, there were over four hundred people in the crowded party, and the stampede occurred when people rushed the staircase to the 1st floor. Although the culprit was never found, eight witnesses testified that the person who shouted it was wearing a "Citizen's Alliance" pin, a local anti-union group, and this claim is believed by some labor historians (Steve Lehto, in particular).\n\nThe event was memorialized by Woody Guthrie in the song "1913 Massacre".`,
+        link: 'https://libcom.org/history/christmas-eve-calumet-massacre-1913',
+        infoSrc: 'https://en.wikipedia.org/wiki/Italian_Hall_disaster'
       },
     ],
   },
@@ -26194,13 +26203,31 @@ export const eventLibrary = {
     ],
     'Rebellion': [
       {
-        category: '',
-        date: '',
-        title: '',
+        category: 'Rebellion',
+        date: 'December 25th, 1831',
+        title: 'Baptist War Slave Rebellion (1831)',
+        imgSrc: require('./assets/eventPhotos/Events/baptistWar.jpg'),
+        description: `The Baptist War, also known as the Christmas Rebellion, was an eleven-day rebellion of sixty thousand of Jamaican slaves that began on this day in 1831. It is one of the largest slave rebellions in the British Caribbean and was a major factor in the British government outlawing slavery in 1833. The name "Baptist War" came about because many of the rebels were Baptist in faith.\n\nThe rebellion was masterminded by the slave Samuel "Daddy" Sharpe, who had been given limited freedom to move around the island. Using this freedom of movement, Sharpe spread word of his plan and communicated with other slave leaders. After one prayer meeting, Sharpe cited examples of earlier slave revolts to encourage his followers, and then had them swear on a Bible to follow the plan he outlined.\n\nThe rebellion began on Christmas day when leaders of the uprising went on strike, demanding more free time and a working wage. The strike escalated into open revolt two days later, when the planters refused their demands. Sugar cane fields were set on fire and a rebel military group known as the Black Regiment defeated slaver forces on December 28th.\n\nThe rebellion was put down in early January, however sporadic resistance continued for another two months as the rebels resorted to guerilla tactics. More than three hundred enslaved men and women were executed for their role in the uprising, including Samuel Sharpe, who was hanged.`,
+        link: 'https://en.wikipedia.org/wiki/Baptist_War',
+        infoSrc: 'https://www.blackpast.org/global-african-history/baptist-war-1831-1832/'
+      },
+      {
+        category: 'Rebellion',
+        date: 'December 25th, 1521',
+        title: 'La Española Slave Revolt (1521)',
         imgSrc: require('./assets/eventPhotos/empty.jpg'),
-        description: ``,
-        link: '',
-        infoSrc: ''
+        description: `On this day in 1521, one of the earliest known slave revolts in the Americas began when slaves in the Spanish colony of La Española launched a violent rebellion against their colonizers. The rebellion was quickly crushed with military force, and the colonial authorities of la Española (modern-day Dominican Republic and Haiti), led by governor Diego Colón, executed many of the rebels.\n\nAccording to historian Anthony Stevens-Acevedo, the uprising was serious enough to prompt the governor to issue, on January 6th of 1522, the Day of the Three Kings (Epiphany), a set of very repressive laws specifically targeted at "Blacks and slaves."`,
+        link: 'https://www.ccny.cuny.edu/sites/default/files/dsi/upload/Introduction_to_Dominican_Blackness_Web.pdf',
+        infoSrc: 'https://academicworks.cuny.edu/dsi_pubs/23/'
+      },
+      {
+        category: 'Rebellion',
+        date: 'December 25th, 1837',
+        title: 'Seminole Nation Defeats U.S. Army (1837)',
+        imgSrc: require('./assets/eventPhotos/Events/seminoleChristmas.jpg'),
+        description: `On this day in 1837, Africans and Native Americans who formed Florida's Seminole Nation defeated a vastly superior U.S. invading army led by Zachary Taylor.\n\nSince the founding of the U.S., escaped African slaves had settled in modern-day Florida. At the same time, Seminoles suffering under Creek rule in Alabama and Georgia were fleeing south to seek independence. There, the two groups formed an alliance, sharing cultivation techniques and putting up armed resistance against colonization and slaver forces.\n\nThe U.S. repeatedly invaded territory controlled by this alliance, and Christmas Day in 1837, 380 to 480 Seminole fighters gathered on the northeast corner of Florida's Lake Okeechobee ready to halt the armies of Colonel Zachary Taylor, a Louisiana slaveholder future U.S. president. Seminole riflemen waited for the soldiers in trees, firing on them from above. The battle was a decisive defeat for U.S. forces, however Taylor falsely claimed a victory when returning to Fort Gardner.`,
+        link: 'https://libcom.org/history/christmas-day-freedom-fighters-hidden-history-seminole-anticolonial-struggle-william-kat',
+        infoSrc: 'https://www.zinnedproject.org/news/tdih/seminole-anti-colonial-struggle'
       },
     ],
     'Labor': [
@@ -26216,13 +26243,13 @@ export const eventLibrary = {
     ],
     'Birthdays': [
       {
-        category: '',
-        date: '',
-        title: '',
-        imgSrc: require('./assets/eventPhotos/empty.jpg'),
-        description: ``,
-        link: '',
-        infoSrc: ''
+        category: 'Birthdays',
+        date: 'December 25th, 1889',
+        title: 'Wilhelm Jelinek (1889 - 1952)',
+        imgSrc: require('./assets/eventPhotos/Individuals/wilhelmJelinek.jpg'),
+        description: `Wilhelm "Willi" Jelinek, born on this day in 1889, was an anarchist revolutionary from Germany who survived the violence of the Third Reich and was imprisoned by Soviet authorities, dying in an East German prison in 1952.\n\nBefore World War II, Jelinek was involved with the anarchist journal "Proletarischer Zeitgeist" (English: "The Worker's Spirit"), a weekly, anti-authoritarian periodical which attempted to develop links between anarchists and the council communists. The paper did not continue past 1933 and, by the end of the war, only six of the organizers involved with it survived; twenty-seven had been murdered by the Gestapo.\n\nAfter the war, Jelinek continued organizing with anarchists in East Germany, where he was critical of the Soviet state. In an unpublished pamphlet, written in 1947, Jelinek denounced the dictatorship of the proletariat "...which signifies the authority of the leaders. Where there is obedience, there are leaders who command". On November 10th, 1948, he was arrested by two Russian officers, and his son-in-law was arrested, disappearing without a trace.\n\nAlthough temporarily released, Jelinek continued to associate with anarchists and was once again arrested, this time sent to Bautzen, an East German prison. Under mysterious circumstances, he died there on March 24th, 1952.`,
+        link: 'https://translate.google.com/translate?hl=en&sl=de&u=https://de.wikipedia.org/wiki/Wilhelm_Jelinek_(Anarchist)&prev=search&pto=aue',
+        infoSrc: 'http://libcom.org/history/jelinek-wilhelm-willi-1889-1952'
       },
     ],
     'Assassinations': [
@@ -26238,13 +26265,22 @@ export const eventLibrary = {
     ],
     'Other': [
       {
-        category: '',
-        date: '',
-        title: '',
-        imgSrc: require('./assets/eventPhotos/empty.jpg'),
-        description: ``,
-        link: '',
-        infoSrc: ''
+        category: 'Other',
+        date: 'December 25th, 1922',
+        title: `International Workers' Association Congress (1922)`,
+        imgSrc: require('./assets/eventPhotos/Organizations/iwa.jpg'),
+        description: `On this day in 1922, the founding congress for the International Workers' Association, an international federation of anarcho-syndicalist labor unions, illegaly began in Berlin, Germany.\n\nDelegations representing roughly two million workers from all over the world attended, including the Argentine Workers Regional Organization (FORA), the Chilean Industrial Workers of the World (IWW), the Free Workers Union of Germany (FAUD), the Italian Syndicalist Union, and the General Confederation of Workers in Portugal. The congress lasted until January 2nd, and was punctuated by police raids and arrests.\n\nThe congress was decidedly anti-Soviet and anti-social democracy in character, with "delegates accusing Bolshevism of suppressing revolution in Russia and creating a new state-capitalist system" according to historian Vadim Damier. The delegates of this congress also voted in favor of forming the IWA, which still exists today.`,
+        link: 'https://libcom.org/history/international-workers-association',
+        infoSrc: 'http://libcom.org/files/Damier-AS-A4.pdf'
+      },
+      {
+        category: 'Other',
+        date: 'December 25th, 1951',
+        title: 'White Supremacists Bomb the Moores (1951)',
+        imgSrc: require('./assets/eventPhotos/Individuals/harryHarrietteMoore.jpg'),
+        description: `On this day in 1951, the home of Harry and Harriette Moore, civil rights activists and educators, was bombed by white supremacists, killing both of them.\n\nHarry Tyson Moore (1905 - 1951) was an African-American educator, leader of the civil rights movement, and president of the Florida chapter of the NAACP. Harriette Moore was an elementary school teacher and civil rights activist. In 1946, both her and her husband were fired by the Brevard County public school system and blacklisted due to their activism.\n\nOn December 25th, 1951, their twenty-fifth wedding anniversary, the Moore home in Mims, Florida was bombed. The local hospital would not treat black people, and Harry died on the way to the nearest one that would, 30 miles away in Sanford, Florida. Harriette died from her wounds nine days later, on January 3rd, 1952, at the same hospital. Their deaths were two of the earliest assassinations in the civil rights movement.\n\nAlthough the Federal Bureau of Investigation investigated their murders, no one was ever prosecuted. A state investigation and forensic work in 2005 identified four Ku Klux Klan members who likely committed the bombing, however they had all been dead for many years.`,
+        link: 'https://www.naacp.org/naacp-history-harry-t-and-harriette-moore/',
+        infoSrc: 'https://en.wikipedia.org/wiki/Harry_T._Moore'
       },
     ],
   },
@@ -26306,13 +26342,13 @@ export const eventLibrary = {
     ],
     'Other': [
       {
-        category: '',
-        date: '',
-        title: '',
-        imgSrc: require('./assets/eventPhotos/empty.jpg'),
-        description: ``,
-        link: '',
-        infoSrc: ''
+        category: 'Other',
+        date: 'December 26th, 1862',
+        title: '38 Executed in Dakota War (1862)',
+        imgSrc: require('./assets/eventPhotos/Events/dakotaWar.jpg'),
+        description: `On this day in 1862, the largest mass execution in United States history took place when 38 Dakota men were executed in Minnesota by the state as part of the Dakota War.\n\nThe Dakota War of 1862, also known as the Sioux Uprising, was an armed conflict between the United States and several bands of Dakota (also known as the eastern Sioux). The war began on August 17th, 1862 in southwest Minnesota after four Dakota were killed by white settlers, leading tribe members to initate a series of violent attacks on settlers throughout the Minnesota River Valley in an attempt to drive them out of the area.\n\nOver the next several months, continued battles of the Dakota against settlers and later, the United States Army, ended with the surrender of most of the Dakota bands. By late December 1862, US soldiers had taken captive more than a thousand Dakota, including women, children and elderly men in addition to warriors. A military tribunal tried the men, sentencing 303 to death for their crimes.\n\nPresident Lincoln commuted the sentence of 264 of them, and the remaining 38 were executed on December 26th in Mankato, Minnesota. The following year, the rest of the Dakota were expelled from Minnesota to Nebraska and South Dakota, and the United States Congress abolished their reservations.`,
+        link: 'https://libcom.org/library/bury-my-heart-wounded-knee-indian-history-american-west-dee-brown',
+        infoSrc: 'https://en.wikipedia.org/wiki/Dakota_War_of_1862'
       },
     ],
   },
