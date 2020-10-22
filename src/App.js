@@ -155,6 +155,7 @@ class App extends React.Component {
           <Route exact path='/'>
             <HomepageComponent
               windowWidth={this.state.windowWidth}
+              winDim={{width: this.state.windowWidth, height: this.state.windowHeight}}
             />
           </Route>
           <Route>

@@ -20,6 +20,9 @@ import {faArrowRight} from '@fortawesome/free-solid-svg-icons';
 }*/
 
 export function HomepageComponent(props) {
+  console.log('props.winDim');
+  console.log(props.winDim);
+
   //get event of the day
   var now = new Date();
   var month = now.getMonth() + 1;
@@ -80,7 +83,10 @@ export function HomepageComponent(props) {
           <div id='eventOTDTextWrapper'>
             <p id='eventOfTheDay'>Event of the Day</p>
           </div>
-          <HomepageEventComponent categoryEvent={eventOfTheDay}/>
+          <HomepageEventComponent
+            categoryEvent={eventOfTheDay}
+            winDim={props.winDim}
+          />
         </div>
         {/*the following JSX would render an "Event of the Day", whichever today event has longest description
         <div id='eventOfTheDayWrapper'>
