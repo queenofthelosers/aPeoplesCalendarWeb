@@ -10,8 +10,8 @@ export class HomepageEventComponent extends React.Component {
       this.state = {
         copied: false, //handles the icon change
         eventDisplayWidth: 1,
-        imgWidth: 1, //for resizing
-        imgHeight: 1,
+        imgWidth: 2, //for resizing
+        imgHeight: 2,
       };
       this.handleCopy = this.handleCopy.bind(this);
       this.getImgDim = this.getImgDim.bind(this);

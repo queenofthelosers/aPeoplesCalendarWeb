@@ -11,8 +11,8 @@ export class EventComponent extends React.Component {
     this.state = {
       collapsed: true, //if collapsed, just event title is displayed, details (description, date, img) are shown if collapsed false
       copied: false, //handles the icon change
-      imgWidth: 1, //for resizing
-      imgHeight: 1,
+      imgWidth: 2, //for resizing
+      imgHeight: 2,
     };
     this.handleExpandCollapse = this.handleExpandCollapse.bind(this);
     this.handleCopy = this.handleCopy.bind(this);
