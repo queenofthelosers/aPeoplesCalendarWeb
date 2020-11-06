@@ -22703,6 +22703,15 @@ export const eventLibrary = {
         link: 'https://mscivilrightsproject.org/neshoba/event-neshoba/the-murder-of-chaney-goodman-and-schwerner/',
         infoSrc: 'https://en.wikipedia.org/wiki/Michael_Schwerner'
       },
+      {
+        category: 'Birthdays',
+        date: 'November 6th, 1903',
+        title: 'Hilde Radusch (1903 - 1994)',
+        imgSrc: require('./assets/eventPhotos/Individuals/hildeRadusch.jpg'),
+        description: `Hilde Radusch, born on this day in 1903 was a German communist, anti-fascist activist, and feminist author. In 1924, Radusch became a member of the Communist Party, and from 1929 until 1932 Radusch served as a Communist Party city councilor in Berlin.\n\nRadusch was arrested by the Nazi government on April 6th, 1933, less than a month after returning from a political trip to the Soviet Union. After refusing to sign a contrived confession, she ended up in the Barnim Street womens' prison, along with around two hundred other "politicals", those identified by the Nazi government as political prisoners (distinct from "criminals").\n\nReleased in September 1933, she went on to run a restaurant with her partner Else "Eddy" Klopsch, which served as a refuge for people wanted by the Nazi regime. After the war, she became the head of the Schöneberg office dedicated to "Victims of Fascism", however she lost the job after being denounced as "lesbian".\n\nIn the 1970s, Radusch became known in the feminist movement, co-founding L74, a Berlin group of older lesbians, and editing the lesbian publication "Our Little Newspaper" ("Unserer Kleinen Zeitung").`,
+        link: 'https://www.spd-fraktion-tempelhof-schoeneberg.de/ehrung-einer-leidenschaftlichen-zeitgenoessin-hilde-radusch/',
+        infoSrc: 'https://en.wikipedia.org/wiki/Hilde_Radusch'
+      },
     ],
     'Assassinations': [
       {
