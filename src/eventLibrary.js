@@ -23224,7 +23224,7 @@ export const eventLibrary = {
         category: 'Rebellion',
         date: 'November 13th, 1909',
         title: 'Suffragette Assaults Churchill (1909)',
-        imgSrc: require('./assets/eventPhotos/Individuals/theresaGarnett.jpg'),
+        imgSrc: require('./assets/eventPhotos/Individuals/theresaGarnett.jpeg'),
         description: `On this day in 1909, British suffragette Theresa Garnett (1888 - 1966) assaulted Winston Churchill with a whip, striking him several times while shouting "Take that in the name of the insulted women of England!".\n\nThe action came out of the militancy of the suffragist group "Women's Social and Political Union", of which Garnett was a member. Set up in Manchester, its policy of "deeds not words" led to militant methods of campaigning by women frustrated by the failure of more peaceful methods. Members of the group committed many illegal activities, ranging from slapping policemen to widespread arson attacks.\n\nAlthough Garnett arrested for assaulting Churchill, she was only charged with disturbing the peace because Churchill did not want to appear in court. She served one month in Horsfield Prison.`,
         link: 'https://en.wikipedia.org/wiki/Theresa_Garnett',
         infoSrc: 'https://libcom.org/history/theresa-garnett-vs-winston-churchill'
