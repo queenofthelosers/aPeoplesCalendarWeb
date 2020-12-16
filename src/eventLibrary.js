@@ -8718,6 +8718,15 @@ export const eventLibrary = {
         link: 'https://www.sacbee.com/news/local/history/article148667224.html',
         infoSrc: 'https://www.huffpost.com/entry/black-panthers-california-1967_n_568accfce4b014efe0db2f40'
       },
+      {
+        category: 'Revolution',
+        date: 'May 2nd, 1968',
+        title: 'May 68 Rebellion (1968)',
+        imgSrc: require('./assets/eventPhotos/Events/may68.jpg'),
+        description: `On this day in 1968, the May 68 Rebellion, the largest general strike in French history, began when school officials shut down the University of Paris shut down the school after months of student protests, leading to nationwide unrest.\n\nIn mid-March, leftist students had occupied an administration building there, although they left peacefully after their demands were published. After the university was closed on May 2nd, the tensions escalated. On May 6th, more than 20,000 students, teachers, and supporters engaged in a protest march. The march was attacked by police and devolved into a riot.\n\nThe state repression of protesters caused two major left union federations, the Confédération Générale du Travail (CGT) and the Force Ouvrière (CGT-FO), to call a one-day general strike on May 13th. More than one million people demonstrated that day.\n\nBy the middle of May, demonstrations had extended to factories, though demands there were different from the students'. Across France, students occupied university structures and up to one-third of the country's workforce was on strike.\n\nThe protests reached such a point that political leaders feared civil war or revolution. President Charles de Gaulle secretly fled France to Germany at one point, and the national government at times ceased to function.\n\nRevolution was averted when de Gaulle dissolved the National Assembly and scheduled an election that the left dissidents agreed to participate in. Revolutionary fervor subsided and the government banned a number of leftist organizations. In the electon, de Gaulle's party won the greatest victory in French parliamentary history, taking 353 of 486 seats versus the Communists' 34 and the Socialists' 57.`,
+        link: 'https://jacobinmag.com/2018/05/how-beautiful-it-was/',
+        infoSrc: 'https://en.wikipedia.org/wiki/May_68'
+      },
     ],
     'Labor': [
       {
@@ -9097,13 +9106,13 @@ export const eventLibrary = {
     ],
     'Labor': [
       {
-        category: '',
-        date: '',
-        title: '',
-        imgSrc: require('./assets/eventPhotos/empty.jpg'),
-        description: ``,
-        link: '',
-        infoSrc: ''
+        category: 'Labor',
+        date: 'May 7th, 1912',
+        title: `NYC Waiters' Strike (1912)`,
+        imgSrc: require('./assets/eventPhotos/Events/nycWaiters1912.jpg'),
+        description: `On this day in 1912, the first industry-wide strike of restaurant and hotel workers in New York City history began when 150 hotel workers, organized by the IWW, walked out to protest their poor working conditions. At the height of the strike, there were 54 hotels and 30 restaurants and other establishments without their staff, amounting to approximately 2,500 waiters, 1,000 cooks, and 3,000 other striking hotel workers.\n\nThe strike was organized directly by Joe Ettor and Elizabeth Gurley Flynn of the Industrial Workers of the World (IWW). Before the IWW, the only union in place for hotel workers only had about 2,000 members and prohibitively high membership dues.\n\nThe workers demanded at least one day off a week, a higher minimum wage, and a prohibition of discrimination for being in a union. The strike continued through the rest of May but faced repression from the police. The strike officially ended on June 25th, 1912 without legal recognition for the IWW created Hotel Workers' International Union. Despite this failure, hotel workers would go on strike again in 1913, 1918, 1929, and 1934.`,
+        link: 'https://hotelworkers.org/about/history/the-story-of-the-first-contract',
+        infoSrc: 'https://en.wikipedia.org/wiki/1912_New_York_City_waiters%27_strike'
       },
     ],
     'Birthdays': [
@@ -25997,7 +26006,7 @@ export const eventLibrary = {
         date: 'December 20th, 1951',
         title: 'Marta Russell (1951 - 2013)',
         imgSrc: require('./assets/eventPhotos/Individuals/martaRussell.jpg'),
-        description: `Marta Russell was an American writer and disability rights activist. Her book, "Beyond Ramps: Disability at the End of the Social Contract published in 1998" analyzes the relationship between disability, social Darwinism, and economic austerity under capitalism.\n\nHer political views, which she described as "left, not liberal," informed her writing on topics such as healthcare, the prison-industrial complex, physician-assisted suicide, poverty, ableism, and the Americans with Disabilities Act of 1990.`,
+        description: `Marta Russell was an American writer and disability rights activistm born on this day in 1951. Her book, "Beyond Ramps: Disability at the End of the Social Contract published in 1998" analyzes the relationship between disability, social Darwinism, and economic austerity under capitalism.\n\nHer political views, which she described as "left, not liberal," informed her writing on topics such as healthcare, the prison-industrial complex, physician-assisted suicide, poverty, ableism, and the Americans with Disabilities Act of 1990.`,
         link: 'https://solidarity-us.org/atc/169/p4113/',
         infoSrc: 'https://en.wikipedia.org/wiki/Marta_Russell'
       },
