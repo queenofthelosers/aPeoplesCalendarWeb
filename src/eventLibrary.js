@@ -1664,7 +1664,7 @@ export const eventLibrary = {
       {
         category: 'Assassinations',
         date: 'January 24th, 1930',
-        title: 'Kim Chwa-chin (1889 - 1930)',
+        title: 'Kim Chwa-chin Assassinated (1930)',
         imgSrc: require('./assets/eventPhotos/Individuals/kimChwaChin.jpg'),
         description: `Kim Chwa-chin (also written Kim Chwa-jin) (1889 - 1930) was a Korean general, independence activist, and anarchist who played an important role in the early attempts at development of anarchism in Korea. When Kim was 18, he released 50 families of slaves when he burned the slave registry and provided each family with enough land to live on, resulting in the first emancipation of slaves in modern Korea.\n\nIn 1918, Kim was one of 40 Korean representatives to sign the Korean Declaration of independence. He then joined the Korea Justice Corps, later becoming the general commander of the Northern Military Administration Office Army and playing a key role in the "Battle of Cheongsanri" against japanese forces.\n\nIn 1928, the Korea Independence Party was formed, and the following year, when the Korean General Association was established as the successor of the new people, Chwa-chin was designated as the President. During this process, conflicts between the nationalist and communist independence activists intensified. On this day in 1930, Kim was assassinated by Park Sang-sil, an agent of the Japanese colonial government.`,
         link: 'https://web.archive.org/web/20151226035222/http://english.hongseong.go.kr/eng/sub01_05_04.do',
