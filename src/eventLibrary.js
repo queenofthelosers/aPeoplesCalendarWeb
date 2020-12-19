@@ -25802,7 +25802,7 @@ export const eventLibrary = {
         date: 'December 17th, 1987',
         title: 'Chelsea Manning (1987 - )',
         imgSrc: require('./assets/eventPhotos/Individuals/chelseaManning.jpg'),
-        description: `Chelsea Elizabeth Manning is an American activist and whistleblower. She is a former United States Army soldier who was convicted by court-martial in July 2013 of violations of the Espionage Act and other offenses, after disclosing to WikiLeaks nearly 750,000 classified, or unclassified but sensitive, military and diplomatic documents.\n\nAmong the documents released was the infamous "Collateral Murder" video, which depicted two American helicopters firing on Reuters journalists and children. Manning was imprisoned from 2010 until 2017, when her sentence was commuted by Barack Obama.`,
+        description: `Chelsea Elizabeth Manning is an American activist and whistleblower who was born on this day in 1987. She is a former United States Army soldier who was convicted by court-martial in July 2013 of violations of the Espionage Act and other offenses, after disclosing to WikiLeaks nearly 750,000 classified, or unclassified but sensitive, military and diplomatic documents.\n\nAmong the documents released was the infamous "Collateral Murder" video, which depicted two American helicopters firing on Reuters journalists and children. Manning was imprisoned from 2010 until 2017, when her sentence was commuted by Barack Obama.`,
         link: 'https://www.theguardian.com/us-news/2018/oct/07/chelsea-manning-wikileaks-whistleblowing-interview-carole-cadwalladr',
         infoSrc: 'https://en.wikipedia.org/wiki/Chelsea_Manning'
       },
@@ -25934,13 +25934,13 @@ export const eventLibrary = {
     ],
     'Birthdays': [
       {
-        category: '',
-        date: '',
-        title: '',
-        imgSrc: require('./assets/eventPhotos/empty.jpg'),
-        description: ``,
-        link: '',
-        infoSrc: ''
+        category: 'Birthdays',
+        date: 'December 19th, 1925',
+        title: 'Lepa Radić (1925 - 1943)',
+        imgSrc: require('./assets/eventPhotos/Individuals/lepaRadic.jpg'),
+        description: `Lepa Radić, born on this day in 1925, was a teenage communist executed by the SS after refusing to turn over information, shouting from the gallows "Fight, people, for your freedom! Do not surrender to the evildoers! I will be killed, but there are those who will avenge me!"\n\nUnder the influence of her uncle, a labor organize, Radić joined the Communist Party of Yugoslavia at the age of 15. THe same year, Radić and her family were arrested by the Ustaše, Nazi collaborators, however they escaped with the help of undercover partisan associates. Following this, she joined the 7th partisan company of the 2nd Krajiški Detachmen.\n\nDuring a fight against the 7th SS Volunteer Mountain Division "Prinz Eugen", Radić was captured and sentenced to death by hanging after being tortured for several days in an attempt to extra information. She refused her interrogators, stating "I am not a traitor of my people. Those whom you are asking about will reveal themselves when they have succeeded in wiping out all you evildoers, to the last man."\n\nRadić was posthumously awared the "Order of the People's Hero" in 1951, the youngest recipient at the the time at seventeen years of age.`,
+        link: 'https://ycl.org.uk/2019/02/11/international-womens-day-2019-lepa-radic/',
+        infoSrc: 'https://en.wikipedia.org/wiki/Lepa_Radi%C4%87'
       },
     ],
     'Assassinations': [
@@ -26013,13 +26013,13 @@ export const eventLibrary = {
     ],
     'Assassinations': [
       {
-        category: '',
-        date: '',
-        title: '',
-        imgSrc: require('./assets/eventPhotos/empty.jpg'),
-        description: ``,
-        link: '',
-        infoSrc: ''
+        category: 'Assassinations',
+        date: 'December 20th, 1973',
+        title: 'Carrero Blanco Bombed by ETA (1973)',
+        imgSrc: require('./assets/eventPhotos/Events/francoAssassination.jpg'),
+        description: `On this day in 1973, Spanish Prime Minister Luis Carrero Blanco, the hand-picked successor to fascist Francisco Franco, was killed in a car bombing by Euskadi Ta Askatasuna (ETA), a left-wing, Basque separatist group.\n\nBlanco (1904 - 1973) had previously served as a naval officer on the Francoist side of the Spanish Civil War, eventually becoming Chief of Naval Operations in 1939. In 1973, he was appointed to the position of Prime Ministers. Six months into his term, he was assassinated by the ETA while returning from mass at San Francisco de Borja church.\n\nFor five months, the ETA members dug under the street from a rented out basement near his route. On the day of the attack, members disguised as electricians were present on the scene to trigger detonation.\n\nIn a collective interview justifying the attack, the ETA bombers said Carrero Blanco "symbolized better than anyone else the figure of 'pure Francoism' and without totally linking himself to any of the Francoist tendencies..." and called him "a man without scruples".\n\nThe assassination had far-reaching political implications, and is crediting with helping Spain become more democratic. Carrero Blanco's successor, Carlos Arias Navarro, promised liberalizing reforms, including the right to form political associations. Franco himself died in 1975, and elections in Spain were held in 1977, with a new constitution being approved the following year.`,
+        link: 'https://www.irishtimes.com/news/world/europe/in-1973-i-applauded-an-eta-killing-not-now-1.3039065',
+        infoSrc: 'https://en.wikipedia.org/wiki/Assassination_of_Luis_Carrero_Blanco'
       },
     ],
     'Other': [
