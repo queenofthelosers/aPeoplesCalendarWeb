@@ -9,7 +9,7 @@ export class EventComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      collapsed: true, //if collapsed, just event title is displayed, details (description, date, img) are shown if collapsed false
+      collapsed: this.props.initCollapsed, //if collapsed, just event title is displayed, details (description, date, img) are shown if collapsed false
       copied: false, //handles the icon change
       imgWidth: 2, //for resizing
       imgHeight: 2,
@@ -47,22 +47,7 @@ export class EventComponent extends React.Component {
     //image resizing logic:
     const width = this.state.imgWidth;
     const height = this.state.imgHeight;
-    //second, try resizing image to be around 28% of total view height
-    /*var resizeHeight = this.props.winDim.height/3; //image will take up 25% of the window's height
-    var ratio = resizeHeight/height; //the ratio by which image has shrunk
-    var resizeWidth = width * ratio; //apply ratio to width
-    //if the resized image becomes too wide (happens with short but wide images)
-    if (resizeWidth > this.props.eventDisplayWidth - 40) {
-      //console.log('image too damn big');
-      //resize the image with respect to width, setting it equal to 80% of total view width
-      resizeWidth = this.props.eventDisplayWidth - 40;
-      ratio = resizeWidth/width; //new ratio of shrunkedness
-      resizeHeight = height * ratio; //apply new ratio to height
-      //console.log('resized for width at ' + resizeWidth);
-    } else {
-      //console.log('resized for height at ' + resizeHeight);
-    };*/
-    //console.log('received eventDisplayWidth in eventComponent: ' + this.props.eventDisplayWidth);
+  
     var resizeWidth = this.props.eventDisplayWidth * .75; //90% of width of container
     var ratio = resizeWidth/width; //the ratio by which the image has changed
     var resizeHeight = height * ratio //apply ratio to height

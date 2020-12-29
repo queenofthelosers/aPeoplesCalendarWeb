@@ -250,12 +250,12 @@ html {
 
 #homepageContent {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 4fr;
 }
 
 #homepageImg {
-  width: 100%;
   grid-column: 1;
+  width: '100%';
 }
 
 #homepageText {

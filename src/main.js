@@ -33,6 +33,7 @@ class Main1 extends React.Component {
       events: '', //events from selected day, initialized to today's date, sent to display in CalendarDisplay as prop
       haveEvents: true, //boolean set to true if there is one non-empty event in this.state.events, false if they are all placeholder events (i.e., !events[Category].description for all categories)
       invalidInput: false, //if invalid input (from url params, i.e., day/94-3039), then redirect to <NotFound/>, else, return main calendar view
+      isSingleEvent: false,
     };
     this.monthList = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
     this.categoryList = ['Revolution', 'Rebellion', 'Labor', 'Birthdays', 'Assassinations', 'Other'];
@@ -61,6 +62,9 @@ class Main1 extends React.Component {
       };
     } else if (this.props.params.hasOwnProperty('event_')) {
       //run search with slug on slugified event titles, should only return the one event as titles are unique
+      this.setState({
+        isSingleEvent: true
+      });
       this.searchBySlug(this.props.params['event_']);
     } else {
       this.initializeToday();
@@ -319,7 +323,13 @@ class Main1 extends React.Component {
                 <EmptyDay displaySearch={this.state.displaySearch}/>
               }
               {this.state.haveEvents &&
-                <CalendarDisplay ref={this.calendarRef} events={this.state.events} stringToSlug={this.stringToSlug} winDim={this.props.winDim}/>
+                <CalendarDisplay 
+                  ref={this.calendarRef} 
+                  events={this.state.events} 
+                  stringToSlug={this.stringToSlug} 
+                  winDim={this.props.winDim}
+                  initCollapsed={!this.state.isSingleEvent}
+                />
               }
             </div>
             :

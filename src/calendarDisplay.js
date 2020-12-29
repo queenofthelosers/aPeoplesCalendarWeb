@@ -53,9 +53,7 @@ export class CalendarDisplay extends React.Component {
   };
 
   render() {
-    //console.log('this.props.events:');
-    //console.log(this.props.events);
-    //less verbosity:
+    //less verbosity: 
     var events = this.props.events;
     return (
       <div id='eventDisplay' ref={eventDisplay => this.eventDisplayRef = eventDisplay}>
@@ -90,6 +88,7 @@ export class CalendarDisplay extends React.Component {
                         key={categoryEvent.title}
                         winDim={this.props.winDim}
                         eventDisplayWidth={this.state.eventDisplayWidth}
+                        initCollapsed={this.props.initCollapsed}
                       />
                       )
                     })
