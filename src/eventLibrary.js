@@ -13,7 +13,7 @@ export const eventLibrary = {
         date: 'January 1st, 1804',
         title: 'Haitian Independence (1804)',
         imgSrc: require('./assets/eventPhotos/Events/haitianRevolution.jpg'),
-        description: `On this day in 1804, the Haitian Republic was established by self-liberated slaves, the culmination of years of violent revolt against French colonizers The Haitian Revolution was the only slave uprising that led to the founding of a state which was both free from slavery, and ruled by non-whites and former captives.\n\nThe revolt began on August 21st, 1791, in what was then the French colony of Saint-Domingue. After a well-attended vodou ceremony, thousands of slaves began to kill their masters and plunged the colony into civil war. Within the next ten days, slaves had taken control of the entire Northern Province in an uprising of unprecedented scale.\n\nThe fighting was particularly brutal, and more than 200,000 black people died in the years from the initial uprising until independence.\n\nAlthough Toussaint Louverture established himself as a military leader of the revolution by 1801, he died shortly before independence was won. Jean-Jacques Dessalines, his former lieutenant, became the first leader of Haiti.`,
+        description: `On this day in 1804, the Haitian Republic was established by self-liberated slaves, the culmination of years of violent revolt against French colonizers. The Haitian Revolution was the only slave uprising that led to the founding of a state which was both free from slavery, and ruled by non-whites and former captives.\n\nThe revolt began on August 21st, 1791, in what was then the French colony of Saint-Domingue. After a well-attended vodou ceremony, thousands of slaves began to kill their masters and plunged the colony into civil war. Within the next ten days, slaves had taken control of the entire Northern Province in an uprising of unprecedented scale.\n\nThe fighting was particularly brutal, and more than 200,000 black people died in the years from the initial uprising until independence.\n\nAlthough Toussaint Louverture established himself as a military leader of the revolution by 1801, he died shortly before independence was won. Jean-Jacques Dessalines, his former lieutenant, became the first leader of Haiti.`,
         infoSrc: 'https://www.blackpast.org/global-african-history/haitian-revolution-1791-1804/',
         link: 'https://libcom.org/library/black-jacobins-toussaint-louverture-san-domingo-revolution'
       },
@@ -24,7 +24,7 @@ export const eventLibrary = {
         date: 'January 1st, 1994',
         title: 'Zapatista Uprising (1994)',
         imgSrc: require('./assets/eventPhotos/Events/zapatistaUprising.jpg'),
-        description: `On this day in 1994, the Zapatista Army of National Liberation (EZLN), an armed indigenous organization, declared war on the Mexican Government, demanding "work, land, housing, food, health, education, independence, liberty, democracy, justice and peace." This action was taken at least partly in response to the enactment of the North American Free Trade Agreement (NAFTA), which was perceived as a threat to the lives of indigenous people in Chiapas.\n\nFollowing this war declaration, armed indigenous rebels seized four towns in Chiapas, Mexico, releasing nearly 200 predominantly indigenous prisoners and destroying land records. The fighting lasted eleven days and estimates of those killed range from 300-400. The EZLN remains active to this day.`,
+        description: `On this day in 1994, the Zapatista Army of National Liberation (EZLN) declared war on the Mexican Government, demanding "work, land, housing, food, health, education, independence, liberty, democracy, justice and peace." This action was taken at least partly in response to the enactment of the North American Free Trade Agreement (NAFTA), which was perceived as a threat to the lives of indigenous people in Chiapas.\n\nFollowing this war declaration, armed indigenous rebels seized four towns in Chiapas, Mexico, releasing nearly 200 predominantly indigenous prisoners and destroying land records. The fighting lasted eleven days and estimates of those killed range from 300-400. The EZLN remains active to this day.`,
         link: 'http://www.internationalaffairs.org.au/news-item/the-zapatista-movement-the-fight-for-indigenous-rights-in-mexico/',
         infoSrc: 'https://libcom.org/history/1994-the-zapatista-uprising'
       },
@@ -46,7 +46,7 @@ export const eventLibrary = {
         date: 'January 1st, 1912',
         title: 'Herbert Lee (1912 - 1961)',
         imgSrc: require('./assets/eventPhotos/Individuals/herbertLee.jpg'),
-        description: `Herbert Lee, born on this day in 1912, was an American civil rights activist remembered as a proponent of voting rights for African Americans in Mississippi, who had been disenfranchised since 1890. He was a charter member of the National Association for the Advancement of Colored People (NAACP) in Amite County and sought to enfranchise black Americans by encouraging voter registration.\n\nIn 1961, Lee assisted Bob Moses, a field secretary with the Student Nonviolent Coordinating Committee (SNCC), in his efforts to persuade locals to register. His activities were met with threats of reprisal by the white community, and Lee became one of the movement's earliest victims to white violence. On September 25th, 1961, Lee was murdered by Mississippi state representative E. H. Hurst (1908 - 1990) in broad daylight at the cotton gin while delivering cotton near Liberty.\n\nHurst killed Lee with a single shot to the head, but later claimed in court that he was defending himself after Lee attacked him with a tire iron. An all-white jury ruled that the killing was a justifiable homicide. In 1964, civil rights activist Louis Allen was killed after he informed federal investigators that his testimony in the case was forced on threat of violence.`,
+        description: `Herbert Lee, born on this day in 1912, was an American civil rights activist who fought for voting rights Mississippi, where black people had been disenfranchised since 1890. He was a charter member of the National Association for the Advancement of Colored People (NAACP) in Amite County and sought to enfranchise black Americans by encouraging voter registration.\n\nIn 1961, Lee assisted Bob Moses, a field secretary with the Student Nonviolent Coordinating Committee (SNCC), in his efforts to persuade locals to register. His activities were met with threats of reprisal by the white community, and Lee became one of the movement's earliest victims to white violence. On September 25th, 1961, Lee was murdered by Mississippi state representative E. H. Hurst (1908 - 1990) in broad daylight at the cotton gin while delivering cotton near Liberty.\n\nHurst killed Lee with a single shot to the head, but later claimed in court that he was defending himself after Lee attacked him with a tire iron. An all-white jury ruled that the killing was a justifiable homicide. In 1964, civil rights activist Louis Allen was killed after he informed federal investigators that his testimony in the case was forced on threat of violence.`,
         link: 'https://snccdigital.org/people/herbert-lee/',
         infoSrc: 'https://en.wikipedia.org/wiki/Herbert_Lee_(activist)'
       },
@@ -246,13 +246,13 @@ export const eventLibrary = {
     ],
     'Birthdays': [
       {
-        category: '',
-        date: '',
-        title: '',
-        imgSrc: require('./assets/eventPhotos/empty.jpg'),
-        description: ``,
-        link: '',
-        infoSrc: ''
+        category: 'Birthdays',
+        date: 'January 4th, 1901',
+        title: 'CLR James (1901 - 1989)',
+        imgSrc: require('./assets/eventPhotos/Individuals/clrJames.jpg'),
+        description: `Cyril Lionel Robert James, born on this day in 1901, was a Marxist historian, journalist, and cricket enthusiast who authored, among many other texts, "The Black Jacobins", an essential history of the Haitian Revolution. In 1937, he also wrote "World Revolution", detailing the rise and fall of the Communist International.\n\nBorn in Trinidad, James later moved to England to assist his friend, the West Indian cricketer Learie Constantine, with his autobiography. In 1933, he moved to London and begin organizing with Trotskyists. In the next few years, James wrote some of his most notable works, including both "World Revolution" and "The Black Jacobins".\n\nIn 1939, James visited Leon Trotsky in Coyoacán, México. The two disagreed on the "Negro Question"; Trotsky saw the Trotskyist Party as providing leadership to the black community in a relationship similar to the Bolsheviks and ethnic minorities in Russia, while James suggested that the self-organized struggle of African-Americans would lead to a broader radical social movement.\n\n"When history is written as it ought to be written, it is the moderation and long patience of the masses at which men will wonder, not their ferocity." - CLR James`,
+        link: 'https://www.marxists.org/archive/james-clr/',
+        infoSrc: 'https://en.wikipedia.org/wiki/C._L._R._James'
       },
     ],
     'Assassinations': [
