@@ -1893,13 +1893,13 @@ export const eventLibrary = {
     ],
     'Assassinations': [
       {
-        category: '',
-        date: '',
-        title: '',
-        imgSrc: require('./assets/eventPhotos/empty.jpg'),
-        description: ``,
-        link: '',
-        infoSrc: ''
+        category: 'Assassinations',
+        date: 'January 27th, 1923',
+        title: 'Wilckens Kills Valera (1923)',
+        imgSrc: require('./assets/eventPhotos/Individuals/kurtWilckens.jpg'),
+        description: `On this day in 1923, anarchist miner Kurt Wilckens (1886 - 1923) assassinated Colonel Héctor Benigno Varela after he led government forces that summarily executed 1,500 revolutionary workers in Argentine Patagonia.\n\nWilckens, a German Wobbly who had immigrated to Argentina a few years prior, was disgusted by the brutal suppression of the Patagonian Uprising. On the morning of January 27th, 1923, Wilckens met Colonel Varela on the street and hurled a bomb at him. Wounded in both legs, Varela attempted to draw his sabre, but Wilckens shot Varela four times, kiling him.\n\nWilckens was injured during the event after shielding a 10-year old girl from the blast. Due to his wounds, he could not leave the scene and was arrested there. On June 15th, Wilckens was murdered in prison by a member of the paramilitary "Liga Patriótica Argentina".\n\nOn the assassination, Wilckens said "It was not vengeance; I did not see in Varela a minor official. No, he was everything in Patagonia: governor, judge, executioner, and undertaker. I tried to hurt him as the naked symbol of a criminal system. But revenge is unworthy of an Anarchist! The dawn, our dawn, claims no quarrels, no crimes, no lies; it affirms life, love, science; we work to hasten that day."`,
+        link: 'https://en.wikipedia.org/wiki/Kurt_Gustav_Wilckens',
+        infoSrc: 'https://libcom.org/history/wilckens-kurt-gustav-1886-1923'
       },
     ],
     'Other': [
