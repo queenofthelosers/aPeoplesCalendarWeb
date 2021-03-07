@@ -16,9 +16,9 @@ export function FullNavBar(props) {
           <NavLink to='/about' className='fullNavTextContainer navBarNavLink'>
             <p className='fullNavText'>About</p>
           </NavLink>
-          <NavLink to='/donate' className='fullNavTextContainer navBarNavLink'>
+          {/*<NavLink to='/donate' className='fullNavTextContainer navBarNavLink'>
             <p className='fullNavText'>Donate</p>
-          </NavLink>
+          </NavLink>*/}
           <NavLink to='/volunteer' className='fullNavTextContainer navBarNavLink'>
             <p className='fullNavText'>Volunteer</p>
           </NavLink>

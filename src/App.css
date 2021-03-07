@@ -94,8 +94,6 @@ html {
 }
 
 .fullNavSocialContainer {
-  margin-left: 6px;
-  margin-right: 6px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -131,7 +129,6 @@ html {
   margin-top: -4px;
   justify-content: space-between;
   height: 50px;
-  padding-right: 25px;
   background-color: #f7f7f7;
   border-bottom: 1px solid #d1d1d1;
   z-index: 99;

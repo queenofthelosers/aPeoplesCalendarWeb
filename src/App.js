@@ -101,7 +101,7 @@ class App extends React.Component {
         {this.state.openHamburger &&
           <div id='hamburgerOpen' style={{top: this.state.hamburgerTop}}>
             <NavLink to='/about' id='hamburgerAbout' className='navText hamburgerText' onClick={() => this.handleClick()}>About</NavLink>
-            <NavLink to='/donate' id='hamburgerDonate' className='navText hamburgerText' onClick={() => this.handleClick()}>Donate</NavLink>
+            {/*<NavLink to='/donate' id='hamburgerDonate' className='navText hamburgerText' onClick={() => this.handleClick()}>Donate</NavLink>*/}
             <NavLink to='/volunteer' id='hamburgerVolunteer' className='navText hamburgerText' onClick={() => this.handleClick()}>Volunteer</NavLink>
             <NavLink to='/calendar' id='hamburgerCalendar' className='navText hamburgerText' onClick={() => this.handleClick()}>Calendar</NavLink>
             <a target='_blank' rel="noopener noreferrer" id='hamburgerContact' className='navText hamburgerText' href='mailto:apeoplescalendar@gmail.com' onClick={() => this.handleClick()}>Contact</a>
@@ -115,7 +115,7 @@ class App extends React.Component {
             <div>
               <FontAwesomeIcon icon={faBars} style={this.state.windowWidth > 500 ? {position: 'absolute', top: '15px', left: '95px'} : {position: 'absolute', top: '15px', left: '82px'}} onClick={(e) => this.handleHamburger(e)}/>
             </div>
-            <SocialIcons/>
+            <SocialIcons windowWidth={this.state.windowWidth}/>
           </div>
         }
         <Switch>
@@ -140,9 +140,9 @@ class App extends React.Component {
           <Route path='/about'>
             <About/>
           </Route>
-          <Route path='/donate'>
+          {/*<Route path='/donate'>
             <Donate/>
-          </Route>
+          </Route>*/}
           <Route path='/volunteer'>
             <Volunteer/>
           </Route>
