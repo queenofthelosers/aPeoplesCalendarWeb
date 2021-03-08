@@ -3,7 +3,7 @@ import './App.css';
 import {Main} from './main.js';
 import {About} from './about.js';
 import {Volunteer} from './volunteer.js';
-import {Donate} from './donate.js';
+//import {Donate} from './donate.js';
 import {NotFound} from './notFound.js';
 import {FullNavBar} from './fullNavBar.js';
 import {SocialIcons} from './socialIconsComponent.js';

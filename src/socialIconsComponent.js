@@ -1,9 +1,9 @@
 import React from 'react';
 import {SocialIcon} from 'react-social-icons';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faAndroid, faApple} from '@fortawesome/free-brands-svg-icons';
+//import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+//import {faAndroid, faApple} from '@fortawesome/free-brands-svg-icons';
 import MobileStoreButton from 'react-mobile-store-button';
-import socialIcon from 'react-social-icons/dist/social-icon';
+//import socialIcon from 'react-social-icons/dist/social-icon';
 
 export function SocialIcons(props) {
   var socialIconSize = {
