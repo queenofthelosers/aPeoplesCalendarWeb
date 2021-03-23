@@ -5825,13 +5825,13 @@ export const eventLibrary = {
     ],
     'Birthdays': [
       {
-        category: '',
-        date: '',
-        title: '',
-        imgSrc: require('./assets/eventPhotos/empty.jpg'),
-        description: ``,
-        link: '',
-        infoSrc: ''
+        category: 'Birthdays',
+        date: 'March 23rd, 1942',
+        title: 'Walter Rodney (1942 - 1980)',
+        imgSrc: require('./assets/eventPhotos/Individuals/walterRodney.jpg'),
+        description: `Walter Rodney, born in Guyana on this day in 1942, was a historian, public intellectual, and Pan-African Marxist who was assassinated by the Guyanese government in 1980, at 38 years old.\n\nRodney attended the University College of the West Indies in 1960 and was awarded a first class honors degree in History in 1963. He later earned a PhD in African History in 1966 at the School of Oriental and African Studies in London, England, at the age of 24.\n\nRodney traveled extensively and became well-known as an activist, scholar, and formidable orator. He taught at the University of Dar es Salaam in Tanzania from 1966-67 and 1969-1974, and in 1968 at his alma mater University of the West Indies.\n\nOn October 15th, 1968, the government of Jamaica declared Rodney a "persona non grata" and banned him from the country. Following his dismissal by the University of the West Indies, students and poor people in West Kingston protested, leading to the "Rodney Riots", which caused in six deaths and millions of dollars in damages.\n\nOn June 13th, 1980, Rodney was killed in Georgetown, Guyana via a bomb given to him by a sergeant in the Guyana Defence Force, named Gregory Smith. a month after returning from celebrations during the independence in Zimbabwe in a time of intense political activism. in 2015, a "Commission of Inquiry" in Guyana that the country's then president, Linden Forbes Burnham was complicit in his murder.\n\n"If there is to be any proving of our humanity it must be through revolutionary means." - Walter Rodney`,
+        link: 'https://www.blackpast.org/global-african-history/rodney-walter-1942-1979/',
+        infoSrc: 'https://en.wikipedia.org/wiki/Walter_Rodney'
       },
     ],
     'Assassinations': [
