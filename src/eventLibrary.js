@@ -5959,13 +5959,13 @@ export const eventLibrary = {
     ],
     'Labor': [
       {
-        category: '',
-        date: '',
-        title: '',
-        imgSrc: require('./assets/eventPhotos/empty.jpg'),
-        description: ``,
-        link: '',
-        infoSrc: ''
+        category: 'Labor',
+        date: 'March 25th, 1911',
+        title: 'Triangle Shirtwaist Factory Fire (1911)',
+        imgSrc: require('./assets/eventPhotos/Events/shirtwaistFactoryFire.jpg'),
+        description: `On this day in 1911, the Triangle Shirtwaist Factory Fire took place in the Greenwich Village neighborhood of Manhattan, New York City. It was the deadliest industrial disaster in the history of the city, and one of the deadliest in U.S. history.\n\nThe fire caused the deaths of 146 garment workers - 123 women and girls and 23 men - who either burned to death, choked on smoke, or jumped to their deaths from high windows. Most of the victims were recent Italian and Jewish immigrant women and girls aged 14 to 23.\n\nThe death toll was high in part because the doors to the stairwells and exits were locked (a then-common practice to prevent workers from taking unauthorized breaks and to reduce theft). The incident led to legislation requiring improved factory safety standards and helped spur the growth of the International Ladies' Garment Workers' Union (ILGWU), which fought for better working conditions for sweatshop workers.\n\nThe owners (who survived the fire by fleeing to the roof when it began), were acquitted of manslaughter charges, but found liable for wrongful death. Although they had to pay out $75 per victim killed, their insurance provider paid them out $400 per casualty. Two years later, one of the owners was arrested and fined $20 for again locking his doors during factory hours.`,
+        link: 'https://aflcio.org/about/history/labor-history-events/triangle-shirtwaist-fire',
+        infoSrc: 'https://en.wikipedia.org/wiki/Triangle_Shirtwaist_Factory_fire'
       },
     ],
     'Birthdays': [
@@ -10440,13 +10440,13 @@ export const eventLibrary = {
     ],
     'Labor': [
       {
-        category: 'Labor',
-        date: 'March 25th, 1911',
-        title: 'Triangle Shirtwaist Factory Fire (1911)',
-        imgSrc: require('./assets/eventPhotos/Events/shirtwaistFactoryFire.jpg'),
-        description: `On this day in 1911, the Triangle Shirtwaist Factory Fire took place in the Greenwich Village neighborhood of Manhattan, New York City. It was the deadliest industrial disaster in the history of the city, and one of the deadliest in U.S. history.\n\nThe fire caused the deaths of 146 garment workers - 123 women and girls and 23 men - who either burned to death, choked on smoke, or jumped to their deaths from high windows. Most of the victims were recent Italian and Jewish immigrant women and girls aged 14 to 23.\n\nThe death toll was high in part because the doors to the stairwells and exits were locked (a then-common practice to prevent workers from taking unauthorized breaks and to reduce theft). The incident led to legislation requiring improved factory safety standards and helped spur the growth of the International Ladies' Garment Workers' Union (ILGWU), which fought for better working conditions for sweatshop workers.\n\nThe owners (who survived the fire by fleeing to the roof when it began), were acquitted of manslaughter charges, but found liable for wrongful death. Although they had to pay out $75 per victim killed, their insurance provider paid them out $400 per casualty. Two years later, one of the owners was arrested and fined $20 for again locking his doors during factory hours.`,
-        link: 'https://aflcio.org/about/history/labor-history-events/triangle-shirtwaist-fire',
-        infoSrc: 'https://en.wikipedia.org/wiki/Triangle_Shirtwaist_Factory_fire'
+        category: '',
+        date: '',
+        title: '',
+        imgSrc: require('./assets/eventPhotos/empty.jpg'),
+        description: ``,
+        link: '',
+        infoSrc: ''
       },
     ],
     'Birthdays': [
