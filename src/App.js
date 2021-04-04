@@ -1,14 +1,14 @@
 import React from 'react';
 import './App.css';
-import {Main} from './main.js';
-import {About} from './about.js';
-import {Volunteer} from './volunteer.js';
+import { Main } from './main.js';
+import { About } from './about.js';
+import { Volunteer } from './volunteer.js';
 //import {Donate} from './donate.js';
-import {NotFound} from './notFound.js';
-import {FullNavBar} from './fullNavBar.js';
-import {SocialIcons} from './socialIconsComponent.js';
-import {HomepageComponent} from './homepageComponent.js';
-import {IconComponent} from './iconComponent.js';
+import { NotFound } from './notFound.js';
+import { FullNavBar } from './fullNavBar.js';
+import { SocialIcons } from './socialIconsComponent.js';
+import { HomepageComponent } from './homepageComponent.js';
+import { IconComponent } from './iconComponent.js';
 import {
   BrowserRouter as Router,
   Switch,
@@ -16,8 +16,8 @@ import {
   NavLink,
   Redirect
 } from "react-router-dom";
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faBars} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 
 class App extends React.Component {
@@ -26,7 +26,7 @@ class App extends React.Component {
     this.state = {
       windowWidth: window.innerWidth,
       windowHeight: window.innerHeight,
-      hamburgerTop: Math.round(34 + (window.innerWidth/7)),
+      hamburgerTop: Math.round(34 + (window.innerWidth / 7)),
       openHamburger: false,
     };
     this.handleResize = this.handleResize.bind(this);
@@ -65,7 +65,7 @@ class App extends React.Component {
     this.setState({
       windowWidth: window.innerWidth,
       windowHeight: window.innerHeight,
-      hamburgerTop: Math.round(34 + (window.innerWidth/7))
+      hamburgerTop: Math.round(34 + (window.innerWidth / 7))
     });
     if (window.innerWidth > 780 && this.state.openHamburger) {
       this.setState({
@@ -92,14 +92,14 @@ class App extends React.Component {
   render() {
     return (
       <Router>
-        <img src={require('./assets/Protests-85-skinniest.jpg')} alt='A police officer maces a peaceful protester at a black lives matter protest in Ohio' id='bannerImg'/>
+        <img src={require('./assets/Protests-85-skinniest.jpg')} alt='A police officer maces a peaceful protester at a black lives matter protest in Ohio' id='bannerImg' />
         {this.state.windowWidth > 780 &&
           <FullNavBar
             windowWidth={this.state.windowWidth}
           />
         }
         {this.state.openHamburger &&
-          <div id='hamburgerOpen' style={{top: this.state.hamburgerTop}}>
+          <div id='hamburgerOpen' style={{ top: this.state.hamburgerTop }}>
             <NavLink to='/about' id='hamburgerAbout' className='navText hamburgerText' onClick={() => this.handleClick()}>About</NavLink>
             {/*<NavLink to='/donate' id='hamburgerDonate' className='navText hamburgerText' onClick={() => this.handleClick()}>Donate</NavLink>*/}
             <NavLink to='/volunteer' id='hamburgerVolunteer' className='navText hamburgerText' onClick={() => this.handleClick()}>Volunteer</NavLink>
@@ -113,49 +113,49 @@ class App extends React.Component {
               <p id='fullNavTitle'>aPC</p>
             </NavLink>
             <div>
-              <FontAwesomeIcon icon={faBars} style={this.state.windowWidth > 500 ? {position: 'absolute', top: '15px', left: '95px'} : {position: 'absolute', top: '15px', left: '82px'}} onClick={(e) => this.handleHamburger(e)}/>
+              <FontAwesomeIcon icon={faBars} style={this.state.windowWidth > 500 ? { position: 'absolute', top: '15px', left: '95px' } : { position: 'absolute', top: '15px', left: '82px' }} onClick={(e) => this.handleHamburger(e)} />
             </div>
-            <SocialIcons windowWidth={this.state.windowWidth}/>
+            <SocialIcons windowWidth={this.state.windowWidth} />
           </div>
         }
         <Switch>
           <Route path='/calendar/day/:day'>
             <Main
               resetDay={resetDay => this.resetDay = resetDay}
-              winDim={{width: this.state.windowWidth, height: this.state.windowHeight}}
+              winDim={{ width: this.state.windowWidth, height: this.state.windowHeight }}
             />
           </Route>
           <Route path='/calendar/events/:event_'>
             <Main
               resetDay={resetDay => this.resetDay = resetDay}
-              winDim={{width: this.state.windowWidth, height: this.state.windowHeight}}
+              winDim={{ width: this.state.windowWidth, height: this.state.windowHeight }}
             />
           </Route>
           <Route exact path='/calendar'>
             <Main
               resetDay={resetDay => this.resetDay = resetDay}
-              winDim={{width: this.state.windowWidth, height: this.state.windowHeight}}
+              winDim={{ width: this.state.windowWidth, height: this.state.windowHeight }}
             />
           </Route>
           <Route path='/about'>
-            <About/>
+            <About />
           </Route>
           {/*<Route path='/donate'>
             <Donate/>
           </Route>*/}
           <Route path='/volunteer'>
-            <Volunteer/>
+            <Volunteer />
           </Route>
           <Route path='/icon'>
-            <IconComponent/>
+            <IconComponent />
           </Route>
           <Route path='/404'>
-            <NotFound/>
+            <NotFound />
           </Route>
           <Route exact path='/'>
             <HomepageComponent
               windowWidth={this.state.windowWidth}
-              winDim={{width: this.state.windowWidth, height: this.state.windowHeight}}
+              winDim={{ width: this.state.windowWidth, height: this.state.windowHeight }}
             />
           </Route>
           <Route>
