@@ -77,6 +77,9 @@ export class HomepageEventComponent extends React.Component {
       } else {
         //console.log('using width resize');
       };
+
+      // const img = require(this.props.categoryEvent.imgSrc);
+
       return (
         <div className='homepageEventWrapper'>
           <div className='homepageEventHeaderWrapper'>
@@ -88,7 +91,7 @@ export class HomepageEventComponent extends React.Component {
             <p className='homepageEventDate'>{this.props.categoryEvent.date}</p>
             {width !== 1 && <img
               className='homepageEventImg'
-              src={this.props.categoryEvent.imgSrc}
+              src={require(`${this.props.categoryEvent.imgSrc}`)}
               alt={this.props.categoryEvent.title}
               ref={img => this.imgRef = img}
               onLoad={() => this.getImgDim(this.imgRef.naturalHeight, this.imgRef.naturalWidth)}
