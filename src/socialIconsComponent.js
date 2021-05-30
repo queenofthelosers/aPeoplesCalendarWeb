@@ -21,9 +21,9 @@ export function SocialIcons(props) {
   };
   return (
     <div id='socialWrapper'>
-      <div className='fullNavSocialContainer' style={fullNavMargin}>
+      {/*<div className='fullNavSocialContainer' style={fullNavMargin}>
         <SocialIcon className='fullNavSocial' url='https://www.facebook.com/aPeoplesCalendar' style={socialIconSize} target='_blank'/>
-      </div>
+      </div>*/}
       <div className='fullNavSocialContainer' style={fullNavMargin}>
         <SocialIcon className='fullNavSocial' url='https://www.twitter.com/aPeoplesCal' style={socialIconSize} target='_blank'/>
       </div>
