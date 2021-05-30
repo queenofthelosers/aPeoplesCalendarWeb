@@ -481,7 +481,7 @@ html {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 0px;
+  margin-top: 25px;
   margin-bottom: 25px;
 }
 
@@ -520,7 +520,7 @@ html {
   padding: 5px;
   padding-left: 12px;
   padding-right: 12px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   margin-top: 15px;
 }
 

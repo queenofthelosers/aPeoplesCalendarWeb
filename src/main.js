@@ -26,7 +26,6 @@ class Main1 extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      dateHeader: '', //string, used as date header on homepage
       dateInput: '', //string in the format YYYY-MM-DD, used to have forward-facing tracked date input
       searchValue: '', //updated onChange from search field, used to generate text search queries
       displaySearch: false, //changes header from dateHeader to 'Search Results'
@@ -152,13 +151,10 @@ class Main1 extends React.Component {
     };
     //placeholder for date input:
     var dateInputInit = year + '-' + month + '-' + day;
-    //initialize date header with today's date month and day:
-    var dateHeader = this.monthList[now.getMonth()] + ' ' + now.getDate() + this.getDaySuffix(now.getDate());
     //figure out if today is an empty day or not, set haveEvents as a boolean accordingly
     var haveEvents = this.isDayNotEmpty(eventLibrary[initTodayString]);
     this.setState({
       dateInput: dateInputInit,
-      dateHeader: dateHeader,
       events: eventLibrary[initTodayString],
       displaySearch: false,
       haveEvents: haveEvents
@@ -189,15 +185,12 @@ class Main1 extends React.Component {
     if (newDateString[2][0] === '0') {
       newDateString[2] = newDateString[2].slice(1);
     };
-    //create the month and day date header with suffix
-    var dateHeader = this.monthList[parseInt(newDateString[1]) - 1] + ' ' + newDateString[2] + this.getDaySuffix(newDateString[2]);
     //create the lookup key to use with eventLibrary
     newDateString = [newDateString[1], newDateString[2]].join('-');
     var haveEvents = this.isDayNotEmpty(eventLibrary[newDateString]);
     this.setState({
       events: eventLibrary[newDateString],
       haveEvents: haveEvents,
-      dateHeader: dateHeader,
       dateInput: e.target.value,
       displaySearch: false,
     });
@@ -307,15 +300,15 @@ class Main1 extends React.Component {
               {/*<div id='appPromoWrapper'>
                 <a id='appPromo' target='_blank' rel="noopener noreferrer" href='https://play.google.com/store/apps/details?id=com.aPeoplesCalendar.aPC&hl=en'>On Android? Get the app!</a>
               </div>*/}
-              <div id="onThisDayWrapper">
-                <p id='onThisDay'>{this.state.displaySearch ? 'Search Results' : this.state.dateHeader}</p>
-              </div>
-              <div id='settings'>
+              {this.state.displaySearch && (<div id="onThisDayWrapper">
+                <p id='onThisDay'>Search Results</p>
+              </div>)}
+              <div id='settings' style={this.props.winDim.width < 501 ? {flexDirection: 'column'} : {}}>
                 <div id='datePickerWrapper'>
                   <input id='datePicker' type='date' value={this.state.dateInput} onChange={this.handleNewDate}/>
                 </div>
-                <form id='searchWrapper' onSubmit={this.handleSearch}>
-                  <input id='searchField' type="text" value={this.state.searchValue} onChange={this.trackSearch}/>
+                <form id='searchWrapper' onSubmit={this.handleSearch} style={this.props.winDim.width < 501 ? {marginTop: 20, marginLeft: -8} : {}}>
+                  <input id='searchField' style={this.props.winDim.width < 501 ? {width: 125} : {}} type="text" value={this.state.searchValue} onChange={this.trackSearch}/>
                   <button id='searchButton' type="submit"><FontAwesomeIcon icon={faSearch} className='searchIcon' size="m"/></button>
                 </form>
               </div>
