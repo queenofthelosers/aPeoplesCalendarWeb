@@ -32,11 +32,13 @@ class App extends React.Component {
     this.handleResize = this.handleResize.bind(this);
     this.handleHamburger = this.handleHamburger.bind(this);
     this.closeMenu = this.closeMenu.bind(this);
+    this.scrollRef = React.createRef()
     //this.hamburgerMenuTop = Math.round(1470920 + (46.61548 - 1470920)/(1 + (window.innerWidth/2990619)^1.163445));;
   };
 
   componentDidMount() {
     window.addEventListener("resize", this.handleResize);
+    this.executeScroll();
   };
 
   componentWillUnmount() {
@@ -80,6 +82,10 @@ class App extends React.Component {
     });
   };
 
+  executeScroll() {
+    this.scrollRef.current.scrollIntoView();
+  }
+
   //this function is a necessary evil right now. resetDay() does nothing until <Main/> is rendered, when it is defined as the initializeToday function from <Main1/>
   //This code is executed when the title (or "Home" link from hamburger menu) is clicked, causing <Main1/> to reset with today's date
   //I have tried to move the today-initializing code up to this parent component, but the <Main/> <Main1/> situation prevents it from working
@@ -93,6 +99,7 @@ class App extends React.Component {
     return (
       <Router>
         <img src={require('./assets/Protests-85-skinniest.jpg')} alt='A police officer maces a peaceful protester at a black lives matter protest in Ohio' id='bannerImg' />
+        <div ref={this.scrollRef}>
         {this.state.windowWidth > 780 &&
           <FullNavBar
             windowWidth={this.state.windowWidth}
@@ -118,6 +125,7 @@ class App extends React.Component {
             <SocialIcons windowWidth={this.state.windowWidth} />
           </div>
         }
+        </div>
         <Switch>
           <Route path='/calendar/day/:day'>
             <Main
