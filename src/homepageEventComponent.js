@@ -91,7 +91,7 @@ export class HomepageEventComponent extends React.Component {
             <p className='homepageEventDate'>{this.props.categoryEvent.date}</p>
             {width !== 1 && <img
               className='homepageEventImg'
-              src={require(`${this.props.categoryEvent.imgSrc}`)}
+              src={`${process.env.PUBLIC_URL}${this.props.categoryEvent.imgSrc}`}
               alt={this.props.categoryEvent.title}
               ref={img => this.imgRef = img}
               onLoad={() => this.getImgDim(this.imgRef.naturalHeight, this.imgRef.naturalWidth)}

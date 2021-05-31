@@ -88,7 +88,7 @@ export class EventComponent extends React.Component {
             <p className='eventDate'>{this.props.categoryEvent.date}</p>
             {width !== 1 && <img
               className='eventImg'
-              src={require(`${this.props.categoryEvent.imgSrc}`)}
+              src={`${process.env.PUBLIC_URL}${this.props.categoryEvent.imgSrc}`}
               alt={this.props.categoryEvent.title}
               style={{ width: resizeWidth, height: resizeHeight }}
               ref={img => this.imgRef = img}
