@@ -10583,13 +10583,13 @@ export const eventLibrary = {
     ],
     'Rebellion': [
       {
-        category: '',
-        date: '',
-        title: '',
-        imgSrc: './assets/eventPhotos/empty.jpg',
-        description: ``,
-        link: '',
-        infoSrc: ''
+        category: 'Rebellion',
+        date: 'May 27th, 2013',
+        title: 'Gezi Park Occupation (2013)',
+        imgSrc: './assets/eventPhotos/Events/taksimSquare.jpg',
+        description: `On this day in 2013, Turkish protesters began occupying Gezi Park to oppose its demolition, an act with led to widespread protests and strikes with more than 3,500,000 participants, 22 deaths, and more than 8,000 injuries.\n\nThe wave of civil unrest across Turkey began after the park occupation was violently evicted by police, who used to tear gas, pepper spray, and water cannons to try and break up the protests, injuring more than one hundred people and hospitalizing a journalist.\n\nThe protest quickly grew in size - by May 31st, 10,000 gather in Istiklal Avenue. In June, the protests became national in scope and transcended any particular demographic or political ideology. Among the wide range of concerns brought by protesters were issues of freedom of the press, expression, and assembly, as well as the alleged political Islamist government's erosion of Turkey's secularism.\n\nMillions of Turkish football fans, normally divided by intense sports rivalry, marched in unity against the government. Protesters displayed symbols the environmentalist movement, rainbow banners, depictions of Che Guevara, different trade unions, and the PKK and its leader Abdullah Öcalan.\n\nOn June 4th, Taksim Dayanışması (Taksim Solidarity) issued a set of demands that included the preservation of Gezi Park, an end to police violence, the right to freedom of assembly, and an end to the privatization of public spaces. Deputy Prime Minister Bülent Arınç met the group on June 5th and rejected these demands.\n\nErdoğan blamed the protests on "internal traitors and external collaborators", demonizing his political opposition as the former. Despite the popular mobilization, Erdoğan remained in power and no major concessions were won from the government.`,
+        link: 'http://libcom.org/blog/istanbul-taksim-gezi-park-has-nothing-do-trees-30052013',
+        infoSrc: 'https://en.wikipedia.org/wiki/Gezi_Park_protests'
       },
     ],
     'Labor': [
@@ -10930,7 +10930,7 @@ export const eventLibrary = {
         date: 'May 31st, 1921',
         title: 'Tulsa Race Massacre (1921)',
         imgSrc: './assets/eventPhotos/Events/tulsaMassacre.jpg',
-        description: `On this day in 1921, the Tulsa Race Massacre began when mobs of white people attacked black residents and businesses of the Greenwood District, known as "Black Wall Street", killing hundreds of black people and making thousands homeless.\n\nScott Ellsworth called it "the single worst incident of racial violence in American history", with estimates ranging from 75-300 people killed, 800 wounded, and 10,000 black families made homeless from the destruction of property.\n\nThe massacre began over Memorial Day weekend after 19-year-old Dick Rowland, a black shoeshiner, was accused of assaulting Sarah Page, the 17-year-old white elevator operator of the nearby Drexel Building.\n\nAn armed group of black men showed up to the jail to counter the lynch mob had been formed, and shots rang out as a white member of the mob tried to disarm one of the black men. The initial violence left ten people dead, and a mob of enraged white people stormed black neighborhoods, indiscriminately killing people and destroying property.\n\nFor 75 years (until 1996), the massacre was almost totally omitted from local, state, and national histories. It was not recognized in the Tulsa Tribune feature of "Fifteen Years Ago Today" or "Twenty-Five Years Ago Today", and a 2017 report detailing the history of the Tulsa Fire Department from 1897 until the date of publication made no mention of the 1921 fire.`,
+        description: `On this day in 1921, the Tulsa Race Massacre began when mobs of white people attacked black residents and businesses of the Greenwood District, known as "Black Wall Street", killing hundreds of black people and making thousands homeless.\n\nHistorian Scott Ellsworth called it "the single worst incident of racial violence in American history", with estimates ranging from 75-300 people killed, 800 wounded, and 10,000 black families made homeless from the destruction of property.\n\nThe massacre began over Memorial Day weekend after 19-year-old Dick Rowland, a black shoeshiner, was accused of assaulting Sarah Page, the 17-year-old white elevator operator of the nearby Drexel Building.\n\nWhen a lynch mob formed at the jail, an armed group of black men showed up to counter it. Shots rang out when a white person tried to disarm one of the black men. The initial violence left ten people dead, and a mob of enraged white people stormed black neighborhoods, indiscriminately killing people and destroying property.\n\nFor 75 years (until 1996), the massacre was almost totally omitted from local, state, and national histories. It was not recognized in the Tulsa Tribune feature of "Fifteen Years Ago Today" or "Twenty-Five Years Ago Today", and a 2017 report detailing the history of the Tulsa Fire Department from 1897 until the date of publication made no mention of the 1921 fire.`,
         link: 'https://www.nytimes.com/2020/06/19/opinion/tulsa-race-riot-massacre-graves.html',
         infoSrc: 'https://en.wikipedia.org/wiki/Tulsa_race_massacre'
       },
@@ -25087,7 +25087,7 @@ export const eventLibrary = {
         date: 'December 6th, 1989',
         title: 'École Polytechnique Massacre (1989)',
         imgSrc: './assets/eventPhotos/Events/ecoleMassacre.jpg',
-        description: `The École Polytechnique Massacre was an anti-feminist mass shooting that killed 14 women at the École Polytechnique engineering school in Montreal, on this day in 1989.\n\nClaiming he was "fighting feminism", the shooter entered a mechanical engineering class at the school and ordered the women and men to opposite sides of the classroom. He instructed the men to leave and shot the remaining women. After this, the shooter walked throughout the school, targeting women for another 20 minutes before committing suicide. Fourteen women were killed, ten women and four men were injured.\n\nThe event was the most deadly mass shooting in Canada's history at the time, and led to more stringent gun control laws as well as changes in the tactical response of police to mass shootings.`,
+        description: `The École Polytechnique Massacre was an anti-feminist mass shooting that killed 14 women at the École Polytechnique engineering school in Montreal on this day in 1989.\n\nClaiming he was "fighting feminism", the shooter entered a mechanical engineering class at the school and ordered the women and men to opposite sides of the classroom. He instructed the men to leave and shot the remaining women. After this, the shooter walked throughout the school, targeting women for another 20 minutes before committing suicide. Fourteen women were killed, ten women and four men were injured.\n\nThe event was the most deadly mass shooting in Canada's history at the time, and led to more stringent gun control laws as well as changes in the tactical response of police to mass shootings.`,
         link: 'https://www.thecanadianencyclopedia.ca/en/article/polytechnique-tragedy',
         infoSrc: 'https://en.wikipedia.org/wiki/%C3%89cole_Polytechnique_massacre'
       },
