@@ -14401,13 +14401,13 @@ export const eventLibrary = {
   '7-19': {
     'Revolution': [
       {
-        category: '',
-        date: '',
-        title: '',
-        imgSrc: './assets/eventPhotos/empty.jpg',
-        description: ``,
-        link: '',
-        infoSrc: ''
+        category: 'Revolution',
+        date: 'July 19th, 1936',
+        title: 'Spanish Revolution (1936)',
+        imgSrc: './assets/eventPhotos/Events/spanishRevolution1936.jpg',
+        description: `On this day in 1936, the Confederación Nacional del Trabajo (CNT) and Unión General de Trabajadores (UGT), together more than 3 million members, called a general strike, beginning the workers' revolution during the Spanish Civil War.\n\nThe strike was called in response to a nationalist military coup that had taken place on July 17th, and was revolutionary and anti-capitalist in character. During the general strike, civilians acquired weapons by raiding state weapons depots.\n\nOn July 24th, the first voluntary militia, known as the Durriti Column, named after libertarian communist Buenaventura Durrti, left Barcelona for the city of Aragon. Other regiments formed, such as the anarchist Iron Column and the CNT-affliated Red and Black Column.\n\nOver the next three years, revolutionary Republicans began reorganizing society and production on anarchist principles and battled with the Nationalist forces, led by Francisco Franco.\n\nThe Republicans were aided and joined by anti-fascists and socialists from all over the world: George Orwell, a British writer, joined the fight and later authored a memoir based on his experiences; 3,000 American volunteers joined the fight as the Abraham Lincoln Brigade; the Soviet Union provided the largest amount of foreign aid to the Republic, using their position to try and make the revolution more Bolshevik in character.\n\nThe Republicans were defeated in 1939 and Francisco Franco became the fascist ruler of Spain, ruling until his death in 1975. Many Spanish revolutionaries sought political asylum in the United States, producing the paper "Espana Libre" to connect the scattered community of Spanish exiles until Franco's death. Others worked to undermine Franco's government from outside the country.\n\n"Don't you see why I'll continue fighting as long as these social injustices exist?" - Buenaventura Durruti`,
+        link: 'https://www.writing.upenn.edu/~afilreis/88/spain-overview.html',
+        infoSrc: 'https://en.wikipedia.org/wiki/Spanish_Revolution_of_1936'
       },
     ],
     'Rebellion': [
@@ -14460,7 +14460,7 @@ export const eventLibrary = {
         date: 'July 19th, 1848',
         title: 'Seneca Falls Convention (1848)',
         imgSrc: './assets/eventPhotos/Events/senecaFalls.jpg',
-        description: `On this day in 1848, the Seneca Falls Convention, the first women's rights convention in the U.S., began. It was advertised as "a convention to discuss the social, civil, and religious condition and rights of woman". Held in the Wesleyan Chapel of the town of Seneca Falls, New York, it spanned two days and became a national, annual event in 1850 (held in Worcester, Massachusetts).\n\nNotable speakers at the convention include Lucretia Mott, Elizabeth Cady Stanton, and Frederick Douglass, who was the meeting's only black member. At its conclusion, the convention issued a "Declaration of Sentiments", which became "the single most important factor in spreading news of the women's rights movement around the country in 1848 and into the future", according to historian Judith Wellman.`,
+        description: `On this day in 1848, the first women's rights convention in the United States, the Seneca Falls Convention, began, advertised as "a convention to discuss the social, civil, and religious condition and rights of woman".\n\nHeld in the Wesleyan Chapel of the town of Seneca Falls, New York, it spanned two days and became a national, annual event in 1850 (held in Worcester, Massachusetts).\n\nNotable speakers at the convention include Lucretia Mott, Elizabeth Cady Stanton, and Frederick Douglass, who was the meeting's only black member. At its conclusion, the convention issued a "Declaration of Sentiments", which became "the single most important factor in spreading news of the women's rights movement around the country in 1848 and into the future", according to historian Judith Wellman.`,
         link: 'https://www.history.com/topics/womens-rights/seneca-falls-convention',
         infoSrc: 'https://en.wikipedia.org/wiki/Declaration_of_Sentiments'
       },
@@ -24815,6 +24815,15 @@ export const eventLibrary = {
         description: `On this day in 1944, Greek police, with the assistance of the British Army, fired on a crowd of 200,000 left-wing protesters in Athens, killing 28 people and wounding approximately 150 more.\n\nThe protest had been called by the EAM (National Liberation Front), a communist resistance movement against the Nazi occupation of Greece, in response to being ordered to disarm by British officer Ronald Scobie and opposition to the Nazi-collaborating "Security Battalions" generally.\n\nThe shootings began when protesters marched to the Tomb of the Unknown Soldier, in front of the Royal Palace. Among the many accounts of the violence, N. Farmakis, a teenaged member of the Anti-EAM "Organization X" testified that he saw the head of the police Angelos Evert giving the order to open fire on the crowd by means of a handkerchief waved from the window.\n\nThe massacre marked the beginning of the "Dekemvriana" ("December Events" in English), a period of fighting between the EAM and the British Army and its collaborators. The Dekemvriana broke the power of the EAM, with 13,000 members of the EAM arrested and transferred by the British to concentration camps. The massacre and its aftermath were important events in the lead up to the Greek Civil War of 1946.`,
         link: 'https://libcom.org/history/british-perfidy-greece-story-worth-remembering-ed-vulliamy-helena-smith',
         infoSrc: 'https://en.wikipedia.org/wiki/Dekemvriana'
+      },
+      {
+        category: 'Rebellion',
+        date: 'December 3rd, 1854',
+        title: 'Eureka Rebellion (1854)',
+        imgSrc: './assets/eventPhotos/Events/eurekaRebellion.jpg',
+        description: `On this day in 1854, a battle between Australian miners and British Colonial Authorities broke out at a makeshift stockade that the miners constructed, a working class revolt that killed dozens and led to democratic reforms in 1856.\n\nThe battle followed months of negotiations and civil unrest by miners, who wanted to loosen restrictions and the price on mining licenses. Colonial police would brutally enforce restrictive licensing laws by patrolling mines and harassing workers, pejoratively dubbed "license hunts".\n\nAs tensions between the miners and government increased, a militant labor leader, Peter Lalor, was elected. Lalor quickly organized the miners into a militaristic structure, with rebel brigades that would elect their captains.\n\nThe miners then set up an encampment and barricaded an area known as Bakery Hill to protect themselves from colonial officals and license Hunts. There, they raised the "Eureka Flag", a blue flag with a white Southern Cross with a deliberately absent Union Jack, the first ever flag to represent a Republican Australia.\n\nOn the early morning of December 3rd, 276 soldiers and policemen attacked the camp. The battle was short and a decisive victory for the government: 22-60 miners were killed and over 100 were captured, while only 6 soldiers were killed.\n\nThirteen leaders of the miners were placed on trial for treason. After an outpouring of popular support, the miners were freed and carried through the streets of Melbourne as heroes. This support contributed to the passage of male suffrage in 1856, one of the earliest democratic reforms in Australian history.`,
+        link: 'https://en.wikipedia.org/wiki/Eureka_Rebellion',
+        infoSrc: 'http://www.eurekapedia.org/Eureka_Battle'
       },
     ],
     'Labor': [
