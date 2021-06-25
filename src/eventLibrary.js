@@ -12969,6 +12969,15 @@ export const eventLibrary = {
         link: 'https://www.amnesty.org/en/latest/news/2018/11/saudi-arabia-reports-of-torture-and-sexual-harassment-of-detained-activists/',
         infoSrc: 'https://en.wikipedia.org/wiki/Samar_Badawi'
       },
+      {
+        category: 'Birthdays',
+        date: 'June 28th, 1909',
+        title: 'Walter Audisio (1909 - 1973)',
+        imgSrc: '/assets/eventPhotos/Individuals/walterAudisio.png',
+        description: `Walter Audisio, born on this day in 1909, was an Italian communist partisan and politician who was the person most likely to have executed Benito Mussolini.\n\nAudisio was a prodigious students and worked for some years as an accountant before joining a clandestine anti-fascist group in 1931. When the group was discovered by the fascist secret police, ORVA, Audisio was sentenced to five years confinement on the island of Ponza.\n\nReleased during World War II, he continued to resist the Mussolini's fascist government and, in September 1943, he started to organize the first bands of partisans in Casale Monferrato.\n\nBy January 1945, he had become a leading figure of the Italian resistance movement in Milan and began using the pseudonym "Colonnello Valerio", a name possibly also used by Luigi Longo.\n\nIt was as an official of the National Liberation Committee that he received the order to execute Mussolini and his mistress, who had been captured the day before.\n\nAlthough it is not known with certainty who pulled the trigger (various figures, including Audisio, have claimed to have executed Mussolini), the version of events with Audisio being directly responsible are generally considered the most credible.\n\nAfter the war, Audisio was elected to parliament for the Italian Communist Party, where he served for 20 years.`,
+        link: 'https://www.nytimes.com/1973/10/13/archives/walter-audisio-dies-in-italy-partisan-executed-mussolini-rendered.html',
+        infoSrc: 'https://en.wikipedia.org/wiki/Walter_Audisio'
+      },
     ],
     'Assassinations': [
       {
@@ -13037,6 +13046,15 @@ export const eventLibrary = {
         link: 'https://www.npr.org/sections/codeswitch/2014/03/10/287320160/stokely-carmichael-a-philosopher-behind-the-black-power-movement',
         infoSrc: 'https://en.wikipedia.org/wiki/Stokely_Carmichael'
       },
+      {
+        category: 'Birthdays',
+        date: 'June 29th, 1892',
+        title: 'Henry Gerber (1892 - 1972)',
+        imgSrc: '/assets/eventPhotos/Individuals/henryGerber.jpg',
+        description: `Henry Gerber, born on this day in 1892, was a German-American queer rights activist who, in 1924 in the United States, founded the first American pro-homosexual organization, known as the "Society for Human Rights" (SHR).\n\nGerber was in Passau, Bavaria, moving to the United States in 1913. In 1917, Gerber was briefly committed to a mental institution because of his homosexuality.\n\nWhen the U.S. declared war on Germany, Gerber was forced to choose between becoming interned as an enemy alien or enlist in the Army. Gerber chose the latter and served in the Army for approximately three years.\n\nDuring his time in Germany, Gerber learned about the sexologist Magnus Hirschfeld his advocacy to decriminalize and normalize homosexuality. He also traveled to Berlin, which supported a thriving gay subculture.\n\nInspired by Hirschfeld's work, on December 10th, 1924, Gerber founded the Society for Human Rights, the first pro-gay organization in the United States. A black clergyman named John T. Graves signed on as the organization's first president while Gerber and six others were listed as directors.\n\nGerber set out to expand the Society's membership beyond the original seven, but had difficulty interesting anyone other than working class queer people in joining. More affluent members of Chicago's gay community refused to join his society, not wanting to ruin their reputations by being associated with homosexuality.\n\nThe Society was only a chartered organization for a few months before police arrested Gerber and several other members. Gerber was subjected to three highly publicized trials, and his defense, while ultimately successful, cost him his life savings.\n\nUnable to continue funding the Society, the group dismantled, and Gerber left for New York City, embittered that the more affluent gays of Chicago had not come to his aid for a cause he believed was designed to advance the common good.\n\n"s not the psychiatrist again putting the cart before the horse in saying that homosexuality is a symptom of the neurotic style of life? Would it not sound more natural to say that the homosexual is made neurotic because his style of life is beset by thousands of dangers?"\n\n- Henry Gerber`,
+        link: 'https://www.nps.gov/articles/henry-gerber-house-national-historic-landmark.htm',
+        infoSrc: 'https://en.wikipedia.org/wiki/Henry_Gerber'
+      },
     ],
     'Assassinations': [
       {
@@ -13064,13 +13082,13 @@ export const eventLibrary = {
   '6-30': {
     'Revolution': [
       {
-        category: '',
-        date: '',
-        title: '',
-        imgSrc: '/assets/eventPhotos/empty.jpg',
-        description: ``,
-        link: '',
-        infoSrc: ''
+        category: 'Revolution',
+        date: 'June 30th, 1960',
+        title: 'Congo Crisis (1960)',
+        imgSrc: '/assets/eventPhotos/Individuals/patriceLumumbaSpeech.jpg',
+        description: `On this day in 1960, the Republic of the Congo became formally independent from Belgian colonizers, beginning a four year period of civil war which killed approximately 100,000 people, including the country's first Prime Minister, Patrice Lumumba. The complex period of political strife is known as the "Congo Crisis".\n\nThe Congo had been colonized by Belgium since the late 19th century, a process initiated by King Leopold II of Belgium, who was frustrated by Belgium's lack of international power and prestige.\n\nA nationalist movement within the Belgian Congo began to gain momentum in the 1950s, consisting of rival factions such as the Mouvement National Congolais (MNC), of which Patrice Lumumba (shown) was a leading figure, and Alliance des Bakongo (ABAKO), led by Joseph Kasa-Vubu.\n\nFollowing major riots in Stanleyville and Léopoldville in 1959, a Round Table Conference in Brussels was held in January 1960, with leaders from all the major Congolese parties in attendance.\n\nThe Congolese leaders were successfully in negotiating their independence to be scheduled within months, formally winning their independence from Belgium in late June. Within days, violence between white and black communities broke out, and the country descended into a civil war between rival political factions. Some factions, supported by powerful mining interests, began seceding from the newly founded Republic of Congo.\n\nThe United Nations sent in peacekeeping troops, which were initially welcomed by Lumumba and the central government with the idea that the UN would help suppress the secessionist states. Viewing the secessions as an internal political matter, the UN refused to use its troops to assist the central Congolese government against them.\n\nLumumba also sought the assistance of the U.S. government of Dwight D. Eisenhower, which refused to provide meaningful military aid. Frustrated, he turned to the Soviet Union, which agreed to provide weapons, logistical and material support, which the state promptly used against the secessionists.\n\nDespite Lumumba's public proclamations that he was not a communist, the United States viewed the acceptance of aid with alarm, and Lumumba became a target of Central Intelligence Agency surveillance. Lumumba was captured and subsequently executed by Belgian-assissted forces on January 17th, 1961.\n\nThe factional conflict continued in the wake of Lumumba's death, with fighting and intervention coming from Western states, the United Nations, and various political groups inside the Congo. In 1964, a group known as the Simbas initiated a rebellion based on social egalitarian rhetoric and witchcraft.\n\nIn November 1964, the Simbas rounded up the remaining white population of Stanleyville, holding them hostage in the Victoria Hotel to use as bargaining tools with the Armée Nationale Congolaise (ANC). In order to recover the hostages, Belgian parachute troops were flown to the Congo in American aircraft. More than 70 hostages and 1,000 Congolese civilians were killed in the rescue mission, but the vast majority of hostages were evacuated.\n\nFollowing chaotic elections in 1964, Joseph-Désiré Mobutu took power in a military coup, assuming sweeping powers and instituting widespread political repression. Mobutu had previously arranged for Lumumba's execution and ruled until 1997, enjoying support from the United States, France, Belgium, and Maoist China.`,
+        link: 'https://www.blackpast.org/global-african-history/congo-civil-war-1960-1964/',
+        infoSrc: 'https://en.wikipedia.org/wiki/Congo_Crisis'
       },
     ],
     'Rebellion': [
