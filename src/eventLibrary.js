@@ -11464,13 +11464,13 @@ export const eventLibrary = {
     ],
     'Labor': [
       {
-        category: '',
-        date: '',
-        title: '',
-        imgSrc: '/assets/eventPhotos/empty.jpg',
-        description: ``,
-        link: '',
-        infoSrc: ''
+        category: 'Labor',
+        date: 'June 8th, 1931',
+        title: 'Battle of Menstad (1931)',
+        imgSrc: '/assets/eventPhotos/Events/battleOfMenstad.jpg',
+        description: `On this day in 1931, the Battle of Menstad began near Skien, Norway when 2,000 striking workers fought and overwhelmed a group of police officers protecting scabs at Norsk Hydro's Menstad plant. The battle took place in the context of drastic pay cuts during the Great Depression.\n\nHistorian Knut Dørum has written that Norway's biggest industrial disputes ever took place that year, beginning with a six month lock-out in the iron industry, involving up to 86,000 workers and causing in a loss of 13 million working days.\n\nAt Menstad, Norsk Hydro and Union & Co hired strike-breakers to replace the striking workers. The workers responded by chasing away the strike-breakers in the days before the battle. The strikers returned on June 8th with police protection that was quickly overwhelmed by striking workers. In response to the violence, the government deployed troops and ships from to the area.\n\nAfterward, 28 strikers were arrested and put on trial, 20 of whom were sentenced to prison. Most of those arrested were members of the Norwegian Communist Party and the Norwegian Labour Party. Worker organization did not prevent mass unemployment during the Great Depression; in the winter of 1932–1933, up to 40% of the trade unionists were unemployed.`,
+        link: 'https://en.wikipedia.org/wiki/Menstad_conflict',
+        infoSrc: 'https://snl.no/Menstadslaget'
       },
     ],
     'Birthdays': [
@@ -13691,13 +13691,13 @@ export const eventLibrary = {
     ],
     'Rebellion': [
       {
-        category: 'Rebellion',
-        date: 'July 8th, 1931',
-        title: 'Battle of Menstad (1931)',
-        imgSrc: '/assets/eventPhotos/Events/battleOfMenstad.jpg',
-        description: `On this day in 1931, the Battle of Menstad began near Skien, Norway when 2,000 striking workers fought and overwhelmed a group of police officers protecting scabs at Norsk Hydro's Menstad plant. The battle took place in the context of drastic pay cuts during the Great Depression.\n\nHistorian Knut Dørum has written that Norway's biggest industrial disputes ever took place that year, beginning with a six month lock-out in the iron industry, involving up to 86,000 workers and causing in a loss of 13 million working days.\n\nAt Menstad, Norsk Hydro and Union & Co hired strike-breakers to replace the striking workers. The workers responded by chasing away the strike-breakers in the days before the battle. The strikers returned on June 8th with police protection that was quickly overwhelmed by striking workers. In response to the violence, the government deployed troops and ships from to the area.\n\nAfterward, 28 strikers were arrested and put on trial, 20 of whom were sentenced to prison. Most of those arrested were members of the Norwegian Communist Party and the Norwegian Labour Party. Worker organization did not prevent mass unemployment during the Great Depression; in the winter of 1932–1933, up to 40% of the trade unionists were unemployed.`,
-        link: 'https://en.wikipedia.org/wiki/Menstad_conflict',
-        infoSrc: 'https://snl.no/Menstadslaget'
+        category: '',
+        date: '',
+        title: '',
+        imgSrc: '/assets/eventPhotos/empty.jpg',
+        description: ``,
+        link: '',
+        infoSrc: ''
       },
     ],
     'Labor': [
