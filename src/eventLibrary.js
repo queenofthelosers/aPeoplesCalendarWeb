@@ -14020,6 +14020,15 @@ export const eventLibrary = {
         link: 'https://www.blackpast.org/african-american-history/nixon-e-d-nixon-1899-1987/',
         infoSrc: 'https://en.wikipedia.org/wiki/E._D._Nixon'
       },
+      {
+        category: 'Birthdays',
+        date: 'July 12th, 1997',
+        title: 'Malala Yousafzai (1997 - )',
+        imgSrc: '/assets/eventPhotos/Individuals/malalaYousafzai.jpg',
+        description: `Malala Yousafzai, born on this day in 1997, is a Pakistani feminist and socialist activist who survived an attempted assassination by the Pakistani Taliban at fifteen years of age, continuing her activism unabated.\n\nShe had begun to achieve international prominence, agreeing to appear in a documentary by request of a New York Times reporter, making multiple media appearances, and being awarded Pakistan's first National Youth Peace Prize.\n\nIn a meeting held in the summer of 2012, Taliban leaders unanimously agreed to kill her. On October 9th, 2012, a Taliban gunman shot Yousafzai in the face, along with two other women, as she rode home on a bus after taking an exam in Pakistan's Swat Valley. She survived.\n\nIn 2014, she was the co-recipient of the 2014 Nobel Peace Prize, along with Kailash Satyarthi of India. Aged 17 at the time, she was the youngest-ever Nobel Prize laureate.In 2020, Malala graduated from Oxford University.\n\n"We realize the importance of our voices only when we are silenced."\n\n- Malala Yousafzai`,
+        link: 'https://www.womenshistory.org/education-resources/biographies/malala-yousafzai',
+        infoSrc: 'https://en.wikipedia.org/wiki/Malala_Yousafzai'
+      },
     ],
     'Assassinations': [
       {
