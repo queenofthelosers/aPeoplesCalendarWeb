@@ -14278,7 +14278,7 @@ export const eventLibrary = {
         date: 'July 15th, 1958',
         title: 'Lebanon Crisis (1958)',
         imgSrc: '/assets/eventPhotos/Events/lebanonCrisis1958.jpg',
-        description: `On this day in 1958, the U.S. invaded Lebanon with more than 54,000 soldiers, occupying the Port of Beirut and Beirut International Airport, its first overt military action in the Middle East, setting an imperialist precedent for the region.\n\nThe pro-Western president of Lebanon, Camille Chamoun, had asked for U.S. assistance after armed groups in Lebanon began rebelling against his administration. While not overtly communist in character, the rebels had burned down a U.S. propaganda outlet and were generally aligned with Gamal Nasser and the United Arab Republic (UAR).\n\nUsing the anti-communist "Eisenhower Doctrine" as justification, on July 15th, President Eisenhower authorized "Operation Blue Bat", a military occupation of Lebanon with more than 14,000 footsoldiers, supported by a fleet of 70 ships and 40,000 sailors, to keep Chamoun in power.\n\nOccupying the Port of Beirut and Beirut International Airport, the forces remained in Lebanon until October 25th, when President Chamoun completed his term as president of Lebanon.\n\nAccording to historian Maurice Labelle, "this was the first overt U.S. military intervention in the region", demonstrating the U.S.'s willingness to act as an imperialist power in the Middle East, willing to commit to overt military action to manage its interests in the region.`,
+        description: `On this day in 1958, the U.S. invaded Lebanon with 54,000 troops, occupying the Port of Beirut and Beirut International Airport, its first overt military action in the Middle East, setting an imperialist precedent for the region.\n\nThe pro-Western president of Lebanon, Camille Chamoun, had asked for U.S. assistance after armed groups in Lebanon began rebelling against his administration. While not overtly communist in character, the rebels had burned down a U.S. propaganda outlet and were generally aligned with Gamal Nasser and the United Arab Republic (UAR).\n\nUsing the anti-communist "Eisenhower Doctrine" as justification, on July 15th, President Eisenhower authorized "Operation Blue Bat", a military occupation of Lebanon with more than 14,000 footsoldiers, supported by a fleet of 70 ships and 40,000 sailors, to keep Chamoun in power.\n\nOccupying the Port of Beirut and Beirut International Airport, the forces remained in Lebanon until October 25th, when President Chamoun completed his term as president of Lebanon.\n\nAccording to historian Maurice Labelle, "this was the first overt U.S. military intervention in the region", demonstrating the U.S.'s willingness to act as an imperialist power in the Middle East, willing to commit to overt military action to manage its interests in the region.`,
         link: 'https://www.aljazeera.com/indepth/features/2013/07/201371411160525538.html',
         infoSrc: 'https://en.wikipedia.org/wiki/1958_Lebanon_crisis'
       },
@@ -14287,24 +14287,24 @@ export const eventLibrary = {
   '7-16': {
     'Revolution': [
       {
-        category: '',
-        date: '',
-        title: '',
-        imgSrc: '/assets/eventPhotos/empty.jpg',
-        description: ``,
-        link: '',
-        infoSrc: ''
+        category: 'Revolution',
+        date: 'July 16th, 1917',
+        title: 'July Days (1917)',
+        imgSrc: '/assets/eventPhotos/Events/julyDays.jpg',
+        description: `On this day in 1917, the "July Days" began in Petrograd, Russia when soldiers, sailors, and workers took up arms against the Russian Provisional Government, chanting "All Power to the Soviets!" and holding Viktor Chernov hostage.\n\nThe July Days took place in the context of growing discontent against the Provisional Government and increasing support for the Bolsheviks. A few months earlier, Bolshevik leader Vladimir Lenin gave his "April Theses", coming out in support of an armed, proletarian insurrection. By July, rank-and-file Bolsheviks were advocating overthrowing the Provisional Government.\n\nOn the morning on July 16th, after a disastrous offensive on World War I's Eastern Front, armed soldiers and workers marched through the streets of Petrograd, to the Tauride Palace. These demonstrators marched under the slogan "All Power to the Soviets", firing their rifles into the air and commandeering vehicles.\n\nThe following day at Tauride Palace, the crowd demanded to see a government official, and the Soviet Leaders sent out Viktor Chernov, a prominent member of the  Socialist-Revolutionary Party. When he tried to calm the crowd, they seized him instead, with one protestor famously shouting, "Take power, you son of a bitch, when it is handed to you!" He was released upon the urging on Leon Trotsky.\n\nThe military authorities sent troops against the demonstrators, leading to many arrests and deaths. The government disarmed workers, disbanded revolutionary military units, destroyed the headquarters of the Bolshevik Central Committee were destroyed, and ordered the arrest of Lenin, Trotsky, and other Bolshevik leaders.\n\nLenin was able to flee to Finland, while Trotsky was arrested alongside Anatoly Lunacharsky and Lev Kamenev. Although the Bolshevik Party's power was temporarily limited in the crackdown, they came to power in the October Revolution just a few months later.`,
+        link: 'https://www.britannica.com/event/July-Days',
+        infoSrc: 'https://en.wikipedia.org/wiki/July_Days'
       },
     ],
     'Rebellion': [
       {
-        category: '',
-        date: '',
-        title: '',
-        imgSrc: '/assets/eventPhotos/empty.jpg',
-        description: ``,
-        link: '',
-        infoSrc: ''
+        category: 'Rebellion',
+        date: 'July 16th, 1964',
+        title: 'Harlem Riot (1964)',
+        imgSrc: '/assets/eventPhotos/Events/harlemRiot1964.jpeg',
+        description: `On this day in 1964, a New York City cop shot and killed a fifteen year old boy, James Powell, leading to riots across Harlem in which residents protested, clashed with police, and caused approximately $1 million in property damage.\n\nThe rebellion began after Police Lieutenant Thomas Gilligan shot Powell three times in front of his friends and about a dozen other witnesses. Powell had entered the home of Patrick Lynch, a superintendent of three apartment houses in Yorkville, to confront him after he hosed down black students for allegedly hanging out on his building's stoops.\n\nGilligan, then off-duty, shot Powell while he was leaving Lynch's building. Although Gilligan claims Powell lunged at him with a knife, witnesses did not corrobate this account; some stated he raised his right hand in a defensive gesture before being killed.\n\nImmediately after Powell's killing, a group of student protesters clashed with police securing the crime scene. The second day, the Congress of Racial Equality (CORE) joined the protests.\n\nOn July 18th, the protests became an outright rebellion after Powell's funeral, monitored closely by barricaded police. After the funeral ended and most of the press left, the crowd and cops began to fight. Residents took to the rooftops, throwing bricks, bottles, and mortar at the police below. When one office shouted "Go home, go home!" at the crowd, a reply was heard: "We are home, Baby."\n\nThe unrest lasted until July 22nd, and included a mix of moderate factions from the NAACP as well as black nationalists. When prominent civil rights activist Bayard Rustin tried to discourage rioting, the crowd booed and chanted "Tom, Uncle Tom". When an NAACP represenative addressed the crowd, stating Bedford-Stuyvesant was a "community of law" and discouraged rioting, his van was rocked until he lost control of his microphone.\n\nAt the end of the conflict, reports counted one dead rioter, 118 injured, and 465 arrested. In September, Gilligan was cleared of any wrongdoing by a grand jury and charges were dropped.`,
+        link: 'https://www.blackpast.org/african-american-history/harlem-race-riot-1964/',
+        infoSrc: 'https://en.wikipedia.org/wiki/Harlem_riot_of_1964'
       },
     ],
     'Labor': [
