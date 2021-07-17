@@ -14807,13 +14807,13 @@ export const eventLibrary = {
     ],
     'Assassinations': [
       {
-        category: 'Assassinations',
-        date: 'July 29th, 1992',
-        title: 'Tavio Amorin (1958 - 1992)',
-        imgSrc: '/assets/eventPhotos/Individuals/tavioAmorin.jpg',
-        description: `Tavio Ayao Tobias Amorin, assassinated on this day in 1992, was a socialist Togolese politician committed to the cause of human rights. He led the Togolese Pan-African Socialist Party, whose politics were influenced by previous pan-African leaders like Kwame Nkrumah.\n\nTavio was relentless in his criticisms of the government. In his role as the Chair of Political Affairs, Human Rights, and Liberties Commission, he worked to expose the human rights abuses in Togo.\n\nHe was eventually assassinated by state police for his outspoken criticisms of the state, and no one has yet been brought to justice for his murder.`,
-        link: 'https://en.wikipedia.org/wiki/Tavio_Amorin',
-        infoSrc: 'https://www.huffpost.com/entry/tavio-amorin_b_5a061f6be4b0cc46c52e6a64'
+        category: '',
+        date: '',
+        title: '',
+        imgSrc: '/assets/eventPhotos/empty.jpg',
+        description: ``,
+        link: '',
+        infoSrc: ''
       },
     ],
     'Other': [
@@ -15215,13 +15215,13 @@ export const eventLibrary = {
     ],
     'Assassinations': [
       {
-        category: '',
-        date: '',
-        title: '',
-        imgSrc: '/assets/eventPhotos/empty.jpg',
-        description: ``,
-        link: '',
-        infoSrc: ''
+        category: 'Assassinations',
+        date: 'July 29th, 1992',
+        title: 'Tavio Amorin (1958 - 1992)',
+        imgSrc: '/assets/eventPhotos/Individuals/tavioAmorin.jpg',
+        description: `Tavio Ayao Tobias Amorin, assassinated on this day in 1992, was a socialist Togolese politician committed to the cause of human rights. He led the Togolese Pan-African Socialist Party, whose politics were influenced by previous pan-African leaders like Kwame Nkrumah.\n\nTavio was relentless in his criticisms of the government. In his role as the Chair of Political Affairs, Human Rights, and Liberties Commission, he worked to expose the human rights abuses in Togo.\n\nHe was eventually assassinated by state police for his outspoken criticisms of the state, and no one has yet been brought to justice for his murder.`,
+        link: 'https://en.wikipedia.org/wiki/Tavio_Amorin',
+        infoSrc: 'https://www.huffpost.com/entry/tavio-amorin_b_5a061f6be4b0cc46c52e6a64'
       },
     ],
     'Other': [
