@@ -14535,13 +14535,13 @@ export const eventLibrary = {
     ],
     'Assassinations': [
       {
-        category: '',
-        date: '',
-        title: '',
-        imgSrc: '/assets/eventPhotos/empty.jpg',
-        description: ``,
-        link: '',
-        infoSrc: ''
+        category: 'Assassinations',
+        date: 'July 19th, 1947',
+        title: 'Lyun Woon-hyung (1886 - 1947)',
+        imgSrc: '/assets/eventPhotos/Individuals/lyunWoonHyung.jpg',
+        description: `Lyuh Woon-hyung, also known as Yo Un-hyung, was a socialist politician who argued that Korean independence was essential to world peace, and was assassinated on this day in 1947 by a right-wing nationalist North Korean refugee.\n\nLyuh was born in Yangpyeong, Gyeonggi Province, the son of a local yangban magnate.  In 1910, Lyuh parted from Korean tradition by freeing his household's slaves, giving them enough land and money to become self-sufficient.\n\nLike many in the Korean independence movement, Lyuh sought aid from both right and left. In 1920, he joined the Koryǒ Communist Party, later meeting Leon Trotsky and Vladimir Lenin. In 1924, he also joined Sun Yat-sen's Chinese Nationalist Party to facilitate Sino-Korean cooperation.\n\nIn September 1945, Lyuh proclaimed the establishment of the People's Republic of Korea and became its vice-premier. When the United States occupied the Korean Peninsula, it did not recognize the People's Republic of Korea, and in October he was forced to step down under pressure from the U.S. military government.\n\nIn 1946, Lyuh represented the center-left politically as part of an effort to unify right and left-wing independence struggles, however this strategy earned ire from both sides. On July 19th, 1947, Lyuh was assassinated in Seoul by a 19-year-old North Korean refugee who was an active member of a nationalist right-wing organization.\n\nHis pen-name was Mongyang, the Hanja for "dream" and "the sun". Lyun Woon-hyung is one of the few politicians celebrated in both North and South Korea.`,
+        link: 'https://web.archive.org/web/20091022204807/http://www.asianresearch.org/articles/1853.html',
+        infoSrc: 'https://en.wikipedia.org/wiki/Lyuh_Woon-hyung'
       },
     ],
     'Other': [
@@ -15020,13 +15020,13 @@ export const eventLibrary = {
     ],
     'Assassinations': [
       {
-        category: '',
-        date: '',
-        title: '',
-        imgSrc: '/assets/eventPhotos/empty.jpg',
-        description: ``,
-        link: '',
-        infoSrc: ''
+        category: 'Assassinations',
+        date: 'July 26th, 1957',
+        title: 'Carlos Castillo Armas (1914 - 1957)',
+        imgSrc: '/assets/eventPhotos/Individuals/carlosCastilloArmas.jpg',
+        description: `On this day in 1957, anti-communist Guatemalan leader Carlos Castillo Armas was assassinated by a leftist member of the Presidential Guard, causing instability that led to the Guatemalan Civil War, which killed ~200,000 civilians.\n\nArmas had seized power with the aid of the U.S. Central Intelligence Agency (CIA) in a 1954 coup against democratically elected leader Jacobo Árbenz, ending an almost ten year period of represenative democracy in the country.\n\nÁrbenz was a social reformer whose government had instituted, among many other reforms, land redistribution, earning the ire of the United Fruit Company (UTC) and the U.S. government.\n\nAfter Armas consolidated his power in an October 1954 election in which he was the only candidate, Árbenz's popular agricultural reform was largely rolled back, with land confiscated from small farmers and returned to large landowners.\n\nHe also created a National Committee of Defense Against Communism, which investigated over 70,000 people and added 10% of the population to a list of suspected communists. Armas cracked down on unions and peasant organizations, arresting and killing thousands, often justifying the repression in the name of anti-communism.\n\nOn July 26th, 1957, Armas was assassinated by Romeo Vásquez Sánchez, a member of the presidential guard. After killing Armas, Sánchez fled into a different room and committed suicide.\n\nFollowing Armas's death, a period of violent political instability followed, with the U.S. backing state forces while leftist insurgents waged guerilla warfare against the state during the Guatemalan Civil War (1960 - 1996).\n\nThe Civil War killed more than 200,000 civilians. Though crimes against civilians were committed by both sides, 93&% of these atrocities were committed by the U.S.-backed military, including a genocidal scorched-earth campaign against the indigenous Maya population during the 1980s. Historians have attributed the violence of the civil war to the 1954 coup, and the "anti-communist paranoia" that it generated.`,
+        link: 'https://dspace.calstate.edu/bitstream/handle/10211.9/1455/ThesisFinalDraftFormated.pdf?sequence=1',
+        infoSrc: 'https://en.wikipedia.org/wiki/Carlos_Castillo_Armas'
       },
     ],
     'Other': [
