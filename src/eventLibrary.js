@@ -10487,13 +10487,13 @@ export const eventLibrary = {
     ],
     'Birthdays': [
       {
-        category: '',
-        date: '',
-        title: '',
-        imgSrc: '/assets/eventPhotos/empty.jpg',
-        description: ``,
-        link: '',
-        infoSrc: ''
+        category: 'Birthdays',
+        date: 'May 25th, 1886',
+        title: 'Lyun Woon-hyung (1886 - 1947)',
+        imgSrc: '/assets/eventPhotos/Individuals/lyunWoonHyung.jpg',
+        description: `Lyuh Woon-hyung, born on this day in 1886, was a socialist politician who argued that Korean independence was essential to world peace, and was assassinated in 1947 by a right-wing nationalist North Korean refugee. He is also known by the name Yo Un-hyung or the pen-name "Mongyang".\n\nLyuh was born in Yangpyeong, Gyeonggi Province, the son of a local yangban magnate.  In 1910, Lyuh parted from Korean tradition by freeing his household's slaves, giving them enough land and money to become self-sufficient.\n\nLike many in the Korean independence movement, Lyuh sought aid from both right and left. In 1920, he joined the Koryǒ Communist Party, later meeting Leon Trotsky and Vladimir Lenin. In 1924, he also joined Sun Yat-sen's Chinese Nationalist Party to facilitate Sino-Korean cooperation.\n\nIn September 1945, Lyuh proclaimed the establishment of the People's Republic of Korea and became its vice-premier. When the United States occupied the Korean Peninsula, it did not recognize the People's Republic of Korea, and in October he was forced to step down under pressure from the U.S. military government.\n\nIn 1946, Lyuh represented the center-left politically as part of an effort to unify right and left-wing independence struggles, however this strategy earned ire from both sides. On July 19th, 1947, Lyuh was assassinated in Seoul by a 19-year-old North Korean refugee who was an active member of a nationalist right-wing organization.\n\nHis pen-name was Mongyang, the Hanja for "dream" and "the sun". Lyun Woon-hyung is one of the few politicians celebrated in both North and South Korea.`,
+        link: 'https://web.archive.org/web/20091022204807/http://www.asianresearch.org/articles/1853.html',
+        infoSrc: 'https://en.wikipedia.org/wiki/Lyuh_Woon-hyung'
       },
     ],
     'Assassinations': [
