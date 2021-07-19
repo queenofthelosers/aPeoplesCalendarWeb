@@ -9,15 +9,15 @@ import {
 } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-import { Main } from './main.jsx';
-import { About } from './about.jsx';
-import { Volunteer } from './volunteer.jsx';
+import { Main } from '../Main/main.jsx';
+import { About } from '../About/about.jsx';
+import { Volunteer } from '../Volunteer/volunteer.jsx';
 // import {Donate} from './donate.js';
-import { NotFound } from './notFound.jsx';
-import { FullNavBar } from './fullNavBar.jsx';
-import { SocialIcons } from './socialIconsComponent.jsx';
-import { HomepageComponent } from './homepageComponent.jsx';
-import { IconComponent } from './iconComponent.jsx';
+import { NotFound } from '../NotFound/notFound.jsx';
+import { FullNavBar } from '../FullNavBar/fullNavBar.jsx';
+import { SocialIcons } from '../SocialIcons/socialIconsComponent.jsx';
+import { HomepageComponent } from '../Homepage/homepageComponent.jsx';
+import { IconComponent } from '../IconComponent/iconComponent.jsx';
 
 class App extends React.Component {
   constructor(props) {
@@ -97,10 +97,13 @@ class App extends React.Component {
   render() {
     return (
       <Router>
-        <img src={require('./assets/Protests-85-skinniest.jpg')} alt="A police officer maces a peaceful protester at a black lives matter protest in Ohio" id="bannerImg" />
+        <img
+          src={require('../../assets/Protests-85-skinniest.jpg')}
+          alt="A police officer maces a peaceful protester at a black lives matter protest in Ohio"
+          id="bannerImg"
+        />
         <div ref={this.scrollRef}>
-          {this.state.windowWidth > 780
-          && (
+          {this.state.windowWidth > 780 && (
           <FullNavBar
             windowWidth={this.state.windowWidth}
           />

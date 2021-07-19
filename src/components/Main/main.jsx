@@ -4,12 +4,12 @@ import {
   Route,
   Redirect,
 } from 'react-router-dom';
-import './App.css';
+import '../App/App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
-import { eventLibrary } from './eventLibrary.js';
-import { CalendarDisplay } from './calendarDisplay.jsx';
-import { EmptyDay } from './emptyDayComponent.jsx';
+import { eventLibrary } from '../../eventLibrary.js';
+import { CalendarDisplay } from '../CalendarDisplay/calendarDisplay.jsx';
+import { EmptyDay } from '../EmptyDay/emptyDayComponent.jsx';
 
 export function Main(props) {
   return (

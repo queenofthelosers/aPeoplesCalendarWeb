@@ -4,7 +4,7 @@ import {
   faPlus, faMinus, faClipboard, faClipboardCheck,
 } from '@fortawesome/free-solid-svg-icons';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
-import './App.css';
+import '../App/App.css';
 // import Helmet from 'react-helmet';
 
 export class EventComponent extends React.Component {

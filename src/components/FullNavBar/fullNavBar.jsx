@@ -4,7 +4,7 @@ import {
 } from 'react-router-dom';
 // import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 // import {faAndroid, faApple} from '@fortawesome/free-brands-svg-icons';
-import { SocialIcons } from './socialIconsComponent.jsx';
+import { SocialIcons } from '../SocialIcons/socialIconsComponent.jsx';
 
 export function FullNavBar(props) {
   return (

@@ -2,7 +2,7 @@ import React from 'react';
 import './calendarDisplay.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faMinus } from '@fortawesome/free-solid-svg-icons';
-import { EventComponent } from './eventComponent.jsx';
+import { EventComponent } from '../EventComponent/eventComponent.jsx';
 
 export class CalendarDisplay extends React.Component {
   constructor(props) {

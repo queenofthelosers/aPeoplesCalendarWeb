@@ -1,17 +1,14 @@
 import React from 'react';
-import './App.css';
+import '../App/App.css';
 import {
   NavLink,
 } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import { eventLibrary } from './eventLibrary.js';
-import { HomepageEventComponent } from './homepageEventComponent.jsx';
+import { eventLibrary } from '../../eventLibrary.js';
+import { HomepageEventComponent } from '../HomepageEvent/homepageEventComponent.jsx';
 
 export function HomepageComponent(props) {
-  console.log('props.winDim');
-  console.log(props.winDim);
-
   // get event of the day
   const now = new Date();
   const month = now.getMonth() + 1;
@@ -36,7 +33,7 @@ export function HomepageComponent(props) {
     <div id="homepageWrapper">
       <div id="homepageContent">
         <img
-          src={require('./assets/howardZinnHeadshot.jpg')}
+          src={require('../../assets/howardZinnHeadshot.jpg')}
           alt="a portrait of historian Howard Zinn"
           id="homepageImg"
         />
@@ -44,7 +41,7 @@ export function HomepageComponent(props) {
           <p id="homepageHeader">A People's Calendar</p>
           <div>
             <p id="homepageDescription">Inspired by Howard Zinn's work "A People's History of the United States", A People's Calendar (aPC) is a project that seeks to promote the worldwide history of working class movements and liberation struggles in the form of a searchable "On This Day" calendar.</p>
-            <p id="homepageDescription">This history includes, but is not limited to, indigenous resistance against colonization, the black liberation struggle, unionization efforts, slave rebellions, the women's suffrage movement, and workers' revolution.</p>
+            <p id="homepageDescription">This history includes, but is not limited to, indigenous resistance against colonization, the black liberation struggle, unionization efforts, slave rebellions, the women's suffrage movement, and revolution.</p>
           </div>
           <NavLink to="/calendar" id="toTheCalendarOuterWrapper">
             <div to="/calendar" id="toTheCalendarWrapper">

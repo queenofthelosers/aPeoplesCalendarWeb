@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClipboard, faClipboardCheck } from '@fortawesome/free-solid-svg-icons';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
-import './App.css';
+import '../App/App.css';
 
 export class HomepageEventComponent extends React.Component {
   constructor(props) {
