@@ -1,0 +1,184 @@
+import React from 'react';
+import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  NavLink,
+  Redirect,
+} from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { Main } from './main.jsx';
+import { About } from './about.jsx';
+import { Volunteer } from './volunteer.jsx';
+// import {Donate} from './donate.js';
+import { NotFound } from './notFound.jsx';
+import { FullNavBar } from './fullNavBar.jsx';
+import { SocialIcons } from './socialIconsComponent.jsx';
+import { HomepageComponent } from './homepageComponent.jsx';
+import { IconComponent } from './iconComponent.jsx';
+
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      windowWidth: window.innerWidth,
+      windowHeight: window.innerHeight,
+      hamburgerTop: Math.round(34 + (window.innerWidth / 7)),
+      openHamburger: false,
+    };
+    this.handleResize = this.handleResize.bind(this);
+    this.handleHamburger = this.handleHamburger.bind(this);
+    this.closeMenu = this.closeMenu.bind(this);
+    this.scrollRef = React.createRef();
+    // this.hamburgerMenuTop = Math.round(1470920 + (46.61548 - 1470920)/(1 + (window.innerWidth/2990619)^1.163445));;
+  }
+
+  componentDidMount() {
+    window.addEventListener('resize', this.handleResize);
+    this.executeScroll();
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleResize);
+  }
+
+  handleHomeHamburgerClick() {
+    this.resetDay();
+    this.handleClick();
+  }
+
+  closeMenu() {
+    this.setState({
+      openHamburger: false,
+    });
+  }
+
+  handleClick() {
+    this.setState({
+      openHamburger: !this.state.openHamburger,
+    });
+  }
+
+  handleResize(e) {
+    // this.hamburgerMenuTop = Math.round(1470920 + (46.61548 - 1470920)/(1 + (window.innerWidth/2990619)^1.163445));
+    this.setState({
+      windowWidth: window.innerWidth,
+      windowHeight: window.innerHeight,
+      hamburgerTop: Math.round(34 + (window.innerWidth / 7)),
+    });
+    if (window.innerWidth > 780 && this.state.openHamburger) {
+      this.setState({
+        openHamburger: false,
+      });
+    }
+  }
+
+  handleHamburger(e) {
+    this.setState({
+      openHamburger: !this.state.openHamburger,
+    });
+  }
+
+  executeScroll() {
+    this.scrollRef.current.scrollIntoView();
+  }
+
+  // this function is a necessary evil right now. resetDay() does nothing until <Main/> is rendered, when it is defined as the initializeToday function from <Main1/>
+  // This code is executed when the title (or "Home" link from hamburger menu) is clicked, causing <Main1/> to reset with today's date
+  // I have tried to move the today-initializing code up to this parent component, but the <Main/> <Main1/> situation prevents it from working
+  // when <App/> state updates, the props sent to <Main/> update, but the ones to <Main1/> do not. Instead, we get to have this placeholder function:
+  resetDay() {
+    // re-written as initializedToday in main.js
+    return '';
+  }
+
+  render() {
+    return (
+      <Router>
+        <img src={require('./assets/Protests-85-skinniest.jpg')} alt="A police officer maces a peaceful protester at a black lives matter protest in Ohio" id="bannerImg" />
+        <div ref={this.scrollRef}>
+          {this.state.windowWidth > 780
+          && (
+          <FullNavBar
+            windowWidth={this.state.windowWidth}
+          />
+          )}
+          {this.state.openHamburger
+          && (
+          <div id="hamburgerOpen" style={{ top: this.state.hamburgerTop }}>
+            <NavLink to="/about" id="hamburgerAbout" className="navText hamburgerText" onClick={() => this.handleClick()}>About</NavLink>
+            {/* <NavLink to='/donate' id='hamburgerDonate' className='navText hamburgerText' onClick={() => this.handleClick()}>Donate</NavLink> */}
+            <NavLink to="/volunteer" id="hamburgerVolunteer" className="navText hamburgerText" onClick={() => this.handleClick()}>Volunteer</NavLink>
+            <NavLink to="/calendar" id="hamburgerCalendar" className="navText hamburgerText" onClick={() => this.handleClick()}>Calendar</NavLink>
+            <a target="_blank" rel="noopener noreferrer" id="hamburgerContact" className="navText hamburgerText" href="mailto:apeoplescalendar@gmail.com" onClick={() => this.handleClick()}>Contact</a>
+          </div>
+          )}
+          {this.state.windowWidth <= 780
+          && (
+          <div id="smallNavBarContainer">
+            <NavLink to="/" className="navBarNavLink" id="titleContainer" onClick={() => this.closeMenu()}>
+              <p id="fullNavTitle">aPC</p>
+            </NavLink>
+            <div>
+              <FontAwesomeIcon icon={faBars} style={this.state.windowWidth > 500 ? { position: 'absolute', top: '15px', left: '95px' } : { position: 'absolute', top: '15px', left: '82px' }} onClick={(e) => this.handleHamburger(e)} />
+            </div>
+            <SocialIcons windowWidth={this.state.windowWidth} />
+          </div>
+          )}
+        </div>
+        <Switch>
+          <Route path="/calendar/day/:day">
+            <Main
+              resetDay={(resetDay) => this.resetDay = resetDay}
+              winDim={{ width: this.state.windowWidth, height: this.state.windowHeight }}
+            />
+          </Route>
+          <Route path="/calendar/events/:event_">
+            <Main
+              resetDay={(resetDay) => this.resetDay = resetDay}
+              winDim={{ width: this.state.windowWidth, height: this.state.windowHeight }}
+            />
+          </Route>
+          <Route exact path="/calendar">
+            <Main
+              resetDay={(resetDay) => this.resetDay = resetDay}
+              winDim={{ width: this.state.windowWidth, height: this.state.windowHeight }}
+            />
+          </Route>
+          <Route path="/about">
+            <About />
+          </Route>
+          {/* <Route path='/donate'>
+            <Donate/>
+          </Route> */}
+          <Route path="/volunteer">
+            <Volunteer />
+          </Route>
+          <Route path="/icon">
+            <IconComponent />
+          </Route>
+          <Route path="/404">
+            <NotFound />
+          </Route>
+          <Route exact path="/">
+            <HomepageComponent
+              windowWidth={this.state.windowWidth}
+              winDim={{ width: this.state.windowWidth, height: this.state.windowHeight }}
+            />
+          </Route>
+          <Route>
+            <Redirect
+              to={{
+                pathname: '/404',
+              }}
+            />
+          </Route>
+        </Switch>
+      </Router>
+    );
+  }
+}
+
+export default App;
