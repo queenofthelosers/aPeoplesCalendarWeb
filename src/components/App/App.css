@@ -71,10 +71,6 @@ html {
   flex-direction: row;
 }
 
-#fullNavTitle {
-
-}
-
 .fullNavTextContainer {
   font-size: 20px;
   width: 85px;
@@ -186,10 +182,6 @@ html {
   color: white;
 }
 
-#navTitleWrapper {
-  /*background-color: #ff4747;*/
-}
-
 #navTitleWrapper:hover {
   background-color: #333333;
   color: white;
@@ -204,20 +196,6 @@ html {
   text-decoration: none;
   margin: 0px;
 }
-
-.navText:hover {
-
-}
-
-/*#navRight {
-  grid-column: 4;
-  grid-row: 1;
-}
-
-#navLeft {
-  grid-column: 2;
-  grid-row: 1;
-}*/
 
 #aboutLink {
   grid-column: 1;
@@ -390,9 +368,6 @@ html {
 }
 
 @media (max-width: 850px) {
-  #fullNavBarContainer {
-    /*flex-direction: column;*/
-  }
   .faNavIconContainer {
     border-radius: 100px;
     height: 35px;
@@ -572,10 +547,6 @@ html {
 
 .headerWrapper {
   cursor: pointer;
-}
-
-.categoryHeaderWrapper {
-
 }
 
 .categoryHeader {
@@ -924,9 +895,6 @@ html {
 }
 
 @media (max-width: 500px) {
-  #datePicker {
-
-  }
   #searchField {
     width: 85px;
   }
