@@ -14570,13 +14570,13 @@ export const eventLibrary = {
     ],
     'Rebellion': [
       {
-        category: '',
-        date: '',
-        title: '',
-        imgSrc: '/assets/eventPhotos/empty.jpg',
-        description: ``,
-        link: '',
-        infoSrc: ''
+        category: 'Rebellion',
+        date: 'July 20th, 2017',
+        title: 'El Mahdaoui Arrested (2017)',
+        imgSrc: '/assets/eventPhotos/Individuals/hamidElMahdauoi.jpg',
+        description: `On this day in 2017, Moroccan journalist and political activist Hamid El Mahdaoui was arrested on dubious charges in Al Hoceima, Morocco, the day after publicly criticizing the government's decision to ban a July 20th protest.\n\nEl Mahdaoui is a Moroccan journalist who founded Badil.info in 2014, becoming a popular figure in the country through political commentary on social media and interviews of public figures. He had previously been convicted for disseminating "false news" in cases involving the head of the national police, although the sentence was suspended.\n\nEl Mahdaoui was part of a political group that had been organizing anti-government protests since October 2016 over perceived government neglect of northern Morocco's Rif region.\n\nThe government had banned a protest planned for July 20th, 2017, and on July 19th, El Mahdaoui publicly condemned the ban. El Mahdaoui was arrseted and, along with 53 other Hirak activists, forced to participate in a mass trial lasting almost one year.\n\nOn July 20th, 2020, El Mahdaoui was released from prison, returning to his family. His website, badil.info, remains active.`,
+        link: 'https://www.moroccoworldnews.com/2020/07/311055/moroccan-journalist-hamid-el-mahdaoui-leaves-prison-after-3-years',
+        infoSrc: 'https://www.hrw.org/news/2018/07/18/morocco-journalist-convicted-dubious-charge'
       },
     ],
     'Labor': [
@@ -14588,6 +14588,15 @@ export const eventLibrary = {
         description: `On this day in 1934, police shot into a crowd of workers participating in the Minneapolis General Strike, killing two and wounding sixty-seven in an event known as "Bloody Friday".\n\nThe Minneapolis General Strike of 1934 grew out of a Teamsters strike against most of the trucking companies operating in Minneapolis, Minnesota. The strike began on May 16th in the Market District (now called the Warehouse District), and led to widespread unionizing throughout the city of Minneapolis.\n\nIts worst single day of violence was July 20th, 1934, known as "Bloody Friday". It occurred when police shot at strikers who were blocking off the delivery of company merchandise, killing two people and injuring sixty-seven. Four days later, 100,000 people lined the streets of the funeral procession route for one of the workers and demanded the resignation of the Minneapolis Police Chief.\n\nIn response, Governor Olson first ordered that the union headquarters be raided. A few days later, he ordered a raid on the anti-union organization the Citizen Alliance as well. Violence continued periodically throughout the summer before the strike was formally ended on August 22nd, with most of the union demands being met.`,
         link: 'https://libcom.org/history/minneapolis-teamsters-strike-1934-jeremy-brecher',
         infoSrc: 'https://en.wikipedia.org/wiki/Bloody_Friday_(Minneapolis)'
+      },
+      {
+        category: 'Labor',
+        date: 'July 20th, 1899',
+        title: 'Newsboy Strike (1899)',
+        imgSrc: '/assets/eventPhotos/Events/newsboyStrike.jpg',
+        description: `On this day in 1899, thousands of New York City "newsies", children who sold newspapers on city streets, went on strike to protest a ten cent increase in the cost of their papers, overturning distribution wagons and attacking scabs.\n\nThe newsboys collectively boycotted the New York Journal and the New York World, which had raised the cost of their newspapers from 50 cents to 60 cents, making the papers harder to sell. The boys organized under charismatic child leaders, meeting with the paper owners and holding meetings as large as 5,000 people.\n\nThe boys also rioted and used direct action: upon declaring the strike, they turned over a distribution wagon for the New York Journal, and any boy or adult caught hocking either paper would be attacked by a mob of striking children, who would seize and destroy the papers they were selling.\n\nIn the end, wholesale price remained at 60 cents, however the newspaper owners agreed to begin refunding boys for unsold papers.\n\n"Ain't that ten cents worth as much to us as it is to Hearst and Pulitzer who are millionaires? Well, I guess it is. If they can't spare it, how can we?...I'm trying to figure out how ten cents on a hundred papers can mean more to a millionaire than it does to newsboys, an' I can’t see it."\n\n- Kid Blink, 1899`,
+        link: 'https://en.wikipedia.org/wiki/Newsboys%27_strike_of_1899',
+        infoSrc: 'https://www.zinnedproject.org/news/tdih/newsboys-strike/'
       },
     ],
     'Birthdays': [
