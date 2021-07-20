@@ -2,7 +2,7 @@ import React from 'react';
 import './calendarDisplay.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faMinus } from '@fortawesome/free-solid-svg-icons';
-import { EventComponent } from '../EventComponent/eventComponent.jsx';
+import { EventComponent } from '../EventComponent/eventComponent';
 import { DayOfEvents } from '../../utils/types';
 import { categoryList } from '../../utils/categoryList';
 
@@ -30,7 +30,7 @@ export const CalendarDisplay = ({ events, initCollapsed, winDim }: ICalendarDisp
   }, [eventDisplayRef]);
 
   const handleResize = () => {
-    const width = eventDisplayRef.clientWidth;
+    const width = eventDisplayRef?.clientWidth ?? 1;
     // console.log('handleResize running in calendarDisplay, shows eventDisplay width at: ' + width);
     setEventDisplayWidth(width);
   }
