@@ -88,7 +88,6 @@ export class CalendarDisplay extends React.Component {
                       <EventComponent
                         categoryEvent={categoryEvent}
                         paragraphs={paragraphs}
-                        stringToSlug={this.props.stringToSlug}
                         key={categoryEvent.title}
                         winDim={this.props.winDim}
                         eventDisplayWidth={this.state.eventDisplayWidth}

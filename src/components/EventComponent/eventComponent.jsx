@@ -5,6 +5,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import '../App/App.css';
+import { stringToSlug } from '../../utils/stringToSlug';
 // import Helmet from 'react-helmet';
 
 export class EventComponent extends React.Component {
@@ -20,7 +21,7 @@ export class EventComponent extends React.Component {
     this.handleCopy = this.handleCopy.bind(this);
     this.getImgDim = this.getImgDim.bind(this);
 
-    this.slugifiedTitle = `apeoplescalendar.org/calendar/events/${this.props.stringToSlug(this.props.categoryEvent.title)}`;
+    this.slugifiedTitle = `apeoplescalendar.org/calendar/events/${stringToSlug(this.props.categoryEvent.title)}`;
   }
 
   getImgDim(height, width) {
@@ -32,7 +33,7 @@ export class EventComponent extends React.Component {
 
   handleExpandCollapse(e) {
     if (this.state.collapsed) {
-      // console.log(this.props.stringToSlug(this.props.categoryEvent.title));
+      // console.log(stringToSlug(this.props.categoryEvent.title));
     }
     this.setState({
       collapsed: !this.state.collapsed,

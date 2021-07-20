@@ -5,7 +5,7 @@ import {
 } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import { eventLibrary } from '../../eventLibrary.js';
+import { eventLibrary } from '../../eventLibrary.ts';
 import { HomepageEventComponent } from '../HomepageEvent/homepageEventComponent.jsx';
 
 export function HomepageComponent(props) {
