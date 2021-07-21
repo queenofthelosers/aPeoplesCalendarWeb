@@ -45,7 +45,7 @@ export const EventComponent = ({initCollapsed, categoryEvent, eventDisplayWidth,
   };
   const { imgWidth, imgHeight } = imgDim;
   // image resizing logic:
-  // move to util file
+  // move to util file?
   let resizeWidth = eventDisplayWidth * 0.75; // 75% of width of container
   let ratio = resizeWidth / imgWidth; // the ratio by which the image has changed
   let resizeHeight = imgHeight * ratio; // apply ratio to height

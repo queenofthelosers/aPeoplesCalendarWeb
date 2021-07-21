@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { eventLibrary } from '../../eventLibrary';
 import { CalendarDisplay } from '../CalendarDisplay/calendarDisplay';
-import { EmptyDay } from '../EmptyDay/emptyDayComponent.jsx';
+import { EmptyDay } from '../EmptyDay/emptyDayComponent';
 import { findEventByTitle } from '../../utils/findEventByTitle';
 import { getTodayStringAndInitDateInput } from '../../utils/getTodayStringAndInitDateInput';
 import { isDayNotEmpty } from '../../utils/isDayNotEmpty';

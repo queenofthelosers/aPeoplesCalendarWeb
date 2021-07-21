@@ -14,9 +14,9 @@ import { About } from '../About/about.jsx';
 import { Volunteer } from '../Volunteer/volunteer.jsx';
 // import {Donate} from './donate.js';
 import { NotFound } from '../NotFound/notFound.jsx';
-import { FullNavBar } from '../FullNavBar/fullNavBar.jsx';
+import { FullNavBar } from '../FullNavBar/fullNavBar';
 import { SocialIcons } from '../SocialIcons/socialIconsComponent.jsx';
-import { HomepageComponent } from '../Homepage/homepageComponent.jsx';
+import { HomepageComponent } from '../Homepage/homepageComponent';
 import { IconComponent } from '../IconComponent/iconComponent.jsx';
 import { calculateHamburgerPosition } from '../../utils/calculateHamburgerPosition';
 
@@ -130,7 +130,6 @@ const App = (): JSX.Element => {
         </Route>
         <Route exact path="/">
           <HomepageComponent
-            windowWidth={windowWidth}
             winDim={{ width: windowWidth, height: windowHeight }}
           />
         </Route>
