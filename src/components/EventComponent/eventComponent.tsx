@@ -9,6 +9,11 @@ import { stringToSlug } from '../../utils/stringToSlug';
 import { DatabaseEvent } from '../../utils/types';
 // import Helmet from 'react-helmet';
 
+// to-do:
+// covert expand/collapse to material-ui accordion
+// create generic event "card" component
+// loading condition for image (can see on deep linking)
+
 interface IEventComponentProps {
   initCollapsed: boolean;
   categoryEvent: DatabaseEvent;
