@@ -4,9 +4,13 @@ import {
 } from 'react-router-dom';
 // import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 // import {faAndroid, faApple} from '@fortawesome/free-brands-svg-icons';
-import { SocialIcons } from '../SocialIcons/socialIconsComponent.jsx';
+import { SocialIcons } from '../SocialIcons/socialIconsComponent';
 
-export function FullNavBar(props) {
+interface IFullNavBarProps {
+  windowWidth: number;
+}
+
+export function FullNavBar({ windowWidth }: IFullNavBarProps) {
   return (
     <div id="fullNavBarContainer">
       <div id="fullNavLeft">
@@ -27,7 +31,7 @@ export function FullNavBar(props) {
         </NavLink>
       </div>
       <div id="fullNavRight">
-        <SocialIcons windowWidth={props.windowWidth} />
+        <SocialIcons windowWidth={windowWidth} />
       </div>
     </div>
   );

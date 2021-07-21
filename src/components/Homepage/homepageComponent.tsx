@@ -5,20 +5,33 @@ import {
 } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import { eventLibrary } from '../../eventLibrary.js';
-import { HomepageEventComponent } from '../HomepageEvent/homepageEventComponent.jsx';
+import { eventLibrary } from '../../eventLibrary';
+import { HomepageEventComponent } from '../HomepageEvent/homepageEventComponent';
+import { categoryList } from '../../utils/categoryList';
+import { getTodayStringAndInitDateInput } from '../../utils/getTodayStringAndInitDateInput';
+import { DatabaseEvent } from '../../utils/types';
 
-export function HomepageComponent(props) {
+interface IHomepageProps {
+  winDim: {
+    width: number;
+    height: number;
+  };
+}
+
+export function HomepageComponent({ winDim }: IHomepageProps) {
   // get event of the day
-  const now = new Date();
-  const month = now.getMonth() + 1;
-  const day = now.getDate();
-  // for the actual getting of data:
-  const initTodayString = `${month}-${day}`;
+  const { initTodayString } = getTodayStringAndInitDateInput();
   // todaysEvents is an object of categories (Rebellion, Labor, etc.), where each prop is a list of events that happened otd
-  const todaysEvents = eventLibrary[initTodayString];
-  const categoryList = ['Revolution', 'Rebellion', 'Labor', 'Birthdays', 'Assassinations', 'Other'];
-  let eventOfTheDay = { description: '' };
+  const todaysEvents: any = eventLibrary[initTodayString];
+  let eventOfTheDay: DatabaseEvent = {
+    category: '',
+    description: '',
+    date: '',
+    title: '',
+    imgSrc: '',
+    link: '',
+    infoSrc: '',
+  };
   for (let i = 0; i < categoryList.length; i++) {
     const category = categoryList[i];
     for (let j = 0; j < todaysEvents[category].length; j++) {
@@ -44,7 +57,7 @@ export function HomepageComponent(props) {
             <p id="homepageDescription">This history includes, but is not limited to, indigenous resistance against colonization, the black liberation struggle, unionization efforts, slave rebellions, the women's suffrage movement, and revolution.</p>
           </div>
           <NavLink to="/calendar" id="toTheCalendarOuterWrapper">
-            <div to="/calendar" id="toTheCalendarWrapper">
+            <div id="toTheCalendarWrapper">
               <p id="toTheCalendar">To the Calendar</p>
               <FontAwesomeIcon icon={faArrowRight} />
             </div>
@@ -56,7 +69,7 @@ export function HomepageComponent(props) {
           </div>
           <HomepageEventComponent
             categoryEvent={eventOfTheDay}
-            winDim={props.winDim}
+            winDim={winDim}
           />
         </div>
       </div>
