@@ -14,7 +14,15 @@ export function About() {
         <p className="aboutText">Although we do our best to fact-check the summaries of each event, this project is ultimately meant to provide a jumping off point for users to research the history and form their own opinions on the matter, using the sourced information below the summary of each event.</p>
         <p className="aboutText">
           We are always looking out for important events, people, and texts that are missing from the calendar. You can make suggestions, sign up to volunteer, or just say hello via
-          <a target="_blank" rel="noopener noreferrer" id="emailLink" href="mailto:apeoplescalendar@gmail.com">email</a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            id="emailLink"
+            href="mailto:apeoplescalendar@gmail.com"
+            style={{ marginLeft: '.25em' }}
+          >
+            email
+          </a>
           .
         </p>
       </div>

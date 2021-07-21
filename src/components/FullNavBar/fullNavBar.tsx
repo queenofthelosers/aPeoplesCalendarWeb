@@ -4,7 +4,7 @@ import {
 } from 'react-router-dom';
 // import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 // import {faAndroid, faApple} from '@fortawesome/free-brands-svg-icons';
-import { SocialIcons } from '../SocialIcons/socialIconsComponent.jsx';
+import { SocialIcons } from '../SocialIcons/socialIconsComponent';
 
 interface IFullNavBarProps {
   windowWidth: number;

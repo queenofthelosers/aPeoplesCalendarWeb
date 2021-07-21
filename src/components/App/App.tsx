@@ -10,14 +10,14 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { Main } from '../Main/main';
-import { About } from '../About/about.jsx';
-import { Volunteer } from '../Volunteer/volunteer.jsx';
+import { About } from '../About/about';
+import { Volunteer } from '../Volunteer/volunteer';
 // import {Donate} from './donate.js';
-import { NotFound } from '../NotFound/notFound.jsx';
+import { NotFound } from '../NotFound/notFound';
 import { FullNavBar } from '../FullNavBar/fullNavBar';
-import { SocialIcons } from '../SocialIcons/socialIconsComponent.jsx';
+import { SocialIcons } from '../SocialIcons/socialIconsComponent';
 import { HomepageComponent } from '../Homepage/homepageComponent';
-import { IconComponent } from '../IconComponent/iconComponent.jsx';
+import { IconComponent } from '../LogoIcon/logoIcon';
 import { calculateHamburgerPosition } from '../../utils/calculateHamburgerPosition';
 
 const App = (): JSX.Element => {

@@ -1,22 +1,28 @@
 import React from 'react';
+// @ts-ignore: Unreachable code error
 import { SocialIcon } from 'react-social-icons';
-// import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-// import {faAndroid, faApple} from '@fortawesome/free-brands-svg-icons';
+// @ts-ignore: Unreachable code error
 import MobileStoreButton from 'react-mobile-store-button';
 // import socialIcon from 'react-social-icons/dist/social-icon';
+// import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+// import {faAndroid, faApple} from '@fortawesome/free-brands-svg-icons';
 
-export function SocialIcons(props) {
+interface ISocialIconsProps {
+  windowWidth: number;
+}
+
+export function SocialIcons({ windowWidth }: ISocialIconsProps) {
   let socialIconSize = {
     height: 35,
     width: 35,
   };
   let fullNavMargin = {
-    marginLeft: props.windowWidth < 410 ? '2px' : '6px',
-    marginRight: props.windowWidth < 410 ? '2px' : '6px',
+    marginLeft: windowWidth < 410 ? '2px' : '6px',
+    marginRight: windowWidth < 410 ? '2px' : '6px',
   };
-  if (props.windowWidth > 850) {
+  if (windowWidth > 850) {
     socialIconSize = { height: 44, width: 44 };
-  } else if (props.windowWidth < 410) {
+  } else if (windowWidth < 410) {
     fullNavMargin = { marginRight: '2px', marginLeft: '2px' };
   }
   return (
@@ -30,12 +36,11 @@ export function SocialIcons(props) {
       <div className="fullNavSocialContainer" style={fullNavMargin}>
         <SocialIcon className="fullNavSocial" url="https://www.reddit.com/r/aPeoplesCalendar" style={socialIconSize} target="_blank" />
       </div>
-      {props.windowWidth > 780
-        && (
+      {windowWidth > 780 && (
         <div className="fullNavSocialContainer" style={fullNavMargin}>
           <SocialIcon className="fullNavSocial" url="mailto:apeoplescalendar@gmail.com" style={socialIconSize} target="_blank" />
         </div>
-        )}
+      )}
       <div className="fullNavSocialContainer" style={fullNavMargin}>
         <MobileStoreButton
           store="android"

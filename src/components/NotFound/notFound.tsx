@@ -13,7 +13,7 @@ export function NotFound() {
         </header>
         <p className="volunteerText centeredText">Sorry, looks like the url you tried didn't work for us.</p>
         <p className="volunteerText centeredText" id="bottomP">
-          <NavLink className="volunteerLink" to="/">Try searching the calendar</NavLink>
+          <NavLink className="volunteerLink" to="/calendar">Try searching the calendar</NavLink>
           .
         </p>
       </div>
