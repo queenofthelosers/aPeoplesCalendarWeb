@@ -3,7 +3,6 @@ import './calendarDisplay.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faMinus } from '@fortawesome/free-solid-svg-icons';
 import { EventComponent } from '../EventComponent/eventComponent';
-import { DayOfEvents } from '../../utils/types';
 import { categoryList } from '../../utils/categoryList';
 
 interface ICalendarDisplayProps {
