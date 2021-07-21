@@ -14565,13 +14565,13 @@ export const eventLibrary: EventDatabase = {
     ],
     Rebellion: [
       {
-        category: '',
-        date: '',
-        title: '',
-        imgSrc: '/assets/eventPhotos/empty.jpg',
-        description: '',
-        link: '',
-        infoSrc: '',
+        category: 'Rebellion',
+        date: 'July 20th, 2017',
+        title: 'El Mahdaoui Arrested (2017)',
+        imgSrc: '/assets/eventPhotos/Individuals/hamidElMahdauoi.jpg',
+        description: `On this day in 2017, Moroccan journalist and political activist Hamid El Mahdaoui was arrested on dubious charges in Al Hoceima, Morocco, the day after publicly criticizing the government's decision to ban a July 20th protest.\n\nEl Mahdaoui is a Moroccan journalist who founded Badil.info in 2014, becoming a popular figure in the country through political commentary on social media and interviews of public figures. He had previously been convicted for disseminating "false news" in cases involving the head of the national police, although the sentence was suspended.\n\nEl Mahdaoui was part of a political group that had been organizing anti-government protests since October 2016 over perceived government neglect of northern Morocco's Rif region.\n\nThe government had banned a protest planned for July 20th, 2017, and on July 19th, El Mahdaoui publicly condemned the ban. El Mahdaoui was arrested and, along with 53 other Hirak activists, forced to participate in a mass trial lasting almost one year.\n\nOn July 20th, 2020, El Mahdaoui was released from prison, returning to his family. His website, badil.info, remains active.`,
+        link: 'https://www.moroccoworldnews.com/2020/07/311055/moroccan-journalist-hamid-el-mahdaoui-leaves-prison-after-3-years',
+        infoSrc: 'https://www.hrw.org/news/2018/07/18/morocco-journalist-convicted-dubious-charge'
       },
     ],
     Labor: [
@@ -14584,6 +14584,15 @@ export const eventLibrary: EventDatabase = {
         link: 'https://libcom.org/history/minneapolis-teamsters-strike-1934-jeremy-brecher',
         infoSrc: 'https://en.wikipedia.org/wiki/Bloody_Friday_(Minneapolis)',
       },
+      {
+        category: 'Labor',
+        date: 'July 20th, 1899',
+        title: 'Newsboy Strike (1899)',
+        imgSrc: '/assets/eventPhotos/Events/newsboyStrike.jpg',
+        description: `On this day in 1899, thousands of New York City "newsies", children who sold newspapers on city streets, went on strike to protest a ten cent increase in the cost of their papers, overturning distribution wagons and attacking scabs.\n\nThe newsboys collectively boycotted the New York Journal and the New York World, which had raised the cost of their newspapers from 50 cents to 60 cents, making the papers harder to sell. The boys organized under charismatic child leaders, meeting with the paper owners and holding meetings as large as 5,000 people.\n\nThe boys also rioted and used direct action: upon declaring the strike, they turned over a distribution wagon for the New York Journal, and any boy or adult caught hocking either paper would be attacked by a mob of striking children, who would seize and destroy the papers they were selling.\n\nIn the end, wholesale price remained at 60 cents, however the newspaper owners agreed to begin refunding boys for unsold papers.\n\n"Ain't that ten cents worth as much to us as it is to Hearst and Pulitzer who are millionaires? Well, I guess it is. If they can't spare it, how can we?...I'm trying to figure out how ten cents on a hundred papers can mean more to a millionaire than it does to newsboys, an' I can’t see it."\n\n- Kid Blink, 1899`,
+        link: 'https://en.wikipedia.org/wiki/Newsboys%27_strike_of_1899',
+        infoSrc: 'https://www.zinnedproject.org/news/tdih/newsboys-strike/'
+      },
     ],
     Birthdays: [
       {
@@ -14591,7 +14600,7 @@ export const eventLibrary: EventDatabase = {
         date: 'July 20th, 1591',
         title: 'Anne Hutchinson (1591 - 1643)',
         imgSrc: '/assets/eventPhotos/Individuals/anneHutchinson.png',
-        description: 'Anne Hutchinson, born on this day in 1591, was a Puritan spiritual advisor, religious reformer, and a key participant in the "Antinomian Controversy", which shook the infant Massachusetts Bay Colony from 1636 to 1638.\n\nHutchinson was known for being a powerful orator who insisted on the ability of women to read the bible for themselves, among other "unauthorized" interpretations of the gospel.\n\nOn November 7th, 1637, Hutchinson was brought to trial, where she was called a heretic and an instrument of the devil, and was exiled from the Puritan community for her beliefs. Thirty-five families who were supportered Hutchinson followed her to settle in Long Island.\n\nHutchinson is an important figure in the history of religious freedom in England\'s American colonies and the history of women in ministry, challenging the authority of the ministers. She has been called "the most famous - or infamous - English woman in colonial American history".',
+        description: 'Anne Hutchinson, born on this day in 1591, was a Puritan spiritual advisor, religious reformer, and a key participant in the "Antinomian Controversy", which shook the infant Massachusetts Bay Colony from 1636 to 1638.\n\nHutchinson was known for being a powerful orator who insisted on the ability of women to read the bible for themselves, among other "unauthorized" interpretations of the gospel.\n\nOn November 7th, 1637, Hutchinson was brought to trial, where she was called a heretic and an instrument of the devil, and was exiled from the Puritan community for her beliefs. Thirty-five families who were supporters Hutchinson followed her to settle in Long Island.\n\nHutchinson is an important figure in the history of religious freedom in England\'s American colonies and the history of women in ministry, challenging the authority of the ministers. She has been called "the most famous - or infamous - English woman in colonial American history".',
         link: 'https://www.historyisaweapon.com/defcon1/zinnint6.html',
         infoSrc: 'https://en.wikipedia.org/wiki/Anne_Hutchinson',
       },
