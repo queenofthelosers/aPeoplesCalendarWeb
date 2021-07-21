@@ -25,7 +25,9 @@ interface IEventComponentProps {
   paragraphs: string[];
 }
 
-export const EventComponent = ({initCollapsed, categoryEvent, eventDisplayWidth, winDim, paragraphs}: IEventComponentProps) => {
+export const EventComponent = ({
+  initCollapsed, categoryEvent, eventDisplayWidth, winDim, paragraphs,
+}: IEventComponentProps) => {
   const [collapsed, setCollapsed] = React.useState<boolean>(initCollapsed);
   const [copied, setCopied] = React.useState<boolean>(false);
   const [imgDim, setImgDim] = React.useState<any>({ width: 2, height: 2 });
@@ -107,25 +109,25 @@ export const EventComponent = ({initCollapsed, categoryEvent, eventDisplayWidth,
               : <div className="emptyLink" />}
             <div className="links copyButton">
               <CopyToClipboard onCopy={handleCopy} text={slugifiedTitle}>
-              <div>
-                {!copied && (
+                <div>
+                  {!copied && (
                   <div className="copyWrapper">
                     <FontAwesomeIcon icon={faClipboard} />
                     <p className="copyText">Copy link</p>
                   </div>
-                )}
-                {copied && (
+                  )}
+                  {copied && (
                   <div className="copyWrapper">
                     <FontAwesomeIcon icon={faClipboardCheck} />
                     <p className="copyText">Link copied!</p>
                   </div>
-                )}
-              </div>
+                  )}
+                </div>
               </CopyToClipboard>
             </div>
           </div>
         </div>
-        )}
+      )}
     </div>
   );
 };

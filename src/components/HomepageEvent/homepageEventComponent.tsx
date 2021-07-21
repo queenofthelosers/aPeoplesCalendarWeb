@@ -90,14 +90,14 @@ export const HomepageEventComponent = ({ categoryEvent, winDim }: IHomepageEvent
       <div className="homepageEventFull" ref={(eventDisplay) => eventDisplayRef = eventDisplay}>
         <p className="homepageEventDate">{categoryEvent.date}</p>
         {imgWidth !== 1 && (
-            <img
-              className="eventImg"
-              src={`${process.env.PUBLIC_URL}${categoryEvent.imgSrc}`}
-              alt={categoryEvent.title}
-              style={{ width: resizeWidth, height: resizeHeight }}
-              ref={(img) => imgRef = img}
-              onLoad={getImgDim}
-            />
+        <img
+          className="eventImg"
+          src={`${process.env.PUBLIC_URL}${categoryEvent.imgSrc}`}
+          alt={categoryEvent.title}
+          style={{ width: resizeWidth, height: resizeHeight }}
+          ref={(img) => imgRef = img}
+          onLoad={getImgDim}
+        />
         )}
         {paragraphList.map((paragraph) => <p className="homepageEventDescription">{paragraph}</p>)}
         <div className="homepageSourcesWrapper">
@@ -106,25 +106,25 @@ export const HomepageEventComponent = ({ categoryEvent, winDim }: IHomepageEvent
             ? <a className="links more" href={categoryEvent.link} target="_blank" rel="noopener noreferrer">More Info</a>
             : <div className="emptyLink" />}
           <div className="links copyButton">
-          <CopyToClipboard onCopy={handleCopy} text={slugifiedTitle}>
-            <div>
-              {!copied && (
-                    <div className="copyWrapper">
-                      <FontAwesomeIcon icon={faClipboard} />
-                      <p className="copyText">Copy link</p>
-                    </div>
-                    )}
-              {copied && (
-                    <div className="copyWrapper">
-                      <FontAwesomeIcon icon={faClipboardCheck} />
-                      <p className="copyText">Link copied!</p>
-                    </div>
-                    )}
-            </div>
-          </CopyToClipboard>
+            <CopyToClipboard onCopy={handleCopy} text={slugifiedTitle}>
+              <div>
+                {!copied && (
+                <div className="copyWrapper">
+                  <FontAwesomeIcon icon={faClipboard} />
+                  <p className="copyText">Copy link</p>
+                </div>
+                )}
+                {copied && (
+                <div className="copyWrapper">
+                  <FontAwesomeIcon icon={faClipboardCheck} />
+                  <p className="copyText">Link copied!</p>
+                </div>
+                )}
+              </div>
+            </CopyToClipboard>
           </div>
         </div>
       </div>
     </div>
   );
-}
+};

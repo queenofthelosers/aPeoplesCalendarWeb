@@ -65,7 +65,7 @@ export const Main = ({ winDim }: IMainProps): JSX.Element => {
     setDisplaySearch(true);
     setEvents(searchEventsResult);
     setHaveEvents(matched);
-  }
+  };
 
   const initializeToday = () => {
     // the following code sets page to today's date and relevant events
@@ -77,7 +77,7 @@ export const Main = ({ winDim }: IMainProps): JSX.Element => {
     setEvents(eventLibrary[initTodayString]);
     setDisplaySearch(false);
     setHaveEvents(dayHasEvents);
-  }
+  };
 
   const handleNewDate = (e: any) => {
     // if the user did something weird and the given date is falsy, don't run anything
@@ -105,7 +105,7 @@ export const Main = ({ winDim }: IMainProps): JSX.Element => {
     if (dayHasEvents && calendarRef.current) {
       calendarRef.current.resetExpandCollapse();
     }
-  }
+  };
 
   const trackSearch = (e: any) => {
     setSearchValue(e.target.value);
@@ -136,52 +136,51 @@ export const Main = ({ winDim }: IMainProps): JSX.Element => {
   return (
     <Route
       render={() => (!invalidInput ? (
-          <div id="App">
-            {/* <div id='appPromoWrapper'>
+        <div id="App">
+          {/* <div id='appPromoWrapper'>
               <a id='appPromo' target='_blank' rel="noopener noreferrer" href='https://play.google.com/store/apps/details?id=com.aPeoplesCalendar.aPC&hl=en'>On Android? Get the app!</a>
             </div> */}
-            {displaySearch && (
-              <div id="onThisDayWrapper">
-                <p id="onThisDay">Search Results</p>
-              </div>
-            )}
-            <div id="settings" style={winDim.width < 501 ? { flexDirection: 'column' } : {}}>
-              <div id="datePickerWrapper">
-                <input id="datePicker" type="date" value={dateInput} onChange={handleNewDate} />
-              </div>
-              <form
-                id="searchWrapper"
-                onSubmit={handleSearch}
-                style={winDim.width < 501 ? { marginTop: 20, marginLeft: -8 } : {}}
-              >
-                <input
-                  id="searchField"
-                  style={winDim.width < 501 ? { width: 125 } : {}}
-                  type="text"
-                  value={searchValue}
-                  onChange={trackSearch}
-                />
-                <button
-                  id="searchButton"
-                  type="submit"
-                >
-                  <FontAwesomeIcon icon={faSearch} className="searchIcon"/>
-                </button>
-              </form>
-            </div>
-            {!haveEvents && 
-              <EmptyDay displaySearch={displaySearch}/>
-            }
-            {haveEvents && (
-              <CalendarDisplay
-                ref={calendarRef}
-                events={events}
-                winDim={winDim}
-                initCollapsed={!isSingleEvent}
-              />
-            )}
+          {displaySearch && (
+          <div id="onThisDayWrapper">
+            <p id="onThisDay">Search Results</p>
           </div>
-        )
+          )}
+          <div id="settings" style={winDim.width < 501 ? { flexDirection: 'column' } : {}}>
+            <div id="datePickerWrapper">
+              <input id="datePicker" type="date" value={dateInput} onChange={handleNewDate} />
+            </div>
+            <form
+              id="searchWrapper"
+              onSubmit={handleSearch}
+              style={winDim.width < 501 ? { marginTop: 20, marginLeft: -8 } : {}}
+            >
+              <input
+                id="searchField"
+                style={winDim.width < 501 ? { width: 125 } : {}}
+                type="text"
+                value={searchValue}
+                onChange={trackSearch}
+              />
+              <button
+                id="searchButton"
+                type="submit"
+              >
+                <FontAwesomeIcon icon={faSearch} className="searchIcon" />
+              </button>
+            </form>
+          </div>
+          {!haveEvents
+              && <EmptyDay displaySearch={displaySearch} />}
+          {haveEvents && (
+          <CalendarDisplay
+            ref={calendarRef}
+            events={events}
+            winDim={winDim}
+            initCollapsed={!isSingleEvent}
+          />
+          )}
+        </div>
+      )
         : (
           <Redirect to={{
             pathname: '/404',
@@ -190,4 +189,4 @@ export const Main = ({ winDim }: IMainProps): JSX.Element => {
         ))}
     />
   );
-;}
+};

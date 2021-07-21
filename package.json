@@ -34,8 +34,8 @@
     "build": "react-scripts build",
     "test": "jest",
     "eject": "react-scripts eject",
-    "//": "for when you refactor directory: eslint src/**/*.js src/**/*.jsx",
-    "lint": "eslint src/*.js src/**/*.jsx src/**/*.js"
+    "//": "for when you refactor directory: eslint src/**/*.js src/**/*.tsx src/**/*.ts",
+    "lint": "eslint src/*.js src/**/*.tsx src/**/*.ts"
   },
   "eslintConfig": {
     "extends": "react-app"

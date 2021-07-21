@@ -33,7 +33,7 @@ export const CalendarDisplay = ({ events, initCollapsed, winDim }: ICalendarDisp
     const width = eventDisplayRef?.clientWidth ?? 1;
     // console.log('handleResize running in calendarDisplay, shows eventDisplay width at: ' + width);
     setEventDisplayWidth(width);
-  }
+  };
 
   const handleExpandCollapse = (_: any, category: string) => {
     const tempCollapseCategory: any = { ...collapseCategory };
@@ -57,12 +57,10 @@ export const CalendarDisplay = ({ events, initCollapsed, winDim }: ICalendarDisp
           <div className="categoryEvents">
             <div className="headerWrapper" onClick={(e) => handleExpandCollapse(e, eventCategory)}>
               <div className="collapseButton" onClick={(e) => handleExpandCollapse(e, eventCategory)}>
-                {collapseCategory?.[eventCategory] && 
-                  <FontAwesomeIcon icon={faPlus} onClick={(e) => handleExpandCollapse(e, eventCategory)} />
-                }
-                {!collapseCategory?.[eventCategory] &&
-                  <FontAwesomeIcon icon={faMinus} onClick={(e) => handleExpandCollapse(e, eventCategory)} />
-                }
+                {collapseCategory?.[eventCategory]
+                  && <FontAwesomeIcon icon={faPlus} onClick={(e) => handleExpandCollapse(e, eventCategory)} />}
+                {!collapseCategory?.[eventCategory]
+                  && <FontAwesomeIcon icon={faMinus} onClick={(e) => handleExpandCollapse(e, eventCategory)} />}
               </div>
               <div className="categoryHeaderWrapper">
                 <p className="categoryHeader">{eventCategory}</p>
@@ -90,4 +88,4 @@ export const CalendarDisplay = ({ events, initCollapsed, winDim }: ICalendarDisp
       })}
     </div>
   );
-}
+};

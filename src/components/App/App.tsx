@@ -50,7 +50,7 @@ const App = (): JSX.Element => {
     setWindowHeight(window.innerHeight);
     // if window was made wide, auto close hamburger menu
     if (window.innerWidth > 780 && hamburgerOpen) {
-      setHamburgerOpen(false)
+      setHamburgerOpen(false);
     }
   };
 
