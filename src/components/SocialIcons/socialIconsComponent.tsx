@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react';
 // @ts-ignore: Unreachable code error
 import { SocialIcon } from 'react-social-icons';
