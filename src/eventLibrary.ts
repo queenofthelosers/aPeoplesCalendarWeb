@@ -14997,6 +14997,15 @@ export const eventLibrary: EventDatabase = {
         link: 'https://www.jacobinmag.com/2015/06/cuban-revolution-fidel-che-raul-castro/',
         infoSrc: 'https://en.wikipedia.org/wiki/Cuban_Revolution',
       },
+      {
+        category: 'Revolution',
+        date: 'July 26th, 1936',
+        title: 'International Conference to Assist Spanish Republicans (1936)',
+        imgSrc: '/assets/eventPhotos/Events/lincolnBattalion.jpg',
+        description: 'On this in 1936, an international conference was held in Prague to arrange assistance for revolutionary Spanish Republicans, leading to the formation of volunteer anti-fascist troops, such as the Lincoln Battalion (shown).\n\nThe conference decided to raise an international brigade of 5,000 men and a fund of 1 billion francs. The Communist International immediately reinforced its activity sending to Spain its leader Georgi Dimitrov, as well as Palmiro Togliti, the chief of the Communist Party of Italy.\n\nFrom August onward, aid was sent from Russia: more than one ship a day arrived at Spain\'s Mediterranean ports carrying munitions, rifles, machine guns, hand grenades, artillery, trucks, and Soviet agents and technicians.\n\nThe conference led to the formation of international brigades of volunteer forces, including the American Lincoln Battalion (shown). Similar groups included the George Washington Battalion and the John Brown Battery (both American), while Latin American and Irish troops formed the Centuria Guttieras and the Connolly Column, respectively.\n\nAlthough the politics of the Lincoln Battalion skewed to the left, the one unifying trait of those who joined was a hatred for fascism. They were also inexperienced and not well trained, suffering heavy casualties during the war.\n\nAmerican Canute Frankson explained his decision to join in a letter written on July 6th, 1937:\n\n"I\'m sure that by this time you are still waiting for a detailed explanation of what has this international struggle to do with my being here. Since this is a war between whites who for centuries have held us in slavery, and have heaped every kind of insult and abuse upon us, segregated and Jim-Crowed us; why I, a Negro who have fought through these years for the rights of my people, am here in Spain today?\n\n...Because if we crush Fascism here we\'ll save our people in America, and in other parts of the world from the vicious persecution, wholesale imprisonment, and slaughter which the Jewish people suffered and are suffering under Hitler\'s Fascist heels.\n\n...We will build us a new society - a society of peace and plenty. There will be no color line, no jim-crow trains, no lynching. That is why, my dear, I’m here in Spain."',
+        link: 'https://spartacus-educational.com/SPlincoln.htm',
+        infoSrc: 'https://en.wikipedia.org/wiki/Lincoln_Battalion',
+      },
     ],
     Rebellion: [
       {
@@ -15044,13 +15053,13 @@ export const eventLibrary: EventDatabase = {
     ],
     Other: [
       {
-        category: '',
-        date: '',
-        title: '',
-        imgSrc: '/assets/eventPhotos/empty.jpg',
-        description: '',
-        link: '',
-        infoSrc: '',
+        category: 'Other',
+        date: 'July 26th, 1917',
+        title: 'Bolsheviks Adopt Democratic Centralism (1917)',
+        imgSrc: '/assets/eventPhotos/Events/democraticCentralism.jpg',
+        description: 'On this day in 1917, the "Sixth Party Congress of the Russian Social-Democratic Labour Party" (the Bolsheviks) began in Petrograd, formally defining and adopting the Leninist concept of democratic centralism.\n\nAlthough the concept of democratic centralism was originally outlined in Vladmir Lenin\'s "What is To Be Done?" 1902 political pamphlet, it was at this meeting the concept was officially defined and adopted by the Bolsheviks.\n\nThe Congress defined democratic centralism as follows:\n\n- That all directing bodies of the Party, from top to bottom, shall be elected.\n\n- That Party bodies shall give periodical accounts of their activities to their respective Party organizations.\n\n- That there shall be strict Party discipline and the subordination of the minority to the majority.\n\n- That all decisions of higher bodies shall be absolutely binding on lower bodies and on all Party members.\n\nThe concept is sometimes briefly sumrised as "freedom of discussion, unity of action", and was intended to prevent factions forming within the party. When the Bolsheviks consolidated power following the Russian Civil War, Lenin and other Bolshevik leaders instituted a ban on factions in the party during the 10th Party Congress of 1921.\n\nThe concept was widely influential in other communist movements; for example, it was adopted in Article 3 of the Constitution of the People\'s Republic of China.\n\nLiberation socialists have been critical of the practice, with anarchist writer Scott Nappolas calling democratic centralism "the organizational theory of a rising ruling class".',
+        link: 'https://www.marxists.org/archive/lenin/works/1901/witbd/',
+        infoSrc: 'https://en.wikipedia.org/wiki/Democratic_centralism',
       },
     ],
   },
