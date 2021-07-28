@@ -29,5 +29,6 @@ module.exports = {
     "linebreak-style": 1,
     "no-use-before-define": [0, { "variables": false }],
     "react-hooks/exhaustive-deps": [0],
+    "quotes": [1, "single"]
   },
 };
