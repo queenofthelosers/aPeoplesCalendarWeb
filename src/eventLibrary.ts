@@ -2162,7 +2162,7 @@ export const eventLibrary: EventDatabase = {
         date: 'January 31st, 1935',
         title: 'Bob Moses (1935 - )',
         imgSrc: '/assets/eventPhotos/Individuals/bobMoses.jpg',
-        description: 'Robert Moses, born on this day in 1935, is an American educator and civil rights activist, known for his work with the SNCC and co-founding the Mississippi Freedom Democratic Party. During the civil rights era, Moses led the Student Nonviolent Coordinating Committee (SNCC) committee on voter education and registration in Mississippi.\n\nMoses was also vehemently opposed to the Vietnam War, and explicitly linked his opposition to the war to the civil rights struggle. Today, Moses runs the Algebra Project, which is a continued effort to improve math education in poor communities with the goal of sending more students to the workforce.',
+        description: 'Robert Moses, born on this day in 1935, was an American educator and civil rights activist, known for his work with the SNCC and co-founding the Mississippi Freedom Democratic Party. During the civil rights era, Moses led the Student Nonviolent Coordinating Committee (SNCC) committee on voter education and registration in Mississippi.\n\nMoses was also vehemently opposed to the Vietnam War, and explicitly linked his opposition to the war to the civil rights struggle.\n\nLater in life, Moses ran the Algebra Project, which is a continued effort to improve math education in poor communities with the goal of sending more students to the workforce.',
         link: 'https://snccdigital.org/people/bob-moses/',
         infoSrc: 'https://en.wikipedia.org/wiki/Bob_Moses_(activist)',
       },
