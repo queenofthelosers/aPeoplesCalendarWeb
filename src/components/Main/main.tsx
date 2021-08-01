@@ -115,6 +115,7 @@ export const Main = ({ winDim }: IMainProps): JSX.Element => {
       return;
     }
     if (searchValue.length < 3) {
+      // eslint-disable-next-line
       alert('Search value must be three characters or longer!');
       return;
     }

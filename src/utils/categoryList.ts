@@ -1,8 +1,8 @@
 export const categoryList: string[] = [
-    'Revolution',
-    'Rebellion',
-    'Labor',
-    'Birthdays',
-    'Assassinations',
-    'Other'
+  'Revolution',
+  'Rebellion',
+  'Labor',
+  'Birthdays',
+  'Assassinations',
+  'Other',
 ];

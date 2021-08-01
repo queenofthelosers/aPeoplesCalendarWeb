@@ -1,3 +1,4 @@
+/* eslint-disable */
 /* eslint no-return-assign: "warn" */
 /* eslint react/no-unused-prop-types: "warn" */
 // above linter disabling is temporary, until problem function moved to parent
