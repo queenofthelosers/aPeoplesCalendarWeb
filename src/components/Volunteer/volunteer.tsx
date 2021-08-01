@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React from 'react';
 import './volunteer.css';
 
@@ -9,11 +8,17 @@ export function Volunteer() {
         <header id="volunteerHeader">
           <p id="volunteerHeaderText">Volunteer</p>
         </header>
-        <p className="volunteerText">Whether you are a history buff, a developer with feature ideas, or are just someone who can proofread calendar events, we welcome your efforts and suggestions towards helping make our calendar more comprehensive and easier to use.</p>
+        <p className="volunteerText">
+          Whether you are a history buff, a developer with feature ideas, or are
+          just someone who can proofread calendar events, we welcome your
+          efforts and suggestions towards helping make our calendar more
+          comprehensive and easier to use.
+        </p>
         <ul>
           <li>
             <p className="volunteerListText">
-              Are you a history buff who noticed an important figure or event missing from the calendar?
+              Are you a history buff who noticed an important figure or event
+              missing from the calendar?
               <a
                 className="volunteerLink"
                 target="_blank"

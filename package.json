@@ -16,6 +16,7 @@
     "@types/node": "^16.3.3",
     "@types/react": "^17.0.14",
     "@types/react-dom": "^17.0.9",
+    "eslint-import-resolver-typescript": "^2.4.0",
     "react": "^16.14.0",
     "react-copy-to-clipboard": "^5.0.3",
     "react-dom": "^16.14.0",
@@ -35,7 +36,7 @@
     "test": "jest",
     "eject": "react-scripts eject",
     "//": "for when you refactor directory: eslint src/**/*.js src/**/*.jsx",
-    "lint": "eslint src/*.js src/**/*.jsx src/**/*.js"
+    "lint": "eslint src/*.js src/**/*.tsx src/**/*.js --fix"
   },
   "eslintConfig": {
     "extends": "react-app"

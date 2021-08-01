@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React from 'react';
 // @ts-ignore: Unreachable code error
 import { SocialIcon } from 'react-social-icons';
@@ -32,14 +31,29 @@ export function SocialIcons({ windowWidth }: ISocialIconsProps) {
         <SocialIcon className='fullNavSocial' url='https://www.facebook.com/aPeoplesCalendar' style={socialIconSize} target='_blank'/>
       </div> */}
       <div className="fullNavSocialContainer" style={fullNavMargin}>
-        <SocialIcon className="fullNavSocial" url="https://www.twitter.com/aPeoplesCal" style={socialIconSize} target="_blank" />
+        <SocialIcon
+          className="fullNavSocial"
+          url="https://www.twitter.com/aPeoplesCal"
+          style={socialIconSize}
+          target="_blank"
+        />
       </div>
       <div className="fullNavSocialContainer" style={fullNavMargin}>
-        <SocialIcon className="fullNavSocial" url="https://www.reddit.com/r/aPeoplesCalendar" style={socialIconSize} target="_blank" />
+        <SocialIcon
+          className="fullNavSocial"
+          url="https://www.reddit.com/r/aPeoplesCalendar"
+          style={socialIconSize}
+          target="_blank"
+        />
       </div>
       {windowWidth > 780 && (
         <div className="fullNavSocialContainer" style={fullNavMargin}>
-          <SocialIcon className="fullNavSocial" url="mailto:apeoplescalendar@gmail.com" style={socialIconSize} target="_blank" />
+          <SocialIcon
+            className="fullNavSocial"
+            url="mailto:apeoplescalendar@gmail.com"
+            style={socialIconSize}
+            target="_blank"
+          />
         </div>
       )}
       <div className="fullNavSocialContainer" style={fullNavMargin}>

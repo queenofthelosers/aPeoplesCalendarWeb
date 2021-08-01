@@ -1,10 +1,11 @@
-/* eslint-disable */
 import React from 'react';
+
+const homeIcon = require('../../assets/apcIconBig.jpg');
 
 export function IconComponent() {
   return (
     <div>
-      <img src={require('../../assets/apcIconBig.jpg')} alt="big icon" />
+      <img src={homeIcon} alt="big icon" />
     </div>
   );
 }
