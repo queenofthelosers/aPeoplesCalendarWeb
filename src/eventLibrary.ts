@@ -17320,7 +17320,7 @@ export const eventLibrary: EventDatabase = {
       {
         category: 'Labor',
         date: 'August 26th, 1913',
-        title: 'Dublin Lock-Out Begins (1913-14)',
+        title: 'Dublin Lock-Out Begins (1913)',
         imgSrc: '/assets/eventPhotos/Events/dublinLockOut.jpg',
         description: 'The Dublin Lock-Out was a major industrial dispute between approximately 20,000 workers and 300 employers which began on this day in 1913, in Ireland\'s capitol city of Dublin. The dispute is often viewed as the most severe and significant industrial dispute in Irish history.\n\nIn the years leading up to the strike, the Irish Transport and General Workers\' Union (ITGWU) had been seeking to unionize and radicalize the Irish workforce. Founded by socialist revolutionary James Larkin in 1908, the ITGWU was the first Irish union to cater to both skilled and unskilled workers.\n\nIn July 1913, three hundred businesses (led by capitalist William Martin Murphy) agreed to not allow the ITGWU to unionize the Dublin workers. Murphy dismissed hundreds of workers of suspected of union membership soon after. Employers in Dublin then locked out their workers, affecting tens of thousands of Irish workers, many of whom were already the poorest in the United Kingdom.\n\nAfter outbreaks of violence between striking workers and strike-breakers, James Connolly, Larkin and ex-British Army Captain Jack White formed a worker\'s militia, the Irish Citizen Army, to protect workers\' demonstrations.\n\nThe lock-out eventually concluded in early 1914, when the Trades Union Congress (TUC) in Britain rejected Larkin and Connolly\'s request for a sympathetic strike. Most workers, many of whom were on the brink of starvation, went back to work and signed pledges not to join the ITGWU.',
         link: 'https://www.historyireland.com/20th-century-contemporary-history/the-dublin-1913-lockout/',
@@ -17392,7 +17392,7 @@ export const eventLibrary: EventDatabase = {
         imgSrc: '/assets/eventPhotos/Events/jewishTailorsStrike.jpg',
         description: 'The London Tailors\' Strike, conducted by Jewish immigrants working in small tailoring workshops in Whitechapel, began on this day in 1889. The strike was called by the Amalgamated Society of Tailors and two smaller pressers\' and machinists\' unions. The striking workers demanded a ten and a half hour day and a limit on overtime hours.\n\nBy September, 10,000 workers were on strike. Although the strike was on the brink of failure four weeks in because of the workers\' impoverished conditions, the Docks Strike Committee (who were largely of Irish Catholic heritage, had little contact with Jews, and were led by an anti-Semitic bigot who called the Jews "dregs and scum of the continent") donated £100 to the tailors, allowing them to continue striking.\n\nIn early October, the employers finally caved to the workers\' demands, granting a shorter workday and a limit on overtime hours.',
         link: 'https://www.thejc.com/culture/books/the-rebels-who-brought-london-to-a-standstill-1.65742',
-        infoSrc: 'http://www.unionhistory.info/timeline/Tl_Display.php?irn=78&QueryPage=..%2FAdvSearch.php#:~:text=London%20Tailors%20Strike%201889%20against,public%20house%20in%20Greenfield%20Street.',
+        infoSrc: 'http://www.unionhistory.info/timeline/Tl_Display.php?irn=78&QueryPage=..%2FAdvSearch.php',
       },
       {
         category: 'Labor',
