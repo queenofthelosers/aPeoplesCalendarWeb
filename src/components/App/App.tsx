@@ -19,8 +19,7 @@ import { SocialIcons } from '../SocialIcons/socialIconsComponent';
 import { HomepageComponent } from '../Homepage/homepageComponent';
 import { IconComponent } from '../LogoIcon/logoIcon';
 import { calculateHamburgerPosition } from '../../utils/calculateHamburgerPosition';
-
-const headerImg = require('../../assets/Protests-85-skinniest.jpg');
+import headerImg from '../../assets/Protests-85-skinniest.jpg';
 
 const App = (): JSX.Element => {
   const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);

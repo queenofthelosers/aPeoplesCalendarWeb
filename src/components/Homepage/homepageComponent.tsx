@@ -9,8 +9,7 @@ import { categoryList } from '../../utils/categoryList';
 import { getTodayStringAndInitDateInput } from '../../utils/getTodayStringAndInitDateInput';
 /* eslint-disable-next-line */
 import { DatabaseEvent } from '../../utils/types';
-
-const howardHead = require('../../assets/howardZinnHeadshot.jpg');
+import howardHead from '../../assets/howardZinnHeadshot.jpg';
 
 interface IHomepageProps {
   winDim: {

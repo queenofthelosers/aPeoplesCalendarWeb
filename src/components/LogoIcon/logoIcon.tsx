@@ -1,6 +1,5 @@
 import React from 'react';
-
-const homeIcon = require('../../assets/apcIconBig.jpg');
+import homeIcon from '../../assets/apcIconBig.jpg';
 
 export function IconComponent() {
   return (
