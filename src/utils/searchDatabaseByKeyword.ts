@@ -1,10 +1,9 @@
-import { eventLibrary } from '../eventLibrary';
 import { categoryList } from './categoryList';
 import { isDayNotEmpty } from './isDayNotEmpty';
 // eslint-disable-next-line
 import { DatabaseEvent } from './types';
 
-export const searchDatabaseByKeyword = (keyword: string) => {
+export const searchDatabaseByKeyword = (eventLibrary: any, keyword: string) => {
   // iterate over each day, each day's category, each day's category's list of events,
   // see if this.state.searchValue is in the event's description
   // if it is, add that event to the "artificial" day that is created from search results (held as searchEventsResult)

@@ -13,6 +13,7 @@ import '../App/App.css';
 import { stringToSlug } from '../../utils/stringToSlug';
 // eslint-disable-next-line
 import { DatabaseEvent } from '../../utils/types';
+import { Accordion, AccordionSummary, AccordionDetails, Typography, CardMedia } from '@material-ui/core';
 // import Helmet from 'react-helmet';
 
 // to-do:
@@ -92,6 +93,75 @@ export const EventComponent = ({
               <meta property="og:image" content={this.props.categoryEvent.imgSrc}>
               <meta property="og:url" content={this.slugifiedTitle}>
         </Helmet> */}
+      <Accordion>
+        <AccordionSummary>
+          <CardMedia
+            image={`${process.env.PUBLIC_URL}${categoryEvent.imgSrc}`}
+            title='event photo'
+          />
+          <Typography>
+            {categoryEvent.title}
+          </Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <div className="eventFull">
+            <p className="eventDate">{categoryEvent.date}</p>
+            {imgWidth !== 1 && (
+              <img
+                className="eventImg"
+                src={`${process.env.PUBLIC_URL}${categoryEvent.imgSrc}`}
+                alt={categoryEvent.title}
+                style={{ width: resizeWidth, height: resizeHeight }}
+                ref={(img) => (imgRef = img)}
+                onLoad={getImgDim}
+              />
+            )}
+            {paragraphs.map((paragraph) => (
+              <p className="eventDescription">{paragraph}</p>
+            ))}
+            <div className="sourcesWrapper">
+              <a
+                className="links source"
+                href={categoryEvent.infoSrc}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Source
+              </a>
+              {categoryEvent.infoSrc !== categoryEvent.link ? (
+                <a
+                  className="links more"
+                  href={categoryEvent.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  More Info
+                </a>
+              ) : (
+                <div className="emptyLink" />
+              )}
+              <div className="links copyButton">
+                <CopyToClipboard onCopy={handleCopy} text={slugifiedTitle}>
+                  <div>
+                    {!copied && (
+                      <div className="copyWrapper">
+                        <FontAwesomeIcon icon={faClipboard} />
+                        <p className="copyText">Copy link</p>
+                      </div>
+                    )}
+                    {copied && (
+                      <div className="copyWrapper">
+                        <FontAwesomeIcon icon={faClipboardCheck} />
+                        <p className="copyText">Link copied!</p>
+                      </div>
+                    )}
+                  </div>
+                </CopyToClipboard>
+              </div>
+            </div>
+          </div>
+        </AccordionDetails>
+      </Accordion>
       <div className="eventHeaderWrapper" onClick={handleExpandCollapse}>
         <div className="eventButton">
           {collapsed && <FontAwesomeIcon icon={faPlus} />}

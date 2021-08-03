@@ -1,8 +1,7 @@
-import { eventLibrary } from '../eventLibrary';
 import { categoryList } from './categoryList';
 import { stringToSlug } from './stringToSlug';
 
-export const findEventByTitle = (title: string) => {
+export const findEventByTitle = (eventLibrary: any, title: string) => {
   // 1-1, 1-2, 1-3, etc.
   const everyDayString: string[] = Object.keys(eventLibrary);
 

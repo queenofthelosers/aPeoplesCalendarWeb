@@ -1,9 +1,9 @@
 import React from 'react';
 import '../App/App.css';
 import { NavLink } from 'react-router-dom';
+import Skeleton from '@material-ui/lab/Skeleton';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import { eventLibrary } from '../../eventLibrary';
 import { HomepageEventComponent } from '../HomepageEvent/homepageEventComponent';
 import { categoryList } from '../../utils/categoryList';
 import { getTodayStringAndInitDateInput } from '../../utils/getTodayStringAndInitDateInput';
@@ -16,13 +16,15 @@ interface IHomepageProps {
     width: number;
     height: number;
   };
+  eventLibrary: any;
+  loading: boolean;
 }
 
-export function HomepageComponent({ winDim }: IHomepageProps) {
-  // get event of the day
-  const { initTodayString } = getTodayStringAndInitDateInput();
-  // todaysEvents is an object of categories (Rebellion, Labor, etc.), where each prop is a list of events that happened otd
-  const todaysEvents: any = eventLibrary[initTodayString];
+export function HomepageComponent({
+  winDim,
+  eventLibrary,
+  loading,
+}: IHomepageProps) {
   let eventOfTheDay: DatabaseEvent = {
     category: '',
     description: '',
@@ -32,15 +34,21 @@ export function HomepageComponent({ winDim }: IHomepageProps) {
     link: '',
     infoSrc: '',
   };
-  for (let i = 0; i < categoryList.length; i++) {
-    const category = categoryList[i];
-    for (let j = 0; j < todaysEvents[category].length; j++) {
-      // console.log(todaysEvents[category][j].description.length);
-      if (
-        todaysEvents[category][j].description.length >=
-        eventOfTheDay.description.length
-      ) {
-        eventOfTheDay = todaysEvents[category][j];
+  if (!loading) {
+    // get event of the day
+    const { initTodayString } = getTodayStringAndInitDateInput();
+    // todaysEvents is an object of categories (Rebellion, Labor, etc.), where each prop is a list of events that happened otd
+    const todaysEvents: any = eventLibrary[initTodayString];
+    for (let i = 0; i < categoryList.length; i++) {
+      const category = categoryList[i];
+      for (let j = 0; j < todaysEvents[category].length; j++) {
+        // console.log(todaysEvents[category][j].description.length);
+        if (
+          todaysEvents[category][j].description.length >=
+          eventOfTheDay.description.length
+        ) {
+          eventOfTheDay = todaysEvents[category][j];
+        }
       }
     }
   }
@@ -81,10 +89,14 @@ export function HomepageComponent({ winDim }: IHomepageProps) {
           <div id="eventOTDTextWrapper">
             <p id="eventOfTheDay">Event of the Day</p>
           </div>
-          <HomepageEventComponent
-            categoryEvent={eventOfTheDay}
-            winDim={winDim}
-          />
+          {loading ? (
+            <Skeleton />
+          ) : (
+            <HomepageEventComponent
+              categoryEvent={eventOfTheDay}
+              winDim={winDim}
+            />
+          )}
         </div>
       </div>
     </div>
