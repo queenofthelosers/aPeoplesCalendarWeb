@@ -16299,7 +16299,7 @@ export const eventLibrary: EventDatabase = {
         title: 'Gulf of Tonkin Incident (1964)',
         imgSrc: '/assets/eventPhotos/Events/gulfOfTonkin.jpg',
         description:
-          'On this day in 1964, the Gulf of Tonkin Incident occurred when the American destroyer Maddox sank in North Vietnamese waters, an event the U.S. government lied about the nature of in order to justify military action against Vietnam.\n\nThe incident began when three North Vietnamese torpedo boats were surveilling the American destroyer USS Maddox as it performed intelligence operations in North Vietnamese waters. The Maddox initiated the incident by opening fire, shooting off three "warning" shots; the North Vietnamese boats replied with torpedoes and machine gun fire.\n\nThe exchange caused ten North Vietnamese casualties and damaged one U.S. helicopter; there were no American casualties.\n\nIn response, the U.S. Congress passed a "Gulf of Tonkin Resolution", which granted U.S. President Lyndon B. Johnson the authority to assist any Southeast Asian country whose government was considered to be jeopardized by "communist aggression". The resolution served as Johnson\'s legal justification for deploying U.S. conventional forces and the commencement of open warfare against North Vietnam.\n\nOn television, President Johnson made misleading statements about the incident and portrayed U.S. military escalation as an act of defense. Since then, the Pentagon Papers, the memoirs of Robert McNamara, and NSA publications from 2005, have proven that the U.S. government lied about the nature of the incident to justify a war against Vietnam.',
+          'On this day in 1964, the Gulf of Tonkin Incident occurred when the American destroyer Maddox was damaged in North Vietnamese waters, an event the U.S. government lied about the nature of in order to justify military action against Vietnam.\n\nThe incident began when three North Vietnamese torpedo boats were surveilling the American destroyer USS Maddox as it performed intelligence operations in North Vietnamese waters. The Maddox initiated the incident by opening fire, shooting off three "warning" shots; the North Vietnamese boats replied with torpedoes and machine gun fire.\n\nThe exchange caused ten North Vietnamese casualties and damaged one U.S. helicopter; there were no American casualties.\n\nIn response, the U.S. Congress passed a "Gulf of Tonkin Resolution", which granted U.S. President Lyndon B. Johnson the authority to assist any Southeast Asian country whose government was considered to be jeopardized by "communist aggression". The resolution served as Johnson\'s legal justification for deploying U.S. conventional forces and the commencement of open warfare against North Vietnam.\n\nOn television, President Johnson made misleading statements about the incident and portrayed U.S. military escalation as an act of defense. Since then, the Pentagon Papers, the memoirs of Robert McNamara, and NSA publications from 2005, have proven that the U.S. government lied about the nature of the incident to justify a war against Vietnam.',
         link: 'https://www.wsws.org/en/articles/2014/08/07/tonk-a07.html',
         infoSrc: 'https://en.wikipedia.org/wiki/Gulf_of_Tonkin_incident',
       },
@@ -16401,13 +16401,13 @@ export const eventLibrary: EventDatabase = {
     ],
     Rebellion: [
       {
-        category: '',
-        date: '',
-        title: '',
-        imgSrc: '/assets/eventPhotos/empty.jpg',
-        description: '',
-        link: '',
-        infoSrc: '',
+        category: 'Rebellion',
+        date: 'August 4th, 1925',
+        title: 'British Communists Arrested (1925)',
+        imgSrc: '/assets/eventPhotos/Organizations/communistPartyGreatBritain.jpg',
+        description: 'On this day in 1925, twelve organizers with the Communist Party of Great Britain (CPGB) were arrested and charged with violating the Mutiny Act of 1797, several serving sent time in prison after refusing to renounce communism.\n\nThe names of the twelve were John Ross Campbell, Jack Murphy, Wal Hannington, Ernie Cant, Tom Wintringham, Harry Pollitt, Hubert Inkpin, Arthur McManus, William Rust, Robin Page Arnot, William Gallacher, and Tom Bell.\n\nMany of those arrested were Party leaders. The CPGB elected to be silent on the arrests, for fear of the next set of leaders being arrested like the first.\n\nThe arrested communists were subjected to a highly politicized trial that lasted for eight days. Five of the group were sentenced to a year in prison for "members of an illegal party carrying on illegal work in this country".\n\nTo the remaining seven, the conservative judge offered an ultimatum: "Those of you who will promise me that you will have nothing more to do with this association or the doctrine it preaches, I will bind over to be of good behaviour in the future. Those of you who do not promise will go to prison." All but one refused.',
+        link: 'https://en.wikipedia.org/wiki/Communist_Party_of_Great_Britain',
+        infoSrc: 'https://spartacus-educational.com/Pcommunist.htm',
       },
     ],
     Labor: [
@@ -16443,6 +16443,15 @@ export const eventLibrary: EventDatabase = {
           'Calixto García Íñiguez, born on this day in 1839, was a general in three separate Cuban uprisings for independence - the Ten Years\' War, the Little War, and the War of 1895, which bled into the Spanish-American War.\n\nHe joined the Ten Years\' War at the age of 18. Five years later, when surrounded by Spanish troops, he shot himself under the chin with a .45 caliber pistol to not give them the satisfaction of capturing him. Although the bullet went out of his forehead and knocked him unconscious, he survived; the wound left a great scar and gave him headaches for the rest of his life.\n\nGarcía played a key role in the ultimately successful War of 1895 and protested the subsequent lack of Cuban autonomy in the conclusion of the war (no Cuban was allowed to sign the terms of surrender and the Spanish leaders in Cuba were allowed to keep their posts in Santiago).\n\nHe died of pneumonia at age 59 on December 11th, 1898, while on a diplomatic mission in Washington, D.C. Today, his portrait is on the 50 Cuban peso banknote.',
         link: 'https://www.historyisaweapon.com/defcon1/zinnempire12.html',
         infoSrc: 'https://en.wikipedia.org/wiki/Calixto_Garc%C3%ADa',
+      },
+      {
+        category: 'Paul Avrich',
+        date: 'August 4th, 1931',
+        title: 'Paul Avrich (1931 - 2006)',
+        imgSrc: '/assets/eventPhotos/Individuals/paulAvrich.jpg',
+        description: 'Paul Avrich, born on this day in 1931, was an anarchist historian who published ten books and numerous articles in his career, addressing topics such as the Kronstadt Rebellion, the Haymarket Riot, and the Sacco and Vanzetti case.\n\nBorn on August 4th, 1931 in Brooklyn, New York, Avrich served in the Korean War and received a prodigious formal education, studying at Cornell University and Columbia University. His doctoral thesis addressed the labor movement during the Russian Revolution. He also became one of the first American exchange students to study in the Soviet Union.\n\nAvrich became a key figure as an exponent of anarchism in the United States, disparaging the popular notion of anarchists as amoral and violent.\n\nHe also became a key figure in formal scholarship of the history of anarchism, interviewing Soviet exiles and, in his last book, "Anarchist Voices: An Oral History of Anarchism in America" (1995), compiling thirty years of interviews of various anarchist figures. Many of his works are on libcom.org, linked under "More Info" below.\n\n"Every good person deep down is an anarchist."\n\n- Paul Avrich',
+        link: 'https://libcom.org/tags/paul-avrich',
+        infoSrc: 'https://en.wikipedia.org/wiki/Paul_Avrich',
       },
     ],
     Assassinations: [
