@@ -33,6 +33,9 @@ export function HomepageComponent({
     imgSrc: '',
     link: '',
     infoSrc: '',
+    otd: '',
+    imgAlt: '',
+    NSFW: false,
   };
   if (!loading) {
     // get event of the day

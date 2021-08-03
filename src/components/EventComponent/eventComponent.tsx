@@ -13,7 +13,13 @@ import '../App/App.css';
 import { stringToSlug } from '../../utils/stringToSlug';
 // eslint-disable-next-line
 import { DatabaseEvent } from '../../utils/types';
-import { Accordion, AccordionSummary, AccordionDetails, Typography, CardMedia } from '@material-ui/core';
+import {
+  Accordion,
+  AccordionSummary,
+  AccordionDetails,
+  Typography,
+  CardMedia,
+} from '@material-ui/core';
 // import Helmet from 'react-helmet';
 
 // to-do:
@@ -95,12 +101,11 @@ export const EventComponent = ({
         </Helmet> */}
       <Accordion>
         <AccordionSummary>
-          <CardMedia
-            image={`${process.env.PUBLIC_URL}${categoryEvent.imgSrc}`}
-            title='event photo'
-          />
-          <Typography>
+          <Typography style={{ fontWeight: 'bold' }}>
             {categoryEvent.title}
+          </Typography>
+          <Typography>
+            {categoryEvent.otd}
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
@@ -162,7 +167,7 @@ export const EventComponent = ({
           </div>
         </AccordionDetails>
       </Accordion>
-      <div className="eventHeaderWrapper" onClick={handleExpandCollapse}>
+      {/* <div className="eventHeaderWrapper" onClick={handleExpandCollapse}>
         <div className="eventButton">
           {collapsed && <FontAwesomeIcon icon={faPlus} />}
           {!collapsed && <FontAwesomeIcon icon={faMinus} />}
@@ -232,7 +237,7 @@ export const EventComponent = ({
             </div>
           </div>
         </div>
-      )}
+      )} */}
     </div>
   );
 };
