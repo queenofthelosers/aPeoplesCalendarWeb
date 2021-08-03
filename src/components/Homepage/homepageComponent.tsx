@@ -1,15 +1,15 @@
 import React from 'react';
 import '../App/App.css';
-import {
-  NavLink,
-} from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { eventLibrary } from '../../eventLibrary';
 import { HomepageEventComponent } from '../HomepageEvent/homepageEventComponent';
 import { categoryList } from '../../utils/categoryList';
 import { getTodayStringAndInitDateInput } from '../../utils/getTodayStringAndInitDateInput';
+/* eslint-disable-next-line */
 import { DatabaseEvent } from '../../utils/types';
+import howardHead from '../../assets/howardZinnHeadshot.jpg';
 
 interface IHomepageProps {
   winDim: {
@@ -36,7 +36,10 @@ export function HomepageComponent({ winDim }: IHomepageProps) {
     const category = categoryList[i];
     for (let j = 0; j < todaysEvents[category].length; j++) {
       // console.log(todaysEvents[category][j].description.length);
-      if (todaysEvents[category][j].description.length >= eventOfTheDay.description.length) {
+      if (
+        todaysEvents[category][j].description.length >=
+        eventOfTheDay.description.length
+      ) {
         eventOfTheDay = todaysEvents[category][j];
       }
     }
@@ -46,15 +49,26 @@ export function HomepageComponent({ winDim }: IHomepageProps) {
     <div id="homepageWrapper">
       <div id="homepageContent">
         <img
-          src={require('../../assets/howardZinnHeadshot.jpg')}
+          src={howardHead}
           alt="a portrait of historian Howard Zinn"
           id="homepageImg"
         />
         <div id="homepageText">
           <p id="homepageHeader">A People's Calendar</p>
           <div>
-            <p id="homepageDescription">Inspired by Howard Zinn's work "A People's History of the United States", A People's Calendar (aPC) is a project that seeks to promote the worldwide history of working class movements and liberation struggles in the form of a searchable "On This Day" calendar.</p>
-            <p id="homepageDescription">This history includes, but is not limited to, indigenous resistance against colonization, the black liberation struggle, unionization efforts, slave rebellions, the women's suffrage movement, and revolution.</p>
+            <p id="homepageDescription">
+              Inspired by Howard Zinn's work "A People's History of the United
+              States", A People's Calendar (aPC) is a project that seeks to
+              promote the worldwide history of working class movements and
+              liberation struggles in the form of a searchable "On This Day"
+              calendar.
+            </p>
+            <p id="homepageDescription">
+              This history includes, but is not limited to, indigenous
+              resistance against colonization, the black liberation struggle,
+              unionization efforts, slave rebellions, the women's suffrage
+              movement, and revolution.
+            </p>
           </div>
           <NavLink to="/calendar" id="toTheCalendarOuterWrapper">
             <div id="toTheCalendarWrapper">

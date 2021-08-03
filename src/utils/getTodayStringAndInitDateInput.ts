@@ -1,12 +1,12 @@
 interface Results {
-    initTodayString: string;
-    initDateInput: string;
+  initTodayString: string;
+  initDateInput: string;
 }
 
 export const getTodayStringAndInitDateInput = (): Results => {
   const now = new Date();
   let month = (now.getMonth() + 1).toString();
-  let day = (now.getDate()).toString();
+  let day = now.getDate().toString();
   const initTodayString = `${month}-${day}`;
   const year = now.getFullYear();
   if (month.toString().length === 1) {

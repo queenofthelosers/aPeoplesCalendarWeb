@@ -1,6 +1,7 @@
 import { eventLibrary } from '../eventLibrary';
 import { categoryList } from './categoryList';
 import { isDayNotEmpty } from './isDayNotEmpty';
+// eslint-disable-next-line
 import { DatabaseEvent } from './types';
 
 export const searchDatabaseByKeyword = (keyword: string) => {
@@ -27,7 +28,8 @@ export const searchDatabaseByKeyword = (keyword: string) => {
     for (let j = 0; j < categoryList.length; j++) {
       for (let k = 0; k < day[categoryList[j]].length; k++) {
         // finally, we arrive at a specific event object - check to see if searchText in event's description prop
-        const lowerDescription = day[categoryList[j]][k].description.toLowerCase();
+        const lowerDescription =
+          day[categoryList[j]][k].description.toLowerCase();
         if (lowerDescription.includes(lowerSearchValue)) {
           // if the search term is included, add the event to the results class variable
           // searchEventsResult.push(day[categoryList[j]][k]);
@@ -41,12 +43,14 @@ export const searchDatabaseByKeyword = (keyword: string) => {
       }
       // if iteration is on last day, sort each category events by title, alphabetically
       if (everyDayString[i] === '12-31') {
-        searchEventsResult[categoryList[j]].sort((a: DatabaseEvent, b: DatabaseEvent) => {
-          if (a.title > b.title) {
-            return 1;
-          }
-          return -1;
-        });
+        searchEventsResult[categoryList[j]].sort(
+          (a: DatabaseEvent, b: DatabaseEvent) => {
+            if (a.title > b.title) {
+              return 1;
+            }
+            return -1;
+          },
+        );
       }
     }
   }

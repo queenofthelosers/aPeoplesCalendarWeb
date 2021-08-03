@@ -1,11 +1,17 @@
+/* eslint-disable */
+/* eslint no-return-assign: "off" */
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faPlus, faMinus, faClipboard, faClipboardCheck,
+  faPlus,
+  faMinus,
+  faClipboard,
+  faClipboardCheck,
 } from '@fortawesome/free-solid-svg-icons';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import '../App/App.css';
 import { stringToSlug } from '../../utils/stringToSlug';
+// eslint-disable-next-line
 import { DatabaseEvent } from '../../utils/types';
 // import Helmet from 'react-helmet';
 
@@ -13,6 +19,7 @@ import { DatabaseEvent } from '../../utils/types';
 // covert expand/collapse to material-ui accordion
 // create generic event "card" component
 // loading condition for image (can see on deep linking)
+// link preview?
 
 interface IEventComponentProps {
   initCollapsed: boolean;
@@ -26,12 +33,18 @@ interface IEventComponentProps {
 }
 
 export const EventComponent = ({
-  initCollapsed, categoryEvent, eventDisplayWidth, winDim, paragraphs,
+  initCollapsed,
+  categoryEvent,
+  eventDisplayWidth,
+  winDim,
+  paragraphs,
 }: IEventComponentProps) => {
   const [collapsed, setCollapsed] = React.useState<boolean>(initCollapsed);
   const [copied, setCopied] = React.useState<boolean>(false);
   const [imgDim, setImgDim] = React.useState<any>({ width: 2, height: 2 });
-  const slugifiedTitle = `apeoplescalendar.org/calendar/events/${stringToSlug(categoryEvent.title)}`;
+  const slugifiedTitle = `apeoplescalendar.org/calendar/events/${stringToSlug(
+    categoryEvent.title,
+  )}`;
   let imgRef: any;
 
   const getImgDim = () => {
@@ -84,7 +97,11 @@ export const EventComponent = ({
           {collapsed && <FontAwesomeIcon icon={faPlus} />}
           {!collapsed && <FontAwesomeIcon icon={faMinus} />}
         </div>
-        <header className={collapsed ? 'headerEvent' : 'headerEvent expandedEventHeader'}>
+        <header
+          className={
+            collapsed ? 'headerEvent' : 'headerEvent expandedEventHeader'
+          }
+        >
           <p className="eventHeader">{categoryEvent.title}</p>
         </header>
       </div>
@@ -97,30 +114,48 @@ export const EventComponent = ({
               src={`${process.env.PUBLIC_URL}${categoryEvent.imgSrc}`}
               alt={categoryEvent.title}
               style={{ width: resizeWidth, height: resizeHeight }}
-              ref={(img) => imgRef = img}
+              ref={(img) => (imgRef = img)}
               onLoad={getImgDim}
             />
           )}
-          {paragraphs.map((paragraph) => <p className="eventDescription">{paragraph}</p>)}
+          {paragraphs.map((paragraph) => (
+            <p className="eventDescription">{paragraph}</p>
+          ))}
           <div className="sourcesWrapper">
-            <a className="links source" href={categoryEvent.infoSrc} target="_blank" rel="noopener noreferrer">Source</a>
-            {categoryEvent.infoSrc !== categoryEvent.link
-              ? <a className="links more" href={categoryEvent.link} target="_blank" rel="noopener noreferrer">More Info</a>
-              : <div className="emptyLink" />}
+            <a
+              className="links source"
+              href={categoryEvent.infoSrc}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Source
+            </a>
+            {categoryEvent.infoSrc !== categoryEvent.link ? (
+              <a
+                className="links more"
+                href={categoryEvent.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                More Info
+              </a>
+            ) : (
+              <div className="emptyLink" />
+            )}
             <div className="links copyButton">
               <CopyToClipboard onCopy={handleCopy} text={slugifiedTitle}>
                 <div>
                   {!copied && (
-                  <div className="copyWrapper">
-                    <FontAwesomeIcon icon={faClipboard} />
-                    <p className="copyText">Copy link</p>
-                  </div>
+                    <div className="copyWrapper">
+                      <FontAwesomeIcon icon={faClipboard} />
+                      <p className="copyText">Copy link</p>
+                    </div>
                   )}
                   {copied && (
-                  <div className="copyWrapper">
-                    <FontAwesomeIcon icon={faClipboardCheck} />
-                    <p className="copyText">Link copied!</p>
-                  </div>
+                    <div className="copyWrapper">
+                      <FontAwesomeIcon icon={faClipboardCheck} />
+                      <p className="copyText">Link copied!</p>
+                    </div>
                   )}
                 </div>
               </CopyToClipboard>

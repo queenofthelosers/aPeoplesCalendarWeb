@@ -19,6 +19,7 @@ import { SocialIcons } from '../SocialIcons/socialIconsComponent';
 import { HomepageComponent } from '../Homepage/homepageComponent';
 import { IconComponent } from '../LogoIcon/logoIcon';
 import { calculateHamburgerPosition } from '../../utils/calculateHamburgerPosition';
+import headerImg from '../../assets/Protests-85-skinniest.jpg';
 
 const App = (): JSX.Element => {
   const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
@@ -65,53 +66,91 @@ const App = (): JSX.Element => {
   return (
     <Router>
       <img
-        src={require('../../assets/Protests-85-skinniest.jpg')}
+        src={headerImg}
         alt="A police officer maces a peaceful protester at a black lives matter protest in Ohio"
         id="bannerImg"
       />
       <div ref={scrollRef}>
-        {windowWidth > 780 && (
-        <FullNavBar
-          windowWidth={windowWidth}
-        />
-        )}
+        {windowWidth > 780 && <FullNavBar windowWidth={windowWidth} />}
         {hamburgerOpen && (
-        <div id="hamburgerOpen" style={{ top: hamburgerMenuPosition }}>
-          <NavLink to="/about" id="hamburgerAbout" className="navText hamburgerText" onClick={handleHamburgerClick}>About</NavLink>
-          {/* <NavLink to='/donate' id='hamburgerDonate' className='navText hamburgerText' onClick={handleHamburgerClick}>Donate</NavLink> */}
-          <NavLink to="/volunteer" id="hamburgerVolunteer" className="navText hamburgerText" onClick={handleHamburgerClick}>Volunteer</NavLink>
-          <NavLink to="/calendar" id="hamburgerCalendar" className="navText hamburgerText" onClick={handleHamburgerClick}>Calendar</NavLink>
-          <a target="_blank" rel="noopener noreferrer" id="hamburgerContact" className="navText hamburgerText" href="mailto:apeoplescalendar@gmail.com" onClick={handleHamburgerClick}>Contact</a>
-        </div>
-        )}
-        {windowWidth <= 780
-        && (
-        <div id="smallNavBarContainer">
-          <NavLink to="/" className="navBarNavLink" id="titleContainer" onClick={closeMenu}>
-            <p id="fullNavTitle">aPC</p>
-          </NavLink>
-          <div>
-            <FontAwesomeIcon icon={faBars} style={windowWidth > 500 ? { position: 'absolute', top: '15px', left: '95px' } : { position: 'absolute', top: '15px', left: '82px' }} onClick={handleHamburgerClick} />
+          <div id="hamburgerOpen" style={{ top: hamburgerMenuPosition }}>
+            <NavLink
+              to="/about"
+              id="hamburgerAbout"
+              className="navText hamburgerText"
+              onClick={handleHamburgerClick}
+            >
+              About
+            </NavLink>
+            {/* <NavLink
+              to='/donate'
+              id='hamburgerDonate'
+              className='navText hamburgerText'
+              onClick={handleHamburgerClick}>
+                Donate
+            </NavLink> */}
+            <NavLink
+              to="/volunteer"
+              id="hamburgerVolunteer"
+              className="navText hamburgerText"
+              onClick={handleHamburgerClick}
+            >
+              Volunteer
+            </NavLink>
+            <NavLink
+              to="/calendar"
+              id="hamburgerCalendar"
+              className="navText hamburgerText"
+              onClick={handleHamburgerClick}
+            >
+              Calendar
+            </NavLink>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              id="hamburgerContact"
+              className="navText hamburgerText"
+              href="mailto:apeoplescalendar@gmail.com"
+              onClick={handleHamburgerClick}
+            >
+              Contact
+            </a>
           </div>
-          <SocialIcons windowWidth={windowWidth} />
-        </div>
+        )}
+        {windowWidth <= 780 && (
+          <div id="smallNavBarContainer">
+            <NavLink
+              to="/"
+              className="navBarNavLink"
+              id="titleContainer"
+              onClick={closeMenu}
+            >
+              <p id="fullNavTitle">aPC</p>
+            </NavLink>
+            <div>
+              <FontAwesomeIcon
+                icon={faBars}
+                style={
+                  windowWidth > 500
+                    ? { position: 'absolute', top: '15px', left: '95px' }
+                    : { position: 'absolute', top: '15px', left: '82px' }
+                }
+                onClick={handleHamburgerClick}
+              />
+            </div>
+            <SocialIcons windowWidth={windowWidth} />
+          </div>
         )}
       </div>
       <Switch>
         <Route path="/calendar/day/:day">
-          <Main
-            winDim={{ width: windowWidth, height: windowHeight }}
-          />
+          <Main winDim={{ width: windowWidth, height: windowHeight }} />
         </Route>
         <Route path="/calendar/events/:event_">
-          <Main
-            winDim={{ width: windowWidth, height: windowHeight }}
-          />
+          <Main winDim={{ width: windowWidth, height: windowHeight }} />
         </Route>
         <Route exact path="/calendar">
-          <Main
-            winDim={{ width: windowWidth, height: windowHeight }}
-          />
+          <Main winDim={{ width: windowWidth, height: windowHeight }} />
         </Route>
         <Route path="/about">
           <About />

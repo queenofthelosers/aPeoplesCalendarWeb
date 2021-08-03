@@ -1,9 +1,5 @@
 import React from 'react';
-import {
-  useParams,
-  Route,
-  Redirect,
-} from 'react-router-dom';
+import { useParams, Route, Redirect } from 'react-router-dom';
 import '../App/App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
@@ -50,7 +46,7 @@ export const Main = ({ winDim }: IMainProps): JSX.Element => {
         // could probably do history.push(/404)
         setInvalidInput(true);
       }
-    // } else if (this.props.params.hasOwnProperty('event_')) {
+      // } else if (this.props.params.hasOwnProperty('event_')) {
     } else if (event_) {
       // run search with slug on slugified event titles, should only return the one event as titles are unique
       setIsSingleEvent(true);
@@ -79,10 +75,10 @@ export const Main = ({ winDim }: IMainProps): JSX.Element => {
     setHaveEvents(dayHasEvents);
   };
 
-  const handleNewDate = (e: any) => {
+  const handleNewDate = (e: any): void => {
     // if the user did something weird and the given date is falsy, don't run anything
     if (!e.target.value) {
-      return null;
+      return;
     }
     // else, split the date string up into an array by dash character
     let newDateString = e.target.value.split('-');
@@ -117,12 +113,15 @@ export const Main = ({ winDim }: IMainProps): JSX.Element => {
     if (searchValue.length === 0) {
       initializeToday();
       return;
-    } if (searchValue.length < 3) {
+    }
+    if (searchValue.length < 3) {
+      // eslint-disable-next-line
       alert('Search value must be three characters or longer!');
       return;
     }
 
-    const { searchEventsResult, dayHasEvents } = searchDatabaseByKeyword(searchValue);
+    const { searchEventsResult, dayHasEvents } =
+      searchDatabaseByKeyword(searchValue);
     setDisplaySearch(true);
     setEvents(searchEventsResult);
     setHaveEvents(dayHasEvents);
@@ -133,26 +132,44 @@ export const Main = ({ winDim }: IMainProps): JSX.Element => {
   };
 
   // redirects to 404 if invalid input was given for date (i.e., 030-29)
+  if (invalidInput) {
+    return (
+      <Route>
+        <Redirect
+          to={{
+            pathname: '/404',
+          }}
+        />
+      </Route>
+    );
+  }
   return (
     <Route
-      render={() => (!invalidInput ? (
+      render={() => (
         <div id="App">
-          {/* <div id='appPromoWrapper'>
-              <a id='appPromo' target='_blank' rel="noopener noreferrer" href='https://play.google.com/store/apps/details?id=com.aPeoplesCalendar.aPC&hl=en'>On Android? Get the app!</a>
-            </div> */}
           {displaySearch && (
-          <div id="onThisDayWrapper">
-            <p id="onThisDay">Search Results</p>
-          </div>
+            <div id="onThisDayWrapper">
+              <p id="onThisDay">Search Results</p>
+            </div>
           )}
-          <div id="settings" style={winDim.width < 501 ? { flexDirection: 'column' } : {}}>
+          <div
+            id="settings"
+            style={winDim.width < 501 ? { flexDirection: 'column' } : {}}
+          >
             <div id="datePickerWrapper">
-              <input id="datePicker" type="date" value={dateInput} onChange={handleNewDate} />
+              <input
+                id="datePicker"
+                type="date"
+                value={dateInput}
+                onChange={handleNewDate}
+              />
             </div>
             <form
               id="searchWrapper"
               onSubmit={handleSearch}
-              style={winDim.width < 501 ? { marginTop: 20, marginLeft: -8 } : {}}
+              style={
+                winDim.width < 501 ? { marginTop: 20, marginLeft: -8 } : {}
+              }
             >
               <input
                 id="searchField"
@@ -161,32 +178,22 @@ export const Main = ({ winDim }: IMainProps): JSX.Element => {
                 value={searchValue}
                 onChange={trackSearch}
               />
-              <button
-                id="searchButton"
-                type="submit"
-              >
+              <button id="searchButton" type="submit">
                 <FontAwesomeIcon icon={faSearch} className="searchIcon" />
               </button>
             </form>
           </div>
-          {!haveEvents
-              && <EmptyDay displaySearch={displaySearch} />}
+          {!haveEvents && <EmptyDay displaySearch={displaySearch} />}
           {haveEvents && (
-          <CalendarDisplay
-            ref={calendarRef}
-            events={events}
-            winDim={winDim}
-            initCollapsed={!isSingleEvent}
-          />
+            <CalendarDisplay
+              ref={calendarRef}
+              events={events}
+              winDim={winDim}
+              initCollapsed={!isSingleEvent}
+            />
           )}
         </div>
-      )
-        : (
-          <Redirect to={{
-            pathname: '/404',
-          }}
-          />
-        ))}
+      )}
     />
   );
 };
