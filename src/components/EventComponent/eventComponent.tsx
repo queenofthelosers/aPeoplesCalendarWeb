@@ -19,13 +19,27 @@ import {
   AccordionDetails,
   Typography,
   Box,
+  IconButton,
 } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
-// import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
 
 const StyledAccordionSummary = withStyles({
   content: {
     flexGrow: 0,
+    // margin: 'auto',
+    // marginTop: 12,
+    // marginBottom: 12,
+    // '&$expanded': {
+    //   flexGrow: 0,
+    //   margin: 'auto',
+    // },
+    // '&:last-child': {
+    //   marginRight: 'auto',
+    // },
+  },
+  expanded: {
+    marginBottom: -28,
   },
 })(AccordionSummary);
 // import Helmet from 'react-helmet';
@@ -131,30 +145,51 @@ export const EventComponent = ({
                 onLoad={getImgDim}
               />
             )}
-            {!expanded && <Typography>{categoryEvent.otd}</Typography>}
+            {!expanded && (
+              <>
+                <Typography
+                  style={{
+                    paddingLeft: 26,
+                    paddingRight: 26,
+                    marginTop: 10,
+                    fontWeight: 'bold',
+                    textAlign: 'center',
+                  }}
+                >
+                  {categoryEvent.date}
+                </Typography>
+                <Typography>{categoryEvent.otd}</Typography>
+                <MoreHorizIcon
+                  style={{ margin: 'auto', marginTop: 5 }}
+                  onClick={handleExpandCollapse}
+                />
+              </>
+            )}
           </Box>
         </StyledAccordionSummary>
         <AccordionDetails
           style={{ paddingLeft: 0, paddingRight: 0, paddingBottom: 0 }}
         >
-          <div className="eventFull" style={{ marginTop: -20, paddingTop: 0 }}>
-            <Typography
-              style={{
-                paddingLeft: 26,
-                paddingRight: 26,
-                fontWeight: 'bold',
-                textAlign: 'center',
-              }}
-            >
-              {categoryEvent.date}
-            </Typography>
-            {paragraphs.map((paragraph) => (
+          <div className="eventFull" style={{ paddingTop: 0 }}>
+            <div onClick={handleExpandCollapse} style={{ cursor: 'pointer' }}>
               <Typography
-                style={{ marginTop: 10, paddingLeft: 26, paddingRight: 26 }}
+                style={{
+                  paddingLeft: 26,
+                  paddingRight: 26,
+                  fontWeight: 'bold',
+                  textAlign: 'center',
+                }}
               >
-                {paragraph}
+                {categoryEvent.date}
               </Typography>
-            ))}
+              {paragraphs.map((paragraph) => (
+                <Typography
+                  style={{ marginTop: 10, paddingLeft: 26, paddingRight: 26 }}
+                >
+                  {paragraph}
+                </Typography>
+              ))}
+            </div>
             <div className="sourcesWrapper">
               <a
                 className="links source"

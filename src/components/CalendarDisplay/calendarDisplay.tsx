@@ -18,18 +18,37 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 const StyledAccordionSummary = withStyles({
   content: {
     flexGrow: 0,
-    margin: "auto",
-    marginTop: 12,
-    marginBottom: 12,
-    "&$expanded": {
-     flexGrow: 0,
-     margin: "auto",
-    },
-    "&:last-child": {
-     marginRight: "auto"
-    }
+    // margin: 'auto',
+    // '&$expanded': {
+    //   flexGrow: 0,
+    //   margin: 'auto',
+    // },
+    // '&:last-child': {
+    //   marginLeft: 'auto',
+    // },
   },
+  // expanded: {
+  //   flexGrow: 0,
+  //   margin: 'auto',
+  //   '&$expanded': {
+  //     flexGrow: 0,
+  //     margin: 'auto',
+  //   },
+  //   '&:last-child': {
+  //     marginLeft: 'auto',
+  //   },
+  // },
+  //  expandIcon: {
+  //    marginLeft: 'auto'
+  //  },
 })(AccordionSummary);
+
+const StyledAccordionDetails = withStyles({
+  root: {
+    flexDirection: 'column',
+    padding: 0,
+  },
+})(AccordionDetails);
 
 interface ICalendarDisplayProps {
   events: any;
@@ -46,7 +65,7 @@ export const CalendarDisplay = ({
   initCollapsed,
   winDim,
 }: ICalendarDisplayProps) => {
-  const [collapseCategory, setCollapseCategory] = React.useState<any>({});
+  // const [collapseCategory, setCollapseCategory] = React.useState<any>({});
   const [eventDisplayWidth, setEventDisplayWidth] = React.useState<number>(1);
   let eventDisplayRef: any;
 
@@ -64,16 +83,16 @@ export const CalendarDisplay = ({
     setEventDisplayWidth(width);
   };
 
-  const handleExpandCollapse = (_: any, category: string) => {
-    const tempCollapseCategory: any = { ...collapseCategory };
-    tempCollapseCategory[category] = !tempCollapseCategory[category];
-    setCollapseCategory(tempCollapseCategory);
-  };
-  // move this function one level higher
-  /* eslint-disable-next-line */
-  const resetExpandCollapse = () => {
-    setCollapseCategory({});
-  };
+  // const handleExpandCollapse = (_: any, category: string) => {
+  //   const tempCollapseCategory: any = { ...collapseCategory };
+  //   tempCollapseCategory[category] = !tempCollapseCategory[category];
+  //   setCollapseCategory(tempCollapseCategory);
+  // };
+  // // move this function one level higher
+  // /* eslint-disable-next-line */
+  // const resetExpandCollapse = () => {
+  //   setCollapseCategory({});
+  // };
 
   return (
     <div
@@ -92,32 +111,13 @@ export const CalendarDisplay = ({
               className="headerWrapper"
               style={{ backgroundColor: '#333333', color: 'white' }}
               expandIcon={<ExpandMoreIcon style={{ color: 'white' }} />}
-              // onClick={(e) => handleExpandCollapse(e, eventCategory)}
             >
-              {/* <div
-                className="collapseButton"
-                onClick={(e) => handleExpandCollapse(e, eventCategory)}
-              >
-                {collapseCategory?.[eventCategory] && (
-                  <FontAwesomeIcon
-                    icon={faPlus}
-                    onClick={(e) => handleExpandCollapse(e, eventCategory)}
-                  />
-                )}
-                {!collapseCategory?.[eventCategory] && (
-                  <FontAwesomeIcon
-                    icon={faMinus}
-                    onClick={(e) => handleExpandCollapse(e, eventCategory)}
-                  />
-                )}
-              </div> */}
               <div className="categoryHeaderWrapper">
                 <p className="categoryHeader">{eventCategory}</p>
               </div>
             </StyledAccordionSummary>
-            {/* {!collapseCategory?.[eventCategory] && */}
-              {/* /* map each individual category event to an EventComponent  */}
-            <AccordionDetails>
+            {/*map each individual category event to an EventComponent  */}
+            <StyledAccordionDetails>
               {events[eventCategory].map((categoryEvent: any) => {
                 // split description on new lines so we can actually have separate p elements (new lines is how description was stored in data)
                 const paragraphs = categoryEvent.description.split('\n\n');
@@ -133,7 +133,7 @@ export const CalendarDisplay = ({
                   />
                 );
               })}
-              </AccordionDetails>
+            </StyledAccordionDetails>
           </Accordion>
         );
       })}
