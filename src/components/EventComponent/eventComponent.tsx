@@ -19,7 +19,15 @@ import {
   AccordionDetails,
   Typography,
   CardMedia,
+  Box,
 } from '@material-ui/core';
+import { withStyles } from '@material-ui/core/styles';
+
+const StyledAccordionSummary = withStyles({
+  content: {
+    flexGrow: 0,
+  },
+})(AccordionSummary);
 // import Helmet from 'react-helmet';
 
 // to-do:
@@ -46,7 +54,7 @@ export const EventComponent = ({
   winDim,
   paragraphs,
 }: IEventComponentProps) => {
-  const [collapsed, setCollapsed] = React.useState<boolean>(initCollapsed);
+  const [expanded, setExpanded] = React.useState<boolean>(!initCollapsed);
   const [copied, setCopied] = React.useState<boolean>(false);
   const [imgDim, setImgDim] = React.useState<any>({ width: 2, height: 2 });
   const slugifiedTitle = `apeoplescalendar.org/calendar/events/${stringToSlug(
@@ -64,7 +72,7 @@ export const EventComponent = ({
   };
 
   const handleExpandCollapse = () => {
-    setCollapsed(!collapsed);
+    setExpanded(!expanded);
   };
 
   const handleCopy = () => {
@@ -99,30 +107,53 @@ export const EventComponent = ({
               <meta property="og:image" content={this.props.categoryEvent.imgSrc}>
               <meta property="og:url" content={this.slugifiedTitle}>
         </Helmet> */}
-      <Accordion>
-        <AccordionSummary>
-          <Typography style={{ fontWeight: 'bold' }}>
-            {categoryEvent.title}
-          </Typography>
-          <Typography>
-            {categoryEvent.otd}
-          </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <div className="eventFull">
-            <p className="eventDate">{categoryEvent.date}</p>
+      <Accordion expanded={expanded} onChange={handleExpandCollapse}>
+        <StyledAccordionSummary>
+          <Box
+            style={{ display: 'flex', flexDirection: 'column', padding: 10 }}
+          >
+            <Typography
+              style={{
+                fontSize: '1.35em',
+                fontWeight: 'bold',
+                textAlign: 'center',
+              }}
+            >
+              {categoryEvent.title}
+            </Typography>
             {imgWidth !== 1 && (
               <img
                 className="eventImg"
                 src={`${process.env.PUBLIC_URL}${categoryEvent.imgSrc}`}
-                alt={categoryEvent.title}
+                alt={categoryEvent.imgAlt}
                 style={{ width: resizeWidth, height: resizeHeight }}
                 ref={(img) => (imgRef = img)}
                 onLoad={getImgDim}
               />
             )}
+            {!expanded && <Typography>{categoryEvent.otd}</Typography>}
+          </Box>
+        </StyledAccordionSummary>
+        <AccordionDetails
+          style={{ paddingLeft: 0, paddingRight: 0, paddingBottom: 0 }}
+        >
+          <div className="eventFull" style={{ marginTop: -20, paddingTop: 0 }}>
+            <Typography
+              style={{
+                paddingLeft: 26,
+                paddingRight: 26,
+                fontWeight: 'bold',
+                textAlign: 'center',
+              }}
+            >
+              {categoryEvent.date}
+            </Typography>
             {paragraphs.map((paragraph) => (
-              <p className="eventDescription">{paragraph}</p>
+              <Typography
+                style={{ marginTop: 10, paddingLeft: 26, paddingRight: 26 }}
+              >
+                {paragraph}
+              </Typography>
             ))}
             <div className="sourcesWrapper">
               <a
