@@ -5,10 +5,31 @@
 
 import React from 'react';
 import './calendarDisplay.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlus, faMinus } from '@fortawesome/free-solid-svg-icons';
 import { EventComponent } from '../EventComponent/eventComponent';
 import { categoryList } from '../../utils/categoryList';
+import {
+  Accordion,
+  AccordionSummary,
+  AccordionDetails,
+} from '@material-ui/core';
+import { withStyles } from '@material-ui/core/styles';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+
+const StyledAccordionSummary = withStyles({
+  content: {
+    flexGrow: 0,
+    margin: "auto",
+    marginTop: 12,
+    marginBottom: 12,
+    "&$expanded": {
+     flexGrow: 0,
+     margin: "auto",
+    },
+    "&:last-child": {
+     marginRight: "auto"
+    }
+  },
+})(AccordionSummary);
 
 interface ICalendarDisplayProps {
   events: any;
@@ -64,14 +85,16 @@ export const CalendarDisplay = ({
         if (!events[eventCategory][0].description) {
           return null;
         }
-        // extract al this into a card component
+        // extract all this into a card component
         return (
-          <div className="categoryEvents">
-            <div
+          <Accordion key={eventCategory} className="categoryEvents">
+            <StyledAccordionSummary
               className="headerWrapper"
-              onClick={(e) => handleExpandCollapse(e, eventCategory)}
+              style={{ backgroundColor: '#333333', color: 'white' }}
+              expandIcon={<ExpandMoreIcon style={{ color: 'white' }} />}
+              // onClick={(e) => handleExpandCollapse(e, eventCategory)}
             >
-              <div
+              {/* <div
                 className="collapseButton"
                 onClick={(e) => handleExpandCollapse(e, eventCategory)}
               >
@@ -87,14 +110,15 @@ export const CalendarDisplay = ({
                     onClick={(e) => handleExpandCollapse(e, eventCategory)}
                   />
                 )}
-              </div>
+              </div> */}
               <div className="categoryHeaderWrapper">
                 <p className="categoryHeader">{eventCategory}</p>
               </div>
-            </div>
-            {!collapseCategory?.[eventCategory] &&
-              /* map each individual category event to an EventComponent */
-              events[eventCategory].map((categoryEvent: any) => {
+            </StyledAccordionSummary>
+            {/* {!collapseCategory?.[eventCategory] && */}
+              {/* /* map each individual category event to an EventComponent  */}
+            <AccordionDetails>
+              {events[eventCategory].map((categoryEvent: any) => {
                 // split description on new lines so we can actually have separate p elements (new lines is how description was stored in data)
                 const paragraphs = categoryEvent.description.split('\n\n');
                 // return individual event as formatted jsx (map returns list of individual events per category)
@@ -109,7 +133,8 @@ export const CalendarDisplay = ({
                   />
                 );
               })}
-          </div>
+              </AccordionDetails>
+          </Accordion>
         );
       })}
     </div>
