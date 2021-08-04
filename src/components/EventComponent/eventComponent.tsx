@@ -1,28 +1,24 @@
-/* eslint-disable */
 /* eslint no-return-assign: "off" */
 import React from 'react';
+import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faPlus,
-  faMinus,
   faClipboard,
   faClipboardCheck,
 } from '@fortawesome/free-solid-svg-icons';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import '../App/App.css';
-import { stringToSlug } from '../../utils/stringToSlug';
-// eslint-disable-next-line
-import { DatabaseEvent } from '../../utils/types';
 import {
   Accordion,
   AccordionSummary,
   AccordionDetails,
   Typography,
   Box,
-  IconButton,
 } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
-import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
+import { stringToSlug } from '../../utils/stringToSlug';
+// eslint-disable-next-line
+import { DatabaseEvent } from '../../utils/types';
 
 const StyledAccordionSummary = withStyles({
   content: {
