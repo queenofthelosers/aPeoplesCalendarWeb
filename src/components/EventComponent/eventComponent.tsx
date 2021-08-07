@@ -14,6 +14,7 @@ import {
   AccordionDetails,
   Typography,
   Box,
+  IconButton,
 } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 import { stringToSlug } from '../../utils/stringToSlug';
@@ -111,6 +112,7 @@ export const EventComponent = ({
                 fontSize: '1.28em',
                 fontWeight: 'bold',
                 textAlign: 'center',
+                color: '#333333',
               }}
             >
               {categoryEvent.title}
@@ -131,18 +133,22 @@ export const EventComponent = ({
                   style={{
                     paddingLeft: 26,
                     paddingRight: 26,
-                    marginTop: 10,
+                    marginTop: 7,
+                    marginBottom: 7,
                     fontWeight: 'bold',
                     textAlign: 'center',
+                    color: '#333333',
                   }}
                 >
                   {categoryEvent.date}
                 </Typography>
                 <Typography>{categoryEvent.otd}</Typography>
-                <MoreHorizIcon
-                  style={{ margin: 'auto', marginTop: 5 }}
+                <IconButton
+                  style={{ margin: 'auto', marginTop: 5, color: '#333333' }}
                   onClick={handleExpandCollapse}
-                />
+                >
+                  <MoreHorizIcon />
+                </IconButton>
               </>
             )}
           </Box>
