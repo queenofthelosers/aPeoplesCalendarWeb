@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App/App.css';
 import { NavLink } from 'react-router-dom';
-import { Paper } from '@material-ui/core';
+import { Box, Paper } from '@material-ui/core';
 import Skeleton from '@material-ui/lab/Skeleton';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
@@ -64,6 +64,7 @@ export function HomepageComponent({
           src={howardHead}
           alt="a portrait of historian Howard Zinn"
           id="homepageImg"
+          width={winDim.width / 3}
         />
         <div id="homepageText">
           <p id="homepageHeader">A People's Calendar</p>
@@ -89,7 +90,7 @@ export function HomepageComponent({
             </div>
           </NavLink>
         </div>
-        <Paper id="eventOfTheDayWrapper">
+        <Box id="eventOfTheDayWrapper">
           <Paper id="eventOTDTextWrapper" style={{ width: winDim.width * 0.75, borderRadius: 0 }}>
             <p id="eventOfTheDay">Event of the Day</p>
           </Paper>
@@ -101,7 +102,7 @@ export function HomepageComponent({
               winDim={winDim}
             />
           )}
-        </Paper>
+        </Box>
       </div>
     </div>
   );

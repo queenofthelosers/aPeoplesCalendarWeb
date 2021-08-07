@@ -49,7 +49,7 @@ const App = (): JSX.Element => {
       setEventLibrary(fetchedEvents);
       setLoadingEvents(false);
     } catch (e) {
-      alert(`Sorry, looks like we had trouble fetching events: ${e.message}`);
+      alert(`Sorry, it looks like we had trouble fetching events: ${e.message}`);
       setLoadingEvents(false);
     }
   };
