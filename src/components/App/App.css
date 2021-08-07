@@ -530,11 +530,10 @@ html {
 }
 
 .categoryEvents {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   border-radius: 8px;
   border-bottom-right-radius: 0px;
   border-bottom-left-radius: 0px;
-  margin-bottom: 20px;
   background-color: #333333;
   color: white;
   box-shadow: 3px 3px 5px black;

@@ -11,6 +11,7 @@ import {
   Accordion,
   AccordionSummary,
   AccordionDetails,
+  Paper,
 } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
@@ -106,35 +107,37 @@ export const CalendarDisplay = ({
         }
         // extract all this into a card component
         return (
-          <Accordion key={eventCategory} className="categoryEvents">
-            <StyledAccordionSummary
-              className="headerWrapper"
-              style={{ backgroundColor: '#333333', color: 'white' }}
-              expandIcon={<ExpandMoreIcon style={{ color: 'white' }} />}
-            >
-              <div className="categoryHeaderWrapper">
-                <p className="categoryHeader">{eventCategory}</p>
-              </div>
-            </StyledAccordionSummary>
-            {/*map each individual category event to an EventComponent  */}
-            <StyledAccordionDetails>
-              {events[eventCategory].map((categoryEvent: any) => {
-                // split description on new lines so we can actually have separate p elements (new lines is how description was stored in data)
-                const paragraphs = categoryEvent.description.split('\n\n');
-                // return individual event as formatted jsx (map returns list of individual events per category)
-                return (
-                  <EventComponent
-                    categoryEvent={categoryEvent}
-                    paragraphs={paragraphs}
-                    key={categoryEvent.title}
-                    winDim={winDim}
-                    eventDisplayWidth={eventDisplayWidth}
-                    initCollapsed={initCollapsed}
-                  />
-                );
-              })}
-            </StyledAccordionDetails>
-          </Accordion>
+          <Paper key={eventCategory} style={{ marginBottom: 20 }}>
+            <Accordion className="categoryEvents">
+              <StyledAccordionSummary
+                className="headerWrapper"
+                style={{ backgroundColor: '#333333', color: 'white' }}
+                expandIcon={<ExpandMoreIcon style={{ color: 'white' }} />}
+              >
+                <div className="categoryHeaderWrapper">
+                  <p className="categoryHeader">{eventCategory}</p>
+                </div>
+              </StyledAccordionSummary>
+              {/*map each individual category event to an EventComponent  */}
+              <StyledAccordionDetails>
+                {events[eventCategory].map((categoryEvent: any) => {
+                  // split description on new lines so we can actually have separate p elements (new lines is how description was stored in data)
+                  const paragraphs = categoryEvent.description.split('\n\n');
+                  // return individual event as formatted jsx (map returns list of individual events per category)
+                  return (
+                    <EventComponent
+                      categoryEvent={categoryEvent}
+                      paragraphs={paragraphs}
+                      key={categoryEvent.title}
+                      winDim={winDim}
+                      eventDisplayWidth={eventDisplayWidth}
+                      initCollapsed={initCollapsed}
+                    />
+                  );
+                })}
+              </StyledAccordionDetails>
+            </Accordion>
+          </Paper>
         );
       })}
     </div>
