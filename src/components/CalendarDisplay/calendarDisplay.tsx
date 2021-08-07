@@ -1,12 +1,6 @@
-/* eslint-disable */
-/* eslint no-return-assign: "warn" */
-/* eslint react/no-unused-prop-types: "warn" */
-// above linter disabling is temporary, until problem function moved to parent
-
 import React from 'react';
 import './calendarDisplay.css';
-import { EventComponent } from '../EventComponent/eventComponent';
-import { categoryList } from '../../utils/categoryList';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import {
   Accordion,
   AccordionSummary,
@@ -14,34 +8,13 @@ import {
   Paper,
 } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import { EventComponent } from '../EventComponent/eventComponent';
+import { categoryList } from '../../utils/categoryList';
 
 const StyledAccordionSummary = withStyles({
   content: {
     flexGrow: 0,
-    // margin: 'auto',
-    // '&$expanded': {
-    //   flexGrow: 0,
-    //   margin: 'auto',
-    // },
-    // '&:last-child': {
-    //   marginLeft: 'auto',
-    // },
   },
-  // expanded: {
-  //   flexGrow: 0,
-  //   margin: 'auto',
-  //   '&$expanded': {
-  //     flexGrow: 0,
-  //     margin: 'auto',
-  //   },
-  //   '&:last-child': {
-  //     marginLeft: 'auto',
-  //   },
-  // },
-  //  expandIcon: {
-  //    marginLeft: 'auto'
-  //  },
 })(AccordionSummary);
 
 const StyledAccordionDetails = withStyles({
@@ -66,39 +39,25 @@ export const CalendarDisplay = ({
   initCollapsed,
   winDim,
 }: ICalendarDisplayProps) => {
-  // const [collapseCategory, setCollapseCategory] = React.useState<any>({});
   const [eventDisplayWidth, setEventDisplayWidth] = React.useState<number>(1);
-  let eventDisplayRef: any;
+  const eventDisplayRef = React.useRef<any>();
 
   React.useEffect(() => {
     window.addEventListener('resize', handleResize);
-    setEventDisplayWidth(eventDisplayRef?.clientWidth);
+    setEventDisplayWidth(eventDisplayRef.current.clientWidth);
     return () => {
       window.removeEventListener('resize', handleResize);
     };
   }, [eventDisplayRef]);
 
   const handleResize = () => {
-    const width = eventDisplayRef?.clientWidth ?? 1;
-    // console.log('handleResize running in calendarDisplay, shows eventDisplay width at: ' + width);
-    setEventDisplayWidth(width);
+    setEventDisplayWidth(eventDisplayRef.current.clientWidth);
   };
-
-  // const handleExpandCollapse = (_: any, category: string) => {
-  //   const tempCollapseCategory: any = { ...collapseCategory };
-  //   tempCollapseCategory[category] = !tempCollapseCategory[category];
-  //   setCollapseCategory(tempCollapseCategory);
-  // };
-  // // move this function one level higher
-  // /* eslint-disable-next-line */
-  // const resetExpandCollapse = () => {
-  //   setCollapseCategory({});
-  // };
 
   return (
     <div
       id="eventDisplay"
-      ref={(eventDisplay) => (eventDisplayRef = eventDisplay)}
+      ref={eventDisplayRef}
     >
       {categoryList.map((eventCategory) => {
         // if the first event is blank (placeholder)

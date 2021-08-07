@@ -250,15 +250,18 @@ html {
 
 #eventOTDTextWrapper {
   margin-top: 15px;
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
   text-align: center;
+  background-color: #333333;
+  color: white;
+  margin: auto;
 }
 
 #eventOfTheDay {
   display: inline-block;
-  padding: 3px;
-  color: #333333;
-  font-size: 36px;
+  padding: 8px;
+  color: white;
+  font-size: 34px;
   margin: 0px;
 }
 
@@ -584,14 +587,6 @@ html {
 
 .eventHeaderWrapper {
   border-bottom: 1px solid black;
-}
-
-.homepageEventHeaderWrapper {
-  border-bottom: 1px solid black;
-  border-top-right-radius: 8px;
-  border-top-left-radius: 8px;
-  background-color: #333333;
-  color: white;
 }
 
 .headerEvent {

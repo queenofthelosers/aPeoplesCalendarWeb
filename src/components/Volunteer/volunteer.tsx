@@ -11,14 +11,13 @@ export function Volunteer() {
         <p className="volunteerText">
           Whether you are a history buff, a developer with feature ideas, or are
           just someone who can proofread calendar events, we welcome your
-          efforts and suggestions towards helping make our calendar more
-          comprehensive and easier to use.
+          efforts and suggestions towards helping make this more accurate,
+          comprehensive, and easy to use.
         </p>
         <ul>
           <li>
             <p className="volunteerListText">
-              Are you a history buff who noticed an important figure or event
-              missing from the calendar?
+              Notice an important figure or event missing from the calendar?
               <a
                 className="volunteerLink"
                 target="_blank"
