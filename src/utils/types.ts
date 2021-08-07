@@ -3,9 +3,12 @@ export interface DatabaseEvent {
     date: string;
     title: string;
     imgSrc: string;
+    imgAlt: string;
+    NSFW: boolean;
     description: string;
     link: string;
     infoSrc: string;
+    otd: string;
 }
 
 export interface DayOfEvents {

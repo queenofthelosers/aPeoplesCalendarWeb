@@ -25,17 +25,36 @@ const App = (): JSX.Element => {
   const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
   const [windowHeight, setWindowHeight] = React.useState(window.innerHeight);
   const [hamburgerOpen, setHamburgerOpen] = React.useState(false);
+  const [eventLibrary, setEventLibrary] = React.useState();
+  const [loadingEvents, setLoadingEvents] = React.useState(true);
 
   const scrollRef: React.RefObject<any> = React.createRef();
   const hamburgerMenuPosition = calculateHamburgerPosition(windowWidth);
 
   React.useEffect(() => {
+    fetchEventLibrary();
     window.addEventListener('resize', handleResize);
     executeScroll();
     return () => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
+
+  const fetchEventLibrary = async () => {
+    try {
+      const response = await fetch(
+        `${process.env.PUBLIC_URL}/eventLibrary.json`,
+      );
+      const fetchedEvents = await response.json();
+      setEventLibrary(fetchedEvents);
+      setLoadingEvents(false);
+    } catch (e) {
+      alert(
+        `Sorry, it looks like we had trouble fetching events: ${e.message}`,
+      );
+      setLoadingEvents(false);
+    }
+  };
 
   // const handleHomeHamburgerClick = () => {
   //   resetDay();
@@ -47,7 +66,7 @@ const App = (): JSX.Element => {
   };
 
   const handleResize = () => {
-    setWindowWidth(window.innerHeight);
+    setWindowWidth(window.innerWidth);
     setWindowHeight(window.innerHeight);
     // if window was made wide, auto close hamburger menu
     if (window.innerWidth > 780 && hamburgerOpen) {
@@ -130,11 +149,12 @@ const App = (): JSX.Element => {
             <div>
               <FontAwesomeIcon
                 icon={faBars}
-                style={
-                  windowWidth > 500
-                    ? { position: 'absolute', top: '15px', left: '95px' }
-                    : { position: 'absolute', top: '15px', left: '82px' }
-                }
+                style={{
+                  position: 'absolute',
+                  top: '15px',
+                  left: windowWidth > 500 ? '95px' : '82px',
+                  cursor: 'pointer',
+                }}
                 onClick={handleHamburgerClick}
               />
             </div>
@@ -144,13 +164,25 @@ const App = (): JSX.Element => {
       </div>
       <Switch>
         <Route path="/calendar/day/:day">
-          <Main winDim={{ width: windowWidth, height: windowHeight }} />
+          <Main
+            winDim={{ width: windowWidth, height: windowHeight }}
+            eventLibrary={eventLibrary}
+            loading={loadingEvents}
+          />
         </Route>
         <Route path="/calendar/events/:event_">
-          <Main winDim={{ width: windowWidth, height: windowHeight }} />
+          <Main
+            winDim={{ width: windowWidth, height: windowHeight }}
+            eventLibrary={eventLibrary}
+            loading={loadingEvents}
+          />
         </Route>
         <Route exact path="/calendar">
-          <Main winDim={{ width: windowWidth, height: windowHeight }} />
+          <Main
+            winDim={{ width: windowWidth, height: windowHeight }}
+            eventLibrary={eventLibrary}
+            loading={loadingEvents}
+          />
         </Route>
         <Route path="/about">
           <About />
@@ -170,6 +202,8 @@ const App = (): JSX.Element => {
         <Route exact path="/">
           <HomepageComponent
             winDim={{ width: windowWidth, height: windowHeight }}
+            eventLibrary={eventLibrary}
+            loading={loadingEvents}
           />
         </Route>
         <Route>

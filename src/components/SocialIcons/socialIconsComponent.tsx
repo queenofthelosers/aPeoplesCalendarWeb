@@ -60,8 +60,8 @@ export function SocialIcons({ windowWidth }: ISocialIconsProps) {
         <MobileStoreButton
           store="android"
           url="https://play.google.com/store/apps/details?id=com.aPeoplesCalendar.aPC&hl=en_US"
-          height={`${socialIconSize.height + 16}px`}
-          width={`${socialIconSize.width + 100}px`}
+          height={socialIconSize.height + 16}
+          width={socialIconSize.width + 100}
           linkProps={{ title: 'Android Store Button' }}
           linkStyles={{ padding: '0px' }}
         />

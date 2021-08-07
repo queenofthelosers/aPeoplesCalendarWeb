@@ -235,7 +235,7 @@ html {
 
 #homepageText {
   grid-column: 2;
-  background-color: #fafafa;
+  /* background-color: #fafafa; */
   color: #333333;
 }
 
@@ -244,21 +244,24 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-top: 1px solid #d1d1d1;
+  /* border-top: 1px solid #d1d1d1; */
   background-color: #f5f5f5;
 }
 
 #eventOTDTextWrapper {
   margin-top: 15px;
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
   text-align: center;
+  background-color: #333333;
+  color: white;
+  margin: auto;
 }
 
 #eventOfTheDay {
   display: inline-block;
-  padding: 3px;
-  color: #333333;
-  font-size: 36px;
+  padding: 8px;
+  color: white;
+  font-size: 34px;
   margin: 0px;
 }
 
@@ -416,11 +419,6 @@ html {
     display: none;
   }
 
-  #homepageImgSmall {
-    width: 32%;
-    margin: auto;
-  }
-
   #homepageText {
     padding-top: 5px;
     grid-column: 1;
@@ -428,6 +426,8 @@ html {
 
   #homepageDescription {
     margin-bottom: 8px;
+    margin-right: 30px;
+    margin-left: 30px;
     font-size: 17px;
   }
 
@@ -530,11 +530,10 @@ html {
 }
 
 .categoryEvents {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   border-radius: 8px;
   border-bottom-right-radius: 0px;
   border-bottom-left-radius: 0px;
-  margin-bottom: 20px;
   background-color: #333333;
   color: white;
   box-shadow: 3px 3px 5px black;
@@ -543,9 +542,6 @@ html {
 .headerWrapper {
   padding-top: 9px;
   padding-bottom: 15px;
-}
-
-.headerWrapper {
   cursor: pointer;
 }
 
@@ -590,14 +586,6 @@ html {
   border-bottom: 1px solid black;
 }
 
-.homepageEventHeaderWrapper {
-  border-bottom: 1px solid black;
-  border-top-right-radius: 8px;
-  border-top-left-radius: 8px;
-  background-color: #333333;
-  color: white;
-}
-
 .headerEvent {
   margin-left: 30px;
   margin-right: 10px;
@@ -633,13 +621,13 @@ html {
   background-color: white;
 }
 
-.eventFull {
+/* .eventFull {
   background-color: #f7f7f7;
 }
 
 .homepageEventFull {
   background-color: #f7f7f7;
-}
+} */
 
 .homepageEventDescription {
   margin-left: 20px;
@@ -647,11 +635,9 @@ html {
 }
 
 .eventDate {
-  text-align: center;
   font-size: 20px;
   margin-top: 0px;
   margin-bottom: 10px;
-  padding-top: 15px;
 }
 
 .homepageEventDate {
@@ -659,12 +645,11 @@ html {
   font-size: 20px;
   margin-top: 0px;
   margin-bottom: 10px;
-  padding-top: 15px;
 }
 
 .eventImg {
   display: block;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
 .homepageEventImg {
@@ -679,7 +664,8 @@ html {
 
 .sourcesWrapper {
   text-align: center;
-  border-top: 1px solid black;
+  /* border-top: 1px solid black; */
+  margin-top: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -925,11 +911,10 @@ html {
     padding-bottom: 15px;
   }
   .eventDate {
-    text-align: center;
     font-size: 18px;
+    font-weight: bold;
     margin-top: 0px;
     margin-bottom: 8px;
-    padding-top: 12px;
   }
   .eventDescription {
     margin-left: 23px;

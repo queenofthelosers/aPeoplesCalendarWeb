@@ -10,6 +10,14 @@ module.exports = {
     'plugin:react/recommended',
     'airbnb',
   ],
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: [".js", ".jsx", ".ts", ".tsx"],
+      },
+      typescript: {},
+    },
+  },
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
@@ -22,11 +30,6 @@ module.exports = {
     'react',
     '@typescript-eslint',
   ],
-  settings: {
-    "import/resolver": {
-      typescript: {},
-    },
-  },
   rules: {
     "max-len": ["error", 120, 2, {
       ignoreUrls: true,
@@ -34,13 +37,13 @@ module.exports = {
       ignoreComments: true,
     }],
     "react/destructuring-assignment": [0, 'always'],
-    "react/jsx-filename-extension": [0, { "extensions": [".js", "tsx"] }],
+    "react/jsx-filename-extension": [0, { extensions: [".js", "tsx"] }],
     "import/prefer-default-export": 0,
     "linebreak-style": 0,
     "react/no-unescaped-entities": 0,
-    "no-use-before-define": [0, { "variables": false }],
+    "no-use-before-define": [0, { variables: false }],
     "react-hooks/exhaustive-deps": [0],
-    "quotes": [0, "single"],
+    quotes: [0, "single"],
     "jsx-a11y/click-events-have-key-events": 0,
     "jsx-a11y/no-static-element-interactions": 0,
     "operator-linebreak": 0,
@@ -50,5 +53,7 @@ module.exports = {
     "no-plusplus": 0,
     "arrow-body-style": 0,
     "no-alert": 0,
+    "react/jsx-boolean-value": 0,
+    "react/no-unused-prop-types": 0,
   },
 };

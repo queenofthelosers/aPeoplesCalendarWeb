@@ -2,8 +2,8 @@ import React from 'react';
 import { useParams, Route, Redirect } from 'react-router-dom';
 import '../App/App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Skeleton from '@material-ui/lab/Skeleton';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
-import { eventLibrary } from '../../eventLibrary';
 import { CalendarDisplay } from '../CalendarDisplay/calendarDisplay';
 import { EmptyDay } from '../EmptyDay/emptyDayComponent';
 import { findEventByTitle } from '../../utils/findEventByTitle';
@@ -17,9 +17,11 @@ interface IMainProps {
     width: number;
     height: number;
   };
+  eventLibrary: any;
+  loading: boolean;
 }
 
-export const Main = ({ winDim }: IMainProps): JSX.Element => {
+export const Main = ({ winDim, eventLibrary, loading }: IMainProps): JSX.Element => {
   const [dateInput, setDateInput] = React.useState('');
   const [searchValue, setSearchValue] = React.useState('');
   const [displaySearch, setDisplaySearch] = React.useState(false);
@@ -33,6 +35,9 @@ export const Main = ({ winDim }: IMainProps): JSX.Element => {
   const calendarRef: React.RefObject<any> = React.createRef();
 
   React.useEffect(() => {
+    if (loading) {
+      return;
+    }
     // if Main is being rendered via dynamic routing and has been passed a params value
     const { day, event_ } = params as any;
     if (day) {
@@ -54,10 +59,10 @@ export const Main = ({ winDim }: IMainProps): JSX.Element => {
     } else {
       initializeToday();
     }
-  }, [params]);
+  }, [params, loading]);
 
   const searchEvents = (title: string) => {
-    const { searchEventsResult, matched } = findEventByTitle(title);
+    const { searchEventsResult, matched } = findEventByTitle(eventLibrary, title);
     setDisplaySearch(true);
     setEvents(searchEventsResult);
     setHaveEvents(matched);
@@ -121,7 +126,7 @@ export const Main = ({ winDim }: IMainProps): JSX.Element => {
     }
 
     const { searchEventsResult, dayHasEvents } =
-      searchDatabaseByKeyword(searchValue);
+      searchDatabaseByKeyword(eventLibrary, searchValue);
     setDisplaySearch(true);
     setEvents(searchEventsResult);
     setHaveEvents(dayHasEvents);
@@ -143,6 +148,13 @@ export const Main = ({ winDim }: IMainProps): JSX.Element => {
       </Route>
     );
   }
+
+  if (loading) {
+    return (
+      <Skeleton />
+    );
+  }
+
   return (
     <Route
       render={() => (
