@@ -165,6 +165,7 @@ export const EventComponent = ({
               {paragraphs.map((paragraph) => (
                 <Typography
                   style={{ marginTop: 10, paddingLeft: 26, paddingRight: 26 }}
+                  key={paragraph}
                 >
                   {paragraph}
                 </Typography>

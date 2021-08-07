@@ -74,7 +74,7 @@ export const HomepageEventComponent = ({
   const { imgWidth, imgHeight } = imgDim;
   // image resizing logic:
   // move to util file?
-  let resizeWidth = winDim.width * 0.75; // 75% of width of window
+  let resizeWidth = winDim.width * 0.75 * 0.75; // 75% of width of container
   let ratio = resizeWidth / imgWidth; // the ratio by which the image has changed
   let resizeHeight = imgHeight * ratio; // apply ratio to height
   if (resizeHeight > winDim.height / 2.5) {
@@ -108,7 +108,12 @@ export const HomepageEventComponent = ({
       <Accordion expanded={true}>
         <StyledAccordionSummary>
           <Box
-            style={{ display: 'flex', flexDirection: 'column', padding: 10 }}
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+              padding: 10,
+              paddingTop: 0,
+            }}
           >
             <Typography
               style={{
@@ -150,6 +155,7 @@ export const HomepageEventComponent = ({
               {paragraphs.map((paragraph) => (
                 <Typography
                   style={{ marginTop: 10, paddingLeft: 26, paddingRight: 26 }}
+                  key={paragraph}
                 >
                   {paragraph}
                 </Typography>

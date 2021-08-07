@@ -49,7 +49,9 @@ const App = (): JSX.Element => {
       setEventLibrary(fetchedEvents);
       setLoadingEvents(false);
     } catch (e) {
-      alert(`Sorry, it looks like we had trouble fetching events: ${e.message}`);
+      alert(
+        `Sorry, it looks like we had trouble fetching events: ${e.message}`,
+      );
       setLoadingEvents(false);
     }
   };
@@ -147,11 +149,12 @@ const App = (): JSX.Element => {
             <div>
               <FontAwesomeIcon
                 icon={faBars}
-                style={
-                  windowWidth > 500
-                    ? { position: 'absolute', top: '15px', left: '95px' }
-                    : { position: 'absolute', top: '15px', left: '82px' }
-                }
+                style={{
+                  position: 'absolute',
+                  top: '15px',
+                  left: windowWidth > 500 ? '95px' : '82px',
+                  cursor: 'pointer',
+                }}
                 onClick={handleHamburgerClick}
               />
             </div>
