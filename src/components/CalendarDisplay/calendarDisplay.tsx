@@ -108,7 +108,7 @@ export const CalendarDisplay = ({
         // extract all this into a card component
         return (
           <Paper key={eventCategory} style={{ marginBottom: 20 }}>
-            <Accordion className="categoryEvents">
+            <Accordion className="categoryEvents" defaultExpanded={true}>
               <StyledAccordionSummary
                 className="headerWrapper"
                 style={{ backgroundColor: '#333333', color: 'white' }}
@@ -118,7 +118,7 @@ export const CalendarDisplay = ({
                   <p className="categoryHeader">{eventCategory}</p>
                 </div>
               </StyledAccordionSummary>
-              {/*map each individual category event to an EventComponent  */}
+              {/* map each individual category event to an EventComponent */}
               <StyledAccordionDetails>
                 {events[eventCategory].map((categoryEvent: any) => {
                   // split description on new lines so we can actually have separate p elements (new lines is how description was stored in data)
