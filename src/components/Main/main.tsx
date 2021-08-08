@@ -1,5 +1,10 @@
 import React from 'react';
-import { useParams, Route, Redirect } from 'react-router-dom';
+import {
+  useParams,
+  Route,
+  Redirect,
+  useHistory,
+} from 'react-router-dom';
 import '../App/App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Skeleton from '@material-ui/lab/Skeleton';
@@ -21,7 +26,11 @@ interface IMainProps {
   loading: boolean;
 }
 
-export const Main = ({ winDim, eventLibrary, loading }: IMainProps): JSX.Element => {
+export const Main = ({
+  winDim,
+  eventLibrary,
+  loading,
+}: IMainProps): JSX.Element => {
   const [dateInput, setDateInput] = React.useState('');
   const [searchValue, setSearchValue] = React.useState('');
   const [displaySearch, setDisplaySearch] = React.useState(false);
@@ -29,8 +38,8 @@ export const Main = ({ winDim, eventLibrary, loading }: IMainProps): JSX.Element
   const [haveEvents, setHaveEvents] = React.useState(false);
   const [invalidInput, setInvalidInput] = React.useState(false);
   const [isSingleEvent, setIsSingleEvent] = React.useState(false);
-
   const params = useParams();
+  const history = useHistory();
 
   const calendarRef: React.RefObject<any> = React.createRef();
 
@@ -38,31 +47,51 @@ export const Main = ({ winDim, eventLibrary, loading }: IMainProps): JSX.Element
     if (loading) {
       return;
     }
-    // if Main is being rendered via dynamic routing and has been passed a params value
     const { day, event_ } = params as any;
-    if (day) {
-      // validate date query (Checks for a non zero padded month and day. I know it's ugly, but it works):
-      if (validateDayString(day)) {
-        // if it's a valid date url, look up date
-        const tempNewDate = { target: { value: `2000-${day}` } };
-        handleNewDate(tempNewDate);
-      } else {
-        // redirect to /404 (<NotFound/>)
-        // could probably do history.push(/404)
-        setInvalidInput(true);
-      }
-      // } else if (this.props.params.hasOwnProperty('event_')) {
-    } else if (event_) {
-      // run search with slug on slugified event titles, should only return the one event as titles are unique
+    if (event_) {
       setIsSingleEvent(true);
       searchEvents(event_);
-    } else {
-      initializeToday();
+      return;
     }
-  }, [params, loading]);
+    if (day) {
+      if (validateDayString(day)) {
+        const splitDateString = day.split('-');
+        // add any necessary zero padding to day and month
+        const year = new Date().getFullYear();
+        let month = splitDateString[0];
+        let queryDay = splitDateString[1];
+        if (month.length === 1) {
+          month = `0${month}`;
+        }
+        if (queryDay.length === 1) {
+          queryDay = `0${queryDay}`;
+        }
+        const formattedDayString = `${year}-${month}-${queryDay}`;
+        const tempNewDate = { target: { value: formattedDayString } };
+        setDateInput(formattedDayString);
+        handleNewDate(tempNewDate);
+        return;
+      }
+      // redirect to /404 (<NotFound/>)
+      history.push('/404');
+      setInvalidInput(true);
+      // return;
+    }
+    const queryParams = new URLSearchParams(window.location.search);
+    const searchTerm = queryParams.get('query');
+    if (searchTerm) {
+      setSearchValue(searchTerm);
+      searchDatabaseByTerm(searchTerm);
+      return;
+    }
+    initializeToday();
+  }, [loading]);
 
   const searchEvents = (title: string) => {
-    const { searchEventsResult, matched } = findEventByTitle(eventLibrary, title);
+    const { searchEventsResult, matched } = findEventByTitle(
+      eventLibrary,
+      title,
+    );
     setDisplaySearch(true);
     setEvents(searchEventsResult);
     setHaveEvents(matched);
@@ -78,6 +107,7 @@ export const Main = ({ winDim, eventLibrary, loading }: IMainProps): JSX.Element
     setEvents(eventLibrary[initTodayString]);
     setDisplaySearch(false);
     setHaveEvents(dayHasEvents);
+    history.push(`/calendar/day/${initTodayString}`);
   };
 
   const handleNewDate = (e: any): void => {
@@ -102,6 +132,8 @@ export const Main = ({ winDim, eventLibrary, loading }: IMainProps): JSX.Element
     setHaveEvents(dayHasEvents);
     setDateInput(e.target.value);
     setDisplaySearch(false);
+    setSearchValue('');
+    history.push(`/calendar/day/${newDateString}`);
     // reset all categories to be expanded when new date is given
     if (dayHasEvents && calendarRef.current) {
       calendarRef.current.resetExpandCollapse();
@@ -112,21 +144,33 @@ export const Main = ({ winDim, eventLibrary, loading }: IMainProps): JSX.Element
     setSearchValue(e.target.value);
   };
 
-  const handleSearch = (e: any) => {
-    e.preventDefault();
+  const handleSearch = (e?: any) => {
+    e?.preventDefault();
+    searchDatabaseByTerm(searchValue);
+    const queryParams = new URLSearchParams(window.location.search);
+    const oldSearchTerm = queryParams.get('query');
+    if (oldSearchTerm !== searchValue) {
+      history.push(`/calendar/search?query=${searchValue}`);
+    }
+  };
 
-    if (searchValue.length === 0) {
+  const searchDatabaseByTerm = (searchTerm: string) => {
+    if (searchTerm.length === 0) {
       initializeToday();
       return;
     }
-    if (searchValue.length < 3) {
+    if (searchTerm.length < 3) {
       // eslint-disable-next-line
       alert('Search value must be three characters or longer!');
       return;
     }
 
-    const { searchEventsResult, dayHasEvents } =
-      searchDatabaseByKeyword(eventLibrary, searchValue);
+    setDateInput('');
+
+    const { searchEventsResult, dayHasEvents } = searchDatabaseByKeyword(
+      eventLibrary,
+      searchTerm,
+    );
     setDisplaySearch(true);
     setEvents(searchEventsResult);
     setHaveEvents(dayHasEvents);
@@ -150,9 +194,7 @@ export const Main = ({ winDim, eventLibrary, loading }: IMainProps): JSX.Element
   }
 
   if (loading) {
-    return (
-      <Skeleton />
-    );
+    return <Skeleton />;
   }
 
   return (
@@ -188,6 +230,7 @@ export const Main = ({ winDim, eventLibrary, loading }: IMainProps): JSX.Element
                 style={winDim.width < 501 ? { width: 125 } : {}}
                 type="text"
                 value={searchValue}
+                placeholder="Search..."
                 onChange={trackSearch}
               />
               <button id="searchButton" type="submit">

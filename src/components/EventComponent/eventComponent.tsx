@@ -1,5 +1,6 @@
 /* eslint no-return-assign: "off" */
 import React from 'react';
+import { ExpandLess } from '@material-ui/icons';
 import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -157,7 +158,7 @@ export const EventComponent = ({
           style={{ paddingLeft: 0, paddingRight: 0, paddingBottom: 0 }}
         >
           <div className="eventFull" style={{ paddingTop: 0 }}>
-            <div onClick={handleExpandCollapse} style={{ cursor: 'pointer' }}>
+            <div>
               <Typography
                 style={{
                   paddingLeft: 26,
@@ -177,6 +178,11 @@ export const EventComponent = ({
                 </Typography>
               ))}
             </div>
+            <Box style={{ display: 'flex', justifyContent: 'center' }}>
+              <IconButton onClick={handleExpandCollapse}>
+                <ExpandLess />
+              </IconButton>
+            </Box>
             <div className="sourcesWrapper">
               <a
                 className="links source"

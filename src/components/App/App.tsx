@@ -170,6 +170,13 @@ const App = (): JSX.Element => {
             loading={loadingEvents}
           />
         </Route>
+        <Route path="/calendar/search">
+          <Main
+            winDim={{ width: windowWidth, height: windowHeight }}
+            eventLibrary={eventLibrary}
+            loading={loadingEvents}
+          />
+        </Route>
         <Route path="/calendar/events/:event_">
           <Main
             winDim={{ width: windowWidth, height: windowHeight }}
@@ -177,7 +184,7 @@ const App = (): JSX.Element => {
             loading={loadingEvents}
           />
         </Route>
-        <Route exact path="/calendar">
+        <Route path="/calendar">
           <Main
             winDim={{ width: windowWidth, height: windowHeight }}
             eventLibrary={eventLibrary}
