@@ -8,6 +8,7 @@ import {
 import '../App/App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Skeleton from '@material-ui/lab/Skeleton';
+import { Box } from '@material-ui/core';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { CalendarDisplay } from '../CalendarDisplay/calendarDisplay';
 import { EmptyDay } from '../EmptyDay/emptyDayComponent';
@@ -194,7 +195,24 @@ export const Main = ({
   }
 
   if (loading) {
-    return <Skeleton />;
+    return (
+      <Box>
+        <Box
+          style={{
+            width: '40%',
+            margin: 'auto',
+            marginTop: 70,
+            marginBottom: 0,
+            display: 'flex',
+            justifyContent: 'center',
+          }}
+        >
+          <Skeleton style={{ width: '40%', height: 75, marginRight: 15 }} />
+          <Skeleton style={{ width: '40%', height: 75 }} />
+        </Box>
+        <Skeleton style={{ width: '70%', height: 400, margin: 'auto' }} />
+      </Box>
+    );
   }
 
   return (
