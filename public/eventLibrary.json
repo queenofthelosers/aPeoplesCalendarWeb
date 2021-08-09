@@ -20586,16 +20586,16 @@
     ],
     "Rebellion": [
       {
-        "category": "",
-        "date": "",
-        "title": "",
-        "imgSrc": "/assets/eventPhotos/empty.jpg",
-        "description": "",
-        "link": "",
-        "infoSrc": "",
-        "imgAltText": "",
+        "category": "Rebellion",
+        "date": "August 11th, 1965",
+        "title": "Watts Riots (1965)",
+        "imgSrc": "/assets/eventPhotos/Events/wattsRebellion.jpg",
+        "description": "On this day in 1965, the Watts Riots began in Los Angeles after police beat Marquette Fry and his family after he was pulled over for drunk driving. The uprising was the largest in city history until the Rodney King riots of 1992, with 34 deaths and $40 million in property damage across a 46 square mile (119 square km) stretch of the city.\n\nThe uprising took place in the context of a highly racialized city, with severely discriminatory housing, educational, and economic practices. The community of Watts was predominantly black, and regularly suffered brutality at the hands of police.\n\nAfter Marquette, along with his brother and mother, were beaten and arrested by police, an angry mob formed and riots broke out. For the next six days, rioters clashed with police and armed National Guardsmen, who had been sent by the thousands to suppress the uprising.\n\nLos Angeles Chief of Police William Parker (incidentally, Parked also coined the phrase \"thin blue line\" around this time), Chief Parker believed the riots to be an insurgency comparable to the Viet Cong, promising a \"paramilitary\" response to the disorder. One officer later stated \"The streets of Watts resembled an all-out war zone in some far-off foreign country, it bore no resemblance to the United States of America.\"\n\nBetween 31,000 and 35,000 people participated in the riots, while 70,000 people were \"sympathetic, but not active\". Over the six days of rioting, there were 34 deaths (23 of which were the result of police shootings), 1,032 injuries, 3,438 arrests, and over $40 million in property damage.\n\nFollowing the uprising's suppression, a wave of white flight occurred in surrounding areas, leading to significant demographic changes in areas such as Compton and Huntington Park.\n\nA government committee known as the McCone Commission concluded that the cause of the riots was primarily socio-economic, and recommended reforms along these lines. Most of these recommendations were not adopted.\n\n\"The whole point of the outbreak in Watts was that it marked the first major rebellion of Negroes against their own masochism and was carried on with the express purpose of asserting that they would no longer quietly submit to the deprivation of slum life.\"\n\n- Bayard Rustin",
+        "link": "https://en.wikipedia.org/wiki/Watts_riots",
+        "infoSrc": "https://www.blackpast.org/african-american-history/watts-los-angeles-1903/",
+        "imgAltText": "Armed National Guardsmen march toward smoke on the horizon during the street fires in Los Angeles, California, 1965. (Credit: Hulton Archive/Getty Images)",
         "NSFW": false,
-        "otd": ""
+        "otd": "On this day in 1965, the Watts Riots began in Los Angeles after police beat a black family after pulling their son over. Until 1992, the uprising was the largest in city history, with 3,438 arrests and $40 million in property damage."
       }
     ],
     "Labor": [
@@ -20637,7 +20637,7 @@
         "infoSrc": "https://www.historyscotland.com/history/the-scot-who-nearly-killed-franco/",
         "imgAltText": "",
         "NSFW": false,
-        "otd": "On this day in 1964, eighteen year old Scottish anarchist Stuart Christie was arrested while carrying explosives he was planning on using to assassinate the Spanish fascist General Francisco Franco."
+        "otd": "On this day in 1964, eighteen year old Scottish anarchist Stuart Christie was arrested while carrying explosives he intended to use to assassinate the Spanish fascist Francisco Franco."
       }
     ],
     "Other": [

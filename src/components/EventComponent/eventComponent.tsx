@@ -122,7 +122,7 @@ export const EventComponent = ({
               <img
                 className="eventImg"
                 src={`${process.env.PUBLIC_URL}${categoryEvent.imgSrc}`}
-                alt={categoryEvent.imgAlt}
+                alt={categoryEvent.imgAltText}
                 style={{ width: resizeWidth, height: resizeHeight }}
                 ref={(img) => (imgRef = img)}
                 onLoad={getImgDim}

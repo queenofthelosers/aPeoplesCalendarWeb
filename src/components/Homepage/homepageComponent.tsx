@@ -35,7 +35,7 @@ export function HomepageComponent({
     link: '',
     infoSrc: '',
     otd: '',
-    imgAlt: '',
+    imgAltText: '',
     NSFW: false,
   };
   if (!loading) {

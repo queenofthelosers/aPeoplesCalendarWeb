@@ -3,7 +3,7 @@ export interface DatabaseEvent {
     date: string;
     title: string;
     imgSrc: string;
-    imgAlt: string;
+    imgAltText: string;
     NSFW: boolean;
     description: string;
     link: string;
