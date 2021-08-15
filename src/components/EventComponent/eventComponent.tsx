@@ -229,3 +229,10 @@ export const EventComponent = ({
     </div>
   );
 };
+
+// const testOtd = (str: string) => {
+//   if (str.length > 238) {
+//     return { backgroundColor: 'red' };
+//   }
+//   return {};
+// };
