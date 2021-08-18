@@ -3530,16 +3530,16 @@
     ],
     "Birthdays": [
       {
-        "category": "",
-        "date": "",
-        "title": "",
-        "imgSrc": "/assets/eventPhotos/empty.jpg",
-        "description": "",
-        "link": "",
-        "infoSrc": "",
-        "imgAltText": "",
+        "category": "Birthdays",
+        "date": "February 9th, 1912",
+        "title": "Marianne Baum (1912 - 1942)",
+        "imgSrc": "/assets/eventPhotos/Individuals/herbertBaum.jpg",
+        "description": "Marianne Baum, born on this day in 1912, was a German communist and Jewish member of the anti-fascist resistance to the Nazis, executed by the Third Reich after the Baum Gruppe (co-founded by her husband, Herbert, shown) attacked an anti-communist propaganda exhibition in Berlin.\n\nMarianne Baum, born Marianne Cohen, was born on February 9th, 1912, in Saarburg, Germany, later moving to Berlin. She was active in left-wing political groups as a teen, joining a communist youth organization in 1931.\n\nAlongside her husband Herbert Baum, she co-founded the anti-fascist Baum Gruppe in 1938-39. The organization, almost entirely composed of young Jewish people, produced anti-Nazi propaganda and sometimes engaged in direct action against the Third Reich.\n\nOn May 18th, 1942, the group set fire to an anti-communist exhibition held in Berlin, temporarily closing it. The attack was high enough profile to catch the attention of senior Nazi officials, and many Baum Gruppe members, including Marianne and Herbert, were arrested in the following days.\n\nOn August 18th, 1942, Marianne was executed by via guillotine by the Nazi state. Her husband Herbert had died a few months earlier, tortured to death in Moabit Prison on June 11th, 1942. Today, there is a plaque in the Weißensee Cemetery in Berlin commemorating the Herbert Baum Group.",
+        "link": "https://en.wikipedia.org/wiki/Marianne_Baum",
+        "infoSrc": "https://jwa.org/encyclopedia/article/baum-gruppe-jewish-women",
+        "imgAltText": "The image shows a portrait off Marianne's husband, Herbert Baum",
         "NSFW": false,
-        "otd": ""
+        "otd": "Marianne Baum, born on this day in 1912, was a German communist who was executed by the Nazis, after the Baum Gruppe (co-founded by her husband, Herbert, shown) set fire to an anti-communist propaganda exhibition in Berlin."
       }
     ],
     "Assassinations": [
@@ -21206,7 +21206,7 @@
       {
         "category": "Assassinations",
         "date": "August 17th, 1982",
-        "title": "Ruth First (1952 - 1982)",
+        "title": "Ruth First (1925 - 1982)",
         "imgSrc": "/assets/eventPhotos/Individuals/ruthFirst.jpg",
         "description": "Ruth First was a South African anti-apartheid activist, journalist, and scholar who was assassinated by South African police via mail-bomb on this day in 1982.\n\nAs an anti-apartheid activist, First had been harassed for years by the South African government. In 1956, First, alongside 155 other activists, were all charged and acquitted of treason in the country's infamous \"Treason Trial\".\n\nAfter the state of emergency that followed the Sharpeville massacre in 1960, she was banned from political participation. First could not attend meetings, publish, and or be quoted. In 1963, she was imprisoned and held in isolation without charge for 117 days under the Ninety-Day Detention Law, the first white woman to be detained under this law.\n\nIn August of 1982, First was assassinated by South African police in Mozambique, where she was working in exile. Her funeral in Maputo was attended by presidents, members of parliament and envoys from 34 countries.\n\nThe Truth and Reconciliation Commission (TRC), established in 1996 following the fall of apartheid, granted amnesty to Craig Williamson and Roger Raven, two of the men responsible for killing First.",
         "link": "https://www.sahistory.org.za/people/ruth-heloise-first",
@@ -21248,16 +21248,16 @@
     ],
     "Rebellion": [
       {
-        "category": "",
-        "date": "",
-        "title": "",
-        "imgSrc": "/assets/eventPhotos/empty.jpg",
-        "description": "",
-        "link": "",
-        "infoSrc": "",
-        "imgAltText": "",
+        "category": "Rebellion",
+        "date": "August 18th, 1823",
+        "title": "Demerara Rebellion (1823)",
+        "imgSrc": "/assets/eventPhotos/Events/demeraraRebellion.jpg",
+        "description": "On this day in 1823, more than 10,000 enslaved Guyanese people rose up against their masters to demand better working conditions. While slaves generally abhorred violence, holding whites hostage in their homes and stockages to make demands, the state declared martial law, killing hundreds of people and displaying their corpses as a warning to the survivors.\n\nThe revolt took place in modern day Guyana, then the British colony of Demerara-Essequibo. The colony's primary export was sugar, and black slaves drastically outnumbered other groups on the island. The year of the uprising, the population consisted of approximately 2,500 whites, 2,500 freed blacks, and 77,000 slaves.\n\nThe rebellion was closely linked to the church of John Smith, a British missionary. One of the primary instigators of the uprising was Jack Gladstone, the son of Quamina, a prominent member of Smith's church.\n\nUpon learning of his son's plans, Quamina opposed the revolt, urging the planners to initiate a strike instead, and to not use violence. Quamina also informed John Smith of the plans, which Smith declined to disclose to the authorities.\n\nOn August 18th, 1823, more than 10,000 slaves rose up against their masters to demand better treatment and more rights as slaves. Slaves generally abhorred violence, choosing instead to hold whites hostage in their homes and stockades as leverage with which to make their demands. Despite the large scale of the revolt, some slaves stayed loyal to their masters and defended their plantations.\n\nThe Governor immediately declared martial law, and, when a crowd of 2,000 slaves refused to disperse on order of a colonial militia, soldiers fired into the crowd, killing hundreds of people. Within two days, the rebellion was suppressed.\n\nIn the weeks following the suppression of uprising, the colonizers executed dozens of slaves, displaying the dismembered heads of those killed as a warning to the rest.\n\nJack Gladstone was deported to was sold and deported to St. Lucia, while Quamina was hunted down and killed on September 23rd. John Smith was arrested for not informing the government of the plans of rebellion and died in prison. His death became a watershed moment in the British abolitionist movement; he was deemed the \"Demerara Martyr\".\n\nUnder pressure from London, the Demerara Court of Policy passed various reforms for slave labor in 1825, institutionalizing working hours and some civil rights for the enslaved. The British government outlawed slavery in all of its territories in 1838.",
+        "link": "https://en.wikipedia.org/wiki/Demerara_rebellion_of_1823",
+        "infoSrc": "https://www.blackpast.org/global-african-history/demerara-rebellion-1823/",
+        "imgAltText": "Slave insurrection in Demerara colony, August 18th, 1823, Bachelor's Adventure, Plate 4, (Joshua Bryant, 1823)",
         "NSFW": false,
-        "otd": ""
+        "otd": "On this day in 1823, more than 10,000 enslaved Guyanese people rose up against their masters. While slaves generally abhorred violence, holding whites hostage to make demands, the state declared martial law, killing hundreds of people."
       }
     ],
     "Labor": [
@@ -21300,6 +21300,18 @@
         "imgAltText": "",
         "NSFW": false,
         "otd": "Ernst Th\u00e4lmann was a German communist leader executed by the Nazis on this day in 1944, killed in the Buchenwald concentration camp after being subjected to more than a decade of solitary confinement and physical torture."
+      },
+      {
+        "category": "Assassinations",
+        "date": "August 18th, 1942",
+        "title": "Marianne Baum (1912 - 1942)",
+        "imgSrc": "/assets/eventPhotos/Individuals/herbertBaum.jpg",
+        "description": "Marianne Baum was a German communist and Jewish member of the anti-fascist resistance to the Nazis, executed by the Third Reich on this day in 1942 after the Baum Gruppe (co-founded by her husband, Herbert, shown) attacked an anti-communist propaganda exhibition in Berlin.\n\nMarianne Baum, born Marianne Cohen, was born on February 9th, 1912, in Saarburg, Germany, later moving to Berlin. She was active in left-wing political groups as a teen, joining a communist youth organization in 1931.\n\nAlongside her husband Herbert Baum, she co-founded the anti-fascist Baum Gruppe in 1938-39. The organization, almost entirely composed of young Jewish people, produced anti-Nazi propaganda and sometimes engaged in direct action against the Third Reich.\n\nOn May 18th, 1942, the group set fire to an anti-communist exhibition held in Berlin, temporarily closing it. The attack was high enough profile to catch the attention of senior Nazi officials, and many Baum Gruppe members, including Marianne and Herbert, were arrested in the following days.\n\nOn August 18th, 1942, Marianne was executed by via guillotine by the Nazi state. Her husband Herbert had died a few months earlier, tortured to death in Moabit Prison on June 11th, 1942. Today, there is a plaque in the Weißensee Cemetery in Berlin commemorating the Herbert Baum Group.",
+        "link": "https://en.wikipedia.org/wiki/Marianne_Baum",
+        "infoSrc": "https://jwa.org/encyclopedia/article/baum-gruppe-jewish-women",
+        "imgAltText": "The image shows a portrait off Marianne's husband, Herbert Baum",
+        "NSFW": false,
+        "otd": "Marianne Baum was a German communist who was executed by the Nazis on this day in 1942, after the Baum Gruppe (co-founded by her husband, Herbert, shown) attacked an anti-communist propaganda exhibition in Berlin."
       }
     ],
     "Other": [
