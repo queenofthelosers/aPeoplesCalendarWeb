@@ -21432,16 +21432,28 @@
     ],
     "Rebellion": [
       {
-        "category": "",
-        "date": "",
-        "title": "",
-        "imgSrc": "/assets/eventPhotos/empty.jpg",
-        "description": "",
-        "link": "",
-        "infoSrc": "",
-        "imgAltText": "",
+        "category": "Rebellion",
+        "date": "August 20th, 1994",
+        "title": "Tyke the Elephant",
+        "imgSrc": "/assets/eventPhotos/Individuals/tykeElephant.jpg",
+        "description": "On this day in 1994, Tyke, an abused circus elephant, killed her trainer and seriously injured her groomer during a performance, escaping into the streets of Honolulu, Hawaii. After thirty minutes of being pursued by police, she died after being shot 86-87 times and subsequently became an international symbol for animal rights.\n\nTyke had been captured as a baby in Mozambique in 1973 and was shipped to the United States to be used as a circus animal. She had been involved in had escaped twice prior to her killing on August 20th.\n\nOn August 20th, 1994, during a performance at Circus International in Honolulu, Hawaii, Tyke trampled and critically injured her groomer, Dallas Beckwith, throwing him around numerous times in the process. She also killed her trainer, Allen Campbell, when he attempted to save Beckwith, knocking him to the ground and crushing him to death under her trunk.\n\nTyke then escaped and police pursued her for a half an hour, riddling her with bullets. After being shot 86-87 times, Tyke finally collapsed from nerve damage and brain hemorrhages.\n\nFollowing the incident, Tyke became a symbol for animal rights. Lawsuits were filed against the City of Honolulu, the State of Hawaii, the circus, and Tyke's owner, John Cuneo Jr. These suits were settled out of court.\n\nAlthough no official ban on animal acts materialized at the arena where the incident occurred, no circus featuring exotic animals has performed at the Blaisdell since Tyke's killing.",
+        "link": "https://www.huffpost.com/entry/tyke-elephant-honolulu-circus_n_5689932",
+        "infoSrc": "https://en.wikipedia.org/wiki/Tyke_(elephant)",
+        "imgAltText": "Tyke, in circus dress, runs along the street while police officers in the background aim their weapons at her",
         "NSFW": false,
-        "otd": ""
+        "otd": "On this day in 1994, Tyke, an abused circus elephant, killed her trainer and escaped into the streets of Honolulu, Hawaii. She died after being shot 86-87 times by police and subsequently became an international symbol for animal rights."
+      },
+      {
+        "category": "Rebellion",
+        "date": "August 20th, 1915",
+        "title": "Anarchist Bank Robbery (1915)",
+        "imgSrc": "/assets/eventPhotos/Individuals/williamJuber.jpg",
+        "description": "On this day in 1915, three anarcho-communists entered the Home Savings Bank in San Francisco and committed an armed robbery, taking more than $2,400, allegedly to help the revolutionary movement in Russia. During the robbery, a gun battle ensued and one of the robbers was shot, however all three still managed to escape.\n\nThe three men - Gregory Chesalkin, Charles Boutoff (later thought to be an alias for Vladimir Osokin), and William Juber (shown) - were members of the Union of Russian Workers of the United States and Canada (UORW), an anarcho-communist federation founded in New York in 1908 that promoted armed warfare against the capitalist state.\n\nOn September 11th, police arrested William Juber after he sought treatment for a wound and were able to find Chesalkin's location. When they attempted to arrest him, Chesalkin initiated a shootout and died. Juber was sentenced to 35 years in prison.\n\nBoutoff was never found, although evidence later surfaced that this may have been an alias for Vladimir Osokin, a Russian anarchist who was shot and killed by San Francisco police after he engaged in a shootout to resist arrest for passing counterfeit money.\n\nWhile dying from his wounds, Osokin wrote an apologetic letter to his mother, as well as another statement that ended with \"I am not a bandit, but an anarchist communist.\"",
+        "link": "https://cdnc.ucr.edu/?a=d&d=SFC19150915.2.58&e=-------en--20--1--txt-txIN--------1",
+        "infoSrc": "https://libcom.org/history/home-saving-bank-robbery-1915",
+        "imgAltText": "William Juber, shown alongside a handwritten note visually describing him",
+        "NSFW": false,
+        "otd": "On this day in 1915, three anarcho-communists entered the Home Savings Bank in San Francisco and committed an armed robbery, taking more than $2,400 allegedly, to help the revolutionary movement in Russia."
       }
     ],
     "Labor": [
