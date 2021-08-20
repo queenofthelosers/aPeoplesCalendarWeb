@@ -1,28 +1,27 @@
 # About
-A People's Calendar (aPC) is a project that seeks to promote the worldwide history of working class movements and liberation struggles in the form of a searchable "On This Day" calendar. This history includes, but is not limited to, indigenous resistance against colonization, the black liberation struggle, unionization efforts, slave rebellions, the women's suffrage movement, and workers' revolution.
+A People's Calendar (aPC) is a project that seeks to promote the worldwide history of working class movements and liberation struggles in the form of a searchable "On This Day" calendar. This history includes, but is not limited to, indigenous resistance against colonization, the black liberation struggle, unionization efforts, slave rebellions, and the women's suffrage movement.
 
-This repository contains the web version of this calendar. It is built using ReactJS and deployed via Netlify at apeoplescalendar.org. A separate codebase is maintained for the app version here: https://github.com/huntzinger92/aPeoplesCalendar. The event libraries (eventLibrary.ts) in either repository are meant to be identical, but are currently stored separately and do not track one another.
+This repository contains the web version of this calendar, which also provides serverless endpoints used by the Android app and a social media posting bot. This project is built with ReactJS and deployed via Netlify at apeoplescalendar.org, and uses Typescript, prettify/eslint, material-ui, and the Jest testing library.
 
 # Open Source
-Both the web and native versions of this application are freely available, and I will never restrict or profit from them for propertiary reasons. I welcome your ideas and suggestions, whether they be something as simple as a typo correction or as complex as a major feature addition. As of July 30th, 2020, there are many features I am still working towards adding, like graphic design on the homepage, animations, and adding hundreds of historical events which are still missing from the event library. One of the major steps coming next is supplying the event library and photos with a back-end, which I have not built yet (Netlify allows for backend-less deploy, currently that data is packaged in the front end code). 
+Both the web and native versions of this application are freely available, and I will never restrict or profit from them for propertiary reasons.
 
-If you have an idea about how to improve the app and the skill and time to implement it, feel free to submit a pull request.
+# Technical Details
 
-# App Hierarchy
+Currently, all event data (including descriptions, dates, and photos) are bundled with the front end of this web application, and can be found in the public folder. The event library (stored as JSON) is fetched and parsed on application mount. 
 
-The "App" component is responsible for only for displaying the navigation bar and handling the navigation itself. The three possible views are given by main.tsx (calendar homepage), about.js, and volunteer.js.
+This situation is not ideal, and there are plans towards building an AWS/Lambda based backend in the future. Do not change the location of the event library or media without making corresponding changes into the repositories aPeoplesCalendar (React Native app) and apc-bot (social media posting app), as these programs are hardcoded to download that data from their current location.
 
-main.tsx is the primary view of the site and is responsible for handing user day/search queries and retrieving a given day's/search's events from eventLibrary.ts. After retrieving this data, it is passed on to the CalendarDisplay component. If the user is searching for events that contain a term rather than events by day, the function searchEvents() constructs the search results as an artifical "day" and sends the data to the CalendarDisplay component in that format. In this way, both search results and day's events can be rendered by the same code in calendarDisplay.js.
+All non-media event data is currently stored in eventLibrary.json.
 
-The CalendarDisplay component receives event data to display and is responsible for formatting it into the proper JSX, handling expansion/collapse logic for each event category, and passing on individual event data to the EventComponent, which is responsible for displaying the low-level details of each event - date, description, relevant image, etc. EventComponent also has internal state that allows for expansion/collapse of individual events (toggling between just title or all information).
-
-All events are stored in eventLibrary.ts and exported as a JSON file. Eventually, these events will be moved to a local sqlite3 database. Each event is stored as an object with the following keys:
-- category (string)
-- title (string)
-- date (string)
-- imgSrc (require(./assets/EventPhotos/...))
-- description (string formatted with new line characters)
-- link: (string)
-- infoSrc: (string)
-
-The folder ./assets/eventPhotos contains all event photos required in eventLibrary.ts, organized by four categories - individuals, events (i.e., battles, massacres, revolutions, protests, etc.), organizations, and books. If there is no picture for the event available, eventPhotos/empty.jpg is used.
+Each event is stored as an object with the following props:
+- category: string
+- title: string
+- date: string
+- imgSrc: string (used to locate image url, typically in the form /assets/EventPhotos/...)
+- imgAltText?: string
+- description: string
+- link: string
+- infoSrc: string
+- NSFW: boolean
+- otd: string (< 238 characters, used for social media posting and quick event summary on website)
