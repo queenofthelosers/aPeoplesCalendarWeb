@@ -38,6 +38,7 @@ module.exports = {
     }],
     "react/destructuring-assignment": [0, 'always'],
     "react/jsx-filename-extension": [0, { extensions: [".js", "tsx"] }],
+    "react/jsx-props-no-spreading": 0,
     "import/prefer-default-export": 0,
     "linebreak-style": 0,
     "react/no-unescaped-entities": 0,

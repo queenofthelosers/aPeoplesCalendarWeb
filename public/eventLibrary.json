@@ -21622,16 +21622,16 @@
     ],
     "Other": [
       {
-        "category": "",
-        "date": "",
-        "title": "",
-        "imgSrc": "/assets/eventPhotos/empty.jpg",
-        "description": "",
-        "link": "",
-        "infoSrc": "",
-        "imgAltText": "",
+        "category": "Other",
+        "date": "August 21st, 1982",
+        "title": "El Calabozo Massacre (1982)",
+        "imgSrc": "/assets/eventPhotos/Events/elCalabozo.jpeg",
+        "description": "On this day in 1982, soldiers from the Atlacatl Battalion of the Salvadoran Army, trained at the infamous U.S. \"School of the Americas\", slaughtered more than 200 unarmed peasants that they had trapped along the \"El Calabozo\" area of the Amatitan river.\n\nThe massacre took place in the context of the Salvadoran Civil War, a conflict between left-wing rebel groups and U.S.-backed state forces in which an estimated 75,000 people were killed. Worried about the spread of communism during the Cold War, the Ronald Reagan's administration gave billions of dollars to the right-wing Salvadoran government.\n\nIn August 1982, the Salvadoran military launched an operation in San Vicente, a rural area that was a guerrilla stronghold at the time. The army sent about 6,000 troops to rid the area of rebel presence, some of whom were from the elite Atlacatl Battalion, trained at the controversial \"School of the Americas\" and previously responsible for the El Mozote Massacre, in which several hundred captured civilians were killed.\n\nOn the night of August 21st, a group of internally displaced people was overtaken beside the Amatitán river state troops. At a spot called \"El Calabozo\" (\"The Dungeon\"), the battalion surrounded the IDPs and opened fire at close range. Survivors allege that the soldiers then threw many of the bodies into the river and threw acid on some corpses, making an accurate count of the violence difficult.\n\nJoaquin Portillo, a survivor whose family was killed, played dead after being shot. His testimony helped identify the bodies years later. Interviewed by Al Jazeera, he stated \"[A burial service for remains returned 38 years later] is a reminder so that we don't forget... They were people who were unarmed, including kids, and [the soldiers] didn't have to do that.\"",
+        "link": "https://en.wikipedia.org/wiki/El_Calabozo_massacre",
+        "infoSrc": "https://www.aljazeera.com/news/2020/1/24/el-calabozo-massacre-remains-of-six-returned-38-years-later",
+        "imgAltText": "Fix of the six coffins lay at the burial site in San Vicente, El Salvador [Anna-Cat Brigida/Al Jazeera]",
         "NSFW": false,
-        "otd": ""
+        "otd": "On this day in 1982, the Atlacatl Battalion of the Salvadoran Army, trained at the U.S. \"School of the Americas\", slaughtered more than 200 unarmed peasants that they had trapped along the \"El Calabozo\" area of the Amatitan river."
       }
     ]
   },
