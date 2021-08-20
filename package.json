@@ -1,6 +1,6 @@
 {
   "name": "apc-web",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
@@ -30,12 +30,14 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.3",
     "react-social-icons": "^4.1.0",
+    "ts-node": "^10.2.1",
     "typescript": "^4.3.5"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "jest",
+    "test": "cross-env NODE_ENV=test jest --coverage",
+    "test:debug": "cross-env NODE_ENV=test node --inspect ./node_modules/jest/bin/jest.js --runInBand",
     "eject": "react-scripts eject",
     "//": "for when you refactor directory: eslint src/**/*.js src/**/*.jsx",
     "lint": "eslint src/*.js src/**/*.tsx src/**/*.js src/**/*.ts --fix"
