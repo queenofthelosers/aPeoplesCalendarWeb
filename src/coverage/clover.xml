@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1629497313251" clover="3.2.0">
-  <project timestamp="1629497313251" name="All files">
-    <metrics statements="1742" coveredstatements="0" conditionals="24" coveredconditionals="0" methods="24" coveredmethods="0" elements="1790" coveredelements="0" complexity="0" loc="1742" ncloc="1742" packages="14" files="24" classes="24"/>
+<coverage generated="1629519955180" clover="3.2.0">
+  <project timestamp="1629519955180" name="All files">
+    <metrics statements="1742" coveredstatements="10" conditionals="24" coveredconditionals="1" methods="24" coveredmethods="1" elements="1790" coveredelements="12" complexity="0" loc="1742" ncloc="1742" packages="14" files="24" classes="24"/>
     <package name="components.About">
       <metrics statements="59" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
       <file name="about.tsx" path="C:\Users\tts2p\Documents\Coding Stuff\apc-web\src\components\About\about.tsx">
@@ -1588,7 +1588,7 @@
       </file>
     </package>
     <package name="utils">
-      <metrics statements="235" coveredstatements="0" conditionals="11" coveredconditionals="0" methods="11" coveredmethods="0"/>
+      <metrics statements="235" coveredstatements="10" conditionals="11" coveredconditionals="1" methods="11" coveredmethods="1"/>
       <file name="calculateHamburgerPosition.ts" path="C:\Users\tts2p\Documents\Coding Stuff\apc-web\src\utils\calculateHamburgerPosition.ts">
         <metrics statements="1" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
@@ -1845,17 +1845,17 @@
         <line num="25" count="0" type="stmt"/>
       </file>
       <file name="validateDayString.ts" path="C:\Users\tts2p\Documents\Coding Stuff\apc-web\src\utils\validateDayString.ts">
-        <metrics statements="10" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
-        <line num="2" count="0" type="stmt"/>
-        <line num="3" count="0" type="stmt"/>
-        <line num="4" count="0" type="stmt"/>
-        <line num="5" count="0" type="stmt"/>
-        <line num="6" count="0" type="stmt"/>
-        <line num="7" count="0" type="stmt"/>
-        <line num="8" count="0" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
+        <metrics statements="10" coveredstatements="10" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
       </file>
     </package>
   </project>

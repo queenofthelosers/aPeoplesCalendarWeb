@@ -1,7 +1,7 @@
 module.exports = {
   presets: [
     [
-      '@babel/reset-env',
+      '@babel/preset-env',
       {
         modules: false,
       },
@@ -9,7 +9,7 @@ module.exports = {
     '@babel/preset-react',
   ],
   plugins: [
-    '@babel/plugin-proposal-class-proprties',
+    '@babel/plugin-proposal-class-properties',
     '@babel/plugin-syntax-dynamic-import',
   ],
   env: {
