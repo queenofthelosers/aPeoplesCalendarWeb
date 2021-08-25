@@ -154,7 +154,7 @@ export const EventComponent = ({
                 >
                   {categoryEvent.date}
                 </Typography>
-                <Typography style={testOtd(categoryEvent.otd)}>{categoryEvent.otd}</Typography>
+                <Typography>{categoryEvent.otd}</Typography>
                 <IconButton
                   style={{ margin: 'auto', marginTop: 5, color: '#333333' }}
                   onClick={handleExpandCollapse}
@@ -241,12 +241,12 @@ export const EventComponent = ({
   );
 };
 
-const testOtd = (str: string) => {
-  if (str.length > 238) {
-    return { backgroundColor: 'red' };
-  }
-  if (str.length < 140) {
-    return { backgroundColor: 'blue' };
-  }
-  return { backgroundColor: 'green' };
-};
+// const testOtd = (str: string) => {
+//   if (str.length > 238) {
+//     return { backgroundColor: 'red' };
+//   }
+//   if (str.length < 140) {
+//     return { backgroundColor: 'blue' };
+//   }
+//   return { backgroundColor: 'green' };
+// };
