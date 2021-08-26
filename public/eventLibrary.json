@@ -7934,16 +7934,16 @@
     ],
     "Labor": [
       {
-        "category": "",
-        "date": "",
-        "title": "",
-        "imgSrc": "/assets/eventPhotos/empty.jpg",
-        "description": "",
-        "link": "",
-        "infoSrc": "",
-        "imgAltText": "",
+        "category": "Labor",
+        "date": "March 29th, 1984",
+        "title": "Wellington Trades Hall Bombing (1984)",
+        "imgSrc": "/assets/eventPhotos/Events/wellingtonBombing.jpg",
+        "description": "On this day in 1984, the Trades Hall in Wellington, New Zealand was bombed, killing the building's caretaker and badly injuring his dog. To this day, the perpetrator has not been identified.\n\nThe Trades Hall was the headquarters of a number of trade unions, and it is most commonly assumed that unions were the target of the bombing. Ernie Abbott, the building's caretaker, was killed when he attempted to move the suitcase, which is believed to have contained three sticks of gelignite triggered by a mercury switch.\n\nTo this day, the perpetrator has never been identified. It was revealed in a 2019 episode of Cold Case that police had a prime suspect, a retired marine engineer with explosives expertise and anti-union attitudes, however the evidence was considered circumstantial and insufficient to lay charges.",
+        "link": "https://en.wikipedia.org/wiki/Terrorism_in_New_Zealand#Wellington_Trades_Hall_bombing",
+        "infoSrc": "http://www.stuff.co.nz/good-reads/9872178/Wellingtons-unsolved-Trades-Hall-mystery",
+        "imgAltText": "Two investigators poring over the wreckage from the bombing",
         "NSFW": false,
-        "otd": ""
+        "otd": "On this day in 1984, the Trades Hall in Wellington, New Zealand was bombed, killing the building's caretaker and badly injuring his dog. Police suspected a retire marine engineer with anti-union sentiments, however no charges were filed."
       }
     ],
     "Birthdays": [
@@ -21962,7 +21962,7 @@
         "date": "August 25th, 1921",
         "title": "Battle of Blair Mountain (1921)",
         "imgSrc": "/assets/eventPhotos/Events/battleOfBlairMountain.jpg",
-        "description": "On this day in 1921, the first skirmishes of the Battle of Blair Mountain took place. Involving more than 10,000 armed workers battling with state and strikebreaking forces, it was the largest post-Civil War uprising, and the largest labor uprising in U.S. history.\n\nThe conflict occurred in Logan County, West Virginia as part of the \"Coal Wars\", a series of early 20th-century labor disputes in Appalachia. Up to 100 people were killed and nearly one thousand miners were arrested on multiple charges, including murder and treason.\n\nFor five days, from late August to early September 1921, some 10,000 armed coal miners confronted 3,000 lawmen and strikebreakers who were backed by coal mine operators during the miners' attempt to unionize the southwestern West Virginia coalfields. Sometimes the Battle's anniversary is marked as August 31st, when the miners' army clashed with armed forces marshaled by the county sheriff, the coal companies, and the state police in Logan County.\n\nThe battle ended on September 4th after approximately one million rounds had been fired, aerial bombardment of the miners, and the U.S. Army's intervention, acting on orders from President Harding.\n\nAfter the battle, 985 miners were indicted for murder, conspiracy to commit murder, accessory to murder, and treason against the state of West Virginia. Though some were acquitted by sympathetic juries, others were imprisoned for several years.\n\nAccording to the Cultural Landscape Foundation, there has never been a complete archaeological survey of the battlefield. The West Virginia Mine Wars Museum is raising funds to sponsor a LiDAR (Light Detection and Ranging) scan of the Nomination Area in order to identify the major zones of historical significance and promote the site's value as a historical park.",
+        "description": "On this day in 1921, the first skirmishes of the Battle of Blair Mountain took place. Involving more than 10,000 armed workers battling with state and strikebreaking forces, it was the largest post-Civil War uprising, and the largest labor uprising in U.S. history.\n\nThe conflict occurred in Logan County, West Virginia as part of the \"Coal Wars\", a series of early 20th-century labor disputes in Appalachia. Up to 100 people were killed and nearly one thousand miners were arrested on multiple charges, including murder and treason.\n\nFor five days, from late August to early September 1921, some 10,000 armed coal miners confronted 3,000 lawmen and strikebreakers who were backed by coal mine operators during the miners' attempt to unionize the southwestern West Virginia coalfields. Sometimes the Battle's anniversary is marked as August 31st, when the miners' army clashed with armed forces marshaled by the county sheriff, the coal companies, and state police in Logan County.\n\nThe battle ended on September 4th after approximately one million rounds had been fired, aerial bombardment of the miners, and the U.S. Army's intervention, acting on orders from President Harding.\n\nAfter the battle, 985 miners were indicted for murder, conspiracy to commit murder, accessory to murder, and treason against the state of West Virginia. Though some were acquitted by sympathetic juries, others were imprisoned for several years.\n\nAccording to the Cultural Landscape Foundation, there has never been a complete archaeological survey of the battlefield. The West Virginia Mine Wars Museum is raising funds to sponsor a LiDAR (Light Detection and Ranging) scan of the Nomination Area in order to identify the major zones of historical significance and promote the site's value as a historical park.",
         "link": "https://tclf.org/battle-blair-mountain-still-being-waged",
         "infoSrc": "https://en.wikipedia.org/wiki/Battle_of_Blair_Mountain",
         "imgAltText": "",
@@ -21976,7 +21976,7 @@
         "date": "August 25th, 1968",
         "title": "Chicago Bus Strike (1968)",
         "imgSrc": "/assets/eventPhotos/Events/ctaStrikeChicago.jpg",
-        "description": "On this day in 1968, black bus drivers in Chicago turned off the lights on their vehicles and headed back to the Chicago Transit Authority (CTA) bus barns, beginning a two-week strike that shut down 52 of the city's 128 bus routes and effectively paralyzed the south and west sides of the city. More than half of the CTA's bus drivers were African-American and for weeks they had been fighting what they considered unfair union representation.\n\nLike many other protest movements in the 50s and 60s, the drivers took as their model the Montgomery bus boycott, organizing car pools and CTW \"courtesy cars\" to meet the transportation shortfall in some neighborhoods. According to Standish Willis, one of the striking drivers who later wrote a college thesis on the incident, \"Black drivers were being arrested while trying to close down the white stations, and we were losing what little money we had bailing them out of jail...White drivers at black stations respected the picket lines. The white drivers at the white ones did not.\"\n\nAccording to Willis, the strike's failure was due to the collective effort of establishment political powers working against the strike: \"With the police arresting our guys, the judges putting guys in jail and holding them for contempt, and the union threatening to kick our leaders out, it was a pretty concerted attack. And we certainly didn't have enough money to get people out of jail at the rate they were putting them in.\"",
+        "description": "On this day in 1968, black bus drivers in Chicago turned off the lights on their vehicles and headed back to the Chicago Transit Authority (CTA) bus barns, beginning a two-week strike that shut down 52 of the city's 128 bus routes and effectively paralyzed the south and west sides of the city. More than half of the CTA's bus drivers were African-American and for weeks they had been fighting what they considered unfair union representation.\n\nLike many other protest movements in the 50s and 60s, the drivers took as their model the Montgomery bus boycott, organizing car pools and CTW \"courtesy cars\" to meet the transportation shortfall in some neighborhoods.\n\nAccording to Standish Willis, one of the striking drivers who later wrote a college thesis on the incident, \"Black drivers were being arrested while trying to close down the white stations, and we were losing what little money we had bailing them out of jail...White drivers at black stations respected the picket lines. The white drivers at the white ones did not.\"\n\nAccording to Willis, the strike's failure was due to the collective effort of establishment political powers working against the strike: \"With the police arresting our guys, the judges putting guys in jail and holding them for contempt, and the union threatening to kick our leaders out, it was a pretty concerted attack. And we certainly didn't have enough money to get people out of jail at the rate they were putting them in.\"",
         "link": "http://www.laborbeat.org/LB_Store_V2/index.php?route=product/product&product_id=50",
         "infoSrc": "https://www.chicagoreader.com/chicago/seizing-the-wheel/Content?oid=895461",
         "imgAltText": "",
@@ -22044,16 +22044,16 @@
     ],
     "Rebellion": [
       {
-        "category": "",
-        "date": "",
-        "title": "",
-        "imgSrc": "/assets/eventPhotos/empty.jpg",
-        "description": "",
-        "link": "",
-        "infoSrc": "",
-        "imgAltText": "",
+        "category": "Rebellion",
+        "date": "August 26th, 1970",
+        "title": "Women's Strike for Equality (1970)",
+        "imgSrc": "/assets/eventPhotos/Events/womensStrikeForEquality.jpeg",
+        "description": "On this day in 1970, on the 50th anniversary of the 19th amendment, nearly 60,000 feminists marched across the United States in the \"Women's Strike for Equality\", demanding free abortion, equal work opportunities, and free childcare. At that time, the protest was the largest on behalf of women in the U.S. history.\n\nThe rally was sponsored by the National Organization for Women (NOW). The strike primarily took place in New York City, where 50,000 women gathered in protest. Thousands more protested in solidarity throughout the country, including in Boston, St. Louis, Minneapolis, Washingont D.C., and San Francisco.\n\nA key organizer of the protest was Betty Friedan, noted second wave feminist and then-president of NOW. The event had three primary goals: free abortion on demand, equal opportunity in the workforce, and free childcare. At the time, women made $.59 cents to every dollar a male counterpart made, and institutions such as Harvard University would not accept women for another seven years.\n\nAlthough the strike did not directly win any concessions, Congress declared August 26th \"Women's Equality Day\" the following year, with the support of President Richard Nixon. The protest was a successful consciousness-raising event, with some feminist scholars claiming that the strike was a significant spark for second wave feminism.",
+        "link": "https://www.thoughtco.com/the-womens-strike-for-equality-3528989",
+        "infoSrc": "https://en.wikipedia.org/wiki/Women%27s_Strike_for_Equality",
+        "imgAltText": "Various protesters on the street, holding signs that say \"WOMEN STRIKE FOR PEACE AND EQUALITY\", \"I'M NO BREEDER FOR THE MAN'S WAR\", \"SISTERHOOD IS POWERFUL - END THE WAR!\", and \"THE WOMEN OF VIETNAM ARE OUR SISTERS\"",
         "NSFW": false,
-        "otd": ""
+        "otd": "On this day in 1970, on the 50th anniversary of the 19th amendment, nearly 60,000 feminists marched across the United States in the \"Women's Strike for Equality\", demanding free abortion, equal work opportunities, and free childcare."
       }
     ],
     "Labor": [
@@ -22062,24 +22062,24 @@
         "date": "August 26th, 2009",
         "title": "South African Striking Troops Attacked (2009)",
         "imgSrc": "/assets/eventPhotos/Events/saTroopsAttacked.jpg",
-        "description": "On this day in 2009, approximately 3,000 military personnel clashed with the police on the streets of Pretoria during demonstrations over pay and working conditions. The troops had marched to union buildings, insisting on President Jacob Zuma to give them a 30% pay raise. Police used rubber bullets and teargas to disperse the marchers, who reportedly became unruly and attacked police cars.\n\nThe government claimed the protest was illegal and fired 697 soldiers in response to the strike.",
+        "description": "On this day in 2009, approximately 3,000 military personnel clashed with the police on the streets of Pretoria, South Africa during demonstrations over pay and working conditions.\n\nThe troops had marched to union buildings, insisting on President Jacob Zuma to give them a 30% pay raise. Police used rubber bullets and teargas to disperse the marchers, who reportedly became unruly and attacked police cars.\n\nThe government claimed the protest was illegal and fired 697 soldiers in response to the strike.",
         "link": "http://news.bbc.co.uk/2/hi/africa/8230793.stm",
         "infoSrc": "http://news.bbc.co.uk/2/hi/africa/8230793.stm",
         "imgAltText": "",
         "NSFW": false,
-        "otd": "On this day in 2009, approximately 3,000 military personnel clashed with the police on the streets of Pretoria during demonstrations over pay and working conditions."
+        "otd": "On this day in 2009, approximately 3,000 military personnel clashed with the police on the streets of Pretoria, South Africa during demonstrations over pay and working conditions."
       },
       {
         "category": "Labor",
         "date": "August 26th, 1913",
         "title": "Dublin Lock-Out Begins (1913)",
         "imgSrc": "/assets/eventPhotos/Events/dublinLockOut.jpg",
-        "description": "The Dublin Lock-Out was a major industrial dispute between approximately 20,000 workers and 300 employers which began on this day in 1913, in Ireland's capitol city of Dublin. The dispute is often viewed as the most severe and significant industrial dispute in Irish history.\n\nIn the years leading up to the strike, the Irish Transport and General Workers' Union (ITGWU) had been seeking to unionize and radicalize the Irish workforce. Founded by socialist revolutionary James Larkin in 1908, the ITGWU was the first Irish union to cater to both skilled and unskilled workers.\n\nIn July 1913, three hundred businesses (led by capitalist William Martin Murphy) agreed to not allow the ITGWU to unionize the Dublin workers. Murphy dismissed hundreds of workers of suspected of union membership soon after. Employers in Dublin then locked out their workers, affecting tens of thousands of Irish workers, many of whom were already the poorest in the United Kingdom.\n\nAfter outbreaks of violence between striking workers and strike-breakers, James Connolly, Larkin and ex-British Army Captain Jack White formed a worker's militia, the Irish Citizen Army, to protect workers' demonstrations.\n\nThe lock-out eventually concluded in early 1914, when the Trades Union Congress (TUC) in Britain rejected Larkin and Connolly's request for a sympathetic strike. Most workers, many of whom were on the brink of starvation, went back to work and signed pledges not to join the ITGWU.",
+        "description": "On this day in 1913, the Dublin Lock-Out began as hundreds of tram workers went out on strike, growing into one of most significant industrial disputes in Irish history. It involved ~20,000 workers and 300 colluding employers, and leading to the founding of the Irish Citizen Army (ICA) to protect worker demonstrations.\n\nIn the years leading up to the strike, the Irish Transport and General Workers' Union (ITGWU) had been seeking to unionize and radicalize the Irish workforce. Founded by socialist revolutionary James Larkin in 1908, the ITGWU was the first Irish union to cater to both skilled and unskilled workers.\n\nIn July 1913, three hundred businesses (led by capitalist William Martin Murphy) agreed to not allow the ITGWU to unionize the Dublin workers. Murphy dismissed hundreds of workers of suspected of union membership soon after. Employers in Dublin then locked out their workers, affecting tens of thousands of Irish workers, many of whom were already the poorest in the United Kingdom.\n\nAfter outbreaks of violence between striking workers and strike-breakers, James Connolly, Larkin and ex-British Army Captain Jack White formed a worker's militia, the Irish Citizen Army, to protect workers' demonstrations.\n\nThe lock-out eventually concluded in early 1914, when the Trades Union Congress (TUC) in Britain rejected Larkin and Connolly's request for a sympathetic strike. Most workers, many of whom were on the brink of starvation, went back to work and signed pledges not to join the ITGWU, which was further weakened when Larkin fled to the United States and James Connolly was executed in 1916.\n\nMany of the blacklisted workers joined the British Army, having no other source of pay to support their families, and quickly found themselves in the trenches of World War I. ITGWU eventually recovered and gained strength after WWI; by 1920 the ITGWU was Ireland's largest union with 120,000 members, compared with its pre-war peak of 24,135 at the start of January 1913.",
         "link": "https://www.historyireland.com/20th-century-contemporary-history/the-dublin-1913-lockout/",
         "infoSrc": "https://en.wikipedia.org/wiki/Dublin_lock-out",
         "imgAltText": "",
         "NSFW": false,
-        "otd": "The Dublin Lock-Out was a major industrial dispute between approximately 20,000 workers and 300 employers which began on this day in 1913, in Ireland's capitol city of Dublin."
+        "otd": "On this day in 1913, the Dublin Lock-Out began as tram workers went out on strike, growing into a huge industrial dispute that involved ~20,000 workers and led to the founding of the Irish Citizen Army (ICA) to protect striking workers."
       }
     ],
     "Birthdays": [
@@ -22102,7 +22102,7 @@
         "date": "August 26th, 1919",
         "title": "Fannie Sellins (1872 - 1919)",
         "imgSrc": "/assets/eventPhotos/Individuals/fannieSellins.jpg",
-        "description": "Fannie Sellins was an American union organizer who was murdered by deputies policing a picket line on this day in 1919, while working for the United Mine Workers of America (UMWA) in Pennsylvania.\n\nSellins came to the attention of United Mine Workers of America (UMWA) after helping organize a local chapter of the International Ladies' Garment Workers' Union in St. Louis, negotiating a worker lockout at a garment factory. The UMWA hired Sellins and, in 1919, sent her to the Allegheny River Valley district to direct picketing by striking miners at Allegheny Coal and Coke Company.\n\nOn August 26th, she witnessed guards attacking Joseph Starzeleski, a picketing miner who was being beaten to death. When Sellins intervened, deputies shot and killed her with four bullets and used a cudgel to fracture her skull. Others said that she was attempting to protect miners' children that were on scene. Three deputies were indicted for the killings, but a 1923 trial ended in acquittal for the two men accused of her murder.",
+        "description": "Fannie Sellins was an American union organizer who was murdered by deputies policing a picket line on this day in 1919, while working for the United Mine Workers of America (UMWA) in Pennsylvania.\n\nSellins came to the attention of United Mine Workers of America (UMWA) after helping organize a local chapter of the International Ladies' Garment Workers' Union in St. Louis, negotiating a worker lockout at a garment factory. The UMWA hired Sellins and, in 1919, sent her to the Allegheny River Valley district to direct picketing by striking miners at Allegheny Coal and Coke Company.\n\nOn August 26th, she witnessed guards attacking Joseph Starzeleski, a picketing miner who was being beaten to death. When Sellins intervened, deputies shot and killed her with four bullets and used a cudgel to fracture her skull.\n\nOthers said that she was attempting to protect miners' children that were on scene. Three deputies were indicted for the killings, but a 1923 trial ended in acquittal for the two men accused of her murder.",
         "link": "https://battleofhomestead.org/bhf/tragedy-in-1919-fannie-sellins/",
         "infoSrc": "https://en.wikipedia.org/wiki/Fannie_Sellins",
         "imgAltText": "",
@@ -22121,7 +22121,7 @@
         "infoSrc": "https://workingclasshistory.com/2019/08/26/negro-matapacos-chiles-riot-dog/",
         "imgAltText": "",
         "NSFW": false,
-        "otd": "Negro Matapacos was a famous stray dog from the streets of Santiago, Chile who was known for attending various student protests across the city in the 2010s and fighting with police. He died from old age on this day in 2017."
+        "otd": "Negro Matapacos (\"Black Cop-Killer\") was a famous stray dog from the streets of Santiago, Chile, known for attending various student protests across the city and fighting with police. He died from old age on this day in 2017."
       }
     ]
   },
