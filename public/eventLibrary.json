@@ -34334,16 +34334,16 @@
     ],
     "Labor": [
       {
-        "category": "",
-        "date": "",
-        "title": "",
-        "imgSrc": "/assets/eventPhotos/empty.jpg",
-        "description": "",
-        "link": "",
-        "infoSrc": "",
-        "imgAltText": "",
+        "category": "Labor",
+        "date": "December 30th, 1936",
+        "title": "Flint Sit-Down Strike (1936)",
+        "imgSrc": "/assets/eventPhotos/Events/flintSitDownStrike.jpg",
+        "description": "On this day in 1936, auto workers at the GM Fisher Number One Plant in Flint, Michigan began a highly organized 44-day occupation of their factory, winning a 5% wage increase.\n\nThe victory was an extremely successful recruitment tool for the just-formed United Automobile Workers (UAW), with approximately half a million workers signing up with the union over the next few years.\n\nThe UAW had formed in 1935 and decided to adjust its organizing strategy to target the most valuable auto factories and employers. They decided to target GM factories in Flint, which were essential to multiple lines of GM cars, and to the cars of GM's subsidiary companies like Chevrolet and Buick.\n\nAs Wyndham Mortimer, the first UAW officer put in charge of organizing the campaign in Flint, entered the town, he was surveilled by men from GM. The company also had infiltrated local union shops (which had very few of the local auto workers) with spies. UAW was thus forced to organize in secret.\n\nOn December 30th, the union learned that GM was planning to move dies essential to the Fisher #1 plant's strategic value out of the factory. UAW lead organizer Bob Travis immediately called a lunchtime meeting at the union hall across the street from the plant, explained the situation, then sent the members across the street to occupy the plant, beginning the Flint Sit-Down Strike.\n\nThe state government refused to get involved, so GM attempted to break the occupation by cutting power and water, and interfering with food deliveries. Workers organized committees dedicated to defense, cleaning, organized recreation, and postal service.\n\nOn January 11th, 1937, the police, armed with guns and tear gas, attempted to enter the plant. They were successfully repelled by the workers, who pelted the cops with hinges, bottles, and bolts. Fourteen strikers were injured by gunfire during the battle.\n\nGM obtained two injuctions against the strike, however these were ignored by the workers. One injuction was issued by a judge who owned over three thousand shares of GM, leading him to becoming disbarred after the UAW discovered this information.\n\nOn February 11th, 1937, GM signed a one-page agreement that formally recognized the UAW as a bargaining representative. The UAW gained significant credibility - in the following year, its membership grew from 30,000 to 500,000 members. Employees of other car manufacturers such as Ford joined the organization, and the entire industry rapidly unionized.",
+        "link": "https://socialwelfare.library.vcu.edu/eras/great-depression/flint-sit-strike-1936-1937/",
+        "infoSrc": "https://en.wikipedia.org/wiki/Flint_sit-down_strike",
+        "imgAltText": "Sit-down strikers guarding window entrance to Fisher body plant number three. Photo by Sheldon Dick, 1937.",
         "NSFW": false,
-        "otd": ""
+        "otd": "On this day in 1936, auto workers at the GM Fisher Number One Plant in Flint, Michigan began a highly organized 44-day occupation of their factory, winning a 5% wage increase and an extremely successful recruitment drive for the UAW."
       }
     ],
     "Birthdays": [
