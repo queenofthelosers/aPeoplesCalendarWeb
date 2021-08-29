@@ -19868,16 +19868,16 @@
     ],
     "Assassinations": [
       {
-        "category": "",
-        "date": "",
-        "title": "",
-        "imgSrc": "/assets/eventPhotos/empty.jpg",
-        "description": "",
-        "link": "",
-        "infoSrc": "",
+        "category": "Assassinations",
+        "date": "August 3rd, 1916",
+        "title": "Roger Casement (1864 - 1916)",
+        "imgSrc": "/assets/eventPhotos/Individuals/rogerCasement.jpg",
+        "description": "Roger Casement was a human rights journalist and Irish revolutionary who was executed on this day in 1916 by the British state for his involvement with the Irish Republicans. Casement's work in the first decade of the 20th century exposed imperialist atrocities in the Congo and Peru, leading him to be called the \"father of twentieth-century human rights investigations\".\n\nCasement began his career working for Henry Morton Stanley and the African International Association, a front for King Leopold II of Belgium in his colonization of the Congo.\n\nIn 1890, Casement met Joseph Conrad, who had come to the Congo to pilot a merchant ship. According to author Liesl Schillinger, both were inspired by the idea that \"European colonisation would bring moral and social progress to the continent and free its inhabitants 'from slavery, paganism and other barbarities.' Each would soon learn the gravity of his error.\"\n\nIn 1904, he published the \"Casement Report\", which, via direct interviews with workers, overseers, and mercenaries, exposed the enslavement, mutilation, and torture of natives on the rubber plantations. The report caused an international scandal and led to various reform organizations in the West.\n\nA few years later, Casement traveled to the Putumayo District in South America, where the rubber was harvested deep in the Amazon Basin, and exposed the treatment of indigenous people in Peru. Finding conditions just as inhumane as what he witnessed in the Congo, Casement interviewed both the Putumayo and men who had abused them, publishing his findings in a first-person narrative that again caused an international scandal.\n\nIn November, 1914 Casement helped form the Irish Volunteers. He traveled to both the United States and Germany to promote the Irish nationalist cause and acquire aid for it.\n\nIn 1916, he was captured by the British government and charged with high treason. During trial proceedings, the government secretly circulated alleged excerpts from Casement's journals, exposing him as a homosexual. This mitigated the enthusiasm of those demanding clemency for his case. He was hanged at Pentonville Prison on August 3rd, 1916 at 51 years old.\n\n\"Self government is our right, a thing born to us at birth a thing no more to be doled out to us by another people then the right to life itself then the right to feel the sun or smell the flowers or to love our kind.\"\n\n- Roger Casement",
+        "link": "https://www.rte.ie/centuryireland/index.php/articles/the-life-and-death-of-roger-casement",
+        "infoSrc": "https://en.wikipedia.org/wiki/Roger_Casement",
         "imgAltText": "",
         "NSFW": false,
-        "otd": ""
+        "otd": "Roger Casement was a human rights journalist and Irish revolutionary who was executed on this day in 1916 by the British state for his involvement with the Irish Republicans."
       }
     ],
     "Other": [
@@ -22596,16 +22596,16 @@
     ],
     "Labor": [
       {
-        "category": "",
-        "date": "",
-        "title": "",
-        "imgSrc": "/assets/eventPhotos/empty.jpg",
-        "description": "",
-        "link": "",
-        "infoSrc": "",
-        "imgAltText": "",
+        "category": "Labor",
+        "date": "August 31st, 1980",
+        "title": "Poland \"Solidarity\" Union Forms (1980)",
+        "imgSrc": "/assets/eventPhotos/Events/solidarityPolandBeginning.jpg",
+        "description": "On this day in 1980, the Polish Union \"Solidarity\" was officially recognized by the state after the Gdańsk Agreement was signed. The union, boasted millions of members and led the largest strikes in the Soviet bloc, accepted money from the CIA and AFL-CIO and played a key role in liberalizing Poland.\n\nWorkers at the Gdańsk Shipyard had gone on strike in mid-August, following the firing of Anna Walentynowicz, a co-founder of Solidarity. Participants formed an Interfactory Strike Committee (MKS), issuing 21 demands, including the acceptance of free trade unions independent of the Communist Party. These demands were agreed to by the state on August 31st in the Gdańsk Agreement.\n\nSolidarity's membership peaked at 10 million in September 1981, representing one-third of the country's working-age population. The union organized the largest strike ever in the Soviet Bloc the same year, the politically-motivated \"Warning Strike\", a four-hour general strike on March 27th involving millions of workers.\n\nSolidarity enjoyed considerable support and aid from anti-communist groups, including the Central Intelligence Agency, the AFL-CIO, and even the U.S. Congress directly, which authorized the National Endowment for Democracy, which allocated $10 million to the organization.\n\nThe union played a key role in Poland's liberalization. 1989 round table talks between the government and the Solidarity-led opposition produced agreement for the 1989 legislative elections.\n\nBy the end of August, a Solidarity-led coalition government was formed and in December 1990 Solidarity co-founder Lech Wałęsa was elected President of Poland and began privatizing the country's economy. He also pushed for Poland's entry into the North American Trade Organization (NATO) and the European Union, which occurred in 1999 and 2004, respectively.",
+        "link": "https://jacobinmag.com/2020/08/poland-solidarity-communism-solidarnosc",
+        "infoSrc": "https://en.wikipedia.org/wiki/Solidarity_(Polish_trade_union)",
+        "imgAltText": "Lech Walesa, co-founder of Solidarity, speaks to workers during a strike at the Gdansk shipyard, August 1980. Photograph: Erazm Ciołek/Forum/Reuters",
         "NSFW": false,
-        "otd": ""
+        "otd": "On this day in 1980, the Polish Union \"Solidarity\" was officially recognized by the state. The union, which led the largest strikes in the Soviet bloc, accepted money from the CIA and AFL-CIO and played a key role in liberalizing Poland."
       }
     ],
     "Birthdays": [
@@ -22706,6 +22706,18 @@
         "imgAltText": "",
         "NSFW": false,
         "otd": "Walter Philip Reuther, born on this day in 1907, was an American leader of organized labor and civil rights activist who built the United Automobile Workers (UAW) into one of the most progressive labor unions in American history."
+      },
+      {
+        "category": "Birthdays",
+        "date": "September 1st, 1864",
+        "title": "Roger Casement (1864 - 1916)",
+        "imgSrc": "/assets/eventPhotos/Individuals/rogerCasement.jpg",
+        "description": "Roger Casement, born on this day in 1864, was a human rights journalist and Irish revolutionary who exposed imperialist atrocities in the Congo and Peru. He was executed by the British state for his involvement with the Irish Republicans.\n\nCasement began his career working for Henry Morton Stanley and the African International Association, a front for King Leopold II of Belgium in his colonization of the Congo.\n\nIn 1890, Casement met Joseph Conrad, who had come to the Congo to pilot a merchant ship. According to author Liesl Schillinger, both were inspired by the idea that \"European colonisation would bring moral and social progress to the continent and free its inhabitants 'from slavery, paganism and other barbarities.' Each would soon learn the gravity of his error.\"\n\nIn 1904, he published the \"Casement Report\", which, via direct interviews with workers, overseers, and mercenaries, exposed the enslavement, mutilation, and torture of natives on the rubber plantations. The report caused an international scandal and led to various reform organizations in the West.\n\nA few years later, Casement traveled to the Putumayo District in South America, where the rubber was harvested deep in the Amazon Basin, and exposed the treatment of indigenous people in Peru. Finding conditions just as inhumane as what he witnessed in the Congo, Casement interviewed both the Putumayo and men who had abused them, publishing his findings in a first-person narrative that again caused an international scandal.\n\nIn November, 1914 Casement helped form the Irish Volunteers. He traveled to both the United States and Germany to promote the Irish nationalist cause and acquire aid for it.\n\nIn 1916, he was captured by the British government and charged with high treason. During trial proceedings, the government secretly circulated alleged excerpts from Casement's journals, exposing him as a homosexual. This mitigated the enthusiasm of those demanding clemency for his case. He was hanged at Pentonville Prison on August 3rd, 1916 at 51 years old.\n\n\"Self government is our right, a thing born to us at birth a thing no more to be doled out to us by another people then the right to life itself then the right to feel the sun or smell the flowers or to love our kind.\"\n\n- Roger Casement",
+        "link": "https://www.rte.ie/centuryireland/index.php/articles/the-life-and-death-of-roger-casement",
+        "infoSrc": "https://en.wikipedia.org/wiki/Roger_Casement",
+        "imgAltText": "",
+        "NSFW": false,
+        "otd": "Roger Casement, born on this day in 1864, was a human rights journalist and Irish revolutionary who exposed imperialist atrocities in the Congo and Peru. He was executed by the British state for his involvement with the Irish Republicans."
       }
     ],
     "Assassinations": [

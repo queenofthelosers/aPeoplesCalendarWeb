@@ -20,7 +20,7 @@ import { HomepageComponent } from '../Homepage/homepageComponent';
 import { IconComponent } from '../LogoIcon/logoIcon';
 import { calculateHamburgerPosition } from '../../utils/calculateHamburgerPosition';
 import headerImg from '../../assets/Protests-85-skinniest.jpg';
-import { databaseChecks } from '../../utils/databaseChecks';
+// import { databaseChecks } from '../../utils/databaseChecks';
 
 const App = (): JSX.Element => {
   const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
@@ -47,7 +47,7 @@ const App = (): JSX.Element => {
         `${process.env.PUBLIC_URL}/eventLibrary.json`,
       );
       const fetchedEvents = await response.json();
-      databaseChecks(fetchedEvents);
+      // databaseChecks(fetchedEvents);
       setEventLibrary(fetchedEvents);
       setLoadingEvents(false);
     } catch (e) {
