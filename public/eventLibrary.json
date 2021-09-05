@@ -27710,33 +27710,19 @@
     ],
     "Rebellion": [
       {
-        "category": "",
-        "date": "",
-        "title": "",
-        "imgSrc": "/assets/eventPhotos/empty.jpg",
-        "description": "",
-        "link": "",
-        "infoSrc": "",
-        "imgAltText": "",
-        "NSFW": false,
-        "otd": ""
-      }
-    ],
-    "Labor": [
-      {
-        "category": "Labor",
+        "category": "Rebellion",
         "date": "October 20th, 1920",
         "title": "Romanian General Strike (1920)",
         "imgSrc": "/assets/eventPhotos/empty.jpg",
         "description": "On this day in 1920, a general strike took place in Romania in response to a call by the General Confederation of Labor. The strike was caused by the Romanian government's refusal to satisfy workers' demands as formulated by the General Council of the Socialist Party of Romania (SPR).\n\nThese demands included observance of democratic freedoms, recognition of workers' factory committees, the abolition of the state of siege then existing in Romania, and the elimination of censorship.\n\nDespite reprisals by the authorities and the capitulation of right-wing leaders of both the SPR and the General Confederation of Labor, who declared the strike over on October 26th, the strike grew to large proportions, with about 400,000 workers taking part in the protest. The strike was put down by force on October 28th.",
-        "link": "https://encyclopedia2.thefreedictionary.com/October+General+Strike+of+1920",
+        "link": "https://en.wikipedia.org/wiki/1920_Romanian_general_strike",
         "infoSrc": "https://encyclopedia2.thefreedictionary.com/October+General+Strike+of+1920",
         "imgAltText": "",
         "NSFW": false,
-        "otd": "On this day in 1920, a general strike took place in Romania in response to a call by the General Confederation of Labor."
+        "otd": "On this day in 1920, a general strike involving ~400,000 workers began in Romania in response to a call by the General Confederation of Labor."
       }
     ],
-    "Birthdays": [
+    "Labor": [
       {
         "category": "",
         "date": "",
@@ -27748,6 +27734,20 @@
         "imgAltText": "",
         "NSFW": false,
         "otd": ""
+      }
+    ],
+    "Birthdays": [
+      {
+        "category": "Birthdays",
+        "date": "October 20th, 1927",
+        "title": "Abel Santamaría (1927 - 1953)",
+        "imgSrc": "/assets/eventPhotos/Individuals/abelSantamaria.jpg",
+        "description": "Abel Santamaría Cuadrado (shown right), born on this day in 1927, was a Cuban communist, second in command to Fidel Castro's revolutionary movement. Abel was the brother of Haydée Santamaría Cuadrado (1922 - 1980), also a Cuban revolutionary communist and a founding member of the Central Committee of the Communist Party of Cuba (PCC).\n\nIn 1947, Abel Santamaría moved to Havana and began reading Marxist texts. On May 1st, 1952, he met Fidel Castro, and they began organizing revolutionary activity together.\n\nAbel and Haydée participated in the Moncada barracks assault on July 26th, 1953 that was intended to start the revolutionary overthrow of Cuban dictator Fulgencio Batista. Fidel Castro had assigned Santamaria with the mission of taking the Saturnino Lora Hospital as part of the assault, taking on a more dangerous mission himself.\n\nSantamaría protested in a now often-quoted exchange, saying: \"You going to the most dangerous spot and sacrificing yourself, when you are most needed by everyone.\". Castro responded, \"I am going to the garrison and you go to the hospital, because you are the soul of this movement, and if I die, you will take my place.\"\n\nThe assault ultimately failed, and both Abel and Haydée were captured, alongside many other revolutionaries. Abel was tortured to death while in captivity to find out where Fidel was, and one of his eyes was reportedly presented to Haydée as a form of intimidation. Neither Haydée nor Abel gave away Castro's location.",
+        "link": "https://en.wikipedia.org/wiki/Abel_Santamar%C3%ADa",
+        "infoSrc": "https://www.ecured.cu/Abel_Santamar%C3%ADa",
+        "imgAltText": "Abel Santamaría (right), with a young Fidel Castro (left)",
+        "NSFW": false,
+        "otd": "Abel Santamaría (shown right), born on this day in 1927, was a Cuban communist, 2nd in command to Fidel Castro's revolutionary movement. He was tortured to death after being captured following the rebels' seizure of a hospital."
       }
     ],
     "Assassinations": [
