@@ -22,8 +22,6 @@ export const findEventByTitle = (eventLibrary: any, title: string) => {
       for (let k = 0; k < day[categoryList[j]].length; k++) {
         // finally, we arrive at a specific event object - check to see if slugified title matches slug we are searching for
         const slugTitle = stringToSlug(day[categoryList[j]][k].title);
-        console.log('slugTitle:');
-        console.log(slugTitle);
         if (slugTitle === title) {
           // if so, add it to the searchEventsResult object
           searchEventsResult[categoryList[j]][0] = day[categoryList[j]][k];

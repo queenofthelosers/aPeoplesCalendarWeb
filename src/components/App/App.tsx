@@ -4,33 +4,26 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  NavLink,
   Redirect,
 } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { Main } from '../Main/main';
 import { About } from '../About/about';
 import { Volunteer } from '../Volunteer/volunteer';
-// import {Donate} from './donate.js';
 import { NotFound } from '../NotFound/notFound';
 import { FullNavBar } from '../FullNavBar/fullNavBar';
-import { SocialIcons } from '../SocialIcons/socialIconsComponent';
 import { HomepageComponent } from '../Homepage/homepageComponent';
 import { IconComponent } from '../LogoIcon/logoIcon';
-import { calculateHamburgerPosition } from '../../utils/calculateHamburgerPosition';
+import { SmallNavBar } from '../SmallNavBar/smallNavBar';
 import headerImg from '../../assets/Protests-85-skinniest.jpg';
 // import { databaseChecks } from '../../utils/databaseChecks';
 
 const App = (): JSX.Element => {
   const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
   const [windowHeight, setWindowHeight] = React.useState(window.innerHeight);
-  const [hamburgerOpen, setHamburgerOpen] = React.useState(false);
   const [eventLibrary, setEventLibrary] = React.useState();
   const [loadingEvents, setLoadingEvents] = React.useState(true);
 
   const scrollRef: React.RefObject<any> = React.createRef();
-  const hamburgerMenuPosition = calculateHamburgerPosition(windowWidth);
 
   React.useEffect(() => {
     fetchEventLibrary();
@@ -58,26 +51,9 @@ const App = (): JSX.Element => {
     }
   };
 
-  // const handleHomeHamburgerClick = () => {
-  //   resetDay();
-  //   handleHamburgerClick();
-  // }
-
-  const closeMenu = () => {
-    setHamburgerOpen(false);
-  };
-
   const handleResize = () => {
     setWindowWidth(window.innerWidth);
     setWindowHeight(window.innerHeight);
-    // if window was made wide, auto close hamburger menu
-    if (window.innerWidth > 780 && hamburgerOpen) {
-      setHamburgerOpen(false);
-    }
-  };
-
-  const handleHamburgerClick = () => {
-    setHamburgerOpen(!hamburgerOpen);
   };
 
   const executeScroll = () => {
@@ -93,76 +69,7 @@ const App = (): JSX.Element => {
       />
       <div ref={scrollRef}>
         {windowWidth > 780 && <FullNavBar windowWidth={windowWidth} />}
-        {hamburgerOpen && (
-          <div id="hamburgerOpen" style={{ top: hamburgerMenuPosition }}>
-            <NavLink
-              to="/about"
-              id="hamburgerAbout"
-              className="navText hamburgerText"
-              onClick={handleHamburgerClick}
-            >
-              About
-            </NavLink>
-            {/* <NavLink
-              to='/donate'
-              id='hamburgerDonate'
-              className='navText hamburgerText'
-              onClick={handleHamburgerClick}>
-                Donate
-            </NavLink> */}
-            <NavLink
-              to="/volunteer"
-              id="hamburgerVolunteer"
-              className="navText hamburgerText"
-              onClick={handleHamburgerClick}
-            >
-              Volunteer
-            </NavLink>
-            <NavLink
-              to="/calendar"
-              id="hamburgerCalendar"
-              className="navText hamburgerText"
-              onClick={handleHamburgerClick}
-            >
-              Calendar
-            </NavLink>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              id="hamburgerContact"
-              className="navText hamburgerText"
-              href="mailto:apeoplescalendar@gmail.com"
-              onClick={handleHamburgerClick}
-            >
-              Contact
-            </a>
-          </div>
-        )}
-        {windowWidth <= 780 && (
-          <div id="smallNavBarContainer">
-            <NavLink
-              to="/"
-              className="navBarNavLink"
-              id="titleContainer"
-              onClick={closeMenu}
-            >
-              <p id="fullNavTitle">aPC</p>
-            </NavLink>
-            <div>
-              <FontAwesomeIcon
-                icon={faBars}
-                style={{
-                  position: 'absolute',
-                  top: '15px',
-                  left: windowWidth > 500 ? '95px' : '82px',
-                  cursor: 'pointer',
-                }}
-                onClick={handleHamburgerClick}
-              />
-            </div>
-            <SocialIcons windowWidth={windowWidth} />
-          </div>
-        )}
+        {windowWidth <= 780 && <SmallNavBar windowWidth={windowWidth} />}
       </div>
       <Switch>
         <Route path="/calendar/day/:day">
