@@ -14,7 +14,7 @@ describe('findEventByTitle', () => {
         Other: [{ description: '' }],
       },
     };
-    expect(findEventByTitle(mockedEventLibrary, 'testTitle')).toEqual(expectedResult);
+    expect(findEventByTitle(mockedEventLibrary, 'testtitle')).toEqual(expectedResult);
   });
   it('returns when no events found', () => {
     const expectedResult = {

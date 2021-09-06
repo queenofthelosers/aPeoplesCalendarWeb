@@ -15,7 +15,7 @@ export const mockedEventLibrary = {
     Rebellion: [{ title: '', description: 'yadda yadda ya' }],
     Labor: [{ title: '', description: 'asdf testKeyword' }],
     Birthdays: [{ title: 'testTitle', description: '' }],
-    Assassinations: [{ title: '', description: 'test keyword (psyche)' }],
+    Assassinations: [{ title: '', description: 'test keyword' }],
     Other: [{ title: '', description: 'ope' }],
   },
   '10-1': {

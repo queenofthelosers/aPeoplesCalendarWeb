@@ -7,11 +7,11 @@ describe('searchDatabaseByKeyword', () => {
       dayHasEvents: true,
       searchEventsResult: {
         Revolution: [
-          { description: 'testKeyword' },
-          { description: 'testKeyword' },
+          { description: 'testKeyword', title: 'blah' },
+          { description: 'testKeyword', title: '' },
         ],
-        Rebellion: [{ description: 'testKeyword rebellion' }],
-        Labor: [{ description: 'asdf testKeyword' }],
+        Rebellion: [{ description: 'testKeyword rebellion', title: '' }],
+        Labor: [{ description: 'asdf testKeyword', title: '' }],
         Birthdays: [{ description: '' }],
         Assassinations: [{ description: '' }],
         Other: [{ description: '' }],

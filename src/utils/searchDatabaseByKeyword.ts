@@ -5,7 +5,7 @@ import { DatabaseEvent } from './types';
 
 export const searchDatabaseByKeyword = (eventLibrary: any, keyword: string) => {
   // iterate over each day, each day's category, each day's category's list of events,
-  // see if this.state.searchValue is in the event's description
+  // see if searchValue is in the event's description
   // if it is, add that event to the "artificial" day that is created from search results (searchEventsResult)
   // this "day" is then returned and processed as if it were a "day" in the calendar
   const searchEventsResult: any = {
