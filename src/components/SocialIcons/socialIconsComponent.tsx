@@ -30,7 +30,7 @@ export function SocialIcons({ windowWidth }: ISocialIconsProps) {
       {/* <div className='fullNavSocialContainer' style={fullNavMargin}>
         <SocialIcon className='fullNavSocial' url='https://www.facebook.com/aPeoplesCalendar' style={socialIconSize} target='_blank'/>
       </div> */}
-      <div className="fullNavSocialContainer" style={fullNavMargin}>
+      <div className="fullNavSocialContainer" style={fullNavMargin} data-testid="twitterIcon">
         <SocialIcon
           className="fullNavSocial"
           url="https://www.twitter.com/aPeoplesCal"
@@ -38,7 +38,7 @@ export function SocialIcons({ windowWidth }: ISocialIconsProps) {
           target="_blank"
         />
       </div>
-      <div className="fullNavSocialContainer" style={fullNavMargin}>
+      <div className="fullNavSocialContainer" style={fullNavMargin} data-testid="redditIcon">
         <SocialIcon
           className="fullNavSocial"
           url="https://www.reddit.com/r/aPeoplesCalendar"
@@ -47,7 +47,7 @@ export function SocialIcons({ windowWidth }: ISocialIconsProps) {
         />
       </div>
       {windowWidth > 780 && (
-        <div className="fullNavSocialContainer" style={fullNavMargin}>
+        <div className="fullNavSocialContainer" style={fullNavMargin} data-testid="emailIcon">
           <SocialIcon
             className="fullNavSocial"
             url="mailto:apeoplescalendar@gmail.com"
@@ -56,7 +56,7 @@ export function SocialIcons({ windowWidth }: ISocialIconsProps) {
           />
         </div>
       )}
-      <div className="fullNavSocialContainer" style={fullNavMargin}>
+      <div className="fullNavSocialContainer" style={fullNavMargin} data-testid="mobileStoreIcon">
         <MobileStoreButton
           store="android"
           url="https://play.google.com/store/apps/details?id=com.aPeoplesCalendar.aPC&hl=en_US"

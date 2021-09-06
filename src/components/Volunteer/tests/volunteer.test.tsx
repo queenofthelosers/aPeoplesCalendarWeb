@@ -4,8 +4,7 @@ import { Volunteer } from '../volunteer';
 
 describe('Volunteer', () => {
   it('renders text', () => {
-    const { queryByText, debug } = render(<Volunteer />);
-    debug(undefined, 100000);
+    const { queryByText } = render(<Volunteer />);
     expect(
       queryByText(
         'Whether you are a history buff, a developer with feature ideas, or are just someone',
