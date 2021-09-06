@@ -1,5 +1,5 @@
 import { findEventByTitle } from '../findEventByTitle';
-import { mockedEventLibrary } from './mockedConstants';
+import { mockedEventLibrary } from '../../testMocks/mockEventLibrary';
 
 describe('findEventByTitle', () => {
   it('returns when found', () => {

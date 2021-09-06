@@ -1,5 +1,5 @@
 import { searchDatabaseByKeyword } from '../searchDatabaseByKeyword';
-import { mockedEventLibrary } from './mockedConstants';
+import { mockedEventLibrary } from '../../testMocks/mockEventLibrary';
 
 describe('searchDatabaseByKeyword', () => {
   it('finds terms as expected', () => {
