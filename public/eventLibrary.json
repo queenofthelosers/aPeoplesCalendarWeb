@@ -23114,7 +23114,7 @@
         "date": "September 5th, 1917",
         "title": "IWW Headquarters Raided (1917)",
         "imgSrc": "/assets/eventPhotos/Individuals/haywoodMugshot.jpg",
-        "description": "Using the newly passed Espionage Act of 1917 as justification, the Department of Justice raided forty-eight Industrial Workers of the World (IWW) meeting halls on this day in 1917. The Department of Justice, with the approval of President Woodrow Wilson, then proceeded to arrest 165 IWW members for \"conspiring to hinder the draft, encourage desertion, and intimidate others in connection with labor disputes.\"\n\nOf the 165 arrested, only 101 actually stood trial. The trial was unusual in the way that the prosecution did not try to demonstrate the guilt of individuals, but rather to indict the IWW as a whole, by reading inflammatory passages from seized documents; accordingly, the defense testified about the plight of the working man and the evils of capitalism.\n\nAll defendants were found guilty on all charges brought by the prosecution, and many IWW members served several years in prison. Among those convicted was the \"Big Bill\" Haywood, a well-known leader of the IWW, however he skipped bail before his sentencing and fled to the Soviet Union, where he would spend the rest of his life.",
+        "description": "Using the newly passed Espionage Act of 1917 as justification, the Department of Justice raided forty-eight Industrial Workers of the World (IWW) meeting halls on this day in 1917. The Department of Justice, with the approval of President Woodrow Wilson, then proceeded to arrest 165 IWW members for \"conspiring to hinder the draft, encourage desertion, and intimidate others in connection with labor disputes.\"\n\nOf the 165 arrested, only 101 actually stood trial. The trial was unusual in the way that the prosecution did not try to demonstrate the guilt of individuals, but rather to indict the IWW as a whole, by reading inflammatory passages from seized documents; accordingly, the defense testified about the plight of the working man and the evils of capitalism.\n\nAll defendants were found guilty on all charges brought by the prosecution, and many IWW members served several years in prison. Among those convicted was \"Big Bill\" Haywood, a well-known leader of the IWW, however he skipped bail before his sentencing and fled to the Soviet Union, where he would spend the rest of his life.",
         "link": "https://www.nytimes.com/1918/04/01/archives/iww-trial-starts-today-fate-of-syndicalist-movement-in-america.html",
         "infoSrc": "https://depts.washington.edu/iww/justice_dept.shtml",
         "imgAltText": "",
@@ -33278,16 +33278,16 @@
     ],
     "Labor": [
       {
-        "category": "",
-        "date": "",
-        "title": "",
-        "imgSrc": "/assets/eventPhotos/empty.jpg",
-        "description": "",
-        "link": "",
-        "infoSrc": "",
-        "imgAltText": "",
+        "category": "Labor",
+        "date": "December 18th, 2012",
+        "title": "Sierra Leone Police Shoot Miners (2012)",
+        "imgSrc": "/assets/eventPhotos/Events/sierraLeoneKono.jpg",
+        "description": "On this day in 2012, police shot and killed two miners in the Kono District of east Sierra Leone. Workers at the mine, acquired by Israeli billionaire Beny Steinmetz’s Octea Diamond Group in 2003, had walked out against non-payment of bonuses, bad working conditions, and racist treatment.\n\nBefore the strike, Octea had promised a Christmas bonus the equivalent of three months wages, but withdrew the bonus at the minute, leading to the strike action. Following the two worker's deaths, miners stormed the hospital and carried their dead bodies through the streets, vowing revenge.\n\nThe labor strife took place in the context of a national period of unrest. On April 16th, a few months earlier, workers at African Minerals Limited (AML), a mining firm headquartered in London, went on strike in northern Sierra Leone after their demands to government officials went unanswered.\n\nMarching protesters, the most heavily armed carrying rocks, were fired on by police in the town center, killing a 24-year-old woman and wounding eight others. Three officers were injured.\n\nPolice arrested at least 29 people who were held for a day before being released without charge; many alleged they were beaten during their arrest.",
+        "link": "https://libcom.org/blog/police-kill-striking-diamond-miners-sierra-leone-02012013",
+        "infoSrc": "https://www.hrw.org/report/2014/02/19/whose-development/human-rights-abuses-sierra-leones-mining-boom",
+        "imgAltText": "Three workers sifting through water in Sierra Leone's Kono District",
         "NSFW": false,
-        "otd": ""
+        "otd": "On this day in 2012, police shot and killed two workers striking at an Israeli-billionaire owned mine in the Kono District of east Sierra Leone. Miners had walked out against non-payment of bonuses and racist treatment."
       }
     ],
     "Birthdays": [
