@@ -245,5 +245,8 @@ export const EventComponent = ({
 //   if (str.length > 238) {
 //     return { backgroundColor: 'red' };
 //   }
+//   if (str.length < 140) {
+//     return { backgroundColor: 'blue' };
+//   }
 //   return { backgroundColor: 'green' };
 // };
