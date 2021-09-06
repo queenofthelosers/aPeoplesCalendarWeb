@@ -25,7 +25,7 @@ export const findEventByTitle = (eventLibrary: any, title: string) => {
         if (slugTitle === title) {
           // if so, add it to the searchEventsResult object
           searchEventsResult[categoryList[j]][0] = day[categoryList[j]][k];
-          // we can safely assume titles are unique, so if we find a match, we can assign the result to state and stop searching
+          // we can safely assume titles are unique, so if we find a match, we can return stop searching
           return {
             searchEventsResult,
             matched: true,
