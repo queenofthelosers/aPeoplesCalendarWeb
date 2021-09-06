@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import { SocialIcons } from '../socialIconsComponent';
 
-describe('Volunteer', () => {
+describe('SocialIconsComponent', () => {
   it('renders icons big screen', () => {
     const { queryByTestId } = render(<SocialIcons windowWidth={1000} />);
     expect(queryByTestId('twitterIcon')).toBeTruthy();

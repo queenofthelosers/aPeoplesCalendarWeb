@@ -1,8 +1,6 @@
 import React from 'react';
 import '../App/App.css';
-import {
-  NavLink,
-} from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { SocialIcons } from '../SocialIcons/socialIconsComponent';
@@ -12,7 +10,9 @@ interface ISmallNavBarProps {
   windowWidth: number;
 }
 
-export const SmallNavBar = ({ windowWidth }: ISmallNavBarProps): JSX.Element => {
+export const SmallNavBar = ({
+  windowWidth,
+}: ISmallNavBarProps): JSX.Element => {
   const [hamburgerOpen, setHamburgerOpen] = React.useState(false);
 
   const hamburgerMenuPosition = calculateHamburgerPosition(windowWidth);
@@ -28,7 +28,7 @@ export const SmallNavBar = ({ windowWidth }: ISmallNavBarProps): JSX.Element => 
   return (
     <>
       {hamburgerOpen && (
-        <div id="hamburgerOpen" style={{ top: hamburgerMenuPosition }}>
+        <div id="hamburgerOpen" style={{ top: hamburgerMenuPosition }} data-testid="hamburgerMenu">
           <NavLink
             to="/about"
             id="hamburgerAbout"
@@ -65,31 +65,30 @@ export const SmallNavBar = ({ windowWidth }: ISmallNavBarProps): JSX.Element => 
           </a>
         </div>
       )}
-      {windowWidth <= 780 && (
-        <div id="smallNavBarContainer">
-          <NavLink
-            to="/"
-            className="navBarNavLink"
-            id="titleContainer"
-            onClick={closeMenu}
-          >
-            <p id="fullNavTitle">aPC</p>
-          </NavLink>
-          <div>
-            <FontAwesomeIcon
-              icon={faBars}
-              style={{
-                position: 'absolute',
-                top: '15px',
-                left: windowWidth > 500 ? '95px' : '82px',
-                cursor: 'pointer',
-              }}
-              onClick={handleHamburgerClick}
-            />
-          </div>
-          <SocialIcons windowWidth={windowWidth} />
+      <div id="smallNavBarContainer">
+        <NavLink
+          to="/"
+          className="navBarNavLink"
+          id="titleContainer"
+          onClick={closeMenu}
+        >
+          <p id="fullNavTitle">aPC</p>
+        </NavLink>
+        <div>
+          <FontAwesomeIcon
+            icon={faBars}
+            style={{
+              position: 'absolute',
+              top: '15px',
+              left: windowWidth > 500 ? '95px' : '82px',
+              cursor: 'pointer',
+            }}
+            onClick={handleHamburgerClick}
+            data-testid="hamburgerIcon"
+          />
         </div>
-      )}
+        <SocialIcons windowWidth={windowWidth} />
+      </div>
     </>
   );
 };
