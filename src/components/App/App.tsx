@@ -103,9 +103,6 @@ const App = (): JSX.Element => {
         <Route path="/about">
           <About />
         </Route>
-        {/* <Route path='/donate'>
-          <Donate/>
-        </Route> */}
         <Route path="/volunteer">
           <Volunteer />
         </Route>
