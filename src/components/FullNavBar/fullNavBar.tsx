@@ -1,7 +1,5 @@
 import React from 'react';
-import {
-  NavLink,
-} from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 // import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 // import {faAndroid, faApple} from '@fortawesome/free-brands-svg-icons';
 import { SocialIcons } from '../SocialIcons/socialIconsComponent';
@@ -20,9 +18,6 @@ export function FullNavBar({ windowWidth }: IFullNavBarProps) {
         <NavLink to="/about" className="fullNavTextContainer navBarNavLink">
           <p className="fullNavText">About</p>
         </NavLink>
-        {/* <NavLink to='/donate' className='fullNavTextContainer navBarNavLink'>
-            <p className='fullNavText'>Donate</p>
-          </NavLink> */}
         <NavLink to="/volunteer" className="fullNavTextContainer navBarNavLink">
           <p className="fullNavText">Volunteer</p>
         </NavLink>
@@ -31,7 +26,9 @@ export function FullNavBar({ windowWidth }: IFullNavBarProps) {
         </NavLink>
       </div>
       <div id="fullNavRight">
-        <SocialIcons windowWidth={windowWidth} />
+        <SocialIcons
+          windowWidth={windowWidth}
+        />
       </div>
     </div>
   );

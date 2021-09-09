@@ -4,7 +4,7 @@ import homeIcon from '../../assets/apcIconBig.jpg';
 export function IconComponent() {
   return (
     <div>
-      <img src={homeIcon} alt="big icon" />
+      <img src={homeIcon} alt="big icon" data-testid="homeIcon" />
     </div>
   );
 }
