@@ -243,10 +243,10 @@ export const EventComponent = ({
 
 // const testOtd = (str: string) => {
 //   if (str.length > 238) {
-//     return { backgroundColor: 'red' };
+//     return { backgroundColor: 'pink' };
 //   }
 //   if (str.length < 140) {
-//     return { backgroundColor: 'blue' };
+//     return { backgroundColor: 'lightsteelblue' };
 //   }
-//   return { backgroundColor: 'green' };
+//   return { backgroundColor: 'lightgreen' };
 // };
