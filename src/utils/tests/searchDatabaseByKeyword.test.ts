@@ -10,7 +10,7 @@ describe('searchDatabaseByKeyword', () => {
           { description: 'testKeyword', title: 'blah' },
           { description: 'testKeyword', title: '' },
         ],
-        Rebellion: [{ description: 'testKeyword rebellion', title: '' }],
+        Rebellion: [{ description: 'testKeyword rebellion', title: 'qwer' }],
         Labor: [{ description: 'asdf testKeyword', title: '' }],
         Birthdays: [{ description: '' }],
         Assassinations: [{ description: '' }],
