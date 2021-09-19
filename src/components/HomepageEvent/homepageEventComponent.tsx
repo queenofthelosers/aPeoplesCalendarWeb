@@ -133,6 +133,7 @@ export const HomepageEventComponent = ({
                 style={{ width: resizeWidth, height: resizeHeight }}
                 ref={(img) => (imgRef = img)}
                 onLoad={getImgDim}
+                data-testid="homepageImg"
               />
             )}
           </Box>
@@ -184,7 +185,7 @@ export const HomepageEventComponent = ({
               )}
               <div className="links copyButton">
                 <CopyToClipboard onCopy={handleCopy} text={slugifiedTitle}>
-                  <div>
+                  <div data-testid="clickableCopy">
                     {!copied && (
                       <div className="copyWrapper">
                         <FontAwesomeIcon icon={faClipboard} />

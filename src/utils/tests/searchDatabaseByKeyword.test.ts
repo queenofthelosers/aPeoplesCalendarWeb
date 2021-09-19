@@ -10,7 +10,13 @@ describe('searchDatabaseByKeyword', () => {
           { description: 'testKeyword', title: 'blah' },
           { description: 'testKeyword', title: '' },
         ],
-        Rebellion: [{ description: 'testKeyword rebellion', title: 'qwer' }],
+        Rebellion: [
+          {
+            description: 'testKeyword rebellion',
+            title: 'qwer',
+            img: '../assets/howardZinnHeadshot.jpg',
+          },
+        ],
         Labor: [{ description: 'asdf testKeyword', title: '' }],
         Birthdays: [{ description: '' }],
         Assassinations: [{ description: '' }],
@@ -33,8 +39,8 @@ describe('searchDatabaseByKeyword', () => {
         Other: [{ description: '' }],
       },
     };
-    expect(searchDatabaseByKeyword(mockedEventLibrary, 'should not return results')).toEqual(
-      expectedResult,
-    );
+    expect(
+      searchDatabaseByKeyword(mockedEventLibrary, 'should not return results'),
+    ).toEqual(expectedResult);
   });
 });

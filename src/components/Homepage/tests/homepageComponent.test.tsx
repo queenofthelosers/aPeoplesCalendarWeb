@@ -79,5 +79,18 @@ describe('HomepageComponent', () => {
     // shows longest event from eventDatabase day
     expect(queryByText('qwer')).toBeTruthy();
     expect(queryByText('testKeyword rebellion')).toBeTruthy();
+    // need to set up process.env mocking for img url
+    // https://stackoverflow.com/questions/48033841/test-process-env-with-jest
+    // expect(queryByTestId('homepageImage')).toBeTruthy();
+    // click on copy link button
+    expect(queryByText('Copy link')).toBeTruthy();
+    expect(queryByText('Link copied!')).toBeFalsy();
+    const copyButton = queryByTestId('clickableCopy') as HTMLElement;
+    expect(copyButton).toBeTruthy();
+    copyButton.click();
+    // await waitFor(() => {
+    expect(queryByText('Link copied!')).toBeTruthy();
+    // });
+    expect(queryByText('Copy link')).toBeFalsy();
   });
 });
