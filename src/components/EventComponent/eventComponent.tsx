@@ -45,7 +45,7 @@ const StyledTooltip = withStyles({
 // loading condition for image (can see on deep linking)
 // link preview on social media with react-helmet?
 
-interface IEventComponentProps {
+export interface IEventComponentProps {
   initCollapsed: boolean;
   categoryEvent: DatabaseEvent;
   eventDisplayWidth: number;
