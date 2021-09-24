@@ -12,7 +12,7 @@ export function NotFound() {
         <p className="volunteerText centeredText">
           Sorry, looks like the url you tried didn't work for us.
         </p>
-        <p className="volunteerText centeredText" id="bottomP">
+        <p className="volunteerText centeredText" id="bottomP" data-testid="searchTheCalendarButton">
           <NavLink className="volunteerLink" to="/calendar">
             Try searching the calendar
           </NavLink>

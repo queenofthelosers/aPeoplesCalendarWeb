@@ -98,6 +98,7 @@ export default {
   // A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
   moduleNameMapper: {
     '^.+\\.(css|less)$': '<rootDir>/testMocks/cssStub.js',
+    '^.+\\.(jpg|jpeg|png)$': '<rootDir>/testMocks/photoStub.js',
   },
 
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader

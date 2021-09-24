@@ -12,7 +12,7 @@ import { getTodayStringAndInitDateInput } from '../../utils/getTodayStringAndIni
 import { DatabaseEvent } from '../../utils/types';
 import howardHead from '../../assets/howardZinnHeadshot.jpg';
 
-interface IHomepageProps {
+export interface IHomepageProps {
   winDim: {
     width: number;
     height: number;
@@ -95,7 +95,7 @@ export function HomepageComponent({
             <p id="eventOfTheDay">Event of the Day</p>
           </Paper>
           {loading ? (
-            <Skeleton />
+            <Skeleton data-testid="homepageLoadingSkeleton" />
           ) : (
             <HomepageEventComponent
               categoryEvent={eventOfTheDay}

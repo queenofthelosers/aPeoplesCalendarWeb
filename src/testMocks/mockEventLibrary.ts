@@ -3,7 +3,11 @@ export const mockedEventLibrary = {
     Revolution: [{ title: 'blah', description: 'testKeyword' }],
     Rebellion: [
       { title: 'asdf', description: 'unusedKeyword' },
-      { title: '', description: 'testKeyword rebellion' },
+      {
+        title: 'qwer',
+        description: 'testKeyword rebellion',
+        img: '../assets/howardZinnHeadshot.jpg',
+      },
     ],
     Labor: [{ title: '', description: '' }],
     Birthdays: [{ title: '', description: '' }],
