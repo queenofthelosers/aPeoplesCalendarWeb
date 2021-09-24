@@ -128,7 +128,10 @@ export const EventComponent = ({
               {categoryEvent.title}
             </Typography>
             {imgWidth !== 1 && (
-              <StyledTooltip title={categoryEvent.imgAltText} style={{ padding: 5, fontSize: 16 }}>
+              <StyledTooltip
+                title={categoryEvent.imgAltText}
+                style={{ padding: 5, fontSize: 16 }}
+              >
                 <img
                   className="eventImg"
                   src={`${process.env.PUBLIC_URL}${categoryEvent.imgSrc}`}
@@ -190,7 +193,10 @@ export const EventComponent = ({
               ))}
             </div>
             <Box style={{ display: 'flex', justifyContent: 'center' }}>
-              <IconButton onClick={handleExpandCollapse}>
+              <IconButton
+                data-testid="expandCollapseIcon"
+                onClick={handleExpandCollapse}
+              >
                 <ExpandLess />
               </IconButton>
             </Box>
@@ -216,7 +222,11 @@ export const EventComponent = ({
                 <div className="emptyLink" />
               )}
               <div className="links copyButton">
-                <CopyToClipboard onCopy={handleCopy} text={slugifiedTitle}>
+                <CopyToClipboard
+                  onCopy={handleCopy}
+                  text={slugifiedTitle}
+                  data-testid="copyToClipboard"
+                >
                   <div>
                     {!copied && (
                       <div className="copyWrapper">

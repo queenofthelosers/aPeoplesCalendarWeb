@@ -4,19 +4,6 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { EventComponent, IEventComponentProps } from '../eventComponent';
 import { DatabaseEvent } from '../../../utils/types';
 
-// let mockDateGetter: any;
-
-// jest.mock('../../../utils/getTodayStringAndInitDateInput', () => {
-//   mockDateGetter = jest.fn(() => {
-//     return { initTodayString: '1-1' };
-//   });
-
-//   return {
-//     __esModule: true,
-//     getTodayStringAndInitDateInput: mockDateGetter,
-//   };
-// });
-
 describe('EventComponent', () => {
   let props: IEventComponentProps;
   let mockedEvent: DatabaseEvent;
@@ -38,24 +25,81 @@ describe('EventComponent', () => {
         width: 1000,
         height: 1000,
       },
-      initCollapsed: false,
+      initCollapsed: true,
       categoryEvent: mockedEvent,
       eventDisplayWidth: 500,
       paragraphs: ['asdf', 'qwer', 'zxcv'],
     };
     jest.clearAllMocks();
   });
-  it('renders', () => {
-    // const loadingProps: IEventComponentProps = {
-    //   ...props,
-    // };
-    const { queryByText } = render(
+  it('renders, collapses and expands', () => {
+    const {
+      queryByText,
+      queryByAltText,
+      queryByTestId,
+    } = render(
       <Router>
         <EventComponent {...props} />
       </Router>,
     );
-    // still shows text while loading
+    expect(queryByText('eventTitle')).toBeTruthy();
     expect(queryByText('on this day statement')).toBeTruthy();
-    expect(queryByText(`A People's Calendar`)).toBeTruthy();
+    expect(queryByAltText(`imgAltText`)).toBeTruthy();
+    expect(queryByText('qwer')).toBeTruthy();
+    expect(queryByText('asdf')).toBeTruthy();
+    expect(queryByText('zxcv')).toBeTruthy();
+    expect(queryByText('Source')).toBeTruthy();
+    expect(queryByText('More Info')).toBeTruthy();
+    const expandIcon = queryByTestId('expandCollapseIcon') as HTMLElement;
+    expect(expandIcon).toBeTruthy();
+    expandIcon.click();
+    expect(queryByText('on this day statement')).toBeFalsy();
+    const copyToClipboard = queryByTestId('copyToClipboard') as HTMLElement;
+    expect(copyToClipboard).toBeTruthy();
+    expect(queryByText('Copy link')).toBeTruthy();
+    expect(queryByText('Link copied!')).toBeFalsy();
+    copyToClipboard.click();
+    expect(queryByText('Copy link')).toBeFalsy();
+    expect(queryByText('Link copied!')).toBeTruthy();
+    const collapseIcon = queryByTestId('expandCollapseIcon') as HTMLElement;
+    expect(collapseIcon).toBeTruthy();
+    collapseIcon.click();
+    expect(queryByText('eventTitle')).toBeTruthy();
+  });
+  it('renders open', () => {
+    const newProps = {
+      ...props,
+      initCollapsed: false,
+      categoryEvent: {
+        ...mockedEvent,
+        link: 'infoSrc.com',
+      },
+    };
+    const {
+      queryByText,
+      queryByAltText,
+      queryByTestId,
+    } = render(
+      <Router>
+        <EventComponent {...newProps} />
+      </Router>,
+    );
+    expect(queryByText('eventTitle')).toBeTruthy();
+    expect(queryByText('on this day statement')).toBeFalsy();
+    expect(queryByAltText(`imgAltText`)).toBeTruthy();
+    expect(queryByText('qwer')).toBeTruthy();
+    expect(queryByText('asdf')).toBeTruthy();
+    expect(queryByText('zxcv')).toBeTruthy();
+    expect(queryByText('Source')).toBeTruthy();
+    // missing second link
+    expect(queryByText('More Info')).toBeFalsy();
+    const collapseIcon = queryByTestId('expandCollapseIcon') as HTMLElement;
+    expect(collapseIcon).toBeTruthy();
+    collapseIcon.click();
+    expect(queryByText('on this day statement')).toBeTruthy();
+    const expandIcon = queryByTestId('expandCollapseIcon') as HTMLElement;
+    expect(expandIcon).toBeTruthy();
+    expandIcon.click();
+    expect(queryByText('on this day statement')).toBeFalsy();
   });
 });
