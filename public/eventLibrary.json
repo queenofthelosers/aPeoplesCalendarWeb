@@ -6520,16 +6520,16 @@
     ],
     "Rebellion": [
       {
-        "category": "",
-        "date": "",
-        "title": "",
-        "imgSrc": "/assets/eventPhotos/empty.jpg",
-        "description": "",
-        "link": "",
-        "infoSrc": "",
-        "imgAltText": "",
+        "category": "Rebellion",
+        "date": "March 13th, 1957",
+        "title": "Havana Presidential Palace Attack (1957)",
+        "imgSrc": "/assets/eventPhotos/Events/havanaPalaceAttack.jpg",
+        "description": "On this day in 1957, the Directorio Revoluncionari Estudiantil, a group of anti-Batista, revolutionary Cuban students, attacked the presidential palace in Havana in a failed attempt to kill Fulgencio Batista and overthrow the government.\n\nParticipants of the attack successfully stormed the palace, making it to the third floor and killing many of Batista's personal guards, but failed to locate and kill Batista himself. The rebellion was successfully quelled, and two of the revolutionaries were put on trial; the rest were either killed or escaped.\n\nA large pro-Batista rally, attended by ~250,000 people, took place on April 7th. Signs read \"For Batista, in the Past, Now and Forever\" and \"Five Hundred American Residents of the Isle of Pines Have Faith in Batista.\"\n\nOn January 22nd, 1959, Fidel Castro stated to journalists that individual-focused acts such as the palace attack are \"false concepts about the revolution\" because \"tyranny is not a man; tyranny is a system...We were never supporters of tyrannicide or military coups, [which tended] to inculcate the people a complex of impotence.\"",
+        "link": "https://www.radiotelevisionmarti.com/a/cuando-los-universitarios-cubanos-se-levantaron-contra-el-gobernante-de-cuba/260147.html",
+        "infoSrc": "https://en.wikipedia.org/wiki/Havana_Presidential_Palace_attack_(1957)",
+        "imgAltText": "Two men, armed with rifles, participating in the palace attack in Havana on March 13th, 1957",
         "NSFW": false,
-        "otd": ""
+        "otd": "On this day in 1957, the Directorio Revoluncionari Estudiantil, a group of anti-Batista, revolutionary Cuban students, attacked the presidential palace in Havana in a failed attempt to kill Fulgencio Batista and overthrow the government."
       }
     ],
     "Labor": [
@@ -26356,12 +26356,12 @@
         "date": "October 5th, 1923",
         "title": "Philip Berrigan (1923 - 2002)",
         "imgSrc": "/assets/eventPhotos/Individuals/philipBerrigan.jpg",
-        "description": "Philip Francis Berrigan, born on this day in 1923, was an American peace activist and Roman Catholic priest. He engaged in nonviolence civil disobedience in the cause of peace and nuclear disarmament and was often arrested. He married a former nun who was also an activist, Elizabeth McAlister, in 1972. Both were both excommunicated by the Catholic church, and eleven years of their twenty-nine year marriage were separated by one or both serving time in prison.\n\nBerrigan frequently engaged in civil disobedience to protest the Vietnam War. On May 17th, while out of bail from a similar act six months prior, Berrigan and eight other Catholic activists walked into the offices of the local draft board in Catonsville, Maryland, removed 600 draft records, doused them in napalm, and burnt them in a lot outside of the building.\n\nThe group issued a statement, saying \"We confront the Roman Catholic Church, other Christian bodies, and the synagogues of America with their silence and cowardice in the face of our country's crimes. We are convinced that the religious bureaucracy in this country is racist, is an accomplice in this war, and is hostile to the poor.\" All nine were sentenced to three years in prison.",
+        "description": "Philip Francis Berrigan, born on this day in 1923, was a radical Christian peace activist who was excommunicated by the Catholic Church for his civil disobedience during the Vietnam War.\n\nBerrigan engaged in nonviolent civil disobedience for the cause of peace and nuclear disarmament, and was frequently arrested or on the run from police. He married a former nun who was also an activist, Elizabeth McAlister, in 1972. Both were both excommunicated by the Catholic church, and eleven years of their twenty-nine year marriage were separated by one or both serving time in prison.\n\nBerrigan frequently engaged in civil disobedience to protest the Vietnam War. On May 17th, while out of bail from a similar act six months prior, Berrigan and eight other radical Christians walked into the offices of the local draft board in Catonsville, Maryland, removed 600 draft records, doused them in napalm, and burnt them in a lot outside of the building.\n\nThe group issued a statement, saying \"We confront the Roman Catholic Church, other Christian bodies, and the synagogues of America with their silence and cowardice in the face of our country's crimes. We are convinced that the religious bureaucracy in this country is racist, is an accomplice in this war, and is hostile to the poor.\" All nine were sentenced to three years in prison.\n\n\"The poor tell us who we are, the prophets tell us who we could be, so we hide the poor, and kill the prophets.\"\n\n- Philip Berigan",
         "link": "https://www.americanswhotellthetruth.org/portraits/philip-berrigan",
         "infoSrc": "https://en.wikipedia.org/wiki/Philip_Berrigan",
         "imgAltText": "",
         "NSFW": false,
-        "otd": "Philip Francis Berrigan, born on this day in 1923, was an American peace activist and Roman Catholic priest."
+        "otd": "Philip Berrigan, born on this day in 1923, was a radical Christian peace activist who was excommunicated by the Catholic Church and frequently arrested for his acts of civil disobedience during the Vietnam War."
       }
     ],
     "Assassinations": [
@@ -26384,12 +26384,12 @@
         "date": "October 5th, 1813",
         "title": "Battle of the Thames (1813)",
         "imgSrc": "/assets/eventPhotos/Events/battleThames.png",
-        "description": "Tecumseh (1768 - 1813) was a Native American Shawnee warrior and chief who became the primary leader of a large, multi-tribal confederacy in the early 19th century.\n\nGrowing up during the American Revolutionary War and the Northwest Indian War, Tecumseh was exposed to warfare and envisioned the establishment of an independent Native American nation east of the Mississippi River under British protection, and established a confederacy of tribes to fight off colonization efforts.\n\nOn this day in 1813, Tecumseh and his second in command Roundhead were killed in the \"Battle of the Thames\", fought as part of the War of 1812 between America and Tecumseh's Confederacy and British allies. Tecumseh's death resulted in the dissolution of his tribal alliances, and led many Native Americans to begin moving west to escape colonization, across the Mississippi River.",
+        "description": "Tecumseh (1768 - 1813) was a Shawnee warrior and chief who became the primary leader of a large, multi-tribal confederacy in the early 19th century.\n\nGrowing up during the American Revolutionary War and the Northwest Indian War, Tecumseh was exposed to warfare and envisioned the establishment of an independent Native American nation east of the Mississippi River under British protection, and established a confederacy of tribes to fight off colonization efforts.\n\nOn this day in 1813, Tecumseh and his second in command Roundhead were killed in the \"Battle of the Thames\", fought as part of the War of 1812 between America and Tecumseh's Confederacy and British allies.\n\nTecumseh's death resulted in the dissolution of his tribal alliances, and led to many indigenous peoples to begin moving west to escape colonization, across the Mississippi River.",
         "link": "https://www.britannica.com/event/Battle-of-the-Thames",
         "infoSrc": "https://en.wikipedia.org/wiki/Battle_of_the_Thames",
         "imgAltText": "",
         "NSFW": false,
-        "otd": "On this day in 1813, Tecumseh and his second in command Roundhead were killed in the \"Battle of the Thames\", fought as part of the War of 1812 between America and Tecumseh's Confederacy and British allies."
+        "otd": "On this day in 1813, Tecumseh was killed in the \"Battle of the Thames\", fought during the War of 1812 between America and Tecumseh's Confederacy. Tecumseh's death led to the dissolution of the alliances he forged."
       }
     ]
   },
@@ -26442,24 +26442,24 @@
         "date": "October 6th, 1917",
         "title": "Fannie Lou Hamer (1917 - 1977)",
         "imgSrc": "/assets/eventPhotos/Individuals/fannieLouHamer.jpg",
-        "description": "Fannie Lou Hamer, born on this day in 1917, was an American voting and women's rights activist, community organizer, and a leader in the civil rights movement. She was the co-founder and vice-chair of the Freedom Democratic Party, which she represented at the 1964 Democratic National Convention. She was also a co-founder of the National Women's Political Caucus, an organization created to recruit, train, and support women of all races who wish to seek election to government office.\n\nWhile having surgery in 1961 to remove a tumor, 44-year-old Hamer was also given a hysterectomy without consent by a white doctor; this was a frequent occurrence under Mississippi's compulsory sterilization plan to reduce the number of poor black people in the state. Hamer is credited with coining the phrase \"Mississippi appendectomy\" as a euphemism for the involuntary or uninformed sterilization of black women, common in the South in the 1960s.\n\nHamer was extorted, threatened, harassed, shot at, and assaulted by white supremacists and police while trying to register for and exercise her right to vote. She later helped and encouraged thousands of African-Americans in Mississippi to become registered voters, and helped hundreds of disenfranchised people in her area through her work in programs like the Freedom Farm Cooperative, which she formed to subvert state oppression of black people in the agricultural industry.",
+        "description": "Fannie Lou Hamer, born on this day in 1917, was an American voting and women's rights activist, community organizer, and a leader in the civil rights movement. She was the co-founder and vice-chair of the Freedom Democratic Party, which she represented at the 1964 Democratic National Convention. She was also a co-founder of the National Women's Political Caucus, an organization created to recruit, train, and support women of all races who wish to seek election to government office.\n\nWhile having surgery in 1961 to remove a tumor, 44-year-old Hamer was also given a hysterectomy without consent by a white doctor; this was a frequent occurrence under Mississippi's compulsory sterilization plan to reduce the number of poor black people in the state. Hamer is credited with coining the phrase \"Mississippi appendectomy\" as a euphemism for the involuntary or uninformed sterilization of black women, common in the South in the 1960s.\n\nHamer was extorted, threatened, harassed, shot at, and assaulted by white supremacists and police while trying to register for and exercise her right to vote.\n\nShe later helped and encouraged thousands of African-Americans in Mississippi to become registered voters, and helped hundreds of disenfranchised people in her area through her work in programs like the Freedom Farm Cooperative, which she formed to subvert state oppression of black people in the agricultural industry.\n\n\"Nobody's free until everybody's free.\"\n\n- Fannie Lou Hamer",
         "link": "https://americanarchive.org/catalog/cpb-aacip_28-bg2h70895r",
         "infoSrc": "https://en.wikipedia.org/wiki/Fannie_Lou_Hamer",
         "imgAltText": "",
         "NSFW": false,
-        "otd": "Fannie Lou Hamer, born on this day in 1917, was an American voting and women's rights activist, community organizer, and a leader in the civil rights movement."
+        "otd": "Fannie Lou Hamer, born on this day in 1917, was an American civil rights activist, community organizer, and leader in the civil rights movement."
       },
       {
         "category": "Birthdays",
         "date": "October 6th, 1885",
         "title": "\"Smiling Joe\" Ettor (1885 - 1948)",
         "imgSrc": "/assets/eventPhotos/Individuals/joeEttor.jpg",
-        "description": "Joseph James \"Smiling Joe\" Ettor, born on this day in 1885, was an Italian-American industrial union organizer who, in the middle-1910s, was one of the leading public faces of the Industrial Workers of the World (IWW). Although he is best remembered for his role in the Lawrence Textile Strike of 1912, Ettor had been active in several strikes in the years leading up to it. He was also governing General Executive Board of the IWW from 1908-1914.\n\nEttor was particularly useful for organizing immigrant workers because he could speak five languages, and he used these skills as a leader of the Lawrence Textile Strike. During the strike, a worker was shot and killed, and he and the other IWW leader present, Arturo Giovannitti, were arrested as accomplices on little to no evidence. The arrests were controversial, and both were eventually acquitted of charges of having been an accessory to the murder.",
+        "description": "Joseph James \"Smiling Joe\" Ettor, born on this day in 1885, was an Italian-American industrial union organizer who, in the middle-1910s, was one of the leading public faces of the Industrial Workers of the World (IWW). Although he is best remembered for his role in the Lawrence Textile Strike of 1912, Ettor had been active in several strikes in the years leading up to it. He was also governing General Executive Board of the IWW from 1908-1914.\n\nEttor was particularly useful for organizing immigrant workers because he could speak five languages, and he used these skills as a leader of the Lawrence Textile Strike. During the strike, a worker was shot and killed, and he and the other IWW leader present, Arturo Giovannitti, were arrested as accomplices on scarce evidence.\n\nThe arrests were controversial, and both were eventually acquitted of charges of having been an accessory to the murder. Ettor was one of the leaders of the Waiters strike of 1912 in New York City, and the Brooklyn barbers strike of 1913.\n\n\"If the workers of the world want to win, all they have to do is recognize their own solidarity. They have nothing to do but fold their arms and the world will stop. The workers are more powerful with their hands in their pockets than all the property of the capitalists.\"\n\n- Joe Ettor",
         "link": "https://libcom.org/history/joseph-ettor-1885-1948",
         "infoSrc": "https://en.wikipedia.org/wiki/Joseph_James_Ettor",
         "imgAltText": "",
         "NSFW": false,
-        "otd": "Joseph James \"Smiling Joe\" Ettor, born on this day in 1885, was an Italian-American industrial union organizer who, in the middle-1910s, was one of the leading public faces of the Industrial Workers of the World (IWW)."
+        "otd": "Joseph \"Smiling Joe\" Ettor, born on this day in 1885, was an Italian-American industrial union organizer who, in the middle-1910s, was one of the leading public faces of the Industrial Workers of the World (IWW)."
       }
     ],
     "Assassinations": [
@@ -26512,7 +26512,7 @@
         "date": "October 7th, 2019",
         "title": "Chilean Protests and Strikes (2019-20)",
         "imgSrc": "/assets/eventPhotos/Events/chileProtests.jpg",
-        "description": "On this day in 2019, protests and riots began throughout Chile in response to a raise in the Santiago Metro's subway fare, the increased cost of living, privatization and inequality prevalent in the country.\n\nThe protests have been called the \"worst civil unrest\" in Chile since the end of Augusto Pinochet's military dictatorship due to the scale of damage to public infrastructure, the number of protesters, and the measures taken by the government to put down the rebellion.\n\nOn the 25th of October, over a million people took to the streets throughout Chile to protest against President Pi\u00f1era, demanding his resignation. As of December 29th, 2019, 29 people have died, nearly 2,500 have been injured, and 2,840 have been arrested. Human rights organizations have received several reports of violations conducted against protesters by security forces, including torture, sexual abuse and sexual assault.",
+        "description": "On this day in 2019, protests and riots began throughout Chile in response to a raise in the Santiago Metro's subway fare, the increased cost of living, privatization and inequality prevalent in the country.\n\nThe protests have been called the \"worst civil unrest\" in Chile since the end of Augusto Pinochet's military dictatorship due to the scale of damage to public infrastructure, the number of protesters, and the measures taken by the government to put down the rebellion.\n\nOn the 25th of October, over a million people took to the streets throughout Chile to protest against President Pi\u00f1era, demanding his resignation. As of December 29th, 2019, 29 people have died, nearly 2,500 have been injured, and 2,840 have been arrested.\n\nHuman rights organizations have received several reports of violations conducted against protesters by security forces, including torture, sexual abuse and sexual assault.",
         "link": "https://www.bbc.com/news/world-latin-america-50191746",
         "infoSrc": "https://en.wikipedia.org/wiki/2019%E2%80%932020_Chilean_protests",
         "imgAltText": "",
@@ -26540,36 +26540,36 @@
         "date": "October 7th, 1967",
         "title": "Michelle Alexander (1967 - )",
         "imgSrc": "/assets/eventPhotos/Individuals/michelleAlexander.jpg",
-        "description": "Michelle Alexander, born on this day in 1967, is a writer, civil rights advocate, and visiting professor at Union Theological Seminary. She is best known for her 2010 book \"The New Jim Crow: Mass Incarceration in the Age of Colorblindness\" and is an opinion columnist for The New York Times.\n\nIn \"The New Jim Crow\", Alexander describes how oppressed minorities are \"subject to legalized discrimination in employment, housing, public benefits, and jury service, just as their parents, grandparents, and great-grandparents once were\". Alexander makes a compelling case for how \"people whose only crime is drug addiction or possession of a small amount of drugs for recreational use\" find themselves permanently locked out of the mainstream society, as well as the racial biases of how the drug war has been waged.",
+        "description": "Michelle Alexander, born on this day in 1967, is a writer, civil rights advocate, and visiting professor at Union Theological Seminary. She is best known for her 2010 book \"The New Jim Crow: Mass Incarceration in the Age of Colorblindness\" and is an opinion columnist for The New York Times.\n\nIn \"The New Jim Crow\", Alexander describes how oppressed minorities are \"subject to legalized discrimination in employment, housing, public benefits, and jury service, just as their parents, grandparents, and great-grandparents once were\".\n\nIn the text, Alexander makes a case for how \"people whose only crime is drug addiction or possession of a small amount of drugs for recreational use\" find themselves permanently locked out of the mainstream society, as well illustrating, with legal detail, the racial biases of how the drug war has been waged.\n\n\"The genius of the current caste system, and what most distinguishes it from its predecessors, is that it appears voluntary. People choose to commit crimes, and that's why they are locked up or locked out, we are told.\"\n\n- Michelle Alexander",
         "link": "https://www.americanswhotellthetruth.org/portraits/michelle-alexander",
         "infoSrc": "https://en.wikipedia.org/wiki/Michelle_Alexander",
         "imgAltText": "",
         "NSFW": false,
-        "otd": "Michelle Alexander, born on this day in 1967, is a writer, civil rights advocate, and visiting professor at Union Theological Seminary."
+        "otd": "Michelle Alexander, born on this day in 1967, is a civil rights advocate and visiting professor at Union Theological Seminary. In 2010, she published \"The New Jim Crow\", which provided an influential analysis of the modern carceral state."
       },
       {
         "category": "Birthdays",
         "date": "October 7th, 1931",
         "title": "Desmond Tutu (1931 - )",
         "imgSrc": "/assets/eventPhotos/Individuals/desmondTutu.jpg",
-        "description": "Desmond Mpilo Tutu, born on this day in 1931, is a South African Anglican cleric and theologian known for his work as an anti-apartheid and human rights activist.\n\nHe was the Bishop of Johannesburg from 1985 to 1986 and then the Archbishop of Cape Town from 1986 to 1996, in both cases being the first black African to hold the position. Theologically, he sought to fuse ideas from black theology with African theology.",
+        "description": "Desmond Mpilo Tutu, born on this day in 1931, is a South African Anglican cleric and theologian known for his work as an anti-apartheid and human rights activist.\n\nHe was the Bishop of Johannesburg from 1985 to 1986 and then the Archbishop of Cape Town from 1986 to 1996, in both cases being the first black African to hold the position. Theologically, he sought to fuse ideas from black theology with African theology.\n\nTutu testified on behalf of a captured cell of Umkhonto we Sizwe, an armed anti-apartheid group linked to the African National Congress (ANC), banned at the time in South Africa. He stated that, although he was committed to non-violence and censured those on all sides who used violence, he could understand why black Africans would become violent when their non-violent tactics had failed to overturn apartheid\n\nTutu also signed a petition calling for the release of ANC activist Nelson Mandela, leading to a correspondence between the pair.\n\n\"I am not interested in picking up crumbs of compassion thrown from the table of someone who considers himself my master. I want the full menu of rights.\"\n\n- Desmond Tutu",
         "link": "https://www.pbs.org/wgbh/pages/frontline/shows/mandela/interviews/tutu.html",
         "infoSrc": "https://en.wikipedia.org/wiki/Desmond_Tutu",
         "imgAltText": "",
         "NSFW": false,
-        "otd": "Desmond Mpilo Tutu, born on this day in 1931, is a South African Anglican cleric and theologian known for his work as an anti-apartheid and human rights activist."
+        "otd": "Desmond Mpilo Tutu, born on this day in 1931, is a South African Anglican cleric and theologian known for his work as a human rights activist. Although committed to non-violence, he testified on behalf of violent anti-apartheid activists."
       },
       {
         "category": "Birthdays",
         "date": "October 7th, 1879",
         "title": "Joe Hill (1879 - 1915)",
         "imgSrc": "/assets/eventPhotos/Individuals/joeHill.jpg",
-        "description": "Joe Hill, born on this day in 1879, was a Swedish-American labor activist, songwriter, and member of the Industrial Workers of the World (IWW).\n\nHill, an immigrant worker frequently facing unemployment and underemployment, became a popular songwriter and cartoonist for the union. His most famous songs include \"The Preacher and the Slave\", \"There Is Power in a Union\", and \"Casey Jones - the Union Scab\", which describes the harsh lives itinerant workers, and call for them to organize to improve their working conditions.\n\nIn 1914, John G. Morrison, a Salt Lake City area grocer and former policeman, and his son were shot and killed by two men. The same evening, Hill arrived at a doctor's office with a gunshot wound, and briefly mentioned a fight over a woman. He refused to explain further, even after he was accused of the grocery store murders on the basis of his injury.\n\nHill was convicted of the murders in a controversial trial and executed on November 19th, despite widespread calls for clemency, including from President Woodrow Wilson and Helen Keller.",
+        "description": "Joe Hill, born on this day in 1879, was a Swedish-American labor organizer, songwriter, and member of the Industrial Workers of the World (IWW).\n\nHill, an immigrant worker frequently facing unemployment and underemployment, became a popular songwriter and cartoonist for the union. His most famous songs include \"The Preacher and the Slave\", \"There Is Power in a Union\", and \"Casey Jones - the Union Scab\", which describes the harsh lives itinerant workers, and call for them to organize to improve their working conditions.\n\nIn 1914, John G. Morrison, a Salt Lake City area grocer and former policeman, and his son were shot and killed by two men. The same evening, Hill arrived at a doctor's office with a gunshot wound, and briefly mentioned a fight over a woman. He refused to explain further, even after he was accused of the grocery store murders on the basis of his injury.\n\nHill was convicted of the murders in a controversial trial and executed on November 19th, despite widespread calls for clemency, including from President Woodrow Wilson and Helen Keller.\n\n\"I will die like a true-blue rebel. Don't waste any time in mourning - organize.\"\n\n- Joe Hill",
         "link": "https://aflcio.org/about/history/labor-history-people/joe-hill",
         "infoSrc": "https://en.wikipedia.org/wiki/Joe_Hill",
         "imgAltText": "",
         "NSFW": false,
-        "otd": "Joe Hill, born on this day in 1879, was a Swedish-American labor activist, songwriter, and member of the Industrial Workers of the World (IWW)."
+        "otd": "Joe Hill, born on this day in 1879, was a Swedish-American labor organizer, songwriter, and member of the Industrial Workers of the World (IWW). In 1915, he was convicted of murder in a controversial and executed by the state."
       }
     ],
     "Assassinations": [
@@ -26648,12 +26648,12 @@
         "date": "October 8th, 1923",
         "title": "West Coast Longshore Strike (1923)",
         "imgSrc": "/assets/eventPhotos/Locations/vancouverCanada.png",
-        "description": "On this day in 1923, the 1,400 members of the International Longshoremen's Association (ILA) in Vancouver struck for higher wages. The Shipping Federation imported strikebreakers, housed in the CPR ship Empress of Japan, while an armed group of 350 men guarded the waterfront from potential interference from striking workers.\n\nThe longshoremen gave up on December 10th, and the Shipping Federation took over the dispatch of the work force, formerly controlled by the union, and set up a company union, the \"Vancouver and District Waterfront Workers Association. This union went on to lead the more well-known West Coast Longshore Strike of 1935.",
+        "description": "On this day in 1923, 1,400 members of the International Longshoremen's Association (ILA) in Vancouver struck for higher wages. The Shipping Federation imported strikebreakers, housed in the CPR ship Empress of Japan, while an armed group of 350 men guarded the waterfront from potential interference from striking workers.\n\nThe longshoremen gave up on December 10th, and the Shipping Federation took over the dispatch of the work force, formerly controlled by the union, and set up a company union, the \"Vancouver and District Waterfront Workers Association\". This union went on to lead the more well-known West Coast Longshore Strike of 1935.",
         "link": "https://www.thecanadianencyclopedia.ca/en/article/west-coast-longshore-strikes-1923-and-1935",
         "infoSrc": "https://www.thecanadianencyclopedia.ca/en/article/west-coast-longshore-strikes-1923-and-1935",
         "imgAltText": "",
         "NSFW": false,
-        "otd": "On this day in 1923, the 1,400 members of the International Longshoremen's Association (ILA) in Vancouver struck for higher wages."
+        "otd": "On this day in 1923, the International Longshoremen's Association (ILA) in Vancouver struck for higher wages. With a force of 350 company guards protecting the dock and scabs, work continued until the strike's defeat in December."
       }
     ],
     "Birthdays": [
@@ -26687,7 +26687,7 @@
     "Other": [
       {
         "category": "Other",
-        "date": "October 8th, 2013",
+        "date": "October 8th, 2013*",
         "title": "Socialist Rifle Association Founded (2013)",
         "imgSrc": "/assets/eventPhotos/Organizations/SRA.png",
         "description": "*Although Wikipedia listed the founding day as October 10th, Kansas state records cited on the page show the organization as legally founded on October 8th\n\nThe Socialist Rifle Association (SRA), founded on this day in 2013, is an American socialist firearm organization that is dedicated to \"providing working class people the information they need to be effectively armed for self and community defense\".\n\nThe SRA describes the mission of their organization as \"to provide an alternate to the mainstream, toxic, right-wing, and non-inclusive gun culture that has dominated the firearms community for decades. We seek to provide a safe, inclusive, and left-leaning platform for talking about gun rights and self defense, free from racist and reactionary prejudices, while providing a platform for the working class to obtain the skills necessary for all aspects of community defense\".",
@@ -26695,7 +26695,7 @@
         "infoSrc": "https://en.wikipedia.org/wiki/Socialist_Rifle_Association",
         "imgAltText": "",
         "NSFW": false,
-        "otd": "The Socialist Rifle Association (SRA), founded on this day in 2013, is an American socialist firearm organization that is dedicated to \"providing working class people the information they need to be effectively armed for self and community defense\"."
+        "otd": "The Socialist Rifle Association (SRA), founded on this day in 2013, is a firearm organization that is dedicated to \"providing working class people the information they need to be effectively armed for self and community defense\"."
       }
     ]
   },
@@ -26739,7 +26739,7 @@
         "infoSrc": "https://libcom.org/history/november-we-remember-centennial-1912-little-falls-textile-strike-brendan-maslauskas-dunn",
         "imgAltText": "Little Falls textile strikers in front of the strike headquarters (Slovak Hall)",
         "NSFW": false,
-        "otd": "On this day in 1912, Phoenix Mill workers in Little Falls, Maine spontaneously walked off their job to demand a wage increase and a 54-hour work week."
+        "otd": "On this day in 1912, Phoenix Mill workers in Little Falls, Maine spontaneously walked off their job to demand a wage increase and a 54-hour work week. With IWW assistance, workers won their demands in January 1913."
       }
     ],
     "Birthdays": [
@@ -26762,12 +26762,12 @@
         "date": "October 9th, 1967",
         "title": "Che Guevara (1928 - 1967)",
         "imgSrc": "/assets/eventPhotos/Individuals/cheGuevara.jpg",
-        "description": "Ernesto \"Che\" Guevara was an Argentine Marxist revolutionary, physician, author, guerrilla leader, diplomat, and military theorist. A major figure of the Cuban Revolution, his stylized visage has become a ubiquitous countercultural symbol of rebellion and global insignia in popular culture.\n\nAfter serving in Castro's government, Guevara left Cuba in 1965 to foment revolution abroad, first unsuccessfully in Congo-Kinshasa and later in Bolivia. While agitating for communist revolution in Bolivia, Guevara was captured by CIA-assisted state forces and summarily executed on this day in 1967.\n\nOn November 3rd, 1966, Guevara had secretly arrived in La Paz on a flight from Montevideo under the false name Adolfo Mena Gonz\u00e1lez, posing as a middle-aged Uruguayan businessman working for the Organization of American States. Once there, Guevara had difficulty getting cooperation from both local dissidents and the Bolivian Communist Party, despite besting the Bolivian military in several skirmishes.\n\nMany of the inhabitants willingly informed the Bolivian authorities and military about the guerrillas and their movements in the area, which led directly to Guevara's capture on October 7th, 1967. He famously shouted \"Do not shoot! I am Che Guevara and I am worth more to you alive than dead!\", however he remained defiant in captivity. On October 9th, on orders from the Bolivian President Ren\u00e9 Barrientos, Guevara was executed.",
+        "description": "Ernesto \"Che\" Guevara was an Argentine Marxist revolutionary, physician, author, guerrilla leader, diplomat, and military theorist. A major figure of the Cuban Revolution, his stylized visage has become a ubiquitous countercultural symbol of rebellion and global insignia in popular culture.\n\nAfter serving in Castro's government, Guevara left Cuba in 1965 to foment revolution abroad, first unsuccessfully in Congo-Kinshasa and later in Bolivia. While agitating for communist revolution in Bolivia, Guevara was captured by CIA-assisted state forces and summarily executed on this day in 1967.\n\nOn November 3rd, 1966, Guevara had secretly arrived in La Paz on a flight from Montevideo under the false name Adolfo Mena Gonz\u00e1lez, posing as a middle-aged Uruguayan businessman working for the Organization of American States. Once there, Guevara had difficulty getting cooperation from both local dissidents and the Bolivian Communist Party, despite besting the Bolivian military in several skirmishes.\n\nMany of the inhabitants willingly informed the Bolivian authorities and military about the guerrillas and their movements in the area, which led directly to Guevara's capture on October 7th, 1967. He famously shouted \"Do not shoot! I am Che Guevara and I am worth more to you alive than dead!\", however he remained defiant in captivity.\n\nOn October 9th, on orders from the Bolivian President Ren\u00e9 Barrientos, Guevara was executed.\n\n\"The true revolutionary is guided by a great feeling of love. It is impossible to think of a genuine revolutionary lacking this quality.\"\n\n- Che Guevara",
         "link": "https://www.thenation.com/article/archive/the-death-of-che-guevara-declassified/",
         "infoSrc": "https://en.wikipedia.org/wiki/Che_Guevara",
         "imgAltText": "",
         "NSFW": false,
-        "otd": "While agitating for communist revolution in Bolivia, Guevara was captured by CIA-assisted state forces and summarily executed on this day in 1967."
+        "otd": "On this day in 1967, communist revolutionary Che Guevara was executed by CIA-assisted forces in Bolivia, where he had been attempting to foment revolution. \"Shoot, coward, you are only going to kill a man.\""
       }
     ],
     "Other": [
@@ -26820,12 +26820,12 @@
         "date": "October 10th, 1947",
         "title": "West African Railway Strike (1947)",
         "imgSrc": "/assets/eventPhotos/Events/africanRailStrike.jpg",
-        "description": "On this day in 1947, the longest strike at that point in African history began, stretching across all branches of railway in French West Africa, the wharfs in Dahomey, and the Ivory Coast. For more than six months, 17,000 railway workers and 2,000 workers in the wharfs refused to work. The timing of the strike was crucial, undermining new French economic goals for the railway.\n\nThe strike was organized by Ibrahima Sarr, the Federal Secretary of the Railway Union. Workers demanded housing, rights for temporary workers, wages to follow regional differences in the cost of living, and clearer standards for promotions.\n\nThe government did not respond for three months, assuming the strike would collapse due to economic pressure. Workers had prepared for this, however, taking up community collections, the community exiling strikebreaking workers, and women of the household economically sustaining families while workers were on strike.\n\nOn March 19th, the workers' union accepted a set of proposals favorable to their demands and returned to work. The strike ended with a long, celebratory march into Thi\u00e8s, followed by meetings and dancing.",
+        "description": "On this day in 1947, the longest strike in African history at the time began, stretching across all branches of railway in French West Africa, the wharfs in Dahomey, and the Ivory Coast. For more than six months, 17,000 railway workers and 2,000 workers in the wharfs refused to work. The timing of the strike was crucial, undermining new French economic goals for the railway.\n\nThe strike was organized by Ibrahima Sarr, the Federal Secretary of the Railway Union. Workers demanded housing, rights for temporary workers, wages to follow regional differences in the cost of living, and clearer standards for promotions.\n\nThe government did not respond for three months, assuming the strike would collapse due to economic pressure. Workers had prepared for this, however, taking up community collections, the community exiling strikebreaking workers, and women of the household economically sustaining families while workers were on strike.\n\nOn March 19th, the workers' union accepted a set of proposals favorable to their demands and returned to work. The strike ended with a long, celebratory march into Thi\u00e8s, followed by meetings and dancing.",
         "link": "https://www.historyisaweapon.com/defcon1/zinnpeopleswar.html",
         "infoSrc": "https://nvdatabase.swarthmore.edu/content/french-west-african-railway-workers-strike-greater-benefits-1947-1948",
         "imgAltText": "",
         "NSFW": false,
-        "otd": "On this day in 1947, the longest strike at that point in African history began, stretching across all branches of railway in French West Africa, the wharfs in Dahomey, and the Ivory Coast."
+        "otd": "On this day in 1947, the longest strike in African history at the time began, stretching across all branches of railway in French West Africa, the wharfs in Dahomey, and the Ivory Coast."
       }
     ],
     "Birthdays": [
@@ -26834,12 +26834,12 @@
         "date": "October 10th, 1941",
         "title": "Ken Saro-Wiwa (1941 - 1995)",
         "imgSrc": "/assets/eventPhotos/Individuals/kenSaroWiwa.jpg",
-        "description": "Kenule Beeson \"Ken\" Saro-Wiwa was a Nigerian writer, television producer, and environmental activist who was born on this day in 1941.\n\nSaro-Wiwa was a member of the Ogoni people, an ethnic minority in Nigeria whose homeland, Ogoniland, in the Niger Delta has been targeted for crude oil extraction since the 1950s and suffered extreme environmental damage from decades of indiscriminate petroleum waste dumping.\n\nInitially as spokesperson for (and later as president of) the \"Movement for the Survival of the Ogoni People\" (MOSOP), Saro-Wiwa led a nonviolent campaign against environmental degradation of the land and waters of Ogoniland by the operations of the multinational petroleum industry, especially the Royal Dutch Shell company.\n\nIn 1994, Saro-Wiwa, along with eight other leaders of MOSOP (together known as the Ogoni Nine), were arrested on false charges and sentenced to death. On November 10th, 1995, the Ogoni nine were hanged by the military dictatorship of General Sani Abacha. Saro-Wiwa's execution provoked international outrage, and resulted in Nigeria's suspension from the Commonwealth of Nations for over three years.",
+        "description": "Kenule Beeson \"Ken\" Saro-Wiwa was a Nigerian writer, television producer, and environmental activist who was born on this day in 1941.\n\nSaro-Wiwa was a member of the Ogoni people, an ethnic minority in Nigeria whose homeland, Ogoniland, in the Niger Delta has been targeted for crude oil extraction since the 1950s and suffered extreme environmental damage from decades of indiscriminate petroleum waste dumping.\n\nInitially as spokesperson for (and later as president of) the \"Movement for the Survival of the Ogoni People\" (MOSOP), Saro-Wiwa led a nonviolent campaign against environmental degradation of the land and waters of Ogoniland by the operations of the multinational petroleum industry, especially the Royal Dutch Shell company.\n\nIn 1994, Saro-Wiwa, along with eight other leaders of MOSOP (together known as the Ogoni Nine), were arrested on false charges and sentenced to death. On November 10th, 1995, the Ogoni nine were hanged by the military dictatorship of General Sani Abacha. Saro-Wiwa's execution provoked international outrage, and resulted in Nigeria's suspension from the Commonwealth of Nations for over three years.\n\n\"I'll tell you this, I may be dead but my ideas will not die.\"\n\n- Ken Saro-Wiwa",
         "link": "https://www.washingtonpost.com/news/monkey-cage/wp/2016/07/29/the-complex-life-death-of-ken-saro-wiwa/",
         "infoSrc": "https://en.wikipedia.org/wiki/Ken_Saro-Wiwa",
         "imgAltText": "",
         "NSFW": false,
-        "otd": "Kenule Beeson \"Ken\" Saro-Wiwa was a Nigerian writer, television producer, and environmental activist who was born on this day in 1941."
+        "otd": "Kenule Saro-Wiwa, born on this day in 1941, was a Nigerian writer, television producer, and environmental activist who fought polluting petroleum interests. After being arrested on false charges, he was executed by the state in 1995."
       }
     ],
     "Assassinations": [
@@ -26904,12 +26904,12 @@
         "date": "October 11th, 1972",
         "title": "D.C. Jail Uprising (1972)",
         "imgSrc": "/assets/eventPhotos/Events/dcJailUprising.jpg",
-        "description": "On this day in 1972, inmates at a Washington, D.C. jail seized control of part of their prison, taking hostages and demanding to be released.\n\nThe uprising began when an inmate, pretending to have a seizure, drew a loaded .38 pistol on the two officers that came to check on him. After subduing the officers, they freed 50 other inmates and took control of the cellblock, capturing several other guards as hostages in the process.\n\nThe inmates demanded to speak to a prison reporter, Washington Claiborne. Inmates issued varying statements to him that indicated a revolutionary fervor among prisoners:\n\n\"We don't want nothin' but the sidewalk. What do you think we want, better food? Bullshit. We want the sidewalk, man.\"\n\n\"We want you to understand one thing very clearly. This is not a riot, it's a revolution.\"\n\n\"We ain't bitches, man. We don't mind dying for the fucking cause.\"\n\nPrison negotiators eventually got the inmates to back off of demanding release, but only in exchange for the opportunity to go before a federal judge to air their grievances about the jail and the promise of no reprisals for their actions. The inmates got their hearing, and a new facility was built. Despite the promise of no reprisals, all nine inmates who participated in the uprising were prosecuted and convicted on various charges.",
+        "description": "On this day in 1972, inmates at a Washington, D.C. jail seized control of part of their prison, taking hostages and demanding to be released.\n\nThe uprising began when an inmate, pretending to have a seizure, drew a loaded .38 pistol on the two officers that came to check on him. After subduing the officers, they freed 50 other inmates and took control of the cellblock, capturing several other guards as hostages in the process.\n\nThe inmates demanded to speak to a prison reporter, Washington Claiborne. Inmates issued varying statements to him that indicated a revolutionary fervor among prisoners:\n\n\"We don't want nothin' but the sidewalk. What do you think we want, better food? Bullshit. We want the sidewalk, man.\"\n\n\"We want you to understand one thing very clearly. This is not a riot, it's a revolution.\"\n\n\"We ain't bitches, man. We don't mind dying for the fucking cause.\"\n\nPrison negotiators eventually got the inmates to back off of demanding release, but only in exchange for the opportunity to go before a federal judge to air their grievances about the jail and the promise of no reprisals for their actions. The inmates got their hearing, and a new facility was built.\n\nDespite the promise of no reprisals, all nine inmates who participated in the uprising were prosecuted and convicted on various charges.",
         "link": "https://dccrimeandpunishment.wordpress.com/2013/10/11/crime-history-oct-11-1972-inmates-at-d-c-jail-hold-corrections-officials-hostage/",
         "infoSrc": "https://boundarystones.weta.org/2018/10/15/hostage-standoff-dc-jail-october-11-1972",
         "imgAltText": "Inmates shouting to reporters and others gathered outside the D.C. jail. Source: Washington Area Spark and DC Public Library, Star Collection, © Washington Post",
         "NSFW": false,
-        "otd": "On this day in 1972, inmates at a Washington, D.C. jail seized control of part of their prison, taking hostages and demanding to be released."
+        "otd": "On this day in 1972, inmates at a Washington, D.C. jail seized control of part of the facility, taking hostages and demanding to be released. \"We want you to understand one thing very clearly. This is not a riot, it's a revolution.\""
       }
     ],
     "Labor": [
@@ -27009,7 +27009,7 @@
         "infoSrc": "https://en.wikipedia.org/wiki/Battle_of_Virden",
         "imgAltText": "",
         "NSFW": false,
-        "otd": "The Battle of Virden was an armed labor union conflict that occurred on this day in 1898 when members of the United Mine Workers of America (UMW) surrounded a train full of strikebreakers in central Illinois."
+        "otd": "On this day in 1898, the Battle of Virden began when armed members of the United Mine Workers of America (UMW) surrounded a train full of strikebreakers and exchanged fire with company guards. 13 people were killed, dozens more wounded."
       }
     ],
     "Birthdays": [
@@ -27018,12 +27018,12 @@
         "date": "October 12th, 1904",
         "title": "Ding Ling (1904 - 1986)",
         "imgSrc": "/assets/eventPhotos/Individuals/dingLing.jpg",
-        "description": "Jiang Bingzhi (better known by her pen name Ding Ling) was a feminist and Marxist Chinese writer born on this day in 1904. She is considered one of China's most popular 20th century authors. In her early career, Ding Ling initially wrote highly successful short stories centering on young, unconventional Chinese women. Around 1930 she became a major literary figure of the \"leftist\" literature.\n\nIn 1931, her husband, communist poet Hu Yepin, was executed in Shanghai by the Kuomintang government for his association with the Communists. Shortly thereafter, she joined the Chinese Communist Party and almost all of her fiction from this time on was in support of its goals.\n\nDespite this, in 1957 she was denounced as a \"rightist\", purged from the party, and her fiction and essays were banned. She spent five years in jail during the Cultural Revolution and was sentenced to do manual labor on a farm for twelve years before being \"rehabilitated\" in 1978.",
+        "description": "Jiang Bingzhi, known by her pen name Ding Ling, was a feminist and Marxist Chinese writer born on this day in 1904. She is considered one of China's most popular 20th century authors.\n\nIn her early career, Ding Ling initially wrote highly successful short stories centering on young, unconventional Chinese women. Around 1930, she became a major literary figure of the \"leftist\" literature.\n\nIn 1931, her husband, communist poet Hu Yepin, was executed in Shanghai by the Kuomintang government for his association with the Communists. Shortly thereafter, she joined the Chinese Communist Party and almost all of her fiction from this time on was in support of its goals.\n\nDespite this, in 1957 she was denounced as a \"rightist\", purged from the party, and her fiction and essays were banned. She spent five years in jail during the Cultural Revolution and was sentenced to do manual labor on a farm for twelve years before being \"rehabilitated\" in 1978.\n\n\"Happiness is to take up the struggle in the midst of the raging storm and not to pluck the lute in the moonlight or recite poetry among the blossoms.\"\n\n- Ding Ling",
         "link": "https://en.wikipedia.org/wiki/Ding_Ling",
         "infoSrc": "https://www.britannica.com/biography/Ding-Ling",
         "imgAltText": "",
         "NSFW": false,
-        "otd": "Jiang Bingzhi (better known by her pen name Ding Ling) was a feminist and Marxist Chinese writer born on this day in 1904."
+        "otd": "Ding Ling, born on this day in 1904, was a prominent Marxist and feminist author in 20th Century China. Despite being a member of the Communist Party, during the Cultural Revolution her works were banned and she was denounced and imprisoned."
       }
     ],
     "Assassinations": [
@@ -27037,7 +27037,7 @@
         "infoSrc": "https://en.wikipedia.org/wiki/Inejiro_Asanuma",
         "imgAltText": "",
         "NSFW": false,
-        "otd": "Inejiro Asanuma (1898 - 1960) was a leader of the Japan Socialist Party assassinated by a nationalist with a samurai sword on this day in 1960."
+        "otd": "Inejiro Asanuma was a prominent Japanese socialist of the post-war period who was assassinated by a nationalist on this day in 1960."
       }
     ],
     "Other": [
