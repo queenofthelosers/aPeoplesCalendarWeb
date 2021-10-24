@@ -28127,22 +28127,10 @@
     "Rebellion": [
       {
         "category": "Rebellion",
-        "date": "October 24th, 1871",
-        "title": "Chinese Massacre of 1871",
-        "imgSrc": "/assets/eventPhotos/Events/chineseMassacre1871.jpg",
-        "description": "The Chinese Massacre of 1871 was a race riot that occurred on this day in Los Angeles, California when a mob of around 500 white and mestizo people entered Chinatown and attacked, robbed, and murdered Chinese residents.\n\nThe massacre took place on Calle de los Negros, also known as \"Negro Alley\". The mob gathered after hearing that a policeman had been shot and a rancher killed by Chinese. Historian John Johnson has described this as the \"largest mass lynching in American history\".\n\nAn estimated 17 to 20 Chinese immigrants were hanged by the mob in the course of the riot, but most had already been shot to death. At least one was mutilated when someone cut off a finger to get his diamond ring.\n\nTen men of the mob were prosecuted and eight were convicted of manslaughter in these deaths. The convictions were overturned on appeal due to technicalities.",
-        "link": "http://www.laweekly.com/how-los-angeles-covered-up-the-massacre-of-17-chinese/",
-        "infoSrc": "https://en.wikipedia.org/wiki/Chinese_massacre_of_1871",
-        "imgAltText": "",
-        "NSFW": false,
-        "otd": "On this day in 1871, a mob of around 500 white and mestizo people entered Chinatown in Los Angeles and attacked, robbed, and murdered Chinese residents in what one historian called \"the largest mass lynching in American history\"."
-      },
-      {
-        "category": "Rebellion",
         "date": "October 24th, 1975",
         "title": "Iceland Women's Strike (1975)",
         "imgSrc": "/assets/eventPhotos/Events/icelandWomen.jpg",
-        "description": "On this day in 1975, approximately 90% of Icelandic women struck for equality, not attending jobs or doing any domestic work. Iceland passed an equal pay law the following year, but the strike has been repeated on its anniversary several times since, such as in the years 2005, 2010, and 2016.\n\nThe strike was planned by \"The Women's Congress\", which had met on June 20th and 21st earlier that year. Among the reasons given for going on strike were pay inequality, lack of women in union leadership, and a general lack of recognition for the value and skill of domestic labor.\n\nDurng the work stoppage, also known as \"Women's Day Off\", 25,000 people gathered in Reykjavik, Iceland's capital city, for a rally. There, women listened to speakers, sang, and talked to each other about what could be done to achieve gender equality in Iceland.\n\nWomen from many different backgrounds spoke, including a housewife, two members of parliament, and a worker. The last speech of the day was by Aðalheiður Bjarnfreðsdóttir, who \"represented Sókn, the trade union for the lowest paid women in Iceland\", according to The Guardian.\n\nIn 1976, the Icelandic government passed an equal pay law, and the country elected its first female President, Vigdís Finnbogadóttir, five years later in 1980.\n\nThe 1975 Women's Strike also helped inspire the 2016 \"Black Monday\" anti-abortion ban protests in Poland, as well as the \"International Women's Strike\", single day work stoppages on March 8th, 2017 and 2018.",
+        "description": "On this day in 1975, approximately 90% of Icelandic women struck for equality, not attending jobs or doing any domestic work. Iceland passed an equal pay law the following year, but the strike has been repeated on its anniversary several times since, such as in the years 2005, 2010, and 2016.\n\nThe strike was planned by \"The Women's Congress\", which had met on June 20th and 21st earlier that year. Among the reasons given for going on strike were pay inequality, lack of women in union leadership, and a general lack of recognition for the value and skill of domestic labor.\n\nDuring the work stoppage, also known as \"Women's Day Off\", 25,000 people gathered in Reykjavik, Iceland's capital city, for a rally. There, women listened to speakers, sang, and talked to each other about what could be done to achieve gender equality in Iceland.\n\nWomen from many different backgrounds spoke, including a housewife, two members of parliament, and a worker. The last speech of the day was by Aðalheiður Bjarnfreðsdóttir, who \"represented Sókn, the trade union for the lowest paid women in Iceland\", according to The Guardian.\n\nIn 1976, the Icelandic government passed an equal pay law, and the country elected its first female President, Vigdís Finnbogadóttir, five years later in 1980.\n\nThe 1975 Women's Strike also helped inspire the 2016 \"Black Monday\" anti-abortion ban protests in Poland, as well as the \"International Women's Strike\", single day work stoppages on March 8th, 2017 and 2018.",
         "infoSrc": "https://www.theguardian.com/world/2005/oct/18/gender.uk",
         "link": "https://kvennasogusafn.is/index.php?page=womens-day-off-1975",
         "imgAltText": "\"VIÐ ERUM MARGAR\": WE ARE MANY The largest mass demonstration in Icelandic history: More than 10% of the total population of Iceland participated in the women's rally in downtown Reykjavík. Photo by Ólafur K Magnússon",
@@ -28194,16 +28182,16 @@
     ],
     "Other": [
       {
-        "category": "",
-        "date": "",
-        "title": "",
-        "imgSrc": "/assets/eventPhotos/empty.jpg",
-        "description": "",
-        "link": "",
-        "infoSrc": "",
+        "category": "Other",
+        "date": "October 24th, 1871",
+        "title": "Chinese Massacre of 1871",
+        "imgSrc": "/assets/eventPhotos/Events/chineseMassacre1871.jpg",
+        "description": "The Chinese Massacre of 1871 was a race riot that occurred on this day in Los Angeles, California when a mob of around 500 white and mestizo people entered Chinatown and attacked, robbed, and murdered Chinese residents.\n\nThe massacre took place on Calle de los Negros, also known as \"Negro Alley\". The mob gathered after hearing that a policeman had been shot and a rancher killed by Chinese. Historian John Johnson has described this as the \"largest mass lynching in American history\".\n\nAn estimated 17 to 20 Chinese immigrants were hanged by the mob in the course of the riot, but most had already been shot to death. At least one was mutilated when someone cut off a finger to get his diamond ring.\n\nTen men of the mob were prosecuted and eight were convicted of manslaughter. The convictions were overturned on appeal due to various technicalities.",
+        "link": "http://www.laweekly.com/how-los-angeles-covered-up-the-massacre-of-17-chinese/",
+        "infoSrc": "https://en.wikipedia.org/wiki/Chinese_massacre_of_1871",
         "imgAltText": "",
         "NSFW": false,
-        "otd": ""
+        "otd": "On this day in 1871, a mob of around 500 white and mestizo people entered Chinatown in Los Angeles and attacked, robbed, and murdered Chinese residents in what one historian called \"the largest mass lynching in American history\"."
       }
     ]
   },
