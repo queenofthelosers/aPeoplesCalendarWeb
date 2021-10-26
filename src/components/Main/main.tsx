@@ -18,7 +18,7 @@ import { isDayNotEmpty } from '../../utils/isDayNotEmpty';
 import { searchDatabaseByKeyword } from '../../utils/searchDatabaseByKeyword';
 import { validateDayString } from '../../utils/validateDayString';
 
-interface IMainProps {
+export interface IMainProps {
   winDim: {
     width: number;
     height: number;
@@ -45,6 +45,10 @@ export const Main = ({
   const calendarRef: React.RefObject<any> = React.createRef();
 
   React.useEffect(() => {
+    handleParams();
+  }, [loading]);
+
+  const handleParams = () => {
     if (loading) {
       return;
     }
@@ -73,10 +77,9 @@ export const Main = ({
         handleNewDate(tempNewDate);
         return;
       }
-      // redirect to /404 (<NotFound/>)
+      // invalid day, redirect to /404
       history.push('/404');
       setInvalidInput(true);
-      // return;
     }
     const queryParams = new URLSearchParams(window.location.search);
     const searchTerm = queryParams.get('query');
@@ -86,7 +89,7 @@ export const Main = ({
       return;
     }
     initializeToday();
-  }, [loading]);
+  };
 
   const searchEvents = (title: string) => {
     const { searchEventsResult, matched } = findEventByTitle(
@@ -100,7 +103,6 @@ export const Main = ({
 
   const initializeToday = () => {
     // the following code sets page to today's date and relevant events
-
     const { initTodayString, initDateInput } = getTodayStringAndInitDateInput();
     const dayHasEvents = isDayNotEmpty(eventLibrary[initTodayString]);
 
@@ -196,7 +198,7 @@ export const Main = ({
 
   if (loading) {
     return (
-      <Box>
+      <Box data-testid="calendarLoadingDivs">
         <Box
           style={{
             width: '40%',
@@ -228,7 +230,7 @@ export const Main = ({
             id="settings"
             style={winDim.width < 501 ? { flexDirection: 'column' } : {}}
           >
-            <div id="datePickerWrapper">
+            <div id="datePickerWrapper" data-testid="datePickerWrapper">
               <input
                 id="datePicker"
                 type="date"
@@ -238,6 +240,7 @@ export const Main = ({
             </div>
             <form
               id="searchWrapper"
+              data-testid="searchWrapper"
               onSubmit={handleSearch}
               style={
                 winDim.width < 501 ? { marginTop: 20, marginLeft: -8 } : {}

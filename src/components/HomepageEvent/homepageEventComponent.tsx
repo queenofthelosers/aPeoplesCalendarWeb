@@ -13,6 +13,7 @@ import {
   AccordionDetails,
   Typography,
   Box,
+  Tooltip,
 } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 import { stringToSlug } from '../../utils/stringToSlug';
@@ -33,6 +34,14 @@ const StyledAccordionSummary = withStyles({
     marginBottom: -28,
   },
 })(AccordionSummary);
+
+const StyledTooltip = withStyles({
+  tooltip: {
+    fontSize: 14,
+    padding: 10,
+    backgroundColor: '#383838',
+  },
+})(Tooltip);
 
 // to-do:
 // create generic event "card" component
@@ -126,15 +135,20 @@ export const HomepageEventComponent = ({
               {categoryEvent.title}
             </Typography>
             {imgWidth !== 1 && (
-              <img
-                className="eventImg"
-                src={`${process.env.PUBLIC_URL}${categoryEvent.imgSrc}`}
-                alt={categoryEvent.imgAltText}
-                style={{ width: resizeWidth, height: resizeHeight }}
-                ref={(img) => (imgRef = img)}
-                onLoad={getImgDim}
-                data-testid="homepageImg"
-              />
+              <StyledTooltip
+                title={categoryEvent.imgAltText}
+                style={{ padding: 5, fontSize: 16 }}
+              >
+                <img
+                  className="eventImg"
+                  src={`${process.env.PUBLIC_URL}${categoryEvent.imgSrc}`}
+                  alt={categoryEvent.imgAltText}
+                  style={{ width: resizeWidth, height: resizeHeight }}
+                  ref={(img) => (imgRef = img)}
+                  onLoad={getImgDim}
+                  data-testid="homepageImg"
+                />
+              </StyledTooltip>
             )}
           </Box>
         </StyledAccordionSummary>

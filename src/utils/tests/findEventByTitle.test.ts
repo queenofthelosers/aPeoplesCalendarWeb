@@ -9,12 +9,16 @@ describe('findEventByTitle', () => {
         Revolution: [{ description: '' }],
         Rebellion: [{ description: '' }],
         Labor: [{ description: '' }],
-        Birthdays: [{ title: 'testTitle', description: '' }],
+        Birthdays: [
+          { title: 'February 2nd Birthdays testTitle', description: '' },
+        ],
         Assassinations: [{ description: '' }],
         Other: [{ description: '' }],
       },
     };
-    expect(findEventByTitle(mockedEventLibrary, 'testtitle')).toEqual(expectedResult);
+    expect(
+      findEventByTitle(mockedEventLibrary, 'february-2nd-birthdays-testtitle'),
+    ).toEqual(expectedResult);
   });
   it('returns when no events found', () => {
     const expectedResult = {
@@ -28,6 +32,8 @@ describe('findEventByTitle', () => {
         Other: [{ description: '' }],
       },
     };
-    expect(findEventByTitle(mockedEventLibrary, 'shouldNotFindTitle')).toEqual(expectedResult);
+    expect(findEventByTitle(mockedEventLibrary, 'shouldNotFindTitle')).toEqual(
+      expectedResult,
+    );
   });
 });

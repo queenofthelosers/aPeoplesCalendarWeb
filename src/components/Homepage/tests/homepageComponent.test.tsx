@@ -77,8 +77,8 @@ describe('HomepageComponent', () => {
     // calls date getter
     expect(mockDateGetter).toHaveBeenCalledTimes(1);
     // shows longest event from eventDatabase day
-    expect(queryByText('qwer')).toBeTruthy();
-    expect(queryByText('testKeyword rebellion')).toBeTruthy();
+    expect(queryByText('January 1st Rebellion asdf')).toBeTruthy();
+    expect(queryByText('January 1st Rebellion unusedKeyword')).toBeTruthy();
     // need to set up process.env mocking for img url
     // https://stackoverflow.com/questions/48033841/test-process-env-with-jest
     // expect(queryByTestId('homepageImage')).toBeTruthy();

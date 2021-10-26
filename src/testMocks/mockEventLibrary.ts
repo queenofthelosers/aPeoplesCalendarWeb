@@ -1,11 +1,19 @@
 export const mockedEventLibrary = {
   '1-1': {
-    Revolution: [{ title: 'blah', description: 'testKeyword' }],
-    Rebellion: [
-      { title: 'asdf', description: 'unusedKeyword' },
+    Revolution: [
       {
-        title: 'qwer',
-        description: 'testKeyword rebellion',
+        title: 'January 1st Revolution blah',
+        description: 'January 1st Revolution testKeyword',
+      },
+    ],
+    Rebellion: [
+      {
+        title: 'January 1st Rebellion asdf',
+        description: 'January 1st Rebellion unusedKeyword',
+      },
+      {
+        title: 'January 1st Rebellion qwer',
+        description: 'January 1st Rebellion testKeyword',
         img: '../assets/howardZinnHeadshot.jpg',
       },
     ],
@@ -15,15 +23,28 @@ export const mockedEventLibrary = {
     Other: [{ title: '', description: '' }],
   },
   '2-1': {
-    Revolution: [{ title: 'asdf', description: '' }],
-    Rebellion: [{ title: '', description: 'yadda yadda ya' }],
-    Labor: [{ title: '', description: 'asdf testKeyword' }],
-    Birthdays: [{ title: 'testTitle', description: '' }],
-    Assassinations: [{ title: '', description: 'test keyword' }],
-    Other: [{ title: '', description: 'ope' }],
+    Revolution: [
+      { title: 'February 2nd Revolution asdf', description: 'asdf' },
+    ],
+    Rebellion: [
+      { title: 'February 2nd Rebellion yadda', description: 'yadda' },
+    ],
+    Labor: [
+      { title: 'February 2nd Labor asdf', description: 'asdf testKeyword' },
+    ],
+    Birthdays: [{ title: 'February 2nd Birthdays testTitle', description: '' }],
+    Assassinations: [
+      { title: 'February 2nd Assassinations', description: 'test keyword' },
+    ],
+    Other: [{ title: 'February 2nd Other', description: 'ope' }],
   },
   '10-1': {
-    Revolution: [{ title: '', description: 'testKeyword' }],
+    Revolution: [
+      {
+        title: 'October 1st Revolution Event',
+        description: 'October 1st Revolution testKeyword',
+      },
+    ],
     Rebellion: [{ title: '', description: '' }],
     Labor: [{ title: '', description: '' }],
     Birthdays: [{ title: '', description: '' }],

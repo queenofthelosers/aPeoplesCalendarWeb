@@ -23,12 +23,9 @@ const App = (): JSX.Element => {
   const [eventLibrary, setEventLibrary] = React.useState();
   const [loadingEvents, setLoadingEvents] = React.useState(true);
 
-  const scrollRef: React.RefObject<any> = React.createRef();
-
   React.useEffect(() => {
     fetchEventLibrary();
     window.addEventListener('resize', handleResize);
-    executeScroll();
     return () => {
       window.removeEventListener('resize', handleResize);
     };
@@ -40,7 +37,6 @@ const App = (): JSX.Element => {
         `${process.env.PUBLIC_URL}/eventLibrary.json`,
       );
       const fetchedEvents = await response.json();
-      // databaseChecks(fetchedEvents);
       setEventLibrary(fetchedEvents);
       setLoadingEvents(false);
     } catch (e: any) {
@@ -56,10 +52,6 @@ const App = (): JSX.Element => {
     setWindowHeight(window.innerHeight);
   };
 
-  const executeScroll = () => {
-    scrollRef.current.scrollIntoView();
-  };
-
   return (
     <Router>
       <img
@@ -67,7 +59,7 @@ const App = (): JSX.Element => {
         alt="A police officer maces a peaceful protester at a black lives matter protest in Ohio"
         id="bannerImg"
       />
-      <div ref={scrollRef}>
+      <div>
         {windowWidth > 780 && <FullNavBar windowWidth={windowWidth} />}
         {windowWidth <= 780 && <SmallNavBar windowWidth={windowWidth} />}
       </div>
