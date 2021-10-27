@@ -4,11 +4,11 @@ A People's Calendar (aPC) is a project that seeks to promote the worldwide histo
 This repository contains the web version of this calendar, which also provides urls used by the Android app and a social media posting bot to download the event library and associated media (such as images) for displayed events.
 
 # Open Source
-Both the web and native versions of this application are freely available, and I will never restrict or profit from them for propertiary reasons.
+Both the web and native versions of this application are freely available under the MIT License, and I will never restrict or profit from them for propertiary reasons.
 
 # Technical Details
 
-This project is built with ReactJS and deployed via Netlify at apeoplescalendar.org. It uses Typescript, prettify/eslint, material-ui, and Jest with React Testing Library.
+This project is built with ReactJS and deployed via Netlify at apeoplescalendar.org. It uses Typescript, prettify/eslint, material-ui components, and Jest with React Testing Library for unit testing.
 
 Currently, all event data (including descriptions, dates, and photos) are bundled with the front end of this web application, and can be found in the public folder. The event library (stored as JSON) is fetched and parsed on application mount. 
 
@@ -25,5 +25,5 @@ Each event is stored as an object with the following props:
 - description: string
 - link: string
 - infoSrc: string
-- NSFW: boolean
+- NSFW: boolean (social media flag for reddit, not used on website yet)
 - otd: string (< 238 characters, used for social media posting and quick event summaries on the website)
