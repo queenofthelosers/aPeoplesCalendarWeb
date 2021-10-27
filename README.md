@@ -12,7 +12,7 @@ This project is built with ReactJS and deployed via Netlify at apeoplescalendar.
 
 Currently, all event data (including descriptions, dates, and photos) are bundled with the front end of this web application, and can be found in the public folder. The event library (stored as JSON) is fetched and parsed on application mount. 
 
-This situation is not ideal, and there are plans towards building a serverless (likely AWS) backend in the future. Do not change the location of the event library or media without making corresponding changes into the repositories aPeoplesCalendar (React Native app) and aPeoplesCalendarBot (social media posting app), as these programs are hardcoded to download that data from where they are currently hosted on the website.
+This situation is temporary, and there are plans towards building a serverless (likely AWS) backend in the future. **Do not change the location of the event library or media without making corresponding changes into the repositories aPeoplesCalendar (React Native app) and aPeoplesCalendarBot (social media posting app)**, as these programs are coded to download that data from where they are currently hosted on the website.
 
 All non-media event data is currently stored in eventLibrary.json, found within the public folder.
 
