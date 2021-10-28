@@ -88,6 +88,7 @@ export const Main = ({
       searchDatabaseByTerm(searchTerm);
       return;
     }
+    // if no params, set calendar to today
     initializeToday();
   };
 
