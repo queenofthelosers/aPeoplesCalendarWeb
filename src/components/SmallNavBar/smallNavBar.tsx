@@ -53,7 +53,7 @@ export const SmallNavBar = ({
           >
             Calendar
           </NavLink>
-          <a
+          {/* <a
             target="_blank"
             rel="noopener noreferrer"
             id="hamburgerContact"
@@ -62,7 +62,15 @@ export const SmallNavBar = ({
             onClick={handleHamburgerClick}
           >
             Contact
-          </a>
+          </a> */}
+          <NavLink
+            to="/contact"
+            id="hamburgerCalendar"
+            className="navText hamburgerText"
+            onClick={handleHamburgerClick}
+          >
+            Contact
+          </NavLink>
         </div>
       )}
       <div id="smallNavBarContainer">

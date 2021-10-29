@@ -24,6 +24,9 @@ export function FullNavBar({ windowWidth }: IFullNavBarProps) {
         <NavLink to="/calendar" className="fullNavTextContainer navBarNavLink">
           <p className="fullNavText">Calendar</p>
         </NavLink>
+        <NavLink to="/contact" className="fullNavTextContainer navBarNavLink">
+          <p className="fullNavText">Contact</p>
+        </NavLink>
       </div>
       <div id="fullNavRight">
         <SocialIcons

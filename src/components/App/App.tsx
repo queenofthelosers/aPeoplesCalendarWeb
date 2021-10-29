@@ -15,6 +15,7 @@ import { HomepageComponent } from '../Homepage/homepageComponent';
 import { IconComponent } from '../LogoIcon/logoIcon';
 import { SmallNavBar } from '../SmallNavBar/smallNavBar';
 import headerImg from '../../assets/Protests-85-skinniest.jpg';
+import { Contact } from '../Contact/contact';
 // import { databaseChecks } from '../../utils/databaseChecks';
 
 const App = (): JSX.Element => {
@@ -110,6 +111,9 @@ const App = (): JSX.Element => {
             eventLibrary={eventLibrary}
             loading={loadingEvents}
           />
+        </Route>
+        <Route exact path="/contact">
+          <Contact />
         </Route>
         <Route>
           <Redirect
